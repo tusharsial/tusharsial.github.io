@@ -25,8 +25,3 @@ Professional Experience
 
 ![HDFC Team Photo](/images/HDFC Team.jpg){: .align-right width="400px"}
 I worked as a **DevSecOps** (Development, Security, & Operations) Engineer at the Digital Factory Vertical of the IT Team at HDFC Bank, Bengaluru. My primary tasks involved Designing, maintaining & securing **CI/CD pipelines** using Jenkins, Git, Kubernetes, and Docker. In addition to this, I was also tasked with implementing **infrastructure-as-code (IAC) principles** using tools like Terraform and Ansible, ensuring secure and compliant cloud environments.
-
-
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
