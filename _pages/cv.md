@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-**CV:** [Tushar_Sial_CV](/files/CV.pdf)
+#**CV:** [Tushar_Sial_CV](/files/CV.pdf)
 
 
 Education
