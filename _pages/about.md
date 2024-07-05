@@ -10,9 +10,16 @@ redirect_from:
 
 I am an incoming MS in Aerospace Engineering student at Iowa State University. Digging deep into the multifaceted aspects throughout my undergraduate journey, I’ve identified my interest in advancing control theory for nonlinear dynamical systems such as robots and spacecraft. Starting in Fall 2024, I'll pursue a Research Assistantship under Professor [Abhishek Halder](https://abhishekhalder.org/index.html).
 
-A data-driven personal website
+Apart from this, I also keep a keen interest in the domain of Electric vehicles. My hobbies include playing the keyboard, cricket and badminton, running, and cycling. 
+
+# Selected Experience
 ======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+## Research Experience
+
+
+## Professional Experience
+HDFC Bank: (July 2023 – July 2024)
+I worked as a DevSecOps(Development, Security, & Operations) Engineer at the Digital Factory Vertical of the IT Team at HDFC Bank, Bengaluru. My primary tasks involved Designing, maintaining & securing CI/CD pipelines using Jenkins, Git, Kubernetes, and Docker. In addition to this, I was also tasked with Implementing infrastructure-as-code principles using tools like Terraform and Ansible, ensuring secure and compliant cloud environments.
 
 For more info
 ------
