@@ -14,17 +14,17 @@ Apart from this, I also keep a keen interest in the domain of Electric vehicles.
 
 Research Experience
 ------
-Guidance, Control & Decision Systems Lab (GCDSL): <span style="float: right;">(June 2022 – June 2023)</span> 
+**Guidance, Control & Decision Systems Lab (GCDSL)** <span style="float: right;">(June 2022 – June 2023)</span> 
 
-![IISc Team Photo](/images/IISc Photo.jpg){: .align-right width="300px"}
-I interned in the Aerospace Department at the Indian Institute of Science, Bengaluru, under the guidance of Professor [Debasish Ghose](https://aero.iisc.ac.in/people/debasish-ghose/). There, I developed control algorithms for docking spacecraft with non-cooperative tumbling satellites.
+![IISc Team Photo](/images/IISc Photo.jpg){: .align-right width="400px"}
+I interned in the Aerospace Department at the Indian Institute of Science, Bengaluru, under the guidance of Professor [Debasish Ghose](https://aero.iisc.ac.in/people/debasish-ghose/). I developed control algorithms for **Autonomous Docking & Rendezvous (AR&D)** of spacecraft with non-cooperative tumbling satellites there.
 
 Professional Experience
 ------------
-HDFC Bank: <span style="float: right;">(July 2023 – July 2024)</span>
+**HDFC Bank** <span style="float: right;">(July 2023 – July 2024)</span>
 
-![HDFC Team Photo](/images/HDFC Team.jpg){: .align-right width="300px"}
-I worked as a **DevSecOps** (Development, Security, & Operations) Engineer at the Digital Factory Vertical of the IT Team at **HDFC Bank, Bengaluru**. My primary tasks involved Designing, maintaining & securing **CI/CD pipelines** using Jenkins, Git, Kubernetes, and Docker. In addition to this, I was also tasked with implementing **infrastructure-as-code (IAC) principles** using tools like Terraform and Ansible, ensuring secure and compliant cloud environments.
+![HDFC Team Photo](/images/HDFC Team.jpg){: .align-right width="400px"}
+I worked as a **DevSecOps** (Development, Security, & Operations) Engineer at the Digital Factory Vertical of the IT Team at HDFC Bank, Bengaluru. My primary tasks involved Designing, maintaining & securing **CI/CD pipelines** using Jenkins, Git, Kubernetes, and Docker. In addition to this, I was also tasked with implementing **infrastructure-as-code (IAC) principles** using tools like Terraform and Ansible, ensuring secure and compliant cloud environments.
 
 
 For more info
