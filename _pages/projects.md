@@ -15,8 +15,9 @@ In 2020, I co-founded CRISS Robotics, a student research technical team for desi
 
 Flight Stabilizing Controllers for Agile Fixed-Wing UAV
 ------
-![Fixed Drone Photo](/images/Fixed Drone.jpeg){: .align-right width="300px"}
-In this project, I've designed flight stability controllers for an agile fixed-wing UAV using the Backstepping approach under Professor Bijoy Krishna Mukherjee, Department of EEE at BITS Pilani.
+![Fixed Drone Photo](/images/Fixed Drone.jpeg){: .align-right width="200px"}
+In this project, I've designed flight stability controllers for an agile fixed-wing UAV using the Backstepping approach under Professor Bijoy Krishna Mukherjee, Department of EEE at BITS Pilani. In particular, I designed and modeled the Longitudinal and Lateral-Directional stability movement controllers of the UAV using
+the Backstepping Control technique using MATLAB and Simulink. Additionally, I designed a wind observer to incorporate environmental disturbances(like wind shears, wind gusts, and atmospheric disturbances) to make the controllers robust and, thus, improve flight capability.
 
 
 Autonomous Delivery Quadcopter
