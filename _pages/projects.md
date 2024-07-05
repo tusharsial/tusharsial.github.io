@@ -15,6 +15,8 @@ In 2020, I co-founded CRISS Robotics, a student research technical team for desi
 
 Flight Stabilizing Controllers for Agile Fixed-Wing UAV
 ------
+![Fixed Drone Photo](/images/Fixed Drone.jpeg){: .align-right width="400px"}
+
 
 Autonomous Delivery Quadcopter
 ---
