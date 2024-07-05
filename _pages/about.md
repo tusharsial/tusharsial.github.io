@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hi Everyone, I'm Tushar: true
+title: "Hi Everyone, I'm Tushar": true
 redirect_from: 
   - /about/
   - /about.html
