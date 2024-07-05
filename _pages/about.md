@@ -16,7 +16,7 @@ Research Experience
 ------
 **Guidance, Control & Decision Systems Lab (GCDSL)** <span style="float: right;">(June 2022 – June 2023)</span> 
 
-![IISc](/images/IISc.jpg){: .align-right width="300px"}
+
 I interned in the Aerospace Department at the Indian Institute of Science, Bengaluru, under the guidance of Professor [Debasish Ghose](https://aero.iisc.ac.in/people/debasish-ghose/). I developed control algorithms for **Autonomous Docking & Rendezvous (AR&D)** of spacecraft with non-cooperative tumbling satellites there.
 
 Professional Experience
