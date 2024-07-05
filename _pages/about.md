@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hi Everyone, I'm Tushar"
+title: "Hi Everyone, I'm Tushar!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm an upcoming graduate student at Iowa State University. 
+I am an incoming MS in Aerospace Engineering student at Iowa State University. Digging deep into the multifaceted aspects throughout my undergraduate journey, I’ve identified my interest in advancing control theory for nonlinear dynamical systems such as robots and spacecraft. Starting in Fall 2024, I'll pursue a Research Assistantship under Professor [Abhishek Halder](https://abhishekhalder.org/index.html).
 
 A data-driven personal website
 ======
