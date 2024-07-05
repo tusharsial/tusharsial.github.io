@@ -9,7 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
-**CV:** [Tushar Sial CV](/files/CV.pdf)
+**CV:** [Tushar_Sial_CV](https://github.com/user-attachments/files/16112967/Tushar_Sial_MS_CV.pdf)
+
 
 Education
 ======
