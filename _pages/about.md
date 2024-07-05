@@ -1,6 +1,8 @@
 ---
 permalink: /
-title: "Hi Everyone, I'm Tushar": true
+title: "Hi Everyone, I'm Tushar"
+excerpt: "About me"
+author_profile: true
 redirect_from: 
   - /about/
   - /about.html
