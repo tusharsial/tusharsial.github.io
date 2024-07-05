@@ -13,13 +13,14 @@ I am an incoming MS in Aerospace Engineering student at Iowa State University. D
 Apart from this, I also keep a keen interest in the domain of Electric vehicles. My hobbies include playing the keyboard, cricket and badminton, running, and cycling. 
 
 # Selected Experience
-======
+
 ## Research Experience
 
 
 ## Professional Experience
 HDFC Bank: (July 2023 – July 2024)
 
+![HDFC Team Photo](/images/HDFC Team.jpg){: .align-right width="300px"}
 I worked as a DevSecOps(Development, Security, & Operations) Engineer at the Digital Factory Vertical of the IT Team at HDFC Bank, Bengaluru. My primary tasks involved Designing, maintaining & securing CI/CD pipelines using Jenkins, Git, Kubernetes, and Docker. In addition to this, I was also tasked with Implementing infrastructure-as-code principles using tools like Terraform and Ansible, ensuring secure and compliant cloud environments.
 
 For more info
