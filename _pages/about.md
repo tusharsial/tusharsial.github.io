@@ -16,7 +16,7 @@ Research Experience
 ------
 **Guidance, Control & Decision Systems Lab (GCDSL)** <span style="float: right;">(June 2022 – June 2023)</span> 
 
-![IISc](/images/IISc Team.jpg){: .align-right width="370px"}
+![IISc](/images/IISc Team.jpg){: .align-right width="350px"}
 With a growing debris population in the lower Earth orbit, robots performing routine tasks autonomously (such as simple repairs/maintenance, refueling, or debris removal) may become increasingly essential for actively preventing disaster. Several missions to uncooperative targets will require **Autonomous Rendezvous and Docking (AR&D)** operations. I interned in the Aerospace Department at the Indian Institute of Science, Bengaluru, under the guidance of Professor [Debasish Ghose](https://aero.iisc.ac.in/people/debasish-ghose/), where I developed control algorithms for **AR&D** of spacecraft with non-cooperative tumbling satellites.
 
 Professional Experience
