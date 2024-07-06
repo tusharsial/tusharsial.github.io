@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Relevant Courses"
+title: "Course Work"
 permalink: /Courses/
 author_profile: true
 
@@ -8,18 +8,26 @@ author_profile: true
 
 {% include base_path %}
 
-# Undergraduate Courses
+# Relevant Undergraduate Courses
 
-## CDC
+## Mathematics
 * Mathematics- 2 (Linear Algebra)
-* Computer Programming (C language)
+* Probability and Statistics
 * Mathematics- 3 (Ordinary Differential Equations)
-* Digital Design
+* Optimization
+
+## Dynamics & Control 
 * Control Systems
-* Signals & Systems
-* Micro-controllers and Processors
 * Modern Control Systems
 * Nonlinear Dynamics & Chaos
+
+## Robotics
 * Autonomous Mobile Robotics
 * Robotic Manipulators
-* Internet of Things.
+* Signals & Systems
+* Internet of Things
+
+## Electronics
+* Digital Design
+* Micro-controllers and Processors
+* Microelectronics
