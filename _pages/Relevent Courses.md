@@ -8,9 +8,9 @@ author_profile: true
 
 {% include base_path %}
 
-## Undergraduate Courses
+# Undergraduate Courses
 
-### CDC
+## CDC
 * Mathematics- 2 (Linear Algebra)
 * Computer Programming (C language)
 * Mathematics- 3 (Ordinary Differential Equations)
