@@ -39,3 +39,21 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+body {
+    background-image: url('../images/Space image.jpg'); /* Adjust the path if needed */
+    background-size: cover; /* Cover the entire screen */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Fixed background image */
+    background-position: center center; /* Center the background image */
+    color: white; /* Optional: Change text color to white for better visibility */
+}
+
+header, footer, .content {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for readability */
+    padding: 10px;
+}
+
+a {
+    color: lightblue; /* Change hyperlink color for better visibility */
+}
