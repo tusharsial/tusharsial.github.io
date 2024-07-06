@@ -24,4 +24,4 @@ Professional Experience
 **HDFC Bank** <span style="float: right;">(July 2023 – July 2024)</span>
 
 ![HDFC Team Photo](/images/HDFC Team.jpg){: .align-right width="350px"}
-I worked as a **DevSecOps** (Development, Security, & Operations) Engineer at the Digital Factory Vertical of the IT Team at HDFC Bank, Bengaluru. My primary tasks involved Designing, maintaining & securing **CI/CD pipelines** using Jenkins, Git, Kubernetes, and Docker. In addition to this, I was also tasked with implementing **infrastructure-as-code (IAC) principles** using tools like Terraform and Ansible, ensuring secure and compliant cloud environments.
+I worked as a **DevSecOps** (Development, Security, & Operations) Engineer at the Digital Factory Vertical of the IT Team at HDFC Bank, Bengaluru. My primary tasks involved designing, maintaining & securing **CI/CD pipelines** using Jenkins, Git, Kubernetes, and Docker. In addition to this, I was also tasked with implementing **infrastructure-as-code (IAC) principles** using tools like Terraform and Ansible, ensuring secure and compliant cloud environments.
