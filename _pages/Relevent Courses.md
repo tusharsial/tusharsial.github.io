@@ -8,8 +8,7 @@ author_profile: true
 
 {% include base_path %}
 
-Undergraduate Courses
-----
+# Undergraduate Courses
 
 ## CDC
 * Mathematics- 2 (Linear Algebra)
