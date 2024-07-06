@@ -41,7 +41,7 @@
 @import "print";
 
 body {
-    background-image: url('../images/Space image.jpg'); /* Adjust the path if needed */
+    background-image: url('/images/Space image.jpg'); /* Adjust the path if needed */
     background-size: cover; /* Cover the entire screen */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-attachment: fixed; /* Fixed background image */
