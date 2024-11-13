@@ -14,7 +14,7 @@ Apart from this, I also keep a keen interest in Electric vehicles. My hobbies in
 
 Research Experience
 ------
-**Halder Group (Stochastic Control & Optimization)** <span style="float: right;">(August 2022 – Present)</span> 
+**Halder Group (Stochastic Control & Optimization)** <span style="float: right;">(August 2024 – Present)</span> 
 
 ![ISU RA](/images/ISU.jpeg){: .align-right width="350px"}
 I'm researching the intersection of Stochastic Systems, Dynamics & Control, and Optimization under Professor Abhishek Halder. The current project that I'm working on involves designing an Optimal Covariance Steering Algorithm for a Stochastic System over a finite time horizon. The earlier works focused on generalizing the Schrodinger Bridge Problem (SBP) with a hard constraint on the final marginal distribution, which finds the most likely stochastic evolution between two probability distributions at two distinct points in time. My current focus is developing a framework incorporating a soft constraint (Frobenius terminal cost) and a quadratic cost function for control input and state. I aim to derive the necessary conditions for optimality for this problem and establish sufficiency. This modification will improve system performance and computational efficiency by optimizing control efforts and the desired system states.
