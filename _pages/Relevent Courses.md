@@ -16,21 +16,21 @@ author_profile: true
 
 ## Guidance, Navigation, and Control
 * AERE 6510 Spacecraft Trajectory Optimization
-* AERE 5730 Random Signal Analysis and Kalman Filtering (Audit)
+* AERE 5730 Random Signal Analysis and Kalman Filtering
 
 ## Electrical
 * EE 5710 - Introduction to Convex Optimization
 * EE 5230 - Random Processes for Communications and Signal Processing
 
 ## Robotics 
-* Mechanical Considerations in Robotics (Audit) 
+* Mechanical Considerations in Robotics
 
 # Relevant Undergraduate Courses
 
 ## Mathematics
-* Mathematics- 2 (Linear Algebra)
+* Linear Algebra
 * Probability and Statistics
-* Mathematics- 3 (Ordinary Differential Equations)
+* Ordinary Differential Equations
 * Optimization
 
 ## Dynamics & Control 
