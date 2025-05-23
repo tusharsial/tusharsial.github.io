@@ -21,9 +21,10 @@ author_profile: true
 ## Electrical
 * EE 5710 - Introduction to Convex Optimization
 * EE 5230 - Random Processes for Communications and Signal Processing
+* EE 6230 - High-Dimensional Probability and Linear Algebra for Machine Learning
 
-## Robotics 
-* Mechanical Considerations in Robotics
+## Systems and Design 
+* AERE 6230 - Introduction to Multidisciplinary Design Optimization
 
 # Relevant Undergraduate Courses
 
