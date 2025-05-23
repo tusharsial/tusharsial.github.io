@@ -24,7 +24,7 @@ author_profile: true
 * EE 6230 - High-Dimensional Probability and Linear Algebra for Machine Learning
 
 ## Systems and Design 
-* AERE 6230 - Introduction to Multidisciplinary Design Optimization
+* AERE 5630 - Introduction to Multidisciplinary Design Optimization
 
 # Relevant Undergraduate Courses
 
