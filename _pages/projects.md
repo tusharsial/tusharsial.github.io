@@ -33,7 +33,7 @@ In-Orbit Servicing
 ------
 <video src="https://github.com/user-attachments/assets/b0d779a0-9210-41bb-9884-691e1c44e9d4" 
        class="align-right" 
-       width="400px" 
+       width="480px" 
        autoplay 
        loop 
        muted 
