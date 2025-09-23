@@ -13,7 +13,6 @@ Optimal Covariance Control
 <div style="float: right; width: 50%; margin-left: 20px;">
     <img src="/images/StateCovariancesAndSamplePaths_CW.png" alt="Marginal position covariances" style="width: 100%;">
     <p style="text-align: center; font-style: italic; margin: 5px 0 15px 0;">(a) Marginal position covariances</p>
-    
     <img src="/images/VelocityCovariancesAndSamplePaths_CW.png" alt="Marginal velocity covariances" style="width: 100%;">
     <p style="text-align: center; font-style: italic; margin: 5px 0 0 0;">(b) Marginal velocity covariances</p>
 </div>
