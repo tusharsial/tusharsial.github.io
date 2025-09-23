@@ -17,7 +17,7 @@ Flight Stabilizing Controllers for Agile Fixed-Wing UAV
 ------
 <video src="https://user-images.githubusercontent.com/74113713/188335543-a0279f09-67d2-4ec2-a6ab-815ede3acb67.mp4" 
        class="align-right" 
-       width="280px" 
+       width="380px" 
        autoplay 
        loop 
        muted 
