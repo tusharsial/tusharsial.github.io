@@ -33,23 +33,24 @@ author_profile: true
 # Relevant Undergraduate Courses
 
 ## _Mathematics_
-* Linear Algebra
-* Probability and Statistics
-* Ordinary Differential Equations
-* Optimization
+* MATH F112 - Linear & Complex Algebra
+* MATH F113 - Probability and Statistics
+* MATH F211 - Ordinary Differential Equations
+* MATH F212 - Optimization
 
 ## _Dynamics & Control_ 
-* Control Systems
-* Modern Control Systems
-* Nonlinear Dynamics & Chaos
+* EEE F242 - Control Systems
+* EEE F422 - Modern Control Systems
+* BITS F316 - Nonlinear Dynamics & Chaos
 
 ## _Robotics_
-* Autonomous Mobile Robotics
-* Robotic Manipulators
-* Signals & Systems
-* Internet of Things
+* BITS F451 - Autonomous Mobile Robotics
+* BITS F441 - Robotic Manipulators
+* EEE F243 - Signals & Systems
+* EEE F411 - Internet of Things
 
-## Electronics
-* Digital Design
-* Micro-controllers and Processors
-* Microelectronics
+## _Electronics_
+* EEE F215 - Digital Design
+* EEE F241 - Microprocessors & Interfacing
+* EEE F244 - Microelectronic Circuits
+* EEE F313 - Analog & Digital VLSI Design
