@@ -10,7 +10,8 @@ author_profile: true
 
 Optimal Covariance Control
 ------
-<div style="float: right; width: 70%; margin-left: 20px;">
+
+<div style="width: 100%; margin: 20px 0;">
     <div style="display: flex; gap: 15px; justify-content: space-between;">
         <div style="flex: 1;">
             <img src="/images/StateCovariancesAndSamplePaths_CW.png" alt="Marginal position covariances" style="width: 100%;">
