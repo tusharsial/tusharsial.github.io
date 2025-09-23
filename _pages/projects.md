@@ -8,9 +8,18 @@ author_profile: true
 
 {% include base_path %}
 
+Optimal Covariance Control
+------
+![Optimal Covariance Photo](/images/Optimal Covariance.png){: .align-right width="240px"}
+My thesis is focused on designing an **Optimal Covariance Steering Algorithm in Continuous Time with Hilbert-Schmidt Terminal Cost for Linear Stochastic Systems over a finite time horizon**. For this problem, the necessary conditions of optimality become a coupled matrix ODE two-point boundary value problem. To solve this system of equations, I've designed a **Matricial Recursive Algorithm** and provided a guarantee for its convergence. The proposed algorithm and its analysis make use of the linear fractional transforms parameterized by the state transition matrix of the associated Hamiltonian matrix. The proposed algorithm was tested on a close-proximity rendezvous scenario by modeling the relative motion of a service spacecraft to a target satellite in LEO using Clohessy–Wiltshire dynamics with stochastic disturbances. This project is expected to be completed by the end of 2025. The code for this project can be found [here](https://github.com/tusharsial/Covariance-Steering). 
+
 Flight Stabilizing Controllers for Agile Fixed-Wing UAV
 ------
-![Fixed Drone Photo](/images/Fixed Drone.jpeg){: .align-right width="240px"}
+<video width="240" style="float: right; margin-left: 20px;" controls muted>
+  <source src="https://user-images.githubusercontent.com/74113713/188335543-a0279f09-67d2-4ec2-a6ab-815ede3acb67.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<!-- ![Fixed Drone Photo](/images/Fixed Drone.jpeg){: .align-right width="240px"} !-->
 In this project, I've designed **flight stability controllers** for an agile fixed-wing UAV under Professor Bijoy Krishna Mukherjee, Department of EEE at BITS Pilani. In particular, I designed and modeled the Longitudinal and Lateral-Directional stability movement controllers of the UAV using the **Backstepping Control technique** using MATLAB and Simulink. Additionally, I created a **wind observer** to incorporate environmental disturbances(like wind shears, wind gusts, and atmospheric disturbances) to make the controllers robust and, thus, improve flight capability. The code for this project can be found [here](https://github.com/tusharsial/Agile-Fixed-Wing-UAV).
 
 Autonomous Mars Rover
