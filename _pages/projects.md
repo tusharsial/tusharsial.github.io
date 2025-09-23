@@ -31,7 +31,7 @@ My thesis is focused on designing an **Optimal Covariance Steering Algorithm in 
 
 In-Orbit Servicing
 ------
-<video src="https://user-images.githubusercontent.com/74113713/188496423-8149be1d-8726-487c-baea-490f0134a860.mp4" 
+<video src="https://github.com/user-attachments/assets/b0d779a0-9210-41bb-9884-691e1c44e9d4" 
        class="align-right" 
        width="360px" 
        autoplay 
