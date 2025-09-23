@@ -6,7 +6,7 @@ excerpt: 'This paper is about the number 1. The number 2 is left for future work
 date: 08-11-2025
 venue: 'ACM Transactions on Embedded Computing Systems'
 slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: '[http://academicpages.github.io/files/paper1.pdf](https://dl.acm.org/doi/pdf/10.1145/3761814)'
+paperurl: 'https://dl.acm.org/doi/pdf/10.1145/3761814'
 citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
 
