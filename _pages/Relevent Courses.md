@@ -10,7 +10,7 @@ author_profile: true
 
 # Relevant Graduate Courses
 
-## Astrodynamics and Flight Dynamics 
+## _Astrodynamics and Flight Dynamics_ 
 * AERE 5510 - Orbital Mechanics
 * AERE 5770 - Linear Systems
 
@@ -21,10 +21,12 @@ author_profile: true
 ## Electrical
 * EE 5710 - Introduction to Convex Optimization
 * EE 5230 - Random Processes for Communications and Signal Processing
-* EE 6230 - High-Dimensional Probability and Linear Algebra for Machine Learning
 
 ## Systems and Design 
 * AERE 5630 - Introduction to Multidisciplinary Design Optimization
+
+## Formal Methods
+* AERE 5070 - Applied Formal Methods
 
 # Relevant Undergraduate Courses
 
