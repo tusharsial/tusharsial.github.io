@@ -45,5 +45,5 @@ In this project, I've designed **flight stability controllers** for an agile fix
 
 Autonomous Mars Rover
 ---
-![Mars Rover Photo](/images/Mars Rover Image.png){: .align-right width="200px"}
+![Mars Rover Photo](/images/Mars Rover Image.png){: .align-right width="240px"}
 In 2020, I co-founded <a href="https://criss-robotics.in/" style="color: red;">CRISS Robotics</a>, a student research technical team for designing and manufacturing an all-terrain 6-wheeled autonomous Mars rover. I developed the **high-level electrical architecture** and an **electronic differential-based drive control system** for the rover there, capable of autonomous traversal, equipment servicing using a 6-DOF robotic manipulator, and life detection using a science module. CRISS qualified for the International Rover Challenge in the 2022 finals at Chennai, India, among 16 international teams, then won the **International Rover Design Challenge** in 2023. You can check out the [IRC Report](https://drive.google.com/file/d/1kP_tj-SH4lCFHxSWdpxNRr5fvlEZZh0U/view) and [IRDC Report](https://drive.google.com/file/d/1R8cpztHJwczZH3zVnijbmGaEj1i9xp4E/view) here. 
