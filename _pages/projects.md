@@ -22,7 +22,7 @@ Optimal Covariance Control
         </div>
     </div>
     <p style="font-style: italic; margin-top: 10px; text-align: center;">
-        <strong>Fig.</strong> Optimally controlled covariances (gray wireframe ellipsoids) and $5$ closed-loop state sample paths for the Noisy CW model in the (a) position and (b) velocity coordinates. The hollow circular markers denote the initial conditions for these sample paths. The red wireframe ellipsoids correspond to the position and velocity marginal covariances of $\bm{\Sigma}_{d}$.
+        <strong>Fig.</strong> Optimally controlled covariances (gray wireframe ellipsoids) and $5$ closed-loop state sample paths for the Noisy CW model in the (a) position and (b) velocity coordinates. The hollow circular markers denote the initial conditions for these sample paths. The red wireframe ellipsoids correspond to the position and velocity marginal covariances of $\Sigma_{d}$.
     </p>
 </div>
 
