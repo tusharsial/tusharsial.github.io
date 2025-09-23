@@ -4,14 +4,11 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap"> You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
+---
 {% include base_path %}
 
-# Journal 
+## Journal
+---
 **[Rasco: Resource Allocation and Scheduling Co-design for DAG Applications on Multicore](https://dl.acm.org/doi/pdf/10.1145/3761814)**  
 Abigail Eisenklam, Robert Gifford, Georgiy A. Bondar, Yifan Cai, **Tushar Sial**, Linh Thi Xuan Phan, and Abhishek Halder.  
 *ACM SIGBED International Conference on Embedded Software (EMSOFT), 2025.*  
