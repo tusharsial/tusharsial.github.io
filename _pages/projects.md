@@ -42,6 +42,14 @@ In-Orbit Servicing
 </video>
 Research into the autonomy of spacecraft has been of increasing interest. Indeed, with a growing debris population, robots that can perform routine tasks autonomously (such as simple repairs/maintenance, refueling, or debris removal) may become increasingly essential for actively preventing disaster. In this context, several autonomous missions to uncooperative targets (which generally can be tumbling and orbiting the Earth elliptically) will require rendezvous and docking procedures. In this project, I've worked on designing a Control Scheme for a Thrust vectoring Satellite using a Koopman-based approach for it to rendezvous with a tumbling noncooperative Satellite under the guidance of Dr. Debasish Ghose, a professor of the Department of Aerospace Engineering at the Indian Institute of Science (IISc), Bengaluru.
 
+Space Trajectory Optimization
+---
+
+Autonomous Mars Rover
+---
+![Mars Rover Photo](/images/Mars Rover Image.png){: .align-right width="200px"}
+In 2020, I co-founded <a href="https://criss-robotics.in/" style="color: red;">CRISS Robotics</a>, a student research technical team for designing and manufacturing an all-terrain 6-wheeled autonomous Mars rover. I developed the **high-level electrical architecture** and an **electronic differential-based drive control system** for the rover there, capable of autonomous traversal, equipment servicing using a 6-DOF robotic manipulator, and life detection using a science module. CRISS qualified for the International Rover Challenge in the 2022 finals at Chennai, India, among 16 international teams, then won the **International Rover Design Challenge** in 2023. You can check out the [IRC Report](https://drive.google.com/file/d/1kP_tj-SH4lCFHxSWdpxNRr5fvlEZZh0U/view) and [IRDC Report](https://drive.google.com/file/d/1R8cpztHJwczZH3zVnijbmGaEj1i9xp4E/view) here. 
+
 Flight Stabilizing Controllers for Agile Fixed-Wing UAV
 ------
 <video src="https://user-images.githubusercontent.com/74113713/188335543-a0279f09-67d2-4ec2-a6ab-815ede3acb67.mp4" 
@@ -56,7 +64,12 @@ Flight Stabilizing Controllers for Agile Fixed-Wing UAV
 <!-- ![Fixed Drone Photo](/images/Fixed Drone.jpeg){: .align-right width="240px"} !-->
 In this project, I've designed **flight stability controllers** for an agile fixed-wing UAV under Professor Bijoy Krishna Mukherjee, Department of EEE at BITS Pilani. In particular, I designed and modeled the Longitudinal and Lateral-Directional stability movement controllers of the UAV using the **Backstepping Control technique** using MATLAB and Simulink. Additionally, I created a **wind observer** to incorporate environmental disturbances(like wind shears, wind gusts, and atmospheric disturbances) to make the controllers robust and, thus, improve flight capability. The code for this project can be found [here](https://github.com/tusharsial/Agile-Fixed-Wing-UAV).
 
-Autonomous Mars Rover
+Powertrain of a Formula-Style Electric Vehicle
 ---
-![Mars Rover Photo](/images/Mars Rover Image.png){: .align-right width="200px"}
-In 2020, I co-founded <a href="https://criss-robotics.in/" style="color: red;">CRISS Robotics</a>, a student research technical team for designing and manufacturing an all-terrain 6-wheeled autonomous Mars rover. I developed the **high-level electrical architecture** and an **electronic differential-based drive control system** for the rover there, capable of autonomous traversal, equipment servicing using a 6-DOF robotic manipulator, and life detection using a science module. CRISS qualified for the International Rover Challenge in the 2022 finals at Chennai, India, among 16 international teams, then won the **International Rover Design Challenge** in 2023. You can check out the [IRC Report](https://drive.google.com/file/d/1kP_tj-SH4lCFHxSWdpxNRr5fvlEZZh0U/view) and [IRDC Report](https://drive.google.com/file/d/1R8cpztHJwczZH3zVnijbmGaEj1i9xp4E/view) here. 
+
+Autonomous Cleaning Bot
+---
+
+Autonomous Delivery Quadcopter
+---
+
