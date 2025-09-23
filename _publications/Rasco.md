@@ -5,7 +5,7 @@ permalink: /publication/Rasco
 date: 08-11-2025
 venue: 'ACM Transactions on Embedded Computing Systems'
 paperurl: 'https://dl.acm.org/doi/pdf/10.1145/3761814'
-citation: 'A. Eisenklam, R. Gifford, G.A. Bondar, Y. Cai, <b>T. Sial<b>, L.T.X. Phan, A. Halder (2025). &quot;Rasco: Resource Allocation and Scheduling Co-design for DAG Applications on Multicore.&quot; <i>ACM Transactions on Embedded Computing Systems</i>.'
+citation: 'A. Eisenklam, R. Gifford, G.A. Bondar, Y. Cai, <b>T. Sial</b>, L.T.X. Phan, A. Halder (2025). &quot;Rasco: Resource Allocation and Scheduling Co-design for DAG Applications on Multicore.&quot; <i>ACM Transactions on Embedded Computing Systems</i>.'
 ---
 
 As multicore hardware becomes increasingly prevalent in real-time embedded systems, traditional scheduling techniques that assume a single worst-case execution time for each task are no longer adequate, as they fail to account for the impact of shared resources—such as cache and memory bandwidth—on execution time. When tasks execute concurrently on different cores, their execution times can vary substantially with their allocated resources. Moreover, the instruction rate of a task during a job execution varies with time, and this variation pattern differs across tasks. Therefore, to improve performance, it is crucial to incorporate the relationship between the resource budget allocated to each task and its time-varying instruction rate in task modeling, resource allocation, and scheduling algorithm design. Yet, no prior work has considered the fine-grained dynamic resource allocation and scheduling problems jointly while also providing hard real-time guarantees.
