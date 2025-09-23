@@ -29,6 +29,19 @@ Optimal Covariance Control
 
 My thesis is focused on designing an **Optimal Covariance Steering Algorithm in Continuous Time with Hilbert-Schmidt Terminal Cost for Linear Stochastic Systems over a finite time horizon**. The earlier works focused on generalizing the Schrodinger Bridge Problem (SBP) with a hard constraint on the final marginal distribution, which finds the most likely stochastic evolution between two probability distributions at two distinct points in time. My current focus is on developing a framework incorporating a soft constraint (Frobenius terminal cost) and a quadratic cost function for control input and state. This modification will improve system performance and computational efficiency by optimizing control efforts and the desired system states. For this problem, the necessary conditions of optimality become a coupled matrix ODE two-point boundary value problem. To solve this system of equations, I've designed a **Matricial Recursive Algorithm** and provided a guarantee for its convergence. The proposed algorithm and its analysis make use of the linear fractional transforms parameterized by the state transition matrix of the associated Hamiltonian matrix. The proposed algorithm was tested on a close-proximity rendezvous scenario by modeling the relative motion of a service spacecraft to a target satellite in LEO using Clohessy–Wiltshire dynamics with stochastic disturbances. This project is expected to be completed by the end of 2025. The code for this project can be found [here](https://github.com/tusharsial/Covariance-Steering). 
 
+In-Orbit Servicing
+------
+<video src="https://user-images.githubusercontent.com/74113713/188496423-8149be1d-8726-487c-baea-490f0134a860.mp4" 
+       class="align-right" 
+       width="240px" 
+       autoplay 
+       loop 
+       muted 
+       playsinline
+       style="margin-left: 20px;">
+</video>
+Research into the autonomy of spacecraft has been of increasing interest. Indeed, with a growing debris population, robots that can perform routine tasks autonomously (such as simple repairs/maintenance, refueling, or debris removal) may become increasingly essential for actively preventing disaster. In this context, several autonomous missions to uncooperative targets (which generally can be tumbling and orbiting the Earth elliptically) will require rendezvous and docking procedures. In this project, I've worked on designing a Control Scheme for a Thrust vectoring Satellite using a Koopman-based approach for it to rendezvous with a tumbling noncooperative Satellite under the guidance of Dr. Debasish Ghose, a professor of the Department of Aerospace Engineering at the Indian Institute of Science (IISc), Bengaluru.
+
 Flight Stabilizing Controllers for Agile Fixed-Wing UAV
 ------
 <video src="https://user-images.githubusercontent.com/74113713/188335543-a0279f09-67d2-4ec2-a6ab-815ede3acb67.mp4" 
