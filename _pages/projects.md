@@ -15,9 +15,14 @@ My thesis is focused on designing an **Optimal Covariance Steering Algorithm in 
 
 Flight Stabilizing Controllers for Agile Fixed-Wing UAV
 ------
-<video width="240" style="float: right; margin-left: 20px;" controls muted>
-  <source src="https://user-images.githubusercontent.com/74113713/188335543-a0279f09-67d2-4ec2-a6ab-815ede3acb67.mp4" type="video/mp4">
-  Your browser does not support the video tag.
+<video src="https://user-images.githubusercontent.com/74113713/188335543-a0279f09-67d2-4ec2-a6ab-815ede3acb67.mp4" 
+       class="align-right" 
+       width="280px" 
+       autoplay 
+       loop 
+       muted 
+       playsinline
+       style="margin-left: 20px;">
 </video>
 <!-- ![Fixed Drone Photo](/images/Fixed Drone.jpeg){: .align-right width="240px"} !-->
 In this project, I've designed **flight stability controllers** for an agile fixed-wing UAV under Professor Bijoy Krishna Mukherjee, Department of EEE at BITS Pilani. In particular, I designed and modeled the Longitudinal and Lateral-Directional stability movement controllers of the UAV using the **Backstepping Control technique** using MATLAB and Simulink. Additionally, I created a **wind observer** to incorporate environmental disturbances(like wind shears, wind gusts, and atmospheric disturbances) to make the controllers robust and, thus, improve flight capability. The code for this project can be found [here](https://github.com/tusharsial/Agile-Fixed-Wing-UAV).
