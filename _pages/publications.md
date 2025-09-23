@@ -12,6 +12,7 @@ author_profile: true
 Abigail Eisenklam, Robert Gifford, Georgiy A. Bondar, Yifan Cai, **Tushar Sial**, Linh Thi Xuan Phan, and Abhishek Halder.  
 *ACM Transactions on Embedded Computing Systems (also in EMSOFT 2025)*  
 
-{% for post in site.publications reversed %}
+<!-- {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %}
+!-->
