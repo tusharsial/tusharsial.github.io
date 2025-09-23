@@ -10,16 +10,21 @@ author_profile: true
 
 Optimal Covariance Control
 ------
-<div style="float: right; width: 50%; margin-left: 20px;">
-    <img src="/images/StateCovariancesAndSamplePaths_CW.png" alt="Marginal position covariances" style="width: 100%;">
-    <p style="text-align: center; font-style: italic; margin: 5px 0 15px 0;">(a) Marginal position covariances</p>
-    <img src="/images/VelocityCovariancesAndSamplePaths_CW.png" alt="Marginal velocity covariances" style="width: 100%;">
-    <p style="text-align: center; font-style: italic; margin: 5px 0 0 0;">(b) Marginal velocity covariances</p>
+<div style="float: right; width: 70%; margin-left: 20px;">
+    <div style="display: flex; gap: 15px; justify-content: space-between;">
+        <div style="flex: 1;">
+            <img src="/images/StateCovariancesAndSamplePaths_CW.png" alt="Marginal position covariances" style="width: 100%;">
+            <p style="text-align: center; font-style: italic; margin: 5px 0 0 0;">(a) Position covariances</p>
+        </div>
+        <div style="flex: 1;">
+            <img src="/images/VelocityCovariancesAndSamplePaths_CW.png" alt="Marginal velocity covariances" style="width: 100%;">
+            <p style="text-align: center; font-style: italic; margin: 5px 0 0 0;">(b) Velocity covariances</p>
+        </div>
+    </div>
+    <p style="font-style: italic; margin-top: 10px; text-align: center;">
+        <strong>Fig.</strong> Optimally controlled covariances (gray wireframe ellipsoids) and $5$ closed-loop state sample paths for the Noisy CW model in the (a) position and (b) velocity coordinates. The hollow circular markers denote the initial conditions for these sample paths. The red wireframe ellipsoids correspond to the position and velocity marginal covariances of $\bm{\Sigma}_{d}$.
+    </p>
 </div>
-
-<p style="clear: both; font-style: italic; margin-top: 10px;">
-    <strong>Fig.</strong> Optimally controlled covariances (gray wireframe ellipsoids) and $5$ closed-loop state sample paths for the numerical example in Sec. [reference] in the (a) position and (b) velocity coordinates. The hollow circular markers denote the initial conditions for these sample paths. The red wireframe ellipsoids correspond to the position and velocity marginal covariances of $\bm{\Sigma}_{d}$.
-</p>
 
 My thesis is focused on designing an **Optimal Covariance Steering Algorithm in Continuous Time with Hilbert-Schmidt Terminal Cost for Linear Stochastic Systems over a finite time horizon**. For this problem, the necessary conditions of optimality become a coupled matrix ODE two-point boundary value problem. To solve this system of equations, I've designed a **Matricial Recursive Algorithm** and provided a guarantee for its convergence. The proposed algorithm and its analysis make use of the linear fractional transforms parameterized by the state transition matrix of the associated Hamiltonian matrix. The proposed algorithm was tested on a close-proximity rendezvous scenario by modeling the relative motion of a service spacecraft to a target satellite in LEO using Clohessy–Wiltshire dynamics with stochastic disturbances. This project is expected to be completed by the end of 2025. The code for this project can be found [here](https://github.com/tusharsial/Covariance-Steering). 
 
