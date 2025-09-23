@@ -14,34 +14,36 @@ author_profile: true
 * AERE 5510 - Orbital Mechanics
 * AERE 5770 - Linear Systems
 
-## Guidance, Navigation, and Control
+## _Guidance, Navigation, and Control_
 * AERE 6510 Spacecraft Trajectory Optimization
 * AERE 5730 Random Signal Analysis and Kalman Filtering
 
-## Electrical
+## _Electrical_
 * EE 5710 - Introduction to Convex Optimization
 * EE 5230 - Random Processes for Communications and Signal Processing
 
-## Systems and Design 
+## _Systems and Design_ 
 * AERE 5630 - Introduction to Multidisciplinary Design Optimization
 
-## Formal Methods
+## _Formal Methods_
 * AERE 5070 - Applied Formal Methods
+
+--- 
 
 # Relevant Undergraduate Courses
 
-## Mathematics
+## _Mathematics_
 * Linear Algebra
 * Probability and Statistics
 * Ordinary Differential Equations
 * Optimization
 
-## Dynamics & Control 
+## _Dynamics & Control_ 
 * Control Systems
 * Modern Control Systems
 * Nonlinear Dynamics & Chaos
 
-## Robotics
+## _Robotics_
 * Autonomous Mobile Robotics
 * Robotic Manipulators
 * Signals & Systems
