@@ -66,7 +66,7 @@ In this project, I've designed **flight stability controllers** for an agile fix
 
 Powertrain of a Formula-Style Electric Vehicle
 ---
-<div style="float: right; width: 340px; margin-left: 20px;">
+<div style="float: right; width: 380px; margin-left: 20px;">
   <img src="https://github.com/user-attachments/assets/87618281-0039-48f7-b009-a133d43f052f" alt="System Overview" style="width: 100%;">
   <p style="text-align: center; font-style: italic; margin-top: 8px; font-size: 0.9em;">
     Fig: High-level Electrical Architecture of EV
