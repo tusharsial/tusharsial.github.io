@@ -44,7 +44,13 @@ Research into the autonomy of spacecraft has been of increasing interest. Indeed
 
 Space Trajectory Optimization
 ---
-
+<div style="float: right; width: 380px; margin-left: 20px;">
+  <img src="https://github.com/user-attachments/assets/25a0be0b-ef75-42e4-be34-c95b650defdb" alt="System Overview" style="width: 100%;">
+  <p style="text-align: center; font-style: italic; margin-top: 8px; font-size: 0.9em;">
+    <strong>Fig.</strong> Optimal thrust direction and flight path angles: Earth-Escape Phase.
+  </p>
+</div>
+In this project, I extended the classic three-stage method for computing optimal low-thrust trajectories from low Earth orbit (LEO) to low lunar orbit (LLO) originally proposed by Pierson and Kluever (1994). The original three-stage method systematically decomposes the complex optimal trajectory problem into simpler subproblems involving maximum-energy Earth-escape and moon-capture spirals, an all-coasting translunar trajectory, and finally, a complete optimization using a hybrid direct/indirect numerical method. Unlike the original formulation, which assumes a constant thrust magnitude, my work allowed thrust magnitude to be a free variable within the optimal control framework. Starting from the necessary conditions for optimality, I derived the modified equations and solved them numerically to obtain optimal trajectories. The classical restricted three-body problem dynamics govern the spacecraft trajectory, involving highly sensitive numerical computations and optimization strategies. Our extended methodology enables a more flexible and general approach to modeling low-thrust Earth–Moon transfers. Simulation results demonstrated the effectiveness of the approach, yielding energy-efficient transfer trajectories that improve upon the constant-thrust assumption. You can check out the [codebase](https://github.com/tusharsial/Earth-Moon-Low-Thrust-Trajectory-Optimization/tree/main) for more details. 
 
 Autonomous Mars Rover
 ---
