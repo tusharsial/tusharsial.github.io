@@ -66,10 +66,10 @@ In this project, I've designed **flight stability controllers** for an agile fix
 
 Powertrain of a Formula-Style Electric Vehicle
 ---
-<div style="float: right; width: 240px; margin-left: 20px;">
+<div style="float: right; width: 340px; margin-left: 20px;">
   <img src="https://github.com/user-attachments/assets/87618281-0039-48f7-b009-a133d43f052f" alt="System Overview" style="width: 100%;">
   <p style="text-align: center; font-style: italic; margin-top: 8px; font-size: 0.9em;">
-    Fig: High-level Electrical Architecture
+    Fig: High-level Electrical Architecture of EV
   </p>
 </div>
 In my freshman year, I joined the Electric Powertrain Subsystem at Inspired Karters Electric, the Formula Student Electric Vehicle (FSEV) Team of BITS Pilani, Pilani Campus. The team comprises roughly 50 talented and focused members who work tirelessly all around the year towards building a single-seater Formula One Car. With endurance being the primary goal of our first electric vehicle, I developed a high-fidelity model of the electric powertrain package by leveraging Simulink & Simscape to calculate the torque and current requirements for motor selection, battery capacity requirements, and optimization of motor control strategies. The powertrain model was incorporated into our proprietary laptime simulator to validate our endurance-optimized design. My brief experience in the Mechanical subsystem also allowed me to assemble and package the electrical components of our car’s CAD model using Fusion 360. Our team achieved an overall first position across India in the 4th Annual Formula Student Electric Vehicle (FSEV) Concept Challenge, hosted by Formula Bharat in the summer of 2020. Subsequently, I gained the opportunity to head the Electric Powertrain Subsystem, as we began manufacturing the EV to showcase in the Formula Bharat competition. You can check out the [Design Report](https://docs.google.com/document/u/1/d/e/2PACX-1vQuObctRIT1pGiuUQN05OE-FDu31f3r085TjL3lFPOHDcydQl3Sj4Ll3P8LhzXQuDx47tkLKqnTsIDy/pub) and the [CAD video](https://youtu.be/fUpCTI_xb6E) here. 
