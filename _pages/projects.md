@@ -80,12 +80,12 @@ Autonomous Cleaning Bot
 
 Autonomous Delivery Quadcopter
 ---
-<figure align="center">
-  <img src="https://github.com/user-attachments/assets/87618281-0039-48f7-b009-a133d43f052f" alt="System Overview" width="600">
-  <figcaption style="text-align: center; font-style: italic; margin-top: 10px;">
+<div align="center">
+  <img src="https://github.com/tusharsial/Autonomous-Delivery-Quadcopter/assets/74113713/c56264c6-2ec6-44e3-9ae6-a69bd2d922ca" alt="System Overview" width="600">
+  <p style="font-style: italic; margin-top: 10px; text-align: center;">
     <strong>Fig.</strong> Flight Control Architecture
-  </figcaption>
-</figure>
+  </p>
+</div>
 
 In today's fast-paced world, the integration of Unmanned Aerial Vehicles (UAVs) has marked a paradigm shift in various industries, particularly in transportation and logistics. Among these cutting-edge technologies, autonomous quadcopters have emerged as frontrunners in revolutionizing the delivery landscape. In this project, I've designed autonomous navigation (flight attitude, position control, & obstacle avoidance) algorithms using ROS, Python, and Gazebo for a 3-D simulated quadcopter capable of autonomously delivering packages in an urban environment. To detect QR tags on delivery packages, I implemented a pyzbar library-based computer vision algorithm. This project was designed for the e-Yantra Robotics Competition hosted by IIT Bombay and sponsored by the Ministry of Education of India.
 
