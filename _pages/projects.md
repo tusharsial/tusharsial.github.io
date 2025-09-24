@@ -69,7 +69,7 @@ Powertrain of a Formula-Style Electric Vehicle
 <div style="float: right; width: 380px; margin-left: 20px;">
   <img src="https://github.com/user-attachments/assets/87618281-0039-48f7-b009-a133d43f052f" alt="System Overview" style="width: 100%;">
   <p style="text-align: center; font-style: italic; margin-top: 8px; font-size: 0.9em;">
-    Fig: High-level Electrical Architecture of EV
+    <strong>Fig.</strong> High-level Electrical Architecture of EV
   </p>
 </div>
 In my freshman year, I joined the Electric Powertrain Subsystem at Inspired Karters Electric, the Formula Student Electric Vehicle (FSEV) Team of BITS Pilani, Pilani Campus. The team comprises roughly 50 talented and focused members who work tirelessly throughout the year to build a single-seater Formula One Car. With endurance being the primary goal of our first electric vehicle, I developed a high-fidelity model of the electric powertrain package by leveraging Simulink & Simscape to calculate the torque and current requirements for motor selection, battery capacity requirements, and optimization of motor control strategies. The powertrain model was incorporated into our proprietary laptime simulator to validate our endurance-optimized design. My brief experience in the Mechanical subsystem also allowed me to assemble and package the electrical components of our car’s CAD model using Fusion 360. Our team achieved an overall first position across India in the 4th Annual Formula Student Electric Vehicle (FSEV) Concept Challenge, hosted by Formula Bharat in the summer of 2020. Subsequently, I gained the opportunity to head the Electric Powertrain Subsystem, as we began manufacturing the EV to showcase in the Formula Bharat competition. You can check out the [Design Report](https://docs.google.com/document/u/1/d/e/2PACX-1vQuObctRIT1pGiuUQN05OE-FDu31f3r085TjL3lFPOHDcydQl3Sj4Ll3P8LhzXQuDx47tkLKqnTsIDy/pub) and the [CAD video](https://youtu.be/fUpCTI_xb6E) here. 
@@ -80,12 +80,12 @@ Autonomous Cleaning Bot
 
 Autonomous Delivery Quadcopter
 ---
-
 <figure align="center">
-  <img src="https://github.com/tusharsial/Autonomous-Delivery-Quadcopter/assets/74113713/c56264c6-2ec6-44e3-9ae6-a69bd2d922ca" alt="System Overview" width="600">
+  <img src="https://github.com/user-attachments/assets/87618281-0039-48f7-b009-a133d43f052f" alt="System Overview" width="600">
   <figcaption style="text-align: center; font-style: italic; margin-top: 10px;">
-    <b>Figure 1:</b> Flight Control Architecture
+    <strong>Fig.</strong> Flight Control Architecture
   </figcaption>
 </figure>
+
 In today's fast-paced world, the integration of Unmanned Aerial Vehicles (UAVs) has marked a paradigm shift in various industries, particularly in transportation and logistics. Among these cutting-edge technologies, autonomous quadcopters have emerged as frontrunners in revolutionizing the delivery landscape. In this project, I've designed autonomous navigation (flight attitude, position control, & obstacle avoidance) algorithms using ROS, Python, and Gazebo for a 3-D simulated quadcopter capable of autonomously delivering packages in an urban environment. To detect QR tags on delivery packages, I implemented a pyzbar library-based computer vision algorithm. This project was designed for the e-Yantra Robotics Competition hosted by IIT Bombay and sponsored by the Ministry of Education of India.
 
