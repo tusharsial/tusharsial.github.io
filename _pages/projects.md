@@ -81,7 +81,7 @@ Autonomous Cleaning Bot
 Autonomous Delivery Quadcopter
 ---
 <div align="center">
-  <img src="https://github.com/tusharsial/Autonomous-Delivery-Quadcopter/assets/74113713/c56264c6-2ec6-44e3-9ae6-a69bd2d922ca" alt="System Overview" width="600">
+  <img src="https://github.com/tusharsial/Autonomous-Delivery-Quadcopter/assets/74113713/c56264c6-2ec6-44e3-9ae6-a69bd2d922ca" alt="System Overview" width="800">
   <p style="font-style: italic; margin-top: 10px; text-align: center;">
     <strong>Fig.</strong> Flight Control Architecture
   </p>
