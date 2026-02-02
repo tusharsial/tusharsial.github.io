@@ -17,6 +17,7 @@ author_profile: true
 ## _Guidance, Navigation, and Control_
 * AERE 6510 Spacecraft Trajectory Optimization
 * AERE 5730 Random Signal Analysis and Kalman Filtering
+* AERE 5740 Optimal Control
 
 ## _Electrical_
 * EE 5710 - Introduction to Convex Optimization
