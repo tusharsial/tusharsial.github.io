@@ -27,11 +27,12 @@ Conference
 -----
 
 **[Generative Profiling for Soft Real-Time Systems and its Applications to Resource Allocation]()**  
+<span class="pub-meta">
 Georgiy A. Bondar, Abigail Eisenklam, Yifan Cai, Robert Gifford, **Tushar Sial**, Linh Thi Xuan Phan, and Abhishek Halder.  
 *To appear at IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS), Saint-Malo, France, May 2026.*  
 **Last five-year average acceptance rate:** [25.83%](https://openaccept.org/c/sys/rtas/)  
 **Primordial version:** [CORD: Co-design of Resource Allocation and Deadline Decomposition with Generative Profiling](https://arxiv.org/pdf/2501.08484)
-
+</span>
 
 <!-- {% for post in site.publications reversed %}
   {% include archive-single.html %}
