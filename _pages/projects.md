@@ -8,6 +8,28 @@ author_profile: true
 
 {% include base_path %}
 
+Coupled Spacecraft Trajectory-Power Subsystem Design Optimization
+-----------
+<div style="width: 100%; margin: 20px 0;">
+    <div style="display: flex; gap: 15px; justify-content: space-between;">
+        <div style="flex: 1;">
+            <img src="/images/Trajectory_only.png" alt="Trajectory only model" style="width: 100%;">
+            <p style="text-align: center; font-style: italic; margin: 5px 0 0 0;">(a) Trajectory-only model </p>
+        </div>
+        <div style="flex: 1;">
+            <img src="/images/Coupled_Trajectory_Power.png" alt="Coupled Trajectory-Power model" style="width: 100%;">
+            <p style="text-align: center; font-style: italic; margin: 5px 0 0 0;">(b) Coupled Trajectory-Power model</p>
+        </div>
+    </div>
+    <p style="font-style: italic; margin-top: 10px; text-align: center;">
+        <strong>Fig.</strong> Comparison of the optimized transfer obtained using a) trajectory-only model and b) coupled trajectory–power model. 
+    </p>
+</div>
+
+This work was completed as part of my final project for the course: AERE 5630 - Multidisciplinary Design Optimization under the guidance of Professor Ping He. In this project, I worked in a three-member team to design a Multidisciplinary Design Optimization (MDO) framework for a low-thrust orbit-lowering maneuver around asteroid 16-Psyche. The framework couples trajectory dynamics, physics-based power generation, and electric propulsion models to ensure that thrust and propellant utilized remain consistent with available onboard power. Unlike traditional trajectory optimization, which assumes constant thrust or specific impulse, this framework uses a high-fidelity Variable Specific Impulse (VSI) model based on the SPT-140 Hall thruster, accounting for solar-array degradation over time. The problem is formulated as a time-optimal control problem and solved using the OpenMDAO and Dymos frameworks, with IPOPT as the nonlinear programming solver.  To improve convergence robustness, a Fast Fourier Series (FFS) shape-based method was used to provide an initial guess for the low-thrust trajectory in the solver.
+Due to the numerical stiffness associated with extremely low-thrust trajectories on local hardware, a thrust scaling factor of 40 was applied to demonstrate the feasibility of the coupled architecture. Due to the computational complexity of the fully coupled problem, the final optimization was performed on a high-performance computing platform. The results show that the coupled optimization model outperforms the baseline trajectory-only model by simultaneously optimizing the trajectory, thrust direction, power usage, and solar array area. The coupled model reduces transfer time by **8.09%** while satisfying all physical and system constraints. You can check out the [codebase](https://github.com/tusharsial/Coupled-Power-Space-Trajectory-Optimization-using-MDO) for more details.
+
+
 Optimal Covariance Control
 ------
 
