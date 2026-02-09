@@ -17,7 +17,7 @@ Coupled Spacecraft Trajectory-Power Subsystem Design Optimization
             <p style="text-align: center; font-style: italic; margin: 5px 0 0 0;">(a) Trajectory-only model </p>
         </div>
         <div style="flex: 1;">
-            <img src="/images/Coupled_Trajectory_Power.png" alt="Coupled Trajectory-Power model" style="width: 100%;">
+            <img src="/images/Coupled_Trajectory_Power.png" alt="Coupled Trajectory-Power model" style="width: 110%;">
             <p style="text-align: center; font-style: italic; margin: 5px 0 0 0;">(b) Coupled Trajectory-Power model</p>
         </div>
     </div>
