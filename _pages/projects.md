@@ -13,7 +13,7 @@ Coupled Spacecraft Trajectory-Power Subsystem Design Optimization
 <div style="width: 100%; margin: 20px 0;">
     <div style="display: flex; gap: 15px; justify-content: space-between;">
         <div style="flex: 1;">
-            <img src="/images/Trajectory_only.png" alt="Trajectory only model" style="width: 100%;">
+            <img src="/images/Trajectory_only.jpeg" alt="Trajectory only model" style="width: 100%;">
             <p style="text-align: center; font-style: italic; margin: 5px 0 0 0;">(a) Trajectory-only model </p>
         </div>
         <div style="flex: 1;">
