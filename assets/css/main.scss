@@ -71,43 +71,26 @@ body,
 }
 
 /* =========================
-   Clean Glass Navbar
+   Orange Masthead Override
    ========================= */
 
-/* Keep navbar above the star canvas */
-.masthead {
-  position: sticky; /* or 'fixed' if you want */
-  top: 0;
-  z-index: 1000;
-
-  background: rgba(8, 12, 35, 0.35) !important; /* glass */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  box-shadow: 0 6px 22px rgba(0,0,0,0.25);
-
-  /* Reduce the "big slab" height */
-  padding: 0.35rem 0;
-}
-
-/* Remove extra backgrounds from inner wrappers so you don't get double bands */
+.masthead,
 .masthead__inner-wrap,
 .masthead__menu,
 .greedy-nav {
-  background: transparent !important;
-  box-shadow: none !important;
+  background-color: #cc5500 !important;   /* nice aerospace orange */
+  background: #ff7a00 !important;
+  border-bottom: none !important;
 }
 
-/* Tighter nav spacing */
-.greedy-nav .visible-links a {
-  padding-top: 0.4rem !important;
-  padding-bottom: 0.4rem !important;
-}
-
-/* Text colors */
+/* Navbar text */
 .masthead a {
-  color: #fff !important;
+  color: white !important;
+}
+
+/* Hover */
+.masthead a:hover {
+  color: #222 !important;
 }
 
 .masthead a:hover {
