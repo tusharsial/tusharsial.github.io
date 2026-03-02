@@ -26,25 +26,24 @@ document.addEventListener("DOMContentLoaded", () => {
     my = (e.clientY / h - 0.5) * 2;
   });
 
-  // Also support gentle motion on mobile via device orientation (optional)
-  window.addEventListener("deviceorientation", (e) => {
-    if (e.gamma == null || e.beta == null) return;
-    mx = Math.max(-1, Math.min(1, e.gamma / 30));
-    my = Math.max(-1, Math.min(1, e.beta / 30));
-  });
-
-  // Stars with depth (z): nearer stars move more (parallax)
   const stars = [];
-  const N = 700;
+  const N = 750;
 
   function resetStar(s) {
     s.x = Math.random() * w;
     s.y = Math.random() * h;
     s.z = Math.random(); // 0..1 (near..far)
     s.r = 0.6 + Math.random() * 1.4;
-    s.a = 0.25 + Math.random() * 0.6;
+    s.a = 0.2 + Math.random() * 0.6;
     s.tw = Math.random() * Math.PI * 2;
     s.ts = 0.6 + Math.random() * 1.5;
+
+    // drift velocity: far stars drift slower, near stars drift faster
+    const par = 1 - s.z;
+    const base = 0.02 + 0.06 * par; // overall drift speed
+    const angle = -Math.PI / 2 + (Math.random() - 0.5) * 0.25; // mostly upward
+    s.vx = Math.cos(angle) * base;
+    s.vy = Math.sin(angle) * base;
   }
 
   for (let i = 0; i < N; i++) {
@@ -53,21 +52,34 @@ document.addEventListener("DOMContentLoaded", () => {
     stars.push(s);
   }
 
+  let lastT = performance.now();
+
   function frame(t) {
+    const dt = Math.min(33, t - lastT); // ms clamp
+    lastT = t;
+
     // black base
     ctx.fillStyle = "#000";
     ctx.fillRect(0, 0, w, h);
 
     for (const s of stars) {
+      // Update drift (dt-scaled so consistent across refresh rates)
+      const speedScale = dt * 0.06; // tune overall drift here
+      s.x += s.vx * speedScale * 60;
+      s.y += s.vy * speedScale * 60;
+
+      // Wrap edges (keeps density constant)
+      if (s.x < -20) s.x = w + 20;
+      if (s.x > w + 20) s.x = -20;
+      if (s.y < -20) s.y = h + 20;
+      if (s.y > h + 20) s.y = -20;
+
+      // Parallax shift
       const par = 1 - s.z;              // near -> 1, far -> 0
       const px = s.x + mx * 22 * par;   // parallax strength
       const py = s.y + my * 22 * par;
 
-      // wrap around edges so it stays dense
-      const x = (px + w) % w;
-      const y = (py + h) % h;
-
-      // subtle twinkle
+      // Twinkle
       const tw = 0.75 + 0.25 * Math.sin((t * 0.001) * s.ts + s.tw);
       const alpha = Math.min(1, s.a * tw);
 
@@ -75,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       ctx.beginPath();
       ctx.fillStyle = `rgba(255,255,255,${alpha})`;
-      ctx.arc(x, y, size, 0, Math.PI * 2);
+      ctx.arc(px, py, size, 0, Math.PI * 2);
       ctx.fill();
     }
 
