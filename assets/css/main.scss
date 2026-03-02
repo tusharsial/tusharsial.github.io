@@ -49,7 +49,7 @@
   inset: 0;              /* top/right/bottom/left = 0 */
   width: 100vw;
   height: 100vh;
-  z-index: -1;
+  z-index: -10;
   pointer-events: none;  /* don't block clicks */
   background: radial-gradient(ellipse at bottom, #0b0c2a 0%, #000 100%);
 }
