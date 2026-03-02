@@ -71,36 +71,33 @@ body,
 }
 
 /* =========================
-   Orange Masthead (clean)
+   Masthead hard reset + solid orange
    ========================= */
 
-/* Apply color ONLY to the outer bar */
-.masthead {
-  background: #ff7a00 !important;   /* pick your orange */
-  border-bottom: none !important;
-}
-
-/* Make inner containers transparent to avoid “double bar / steps” */
-.masthead__inner-wrap,
-.masthead__menu,
-.greedy-nav {
-  background: transparent !important;
-}
-
-/* Optional: remove any shadow/lines that look odd on orange */
+/* 1) Clear backgrounds everywhere in the masthead subtree */
 .masthead,
-.greedy-nav {
+.masthead * ,
+#site-nav,
+#site-nav * {
+  background: transparent !important;
   box-shadow: none !important;
 }
 
-/* Text colors */
-.masthead a {
-  color: #ffffff !important;
+/* 2) Apply orange ONLY to the outer masthead bar */
+.masthead {
+  background: #e36414 !important;     /* calmer orange */
+  border-bottom: none !important;
 }
 
-.masthead a:hover {
-  color: #1a1a1a !important;
-}
+/* 3) Make the nav stretch full width (removes inner “block” look) */
 .masthead__inner-wrap {
-  max-width: none !important;   /* let the nav stretch full width */
+  max-width: none !important;
+}
+
+/* 4) Keep text readable */
+.masthead a {
+  color: #fff !important;
+}
+.masthead a:hover {
+  color: #111 !important;
 }
