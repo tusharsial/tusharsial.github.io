@@ -74,30 +74,11 @@ body,
    Masthead hard reset + solid orange
    ========================= */
 
-/* 1) Clear backgrounds everywhere in the masthead subtree */
-.masthead,
-.masthead * ,
-#site-nav,
-#site-nav * {
-  background: transparent !important;
-  box-shadow: none !important;
-}
+/* Paint background only once */
+.masthead { background: #e36414 !important; }
 
-/* 2) Apply orange ONLY to the outer masthead bar */
-.masthead {
-  background: #e36414 !important;     /* calmer orange */
-  border-bottom: none !important;
-}
+/* Ensure inner nav doesn’t paint its own rectangle */
+.masthead nav.greedy-nav { background: transparent !important; }
 
-/* 3) Make the nav stretch full width (removes inner “block” look) */
-.masthead__inner-wrap {
-  max-width: none !important;
-}
-
-/* 4) Keep text readable */
-.masthead a {
-  color: #fff !important;
-}
-.masthead a:hover {
-  color: #111 !important;
-}
+/* If inner wrap width causes a block look */
+.masthead__inner-wrap { max-width: none !important; }
