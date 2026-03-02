@@ -59,7 +59,7 @@ body, #main, .initial-content, .page, .page__content, .archive, .site {
 
 /* solid orange bar */
 .masthead {
-  background: #e36414 !important;
+  background: #1f1f1f !important;
   border-bottom: 0 !important;
   box-shadow: none !important;
 }
@@ -82,11 +82,11 @@ body, #main, .initial-content, .page, .page__content, .archive, .site {
 .masthead a,
 .masthead .masthead__menu-item a,
 .masthead .masthead__menu-item--lg a {
-  color: #111 !important;
+  color: #ffffff !important;
 }
 
 /* hover */
 .masthead a:hover {
-  color: #000 !important;
+  color: #bbbbbb !important;
 }
 
