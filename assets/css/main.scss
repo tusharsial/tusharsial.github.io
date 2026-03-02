@@ -101,3 +101,6 @@ body,
 .masthead a:hover {
   color: #1a1a1a !important;
 }
+.masthead__inner-wrap {
+  max-width: none !important;   /* let the nav stretch full width */
+}
