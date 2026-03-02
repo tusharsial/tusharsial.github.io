@@ -71,30 +71,35 @@ body,
 }
 
 /* =========================
-   Dark Masthead (Navbar)
+   Glass Navbar (Space Theme)
    ========================= */
 
-/* Force masthead/nav to be dark */
 .masthead,
 .masthead__inner-wrap,
 .masthead__menu,
 .greedy-nav {
-  background-color: rgba(5, 8, 25, 0.95) !important;
-  background: rgba(5, 8, 25, 0.95) !important;
+  background: rgba(8, 12, 35, 0.45) !important;  /* translucent navy */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+/* Remove any white shadow */
+.masthead,
 .greedy-nav {
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  box-shadow: none !important;
 }
 
-/* Link colors */
+/* Navbar text */
 .masthead .masthead__menu-item a,
 .masthead .masthead__menu-item--lg a {
   color: #ffffff !important;
+  font-weight: 500;
+  transition: all 0.25s ease;
 }
 
-.masthead .masthead__menu-item a:hover,
-.masthead .masthead__menu-item--lg a:hover {
+/* Hover glow */
+.masthead .masthead__menu-item a:hover {
   color: #58a6ff !important;
+  text-shadow: 0 0 6px rgba(88,166,255,0.6);
 }
