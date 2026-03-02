@@ -91,36 +91,38 @@ body, #main, .initial-content, .page, .page__content, .archive, .site {
 }
 
 /* =========================
-   Name left, links right (NO dropdown)
+   Disable Greedy dropdown; name left, links right
    ========================= */
 
-/* Keep Greedy Nav behavior but push links to the right */
+/* 1) Kill the greedy dropdown behavior */
+nav.greedy-nav > button {
+  display: none !important;          /* hides hamburger/X */
+}
+nav.greedy-nav .hidden-links {
+  display: none !important;          /* hides dropdown list */
+}
+
+/* 2) Make the nav a normal flex row */
 nav.greedy-nav {
   display: flex !important;
   align-items: center;
+  width: 100%;
 }
 
-/* Make the visible links take remaining space */
+/* 3) Layout: name left, links right */
 nav.greedy-nav .visible-links {
-  flex: 1 1 auto;
-  display: flex;
+  display: flex !important;
   align-items: center;
+  width: 100%;
+  flex-wrap: wrap;                   /* if screen is narrow, wrap to next line instead of dropdown */
+  gap: 1.25rem;
 }
 
-/* Push all links (except the first: your name) to the right */
 nav.greedy-nav .visible-links > li.masthead__menu-item--lg {
-  margin-right: auto !important;
+  margin-right: auto !important;     /* pushes the rest to the right */
 }
 
-/* Keep the hamburger button at the far right */
-nav.greedy-nav > button {
-  margin-left: 0.75rem;
-}
-
-/* Keep the hamburger/search button on the far right as well */
-.greedy-nav button {
-  margin-left: 1rem;
-}
-.masthead__inner-wrap {
-  max-width: 100% !important;
+/* Optional: tighten spacing on smaller screens */
+@media (max-width: 700px) {
+  nav.greedy-nav .visible-links { gap: 0.75rem; }
 }
