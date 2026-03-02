@@ -40,49 +40,22 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-/* =========================
-   Space background (canvas)
-   ========================= */
-
+/* Milky Way canvas */
 #starfield {
   position: fixed;
   inset: 0;
   z-index: -10;
   pointer-events: none;
-  background: #000000;   /* true black */
+  background: radial-gradient(ellipse at 30% 35%,
+    rgba(180, 220, 255, 0.12) 0%,
+    rgba(60, 90, 160, 0.08) 25%,
+    rgba(0, 0, 0, 0.95) 65%,
+    #000 100%);
 }
 
-/* Ensure the theme’s content backgrounds don’t cover the canvas */
-body,
-#main {
+/* Ensure site containers don't cover it */
+body, #main, .initial-content, .page, .site, .archive {
   background: transparent !important;
-}
-
-/* These wrappers sometimes have background set by the theme */
-.initial-content,
-.page,
-.page__content,
-.site,
-.site__content,
-.archive {
-  background: transparent !important;
-}
-
-#starfield::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-      circle at 30% 40%,
-      rgba(0, 90, 255, 0.08),
-      transparent 60%
-    ),
-    radial-gradient(
-      circle at 70% 60%,
-      rgba(255, 0, 120, 0.06),
-      transparent 60%
-    );
-  pointer-events: none;
 }
 
 /* =========================
