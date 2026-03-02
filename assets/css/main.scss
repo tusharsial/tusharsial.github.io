@@ -57,7 +57,9 @@
 body, #main, .initial-content, .page, .site, .archive {
   background: transparent !important;
 }
-
+body {
+  background-color: #000 !important;
+}
 /* =========================
    Orange masthead + remove underline + black text
    ========================= */
