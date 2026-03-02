@@ -71,35 +71,45 @@ body,
 }
 
 /* =========================
-   Glass Navbar (Space Theme)
+   Clean Glass Navbar
    ========================= */
 
-.masthead,
+/* Keep navbar above the star canvas */
+.masthead {
+  position: sticky; /* or 'fixed' if you want */
+  top: 0;
+  z-index: 1000;
+
+  background: rgba(8, 12, 35, 0.35) !important; /* glass */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 6px 22px rgba(0,0,0,0.25);
+
+  /* Reduce the "big slab" height */
+  padding: 0.35rem 0;
+}
+
+/* Remove extra backgrounds from inner wrappers so you don't get double bands */
 .masthead__inner-wrap,
 .masthead__menu,
 .greedy-nav {
-  background: rgba(8, 12, 35, 0.45) !important;  /* translucent navy */
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-/* Remove any white shadow */
-.masthead,
-.greedy-nav {
+  background: transparent !important;
   box-shadow: none !important;
 }
 
-/* Navbar text */
-.masthead .masthead__menu-item a,
-.masthead .masthead__menu-item--lg a {
-  color: #ffffff !important;
-  font-weight: 500;
-  transition: all 0.25s ease;
+/* Tighter nav spacing */
+.greedy-nav .visible-links a {
+  padding-top: 0.4rem !important;
+  padding-bottom: 0.4rem !important;
 }
 
-/* Hover glow */
-.masthead .masthead__menu-item a:hover {
+/* Text colors */
+.masthead a {
+  color: #fff !important;
+}
+
+.masthead a:hover {
   color: #58a6ff !important;
-  text-shadow: 0 0 6px rgba(88,166,255,0.6);
 }
