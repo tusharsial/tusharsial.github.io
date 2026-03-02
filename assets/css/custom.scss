@@ -1,0 +1,15 @@
+#starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: radial-gradient(ellipse at bottom, #0b0c2a 0%, #000000 100%);
+}
+
+.page,
+.page__content,
+.site,
+.site__content {
+    position: relative;
+    z-index: 1;
+}
