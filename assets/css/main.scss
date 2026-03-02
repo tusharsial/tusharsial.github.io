@@ -69,3 +69,22 @@ body,
 .archive {
   background: transparent !important;
 }
+
+/* =========================
+   Dark Masthead (Navbar)
+   ========================= */
+
+.masthead {
+  background: rgba(5, 8, 25, 0.95) !important;  /* deep navy */
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.masthead__menu-item a,
+.masthead__menu-item button {
+  color: #ffffff !important;
+}
+
+.masthead__menu-item a:hover {
+  color: #58a6ff !important;  /* subtle space blue */
+}
