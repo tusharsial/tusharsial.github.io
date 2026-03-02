@@ -46,12 +46,10 @@
 
 #starfield {
   position: fixed;
-  inset: 0;              /* top/right/bottom/left = 0 */
-  width: 100vw;
-  height: 100vh;
+  inset: 0;
   z-index: -10;
-  pointer-events: none;  /* don't block clicks */
-  background: radial-gradient(ellipse at bottom, #0b0c2a 0%, #000 100%);
+  pointer-events: none;
+  background: #000000;   /* true black */
 }
 
 /* Ensure the theme’s content backgrounds don’t cover the canvas */
