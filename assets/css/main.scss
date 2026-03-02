@@ -71,28 +71,33 @@ body,
 }
 
 /* =========================
-   Orange Masthead Override
+   Orange Masthead (clean)
    ========================= */
 
-.masthead,
-.masthead__inner-wrap,
-.masthead__menu,
-.greedy-nav {
-  background-color: #cc5500 !important;   /* nice aerospace orange */
-  background: #ff7a00 !important;
+/* Apply color ONLY to the outer bar */
+.masthead {
+  background: #ff7a00 !important;   /* pick your orange */
   border-bottom: none !important;
 }
 
-/* Navbar text */
+/* Make inner containers transparent to avoid “double bar / steps” */
+.masthead__inner-wrap,
+.masthead__menu,
+.greedy-nav {
+  background: transparent !important;
+}
+
+/* Optional: remove any shadow/lines that look odd on orange */
+.masthead,
+.greedy-nav {
+  box-shadow: none !important;
+}
+
+/* Text colors */
 .masthead a {
-  color: white !important;
-}
-
-/* Hover */
-.masthead a:hover {
-  color: #222 !important;
+  color: #ffffff !important;
 }
 
 .masthead a:hover {
-  color: #58a6ff !important;
+  color: #1a1a1a !important;
 }
