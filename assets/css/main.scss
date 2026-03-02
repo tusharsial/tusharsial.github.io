@@ -90,39 +90,3 @@ body, #main, .initial-content, .page, .page__content, .archive, .site {
   color: #000 !important;
 }
 
-/* =========================
-   Disable Greedy dropdown; name left, links right
-   ========================= */
-
-/* 1) Kill the greedy dropdown behavior */
-nav.greedy-nav > button {
-  display: none !important;          /* hides hamburger/X */
-}
-nav.greedy-nav .hidden-links {
-  display: none !important;          /* hides dropdown list */
-}
-
-/* 2) Make the nav a normal flex row */
-nav.greedy-nav {
-  display: flex !important;
-  align-items: center;
-  width: 100%;
-}
-
-/* 3) Layout: name left, links right */
-nav.greedy-nav .visible-links {
-  display: flex !important;
-  align-items: center;
-  width: 100%;
-  flex-wrap: wrap;                   /* if screen is narrow, wrap to next line instead of dropdown */
-  gap: 1.25rem;
-}
-
-nav.greedy-nav .visible-links > li.masthead__menu-item--lg {
-  margin-right: auto !important;     /* pushes the rest to the right */
-}
-
-/* Optional: tighten spacing on smaller screens */
-@media (max-width: 700px) {
-  nav.greedy-nav .visible-links { gap: 0.75rem; }
-}
