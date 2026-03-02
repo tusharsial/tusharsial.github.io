@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     for (const s of stars) {
       // Update drift (dt-scaled so consistent across refresh rates)
-      const speedScale = dt * 0.06; // tune overall drift here
+      const speedScale = dt * 0.03; // tune overall drift here
       s.x += s.vx * speedScale * 60;
       s.y += s.vy * speedScale * 60;
 
