@@ -91,30 +91,30 @@ body, #main, .initial-content, .page, .page__content, .archive, .site {
 }
 
 /* =========================
-   Masthead layout: name left, links right
+   Name left, links right (NO dropdown)
    ========================= */
 
-/* Make the visible-links row a flex container */
-.greedy-nav .visible-links {
+/* Keep Greedy Nav behavior but push links to the right */
+nav.greedy-nav {
   display: flex !important;
   align-items: center;
-  width: 100%;
 }
 
-/* Push everything except the first (your name) to the right */
-.greedy-nav .visible-links > li:not(.masthead__menu-item--lg) {
-  margin-left: 1.25rem;
+/* Make the visible links take remaining space */
+nav.greedy-nav .visible-links {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
 }
 
-/* This is the key: give the name item auto margin so it stays left and pushes others right */
-.greedy-nav .visible-links > li.masthead__menu-item--lg {
+/* Push all links (except the first: your name) to the right */
+nav.greedy-nav .visible-links > li.masthead__menu-item--lg {
   margin-right: auto !important;
 }
 
-/* Optional: tighten spacing and make it look like the reference */
-.masthead__menu-item--lg a {
-  font-weight: 700;
-  letter-spacing: 0.2px;
+/* Keep the hamburger button at the far right */
+nav.greedy-nav > button {
+  margin-left: 0.75rem;
 }
 
 /* Keep the hamburger/search button on the far right as well */
