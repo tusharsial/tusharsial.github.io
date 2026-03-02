@@ -71,14 +71,38 @@ body,
 }
 
 /* =========================
-   Masthead hard reset + solid orange
+   Orange masthead + remove underline + black text
    ========================= */
 
-/* Paint background only once */
-.masthead { background: #e36414 !important; }
+/* solid orange bar */
+.masthead {
+  background: #e36414 !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+}
 
-/* Ensure inner nav doesn’t paint its own rectangle */
-.masthead nav.greedy-nav { background: transparent !important; }
+/* the nav itself sometimes draws its own border/shadow */
+.masthead nav.greedy-nav {
+  background: transparent !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+}
 
-/* If inner wrap width causes a block look */
-.masthead__inner-wrap { max-width: none !important; }
+/* remove any separator lines from inner wrappers too */
+.masthead__inner-wrap,
+.masthead__menu {
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+}
+
+/* black text */
+.masthead a,
+.masthead .masthead__menu-item a,
+.masthead .masthead__menu-item--lg a {
+  color: #111 !important;
+}
+
+/* hover */
+.masthead a:hover {
+  color: #000 !important;
+}
