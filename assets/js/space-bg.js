@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // drift velocity: far stars drift slower, near stars drift faster
     const par = 1 - s.z;
     const base = 0.02 + 0.06 * par; // overall drift speed
-    const angle = -Math.PI / 2 + (Math.random() - 0.5) * 0.25; // mostly upward
+    const angle = -2.2 + (Math.random() - 0.5) * 0.35;
     s.vx = Math.cos(angle) * base;
     s.vy = Math.sin(angle) * base;
   }
