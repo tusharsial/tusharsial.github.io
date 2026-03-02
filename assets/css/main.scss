@@ -39,3 +39,33 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* =========================
+   Space background (canvas)
+   ========================= */
+
+#starfield {
+  position: fixed;
+  inset: 0;              /* top/right/bottom/left = 0 */
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;  /* don't block clicks */
+  background: radial-gradient(ellipse at bottom, #0b0c2a 0%, #000 100%);
+}
+
+/* Ensure the theme’s content backgrounds don’t cover the canvas */
+body,
+#main {
+  background: transparent !important;
+}
+
+/* These wrappers sometimes have background set by the theme */
+.initial-content,
+.page,
+.page__content,
+.site,
+.site__content,
+.archive {
+  background: transparent !important;
+}
