@@ -212,6 +212,18 @@ th {
 }
 td { border-color: rgba(255,107,0,0.1) !important; }
 
+// Footer size
+.page__footer {
+  padding: 10px 0 !important;
+  font-size: 0.7rem !important;
+}
+
+.page__footer-follow,
+.page__footer-copyright {
+  padding: 4px 0 !important;
+  margin: 0 !important;
+}
+
 // Scrollbar
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #03030a; }
