@@ -260,6 +260,14 @@ td { border-color: rgba(255,107,0,0.1) !important; }
   margin-bottom: 0 !important;
 }
 
+#main {
+  min-height: auto !important;
+}
+
+.page__inner-wrap {
+  min-height: auto !important;
+}
+
 // Scrollbar
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #03030a; }
