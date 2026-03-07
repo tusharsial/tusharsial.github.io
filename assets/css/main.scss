@@ -214,34 +214,38 @@ td { border-color: rgba(255,107,0,0.1) !important; }
 
 /* ===== Reduce Footer Height ===== */
 
+/* ===== Compact footer properly ===== */
+
 .page__footer {
-  padding: 10px 0 !important;
-  font-size: 0.7rem !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
+  min-height: auto !important;
 }
 
 .page__footer footer {
-  padding: 0 !important;
+  margin-top: 0 !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  min-height: auto !important;
+}
+
+.page__footer .page__footer-follow {
+  margin: 0 0 6px 0 !important;
+}
+
+.page__footer .page__footer-follow ul,
+.page__footer .page__footer-follow li {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.page__footer .page__footer-copyright {
   margin: 0 !important;
 }
 
-.page__footer-follow {
-  padding: 4px 0 !important;
-  margin: 0 !important;
-}
-
-.page__footer-copyright {
-  padding: 4px 0 !important;
-  margin: 0 !important;
-}
-
-.page__footer ul {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.page__footer li {
-  margin: 0 !important;
-  padding: 0 2px !important;
+.page__footer .page__footer-follow,
+.page__footer .page__footer-copyright {
+  line-height: 1.4 !important;
 }
 
 // Scrollbar
