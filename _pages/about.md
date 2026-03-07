@@ -9,6 +9,14 @@ redirect_from:
 ---
 
 <div class="hero-intro">
+
+  <!-- Orbit rings -->
+  <div class="orbit-wrap">
+    <div class="o-ring ring-1"><div class="o-dot"></div></div>
+    <div class="o-ring ring-2"><div class="o-dot"></div></div>
+    <div class="o-ring ring-3"><div class="o-dot"></div></div>
+  </div>
+
   <div class="hero-badge">PhD Researcher · Aerospace Engineering</div>
   <h1 class="hero-title">Exploring the<br/>Final Frontier</h1>
   <p class="hero-sub">
@@ -51,11 +59,47 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 | **Fall 2024** | Joined Prof. Halder's lab as Graduate Research Assistant |
 
 <style>
+/* Orbit rings */
+.orbit-wrap {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.o-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 107, 0, 0.22);
+  top: 50%; left: 50%;
+  animation: o-spin linear infinite;
+}
+.ring-1 { width: 260px; height: 260px; margin: -130px 0 0 -130px; animation-duration: 14s; }
+.ring-2 { width: 400px; height: 400px; margin: -200px 0 0 -200px; animation-duration: 26s; border-color: rgba(255,154,60,0.13); }
+.ring-3 { width: 560px; height: 560px; margin: -280px 0 0 -280px; animation-duration: 44s; border-color: rgba(255,107,0,0.07); }
+.o-dot {
+  position: absolute;
+  width: 7px; height: 7px;
+  background: #FF6B00;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #FF6B00;
+  top: -3.5px; left: 50%;
+  margin-left: -3.5px;
+}
+@keyframes o-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
 /* Hero Section */
 .hero-intro {
   text-align: center;
-  padding: 60px 20px 40px;
+  padding: 80px 20px 60px;
   position: relative;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .hero-badge {
   font-family: 'Orbitron', sans-serif;
