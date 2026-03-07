@@ -3,14 +3,30 @@
 
 /*
  *    Minimal Mistakes Jekyll Theme
- *
- *  - Michael Rose
- *  - mademistakes.com
- *  - https://twitter.com/mmistakes
- *
+ *    Space Theme Override — Tushar Sial
 */
 
-@import "vendor/breakpoint/breakpoint"; // media query mixins
+// =============================================
+// STEP 1: Override SCSS variables BEFORE any imports
+// This ensures the theme compiles with our colors baked in
+// =============================================
+$background-color       : #03030a;
+$text-color             : #e0e0e0;
+$muted-text-color       : #b0b8c8;
+$primary-color          : #FF6B00;
+$link-color             : #FF9A3C;
+$link-color-hover       : #FF6B00;
+$masthead-link-color    : #b0b8c8;
+$masthead-link-color-hover: #FF9A3C;
+$navicon-link-color-hover : #FF9A3C;
+$footer-background-color: #03030a;
+$border-color           : rgba(255, 107, 0, 0.2);
+$code-background-color  : rgba(255, 255, 255, 0.05);
+
+// =============================================
+// STEP 2: Import theme files (variables are now baked in)
+// =============================================
+@import "vendor/breakpoint/breakpoint";
 @import "variables";
 @import "mixins";
 @import "vendor/susy/susy";
@@ -40,70 +56,73 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-// /* ===== Parallax star background ===== */
-// #starfield {
-//   position: fixed;
-//   inset: 0;
-//   z-index: -10;
-//   pointer-events: none;
-//   background: #000; /* pure black */
-// }
+// =============================================
+// STEP 3: Post-import overrides (fine-tuning only)
+// =============================================
 
-// /* Ensure theme containers don't cover the canvas */
-// body, #main, .initial-content, .page, .page__content, .archive, .site {
-//   background: transparent !important;
-// }
-// /* =========================
-//    Orange masthead + remove underline + black text
-//    ========================= */
-
-// /* solid orange bar */
-// .masthead {
-//   background: #1f1f1f !important;
-//   border-bottom: 0 !important;
-//   box-shadow: none !important;
-// }
-
-// /* the nav itself sometimes draws its own border/shadow */
-// .masthead nav.greedy-nav {
-//   background: transparent !important;
-//   border-bottom: 0 !important;
-//   box-shadow: none !important;
-// }
-
-// /* remove any separator lines from inner wrappers too */
-// .masthead__inner-wrap,
-// .masthead__menu {
-//   border-bottom: 0 !important;
-//   box-shadow: none !important;
-// }
-
-// /* black text */
-// .masthead a,
-// .masthead .masthead__menu-item a,
-// .masthead .masthead__menu-item--lg a {
-//   color: #ffffff !important;
-// }
-
-// /* hover */
-// .masthead a:hover {
-//   color: #bbbbbb !important;
-// }
-
-/* =============================================
-   SPACE THEME OVERRIDES
-   ============================================= */
-
-// Background & base colors
+// Fonts
 body {
-  background-color: #03030a !important;
-  color: #ffffff !important;
   font-family: 'Exo 2', sans-serif !important;
 }
 
-// Masthead (top nav bar)
+// Force html/body dark background — belt AND suspenders
+html {
+  background: #03030a !important;
+}
+body {
+  background: #03030a !important;
+}
+
+// Make all content wrappers transparent so canvas shows through
+.page,
+.page__content,
+.page__inner-wrap,
+.initial-content,
+.search-content,
+#main,
+.archive,
+.home,
+.sidebar,
+.sidebar.sticky,
+.sidebar__right,
+.page__hero,
+.page__hero--overlay,
+.page__footer-follow,
+.page__footer-copyright,
+.pagination,
+.taxonomy__section,
+.page__related,
+.author__content,
+.author__urls-wrapper {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+// Star canvas — sits above html bg, below all content
+#star-canvas {
+  position: fixed !important;
+  top: 0 !important; left: 0 !important;
+  width: 100% !important; height: 100% !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+  display: block !important;
+}
+
+// All page elements must sit above the canvas
+.masthead,
+#main,
+.initial-content,
+.page,
+.sidebar,
+.page__footer,
+.page__inner-wrap {
+  position: relative;
+  z-index: 2;
+}
+
+// Masthead
 .masthead {
-  background: rgba(3, 3, 10, 0.92) !important;
+  background: rgba(3, 3, 10, 0.90) !important;
   border-bottom: 1px solid rgba(255, 107, 0, 0.2) !important;
   backdrop-filter: blur(8px);
 
@@ -117,7 +136,6 @@ body {
 
   .greedy-nav {
     background: transparent !important;
-
     a {
       font-family: 'Orbitron', sans-serif !important;
       font-size: 0.7rem !important;
@@ -126,20 +144,9 @@ body {
       text-transform: uppercase;
       &:hover { color: #FF9A3C !important; }
     }
-
-    .visible-links a::before {
-      background: #FF6B00 !important;
-    }
+    .visible-links a::before { background: #FF6B00 !important; }
+    button { background: transparent !important; color: #b0b8c8 !important; }
   }
-}
-
-// Page content areas
-.page__content,
-.archive,
-.sidebar,
-.page__hero,
-.page {
-  background: transparent !important;
 }
 
 // Headings
@@ -147,40 +154,33 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Orbitron', sans-serif !important;
   color: #ffffff !important;
 }
-
-// Orange accent on h2 underline
 h2 {
   border-bottom: 1px solid rgba(255, 107, 0, 0.3) !important;
   padding-bottom: 8px;
 }
 
 // Links
-a {
-  color: #FF9A3C !important;
-  &:hover { color: #FF6B00 !important; }
-}
+a { color: #FF9A3C !important; &:hover { color: #FF6B00 !important; } }
 
-// Sidebar author info
+// Sidebar
 .sidebar .author__name {
   font-family: 'Orbitron', sans-serif !important;
   color: #ffffff !important;
 }
-.sidebar .author__bio {
-  color: #b0b8c8 !important;
-}
-.sidebar .author__urls a {
-  color: #FF9A3C !important;
+.sidebar .author__bio { color: #b0b8c8 !important; }
+.sidebar .author__urls a { color: #FF9A3C !important; }
+.author__avatar img {
+  border: 2px solid rgba(255, 107, 0, 0.4) !important;
+  box-shadow: 0 0 20px rgba(255, 107, 0, 0.15) !important;
 }
 
-// Cards / archive items
+// Archive cards
 .archive__item-title a {
   color: #ffffff !important;
   font-family: 'Orbitron', sans-serif !important;
   font-size: 0.85rem !important;
 }
-.archive__item-excerpt {
-  color: #b0b8c8 !important;
-}
+.archive__item-excerpt { color: #b0b8c8 !important; }
 
 // Buttons
 .btn {
@@ -191,98 +191,28 @@ a {
   letter-spacing: 1px;
   &:hover {
     background: #FF9A3C !important;
-    box-shadow: 0 0 20px rgba(255,107,0,0.4) !important;
+    box-shadow: 0 0 20px rgba(255, 107, 0, 0.4) !important;
   }
 }
 
-// Page footer
+// Footer
 .page__footer {
   background: rgba(3, 3, 10, 0.95) !important;
   border-top: 1px solid rgba(255, 107, 0, 0.15) !important;
-  color: #555 !important;
+  color: #888 !important;
+  a { color: #FF9A3C !important; }
 }
 
 // Tables
-table {
-  background: rgba(255,255,255,0.02) !important;
-  border: 1px solid rgba(255,107,0,0.15) !important;
-  color: #ccc !important;
-}
+table { background: rgba(255,255,255,0.02) !important; color: #ccc !important; }
 th {
   background: rgba(255,107,0,0.1) !important;
   color: #FF9A3C !important;
   font-family: 'Orbitron', sans-serif !important;
 }
+td { border-color: rgba(255,107,0,0.1) !important; }
 
-// Scrollbar (Webkit)
+// Scrollbar
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #03030a; }
 ::-webkit-scrollbar-thumb { background: #FF6B00; border-radius: 3px; }
-
-/* =============================================
-   STAR CANVAS FIX — paste at very bottom
-   ============================================= */
-
-/* Force ALL backgrounds to transparent so canvas shows through */
-html {
-  background: #03030a !important;
-}
-
-body {
-  background: transparent !important;
-}
-
-.page, 
-.page__content,
-.archive,
-.initial-content,
-.search-content,
-#main,
-.sidebar,
-.sidebar.sticky,
-.page__inner-wrap,
-.page__hero,
-.page__hero--overlay,
-.masthead__inner-wrap,
-.page__footer-follow,
-.page__footer-copyright,
-.pagination,
-.taxonomy__section,
-.home {
-  background: transparent !important;
-  background-color: transparent !important;
-}
-
-/* Masthead needs a slight dark bg so nav text is readable */
-.masthead {
-  background: rgba(3, 3, 10, 0.88) !important;
-  backdrop-filter: blur(8px);
-}
-
-.page__footer {
-  background: rgba(3, 3, 10, 0.92) !important;
-}
-
-/* Make sure canvas is visible and fixed behind everything */
-#star-canvas {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  z-index: 0 !important;
-  pointer-events: none !important;
-  display: block !important;
-}
-
-/* Everything above the canvas needs z-index > 0 */
-.masthead,
-#main,
-.page,
-.sidebar,
-.page__footer,
-.initial-content {
-  position: relative;
-  z-index: 1;
-}
-
