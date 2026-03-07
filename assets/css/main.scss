@@ -40,53 +40,183 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-/* ===== Parallax star background ===== */
-#starfield {
-  position: fixed;
-  inset: 0;
-  z-index: -10;
-  pointer-events: none;
-  background: #000; /* pure black */
+// /* ===== Parallax star background ===== */
+// #starfield {
+//   position: fixed;
+//   inset: 0;
+//   z-index: -10;
+//   pointer-events: none;
+//   background: #000; /* pure black */
+// }
+
+// /* Ensure theme containers don't cover the canvas */
+// body, #main, .initial-content, .page, .page__content, .archive, .site {
+//   background: transparent !important;
+// }
+// /* =========================
+//    Orange masthead + remove underline + black text
+//    ========================= */
+
+// /* solid orange bar */
+// .masthead {
+//   background: #1f1f1f !important;
+//   border-bottom: 0 !important;
+//   box-shadow: none !important;
+// }
+
+// /* the nav itself sometimes draws its own border/shadow */
+// .masthead nav.greedy-nav {
+//   background: transparent !important;
+//   border-bottom: 0 !important;
+//   box-shadow: none !important;
+// }
+
+// /* remove any separator lines from inner wrappers too */
+// .masthead__inner-wrap,
+// .masthead__menu {
+//   border-bottom: 0 !important;
+//   box-shadow: none !important;
+// }
+
+// /* black text */
+// .masthead a,
+// .masthead .masthead__menu-item a,
+// .masthead .masthead__menu-item--lg a {
+//   color: #ffffff !important;
+// }
+
+// /* hover */
+// .masthead a:hover {
+//   color: #bbbbbb !important;
+// }
+
+/* =============================================
+   SPACE THEME OVERRIDES
+   ============================================= */
+
+// Background & base colors
+body {
+  background-color: #03030a !important;
+  color: #ffffff !important;
+  font-family: 'Exo 2', sans-serif !important;
 }
 
-/* Ensure theme containers don't cover the canvas */
-body, #main, .initial-content, .page, .page__content, .archive, .site {
-  background: transparent !important;
-}
-/* =========================
-   Orange masthead + remove underline + black text
-   ========================= */
-
-/* solid orange bar */
+// Masthead (top nav bar)
 .masthead {
-  background: #1f1f1f !important;
-  border-bottom: 0 !important;
-  box-shadow: none !important;
+  background: rgba(3, 3, 10, 0.92) !important;
+  border-bottom: 1px solid rgba(255, 107, 0, 0.2) !important;
+  backdrop-filter: blur(8px);
+
+  .site-title {
+    font-family: 'Orbitron', sans-serif !important;
+    color: #FF6B00 !important;
+    font-weight: 800;
+    letter-spacing: 2px;
+    &:hover { color: #FF9A3C !important; }
+  }
+
+  .greedy-nav {
+    background: transparent !important;
+
+    a {
+      font-family: 'Orbitron', sans-serif !important;
+      font-size: 0.7rem !important;
+      letter-spacing: 1.5px;
+      color: #b0b8c8 !important;
+      text-transform: uppercase;
+      &:hover { color: #FF9A3C !important; }
+    }
+
+    .visible-links a::before {
+      background: #FF6B00 !important;
+    }
+  }
 }
 
-/* the nav itself sometimes draws its own border/shadow */
-.masthead nav.greedy-nav {
+// Page content areas
+.page__content,
+.archive,
+.sidebar,
+.page__hero,
+.page {
   background: transparent !important;
-  border-bottom: 0 !important;
-  box-shadow: none !important;
 }
 
-/* remove any separator lines from inner wrappers too */
-.masthead__inner-wrap,
-.masthead__menu {
-  border-bottom: 0 !important;
-  box-shadow: none !important;
-}
-
-/* black text */
-.masthead a,
-.masthead .masthead__menu-item a,
-.masthead .masthead__menu-item--lg a {
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif !important;
   color: #ffffff !important;
 }
 
-/* hover */
-.masthead a:hover {
-  color: #bbbbbb !important;
+// Orange accent on h2 underline
+h2 {
+  border-bottom: 1px solid rgba(255, 107, 0, 0.3) !important;
+  padding-bottom: 8px;
 }
+
+// Links
+a {
+  color: #FF9A3C !important;
+  &:hover { color: #FF6B00 !important; }
+}
+
+// Sidebar author info
+.sidebar .author__name {
+  font-family: 'Orbitron', sans-serif !important;
+  color: #ffffff !important;
+}
+.sidebar .author__bio {
+  color: #b0b8c8 !important;
+}
+.sidebar .author__urls a {
+  color: #FF9A3C !important;
+}
+
+// Cards / archive items
+.archive__item-title a {
+  color: #ffffff !important;
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: 0.85rem !important;
+}
+.archive__item-excerpt {
+  color: #b0b8c8 !important;
+}
+
+// Buttons
+.btn {
+  font-family: 'Orbitron', sans-serif !important;
+  background: #FF6B00 !important;
+  color: #000 !important;
+  border: none !important;
+  letter-spacing: 1px;
+  &:hover {
+    background: #FF9A3C !important;
+    box-shadow: 0 0 20px rgba(255,107,0,0.4) !important;
+  }
+}
+
+// Page footer
+.page__footer {
+  background: rgba(3, 3, 10, 0.95) !important;
+  border-top: 1px solid rgba(255, 107, 0, 0.15) !important;
+  color: #555 !important;
+}
+
+// Tables
+table {
+  background: rgba(255,255,255,0.02) !important;
+  border: 1px solid rgba(255,107,0,0.15) !important;
+  color: #ccc !important;
+}
+th {
+  background: rgba(255,107,0,0.1) !important;
+  color: #FF9A3C !important;
+  font-family: 'Orbitron', sans-serif !important;
+}
+
+// Scrollbar (Webkit)
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #03030a; }
+::-webkit-scrollbar-thumb { background: #FF6B00; border-radius: 3px; }
+
 
