@@ -75,7 +75,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 }
 /* .ring-1 { width: 260px; height: 260px; margin: -130px 0 0 -130px; animation-duration: 14s; }
 .ring-2 { width: 400px; height: 400px; margin: -200px 0 0 -200px; animation-duration: 26s; border-color: rgba(255,154,60,0.13); } */
-.ring-3 { width: 460px; height: 460px; margin: -230px 0 0 -230px; animation-duration: 44s; border-color: rgba(255,107,0,0.07); }
+.ring-3 { width: 460px; height: 460px; margin: -230px 0 0 -230px; animation-duration: 44s; border-color: rgba(255,107,0,0.25); }
 .o-dot {
   position: absolute;
   width: 7px; height: 7px;
