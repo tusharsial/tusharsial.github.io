@@ -248,6 +248,18 @@ td { border-color: rgba(255,107,0,0.1) !important; }
   padding-bottom: 0 !important;
 }
 
+.page__meta {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
+}
+
+.page__inner-wrap {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 // Scrollbar
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #03030a; }
