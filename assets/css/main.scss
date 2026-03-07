@@ -233,6 +233,21 @@ th {
 }
 td { border-color: rgba(255,107,0,0.1) !important; }
 
+// Remove extra space from auto-generated page title on about page
+.page__title {
+  display: none !important;
+}
+
+// Tighten last elements before footer
+.research-tags {
+  margin-bottom: 10px !important;
+}
+
+.page__content > *:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 // Scrollbar
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #03030a; }
