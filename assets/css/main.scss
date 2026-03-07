@@ -212,16 +212,24 @@ th {
 }
 td { border-color: rgba(255,107,0,0.1) !important; }
 
-// Footer size
+/* ===== Reduce Footer Height ===== */
+
 .page__footer {
-  padding: 10px 0 !important;
-  font-size: 0.7rem !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
 
-.page__footer-follow,
+.page__footer-follow {
+  margin-bottom: 5px !important;
+}
+
 .page__footer-copyright {
-  padding: 4px 0 !important;
-  margin: 0 !important;
+  margin-top: 5px !important;
+}
+
+/* Remove extra empty space */
+.page__footer {
+  min-height: auto !important;
 }
 
 // Scrollbar
