@@ -8,50 +8,27 @@ author_profile: true
 
 {% include base_path %}
 
-# Relevant Graduate Courses
+Research Experience
+------
+**Halder Group (Stochastic Control & Optimization)** <span style="float: right;">(August 2024 – Present)</span> 
 
-## _Astrodynamics and Flight Dynamics_ 
-* AERE 5510 - Orbital Mechanics
-* AERE 5770 - Linear Systems
+![ISU RA](/images/ISU.jpeg){: .align-right width="350px"}
+I'm researching the intersection of Stochastic Systems, Dynamics & Control, and Optimization under Professor Abhishek Halder. The current project that I'm working on involves designing an Optimal Covariance Steering Algorithm for a Stochastic System over a finite time horizon. In addition, I'm contributing to the design and testing of generative profiling algorithms for adaptive resource allocation and scheduling on single- and multicore real-time embedded systems. This project was in collaboration between researchers from the University of California, Santa Cruz, Iowa State University, and the University of Pennsylvania.
 
-## _Guidance, Navigation, and Control_
-* AERE 6510 Spacecraft Trajectory Optimization
-* AERE 5730 Random Signal Analysis and Kalman Filtering
-* AERE 5740 Optimal Control
+**Guidance, Control & Decision Systems Lab (GCDSL)** <span style="float: right;">(June 2022 – June 2023)</span> 
 
-## _Electrical_
-* EE 5710 - Introduction to Convex Optimization
-* EE 5230 - Random Processes for Communications and Signal Processing
+![IISc](/images/IISc Team.jpg){: .align-right width="350px"}
+With a growing debris population in low Earth orbit, robots performing routine tasks autonomously (such as simple repairs/maintenance, refueling, or debris removal) may become increasingly essential for actively preventing disasters. Several missions to uncooperative targets will require **Autonomous Rendezvous and Docking (AR&D)** operations. I interned in the Aerospace Department at the Indian Institute of Science, Bengaluru, under the guidance of Professor [Debasish Ghose](https://sites.google.com/view/gcdsl-iisc/home), where I developed control algorithms for **AR&D** of spacecraft with non-cooperative tumbling satellites.
 
-## _Systems and Design_ 
-* AERE 5630 - Introduction to Multidisciplinary Design Optimization
+Professional Experience
+------------
+**HDFC Bank** <span style="float: right;">(July 2023 – July 2024)</span>
 
-## _Formal Methods_
-* AERE 5070 - Applied Formal Methods
+![HDFC Team Photo](/images/HDFC Team.jpg){: .align-right width="350px"}
+I worked as a **DevSecOps** (Development, Security, & Operations) Engineer in the Digital Factory Vertical of the IT Team at HDFC Bank, Bengaluru. My primary tasks involved designing, maintaining & securing **CI/CD pipelines** using Jenkins, Git, Kubernetes, and Docker. In addition, I was tasked with implementing **infrastructure-as-code (IAC) principles** using tools such as Terraform and Ansible, ensuring secure, compliant cloud environments.
 
---- 
-
-# Relevant Undergraduate Courses
-
-## _Mathematics_
-* MATH F112 - Linear & Complex Algebra
-* MATH F113 - Probability and Statistics
-* MATH F211 - Ordinary Differential Equations
-* MATH F212 - Optimization
-
-## _Dynamics & Control_ 
-* EEE F242 - Control Systems
-* EEE F422 - Modern Control Systems
-* BITS F316 - Nonlinear Dynamics & Chaos
-
-## _Robotics_
-* BITS F451 - Autonomous Mobile Robotics
-* BITS F441 - Robotic Manipulators
-* EEE F243 - Signals & Systems
-* EEE F411 - Internet of Things
-
-## _Electronics_
-* EEE F215 - Digital Design
-* EEE F241 - Microprocessors & Interfacing
-* EEE F244 - Microelectronic Circuits
-* EEE F313 - Analog & Digital VLSI Design
+Review Service
+------------
+**Journal Manuscript Reviewer**         
+* System and Control Letters. (5)
+* ASME Journal of Dynamical Systems, Measurement, and Control. (1)
