@@ -215,21 +215,33 @@ td { border-color: rgba(255,107,0,0.1) !important; }
 /* ===== Reduce Footer Height ===== */
 
 .page__footer {
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+  padding: 10px 0 !important;
+  font-size: 0.7rem !important;
+}
+
+.page__footer footer {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .page__footer-follow {
-  margin-bottom: 5px !important;
+  padding: 4px 0 !important;
+  margin: 0 !important;
 }
 
 .page__footer-copyright {
-  margin-top: 5px !important;
+  padding: 4px 0 !important;
+  margin: 0 !important;
 }
 
-/* Remove extra empty space */
-.page__footer {
-  min-height: auto !important;
+.page__footer ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.page__footer li {
+  margin: 0 !important;
+  padding: 0 2px !important;
 }
 
 // Scrollbar
