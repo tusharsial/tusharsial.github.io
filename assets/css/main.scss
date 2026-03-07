@@ -8,23 +8,22 @@
 
 // =============================================
 // STEP 1: Override SCSS variables BEFORE any imports
-// This ensures the theme compiles with our colors baked in
 // =============================================
-$background-color       : #03030a;
-$text-color             : #e0e0e0;
-$muted-text-color       : #b0b8c8;
-$primary-color          : #FF6B00;
-$link-color             : #FF9A3C;
-$link-color-hover       : #FF6B00;
-$masthead-link-color    : #b0b8c8;
+$background-color         : #03030a;
+$text-color               : #e0e0e0;
+$muted-text-color         : #b0b8c8;
+$primary-color            : #FF6B00;
+$link-color               : #FF9A3C;
+$link-color-hover         : #FF6B00;
+$masthead-link-color      : #b0b8c8;
 $masthead-link-color-hover: #FF9A3C;
 $navicon-link-color-hover : #FF9A3C;
-$footer-background-color: #03030a;
-$border-color           : rgba(255, 107, 0, 0.2);
-$code-background-color  : rgba(255, 255, 255, 0.05);
+$footer-background-color  : #03030a;
+$border-color             : rgba(255, 107, 0, 0.2);
+$code-background-color    : rgba(255, 255, 255, 0.05);
 
 // =============================================
-// STEP 2: Import theme files (variables are now baked in)
+// STEP 2: Import theme files
 // =============================================
 @import "vendor/breakpoint/breakpoint";
 @import "variables";
@@ -57,71 +56,33 @@ $code-background-color  : rgba(255, 255, 255, 0.05);
 @import "print";
 
 // =============================================
-// STEP 3: Post-import overrides (fine-tuning only)
+// STEP 3: Layout — sticky footer + fixed masthead
 // =============================================
+html, body {
+  height: 100%;
+  background: #03030a !important;
+}
 
-// Fonts
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: 'Exo 2', sans-serif !important;
-}
-
-// Force html/body dark background — belt AND suspenders
-html {
-  background: #03030a !important;
-}
-body {
   background: #03030a !important;
 }
 
-// Make all content wrappers transparent so canvas shows through
-.page,
-.page__content,
-.page__inner-wrap,
 .initial-content,
-.search-content,
-#main,
-.archive,
-.home,
-.sidebar,
-.sidebar.sticky,
-.sidebar__right,
-.page__hero,
-.page__hero--overlay,
-.page__footer-follow,
-.page__footer-copyright,
-.pagination,
-.taxonomy__section,
-.page__related,
-.author__content,
-.author__urls-wrapper {
-  background: transparent !important;
-  background-color: transparent !important;
+#main {
+  flex: 1 0 auto;
 }
 
-// Star canvas — sits above html bg, below all content
-#star-canvas {
-  position: fixed !important;
-  top: 0 !important; left: 0 !important;
-  width: 100% !important; height: 100% !important;
-  z-index: 1 !important;
-  pointer-events: none !important;
-  display: block !important;
-}
-
-// All page elements must sit above the canvas
-.masthead,
-#main,
-.initial-content,
-.page,
-.sidebar,
-.page__footer,
-.page__inner-wrap {
-  position: relative;
-  z-index: 2;
-}
-
-// Masthead
 .masthead {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  z-index: 10 !important;
   background: rgba(3, 3, 10, 0.90) !important;
   border-bottom: 1px solid rgba(255, 107, 0, 0.2) !important;
   backdrop-filter: blur(8px);
@@ -149,7 +110,86 @@ body {
   }
 }
 
-// Headings
+#main {
+  padding-top: 60px !important;
+}
+
+.page__footer {
+  flex-shrink: 0;
+  background: rgba(3, 3, 10, 0.95) !important;
+  border-top: 1px solid rgba(255, 107, 0, 0.15) !important;
+  color: #888 !important;
+  padding: 0 !important;
+  a { color: #FF9A3C !important; }
+}
+.page__footer footer {
+  padding: 10px 16px !important;
+}
+.page__footer .page__footer-follow {
+  margin: 0 0 4px 0 !important;
+  line-height: 1.4 !important;
+}
+.page__footer .page__footer-follow ul,
+.page__footer .page__footer-follow li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.page__footer .page__footer-copyright {
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+// =============================================
+// STEP 4: Transparent backgrounds (canvas shows through)
+// =============================================
+.page,
+.page__content,
+.page__inner-wrap,
+.initial-content,
+.search-content,
+#main,
+.archive,
+.home,
+.sidebar,
+.sidebar.sticky,
+.sidebar__right,
+.page__hero,
+.page__footer-follow,
+.page__footer-copyright,
+.pagination,
+.taxonomy__section,
+.page__related,
+.author__content,
+.author__urls-wrapper {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+// All page elements above the canvas
+.masthead,
+#main,
+.initial-content,
+.page,
+.sidebar,
+.page__footer,
+.page__inner-wrap {
+  position: relative;
+  z-index: 2;
+}
+
+// Star canvas
+#star-canvas {
+  position: fixed !important;
+  top: 0 !important; left: 0 !important;
+  width: 100% !important; height: 100% !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+  display: block !important;
+}
+
+// =============================================
+// STEP 5: Typography & colors
+// =============================================
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Orbitron', sans-serif !important;
   color: #ffffff !important;
@@ -159,8 +199,10 @@ h2 {
   padding-bottom: 8px;
 }
 
-// Links
 a { color: #FF9A3C !important; &:hover { color: #FF6B00 !important; } }
+
+.page__title { display: none !important; }
+.page__meta  { display: none !important; }
 
 // Sidebar
 .sidebar .author__name {
@@ -195,35 +237,6 @@ a { color: #FF9A3C !important; &:hover { color: #FF6B00 !important; } }
   }
 }
 
-// Footer
-.page__footer {
-  background: rgba(3, 3, 10, 0.95) !important;
-  border-top: 1px solid rgba(255, 107, 0, 0.15) !important;
-  color: #888 !important;
-  margin-top: 0 !important;
-  padding: 0 !important;
-  min-height: auto !important;
-  a { color: #FF9A3C !important; }
-}
-.page__footer footer {
-  margin-top: 0 !important;
-  padding: 10px 16px !important;
-  min-height: auto !important;
-}
-.page__footer .page__footer-follow {
-  margin: 0 0 4px 0 !important;
-  line-height: 1.4 !important;
-}
-.page__footer .page__footer-follow ul,
-.page__footer .page__footer-follow li {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-.page__footer .page__footer-copyright {
-  margin: 0 !important;
-  line-height: 1.4 !important;
-}
-
 // Tables
 table { background: rgba(255,255,255,0.02) !important; color: #ccc !important; }
 th {
@@ -232,73 +245,6 @@ th {
   font-family: 'Orbitron', sans-serif !important;
 }
 td { border-color: rgba(255,107,0,0.1) !important; }
-
-// Remove extra space from auto-generated page title on about page
-.page__title {
-  display: none !important;
-}
-
-// Tighten last elements before footer
-.research-tags {
-  margin-bottom: 10px !important;
-}
-
-.page__content > *:last-child {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-.page__meta {
-  display: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  height: 0 !important;
-}
-
-.page__inner-wrap {
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-#main {
-  min-height: auto !important;
-}
-
-.page__inner-wrap {
-  min-height: auto !important;
-}
-
-html, body {
-  height: 100%;
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.initial-content,
-#main {
-  flex: 1 0 auto;
-}
-
-.page__footer {
-  flex-shrink: 0;
-}
-
-.masthead {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  width: 100% !important;
-  z-index: 10 !important;
-}
-
-#main {
-  padding-top: 60px !important;
-}
 
 // Scrollbar
 ::-webkit-scrollbar { width: 6px; }
