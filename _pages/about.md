@@ -292,13 +292,14 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   letter-spacing: 5px;
   color: #FF6B00;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 .section-heading {
   font-family: 'Orbitron', sans-serif !important;
   font-size: clamp(1.4rem, 3vw, 2rem) !important;
   font-weight: 800 !important;
-  margin-bottom: 12px !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 12px !important;
   border: none !important;
   position: relative;
   display: inline-block;
@@ -306,7 +307,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 .section-heading::after {
   content: '';
   position: absolute;
-  bottom: -10px;
+  bottom: 0;
   left: 0;
   width: 50px;
   height: 2px;
@@ -315,7 +316,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 .contact-intro {
   color: #b0b8c8;
   line-height: 1.85;
-  margin: 24px 0 32px;
+  margin: 16px 0 28px;
   max-width: 580px;
   font-size: 0.95rem;
 }
