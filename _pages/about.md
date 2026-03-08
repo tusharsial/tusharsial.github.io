@@ -27,7 +27,7 @@ redirect_from:
   <div class="hero-btns">
     <a href="/publications/" class="btn btn-space-primary">View Research</a>
     <a href="/files/CV.pdf" target="_blank" rel="noopener" class="btn btn-space-outline">Download CV</a>
-    <a href="/contact/" class="btn btn-space-outline">Get in Touch</a>
+    <a href="#contact" class="btn btn-space-outline">Get in Touch</a>
   </div>
   <div class="scroll-hint">Scroll</div>
 </div>
@@ -85,7 +85,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   <div class="news-divider"></div>
 </div>
 
-<div class="fade-in">
+<div class="fade-in" id="contact">
   <div class="section-eyebrow">Let's Connect</div>
   <div class="section-heading">Get In Touch</div>
   <p class="contact-intro">Whether you're interested in collaborating on research, discussing GNC and stochastic control, or just want to say hello — my inbox is always open.</p>
