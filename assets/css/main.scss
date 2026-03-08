@@ -51,11 +51,13 @@ $code-background-color    : rgba(255, 255, 255, 0.05);
 @import "print";
 
 // =============================================
-// STEP 3: Base layout
+// STEP 3: Base layout (flexbox sticky footer)
 // =============================================
 html, body {
   height: 100%;
   background: #03030a !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 body {
@@ -63,20 +65,16 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Exo 2', sans-serif !important;
-  background: #03030a !important;
 }
 
 .initial-content,
 #main {
   flex: 1 0 auto;
-}
-
-#main {
   padding-top: 10px !important;
 }
 
 // =============================================
-// STEP 4: Masthead (fixed to top)
+// STEP 4: Masthead
 // =============================================
 .masthead {
   position: fixed !important;
@@ -120,37 +118,41 @@ body {
 }
 
 // =============================================
-// STEP 5: Footer (sticky at bottom)
+// STEP 5: Footer
 // =============================================
 .page__footer {
   flex-shrink: 0;
   width: 100% !important;
-  align-self: stretch !important;
   background: rgba(3, 3, 10, 0.95) !important;
   border-top: 1px solid rgba(255, 107, 0, 0.15) !important;
-  color: #888 !important;
   padding: 0 !important;
+  margin: 0 !important;
   a { color: #FF9A3C !important; }
 }
 
 .page__footer footer {
   display: flex !important;
+  flex-direction: row !important;
   justify-content: space-between !important;
   align-items: center !important;
   width: 100% !important;
-  max-width: 100% !important;
-  padding: 10px 16px !important;
   box-sizing: border-box !important;
+  padding: 10px 16px !important;
 }
 
-.footer-left a {
-  color: #FF9A3C !important;
-  font-size: 1.6rem !important;
-  transition: color 0.3s;
-  &:hover { color: #FF6B00 !important; }
+.footer-left {
+  flex: 0 0 auto !important;
+  a {
+    color: #FF9A3C !important;
+    font-size: 1.6rem !important;
+    transition: color 0.3s;
+    &:hover { color: #FF6B00 !important; }
+  }
 }
 
 .footer-right {
+  flex: 0 0 auto !important;
+  margin-left: auto !important;
   font-size: 0.75rem !important;
   color: #888 !important;
   font-family: 'Exo 2', sans-serif !important;
@@ -162,7 +164,7 @@ body {
 }
 
 // =============================================
-// STEP 6: Transparent backgrounds (canvas shows through)
+// STEP 6: Transparent backgrounds + z-index
 // =============================================
 .page,
 .page__content,
@@ -187,7 +189,6 @@ body {
   background-color: transparent !important;
 }
 
-// Ensure all elements sit above the star canvas
 .masthead,
 #main,
 .initial-content,
@@ -199,7 +200,6 @@ body {
   z-index: 2;
 }
 
-// Star canvas
 #star-canvas {
   position: fixed !important;
   top: 0 !important; left: 0 !important;
@@ -245,20 +245,18 @@ a { color: #FF9A3C !important; &:hover { color: #FF6B00 !important; } }
 // STEP 9: Components
 // =============================================
 
-// Archive cards
+// Archive
+.archive {
+  width: 100% !important;
+  max-width: 100% !important;
+  float: none !important;
+}
 .archive__item-title a {
   color: #ffffff !important;
   font-family: 'Orbitron', sans-serif !important;
   font-size: 0.85rem !important;
 }
 .archive__item-excerpt { color: #b0b8c8 !important; }
-
-// Archive full width
-.archive {
-  width: 100% !important;
-  max-width: 100% !important;
-  float: none !important;
-}
 
 // Buttons
 .btn {
