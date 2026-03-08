@@ -17,33 +17,36 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!nav) return;
 
   let lastY = window.scrollY;
-  let ticking = false;
+  let hidden = false;
 
   nav.style.opacity = "1";
-  nav.style.transition = "opacity 3.7s ease";
+  nav.style.transition = "opacity 0.7s ease";
+  nav.style.pointerEvents = "auto";
 
   window.addEventListener("scroll", function () {
-    if (ticking) return;
+    const currentY = window.scrollY;
 
-    window.requestAnimationFrame(function () {
-      const currentY = window.scrollY;
-
-      if (currentY <= 10) {
-        nav.style.opacity = "1";
-        nav.style.pointerEvents = "auto";
-      } else if (currentY > lastY) {
-        nav.style.opacity = "0";
-        nav.style.pointerEvents = "none";
-      } else if (currentY < lastY) {
-        nav.style.opacity = "1";
-        nav.style.pointerEvents = "auto";
-      }
-
+    if (currentY <= 10) {
+      nav.style.opacity = "1";
+      nav.style.pointerEvents = "auto";
+      hidden = false;
       lastY = currentY;
-      ticking = false;
-    });
+      return;
+    }
 
-    ticking = true;
+    if (currentY > lastY && !hidden) {
+      // scrolling down -> fade out
+      nav.style.opacity = "0";
+      nav.style.pointerEvents = "none";
+      hidden = true;
+    } else if (currentY < lastY && hidden) {
+      // scrolling up -> fade in
+      nav.style.opacity = "1";
+      nav.style.pointerEvents = "auto";
+      hidden = false;
+    }
+
+    lastY = currentY;
   }, { passive: true });
 });
 </script>
