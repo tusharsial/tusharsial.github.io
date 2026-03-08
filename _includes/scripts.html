@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let lastY = window.scrollY;
   let ticking = false;
-  const threshold = 10;
 
-  nav.classList.add("nav-visible");
+  nav.style.opacity = "1";
+  nav.style.transition = "opacity 3.7s ease";
 
   window.addEventListener("scroll", function () {
     if (ticking) return;
@@ -28,15 +28,15 @@ document.addEventListener("DOMContentLoaded", function () {
     window.requestAnimationFrame(function () {
       const currentY = window.scrollY;
 
-      if (currentY <= threshold) {
-        nav.classList.add("nav-visible");
-        nav.classList.remove("nav-hidden");
+      if (currentY <= 10) {
+        nav.style.opacity = "1";
+        nav.style.pointerEvents = "auto";
       } else if (currentY > lastY) {
-        nav.classList.add("nav-hidden");
-        nav.classList.remove("nav-visible");
-      } else {
-        nav.classList.add("nav-visible");
-        nav.classList.remove("nav-hidden");
+        nav.style.opacity = "0";
+        nav.style.pointerEvents = "none";
+      } else if (currentY < lastY) {
+        nav.style.opacity = "1";
+        nav.style.pointerEvents = "auto";
       }
 
       lastY = currentY;
