@@ -125,6 +125,17 @@ body {
   pointer-events: auto !important;
 }
 
+.masthead__inner-wrap,
+.masthead .greedy-nav,
+.masthead .greedy-nav .visible-links,
+.masthead .greedy-nav .hidden-links,
+.masthead nav {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
 .masthead .site-title {
   font-family: 'Orbitron', sans-serif !important;
   color: #FF6B00 !important;
