@@ -3,7 +3,6 @@ layout: archive
 #title: "Course Work"
 permalink: /Courses/
 author_profile: false
-classes: no-sidebar
 ---
 
 {% include base_path %}
