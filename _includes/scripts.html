@@ -10,34 +10,33 @@ const obs = new IntersectionObserver(entries => {
 document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
 </script>
 
+<!-- Smart Navbar -->
 <script>
-(function () {
-  const nav = document.querySelector('.masthead');
+document.addEventListener("DOMContentLoaded", function () {
+  const nav = document.querySelector(".masthead");
   if (!nav) return;
 
   let lastY = window.scrollY;
   let ticking = false;
   const threshold = 10;
 
-  nav.classList.add('nav-visible');
+  nav.classList.add("nav-visible");
 
-  window.addEventListener('scroll', function () {
+  window.addEventListener("scroll", function () {
     if (ticking) return;
 
     window.requestAnimationFrame(function () {
       const currentY = window.scrollY;
 
       if (currentY <= threshold) {
-        nav.classList.remove('nav-hidden');
-        nav.classList.add('nav-visible');
+        nav.classList.add("nav-visible");
+        nav.classList.remove("nav-hidden");
       } else if (currentY > lastY) {
-        // scrolling down
-        nav.classList.remove('nav-visible');
-        nav.classList.add('nav-hidden');
-      } else if (currentY < lastY) {
-        // scrolling up
-        nav.classList.remove('nav-hidden');
-        nav.classList.add('nav-visible');
+        nav.classList.add("nav-hidden");
+        nav.classList.remove("nav-visible");
+      } else {
+        nav.classList.add("nav-visible");
+        nav.classList.remove("nav-hidden");
       }
 
       lastY = currentY;
@@ -45,6 +44,6 @@ document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
     });
 
     ticking = true;
-  });
-})();
+  }, { passive: true });
+});
 </script>
