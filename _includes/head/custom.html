@@ -73,10 +73,16 @@
   }
 
   /* Masthead and footer keep a dark tint for readability */
-  .masthead {
-    background: rgba(3, 3, 10, 0.90) !important;
-    backdrop-filter: blur(8px);
-  }
+ .masthead {
+  background: linear-gradient(
+    to bottom,
+    rgba(3, 3, 10, 0.92) 0%,
+    rgba(3, 3, 10, 0.70) 35%,
+    rgba(3, 3, 10, 0.35) 70%,
+    rgba(3, 3, 10, 0.00) 100%
+  ) !important;
+  backdrop-filter: none !important;
+}
   .page__footer {
     background: rgba(3, 3, 10, 0.95) !important;
   }
