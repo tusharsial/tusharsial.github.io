@@ -18,43 +18,43 @@ document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
 
   let lastY = window.scrollY;
   let ticking = false;
+  let delta = 0;
 
-  const hideThreshold = 120;   // how far to scroll before hiding
+  const hideThreshold = 120;   // hide only after scrolling down enough
   const showThreshold = 5;     // near top always visible
+  const scrollDelta = 12;      // ignore tiny scroll movements
 
   nav.classList.add('nav-visible');
 
   window.addEventListener('scroll', function () {
-
     if (ticking) return;
 
     window.requestAnimationFrame(function () {
-
       const currentY = window.scrollY;
+      const diff = currentY - lastY;
+      delta += diff;
 
       if (currentY <= showThreshold) {
         nav.classList.remove('nav-hidden');
         nav.classList.add('nav-visible');
-
-      } else if (currentY > lastY && currentY > hideThreshold) {
+        delta = 0;
+      } else if (delta > scrollDelta && currentY > hideThreshold) {
         // scrolling down
         nav.classList.remove('nav-visible');
         nav.classList.add('nav-hidden');
-
-      } else if (currentY < lastY) {
+        delta = 0;
+      } else if (delta < -scrollDelta) {
         // scrolling up
         nav.classList.remove('nav-hidden');
         nav.classList.add('nav-visible');
+        delta = 0;
       }
 
       lastY = currentY;
       ticking = false;
-
     });
 
     ticking = true;
-
   }, { passive: true });
-
 })();
 </script>
