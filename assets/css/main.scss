@@ -37,9 +37,6 @@ $code-background-color    : rgba(255, 255, 255, 0.05);
 @import "buttons";
 @import "notices";
 @import "masthead";
-// Force masthead transparent immediately after import
-.masthead { background: transparent !important; background-color: transparent !important; }
-
 @import "navigation";
 @import "footer";
 @import "syntax";
@@ -77,8 +74,15 @@ body {
 }
 
 // =============================================
-// STEP 4: Masthead
+// STEP 4: Masthead — transparent + fade on scroll
 // =============================================
+
+// Kill the theme's intro animation that sets background
+@keyframes intro {
+  0%   { opacity: 0; background: transparent; }
+  100% { opacity: 1; background: transparent; }
+}
+
 .masthead {
   position: fixed !important;
   top: 0 !important;
@@ -86,12 +90,13 @@ body {
   right: 0 !important;
   width: 100% !important;
   z-index: 10 !important;
-
+  animation: none !important;
+  -webkit-animation: none !important;
   background: transparent !important;
-  border-bottom: none !important;
+  background-color: transparent !important;
+  border: none !important;
   box-shadow: none !important;
   backdrop-filter: none !important;
-
   opacity: 1;
   transition: opacity 0.7s ease !important;
 }
@@ -106,49 +111,6 @@ body {
   pointer-events: auto !important;
 }
 
-.masthead .site-title {
-  font-family: 'Orbitron', sans-serif !important;
-  color: #FF6B00 !important;
-  font-weight: 800;
-  letter-spacing: 2px;
-}
-
-.masthead .site-title:hover {
-  color: #FF9A3C !important;
-}
-
-.masthead .greedy-nav {
-  background: transparent !important;
-}
-
-.masthead .greedy-nav a {
-  font-family: 'Orbitron', sans-serif !important;
-  font-size: 0.7rem !important;
-  letter-spacing: 1.5px;
-  color: #b0b8c8 !important;
-  text-transform: uppercase;
-}
-
-.masthead .greedy-nav a:hover {
-  color: #FF9A3C !important;
-}
-
-.masthead .greedy-nav .visible-links a::before {
-  background: #FF6B00 !important;
-}
-
-.masthead .greedy-nav button {
-  background: transparent !important;
-  color: #b0b8c8 !important;
-}
-
-.masthead__inner-wrap {
-  max-width: 100% !important;
-  width: 100% !important;
-  padding-left: 56px !important;
-  padding-right: 16px !important;
-}
-
 .masthead,
 .masthead__inner-wrap,
 .masthead .greedy-nav,
@@ -161,6 +123,35 @@ body {
   border: none !important;
 }
 
+.masthead .site-title {
+  font-family: 'Orbitron', sans-serif !important;
+  color: #FF6B00 !important;
+  font-weight: 800;
+  letter-spacing: 2px;
+  &:hover { color: #FF9A3C !important; }
+}
+
+.masthead .greedy-nav {
+  background: transparent !important;
+  a {
+    font-family: 'Orbitron', sans-serif !important;
+    font-size: 0.7rem !important;
+    letter-spacing: 1.5px;
+    color: #b0b8c8 !important;
+    text-transform: uppercase;
+    &:hover { color: #FF9A3C !important; }
+  }
+  .visible-links a::before { background: #FF6B00 !important; }
+  button { background: transparent !important; color: #b0b8c8 !important; }
+}
+
+.masthead__inner-wrap {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 56px !important;
+  padding-right: 16px !important;
+}
+
 // =============================================
 // STEP 5: Footer
 // =============================================
@@ -171,7 +162,6 @@ body {
   border-top: 1px solid rgba(255, 107, 0, 0.15) !important;
   margin: 0 !important;
   padding: 0 !important;
-  min-height: 56px !important;
   height: 70px !important;
   display: flex !important;
   align-items: center !important;
@@ -179,7 +169,6 @@ body {
 
 .page__footer > footer {
   width: 100% !important;
-  max-width: none !important;
   height: 100% !important;
   margin: 0 !important;
   padding: 0 16px 0 56px !important;
@@ -200,32 +189,29 @@ body {
 
 .footer-left {
   flex: 0 0 auto !important;
+  a {
+    display: inline-flex !important;
+    align-items: center !important;
+    line-height: 1 !important;
+    color: #FF9A3C !important;
+    font-size: 1.45rem !important;
+    &:hover { color: #FF6B00 !important; }
+  }
+  i { display: block !important; line-height: 1 !important; }
 }
 
 .footer-right {
   flex: 0 0 auto !important;
   margin-left: auto !important;
-  line-height: 1 !important;
   font-size: 0.75rem !important;
   color: #888 !important;
   font-family: 'Exo 2', sans-serif !important;
-  padding-right: 6px !important; /* change only this */
+  padding-right: 6px !important;
 }
 
-.footer-left a {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  height: 100% !important;
-  line-height: 1 !important;
-  color: #FF9A3C !important;
-  text-decoration: none !important;
-  font-size: 1.45rem !important;
-}
-
-.footer-left i {
-  display: block !important;
-  line-height: 1 !important;
+.page__footer-follow,
+.page__footer-copyright {
+  display: none !important;
 }
 
 // =============================================
