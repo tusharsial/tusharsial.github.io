@@ -83,9 +83,21 @@ body {
   right: 0 !important;
   width: 100% !important;
   z-index: 10 !important;
-  background: rgba(3, 3, 10, 0.90) !important;
-  border-bottom: 1px solid rgba(255, 107, 0, 0.2) !important;
-  backdrop-filter: blur(8px);
+  background: transparent !important;
+  border-bottom: none !important;
+  transition: opacity 0.4s ease, transform 0.4s ease !important;
+
+  &.nav-hidden {
+    opacity: 0 !important;
+    transform: translateY(-100%) !important;
+    pointer-events: none !important;
+  }
+
+  &.nav-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    pointer-events: auto !important;
+  }
 
   .site-title {
     font-family: 'Orbitron', sans-serif !important;
