@@ -15,6 +15,15 @@ author_profile: false
     margin-right: auto !important;
     padding-left: 16px !important;
   }
+
+  #main {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
 </style>
 
 # Relevant Graduate Courses
