@@ -142,11 +142,12 @@ body {
   min-height: 0 !important;
 
   margin: 0 !important;
-  padding: 0 20px !important;
+  padding-left: 56px !important;
+  padding-right: 16px !important;
+
   box-sizing: border-box !important;
 
   display: flex !important;
-  flex-direction: row !important;
   justify-content: space-between !important;
   align-items: center !important;
 }
