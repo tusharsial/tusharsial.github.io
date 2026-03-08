@@ -356,7 +356,9 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   border: none !important;
   box-shadow: none !important;
 }
-.news-date {
+.news-date,
+.news-table td.news-date,
+table.news-table td.news-date {
   font-family: 'Orbitron', sans-serif !important;
   font-size: 0.68rem !important;
   letter-spacing: 2px !important;
