@@ -32,7 +32,7 @@ redirect_from:
 
 <div class="orbit-divider fade-in"></div>
 
-<div class="fade-in">
+<div class="fade-in" markdown="1">
 ## About Me
 </div>
 
@@ -42,7 +42,7 @@ My enduring curiosity for control systems led me to major in Electrical and Elec
 
 Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies include trekking, cricket, badminton, running, and cycling.
 
-<div class="fade-in">
+<div class="fade-in" markdown="1">
 ## Research Interests
 </div>
 
@@ -55,7 +55,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   <span class="rtag">Multi-body Dynamics</span>
 </div>
 
-<div class="fade-in">
+<div class="fade-in" markdown="1">
 ## News
 </div>
 
