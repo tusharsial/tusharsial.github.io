@@ -172,11 +172,21 @@ body {
 .page__footer {
   flex-shrink: 0;
   width: 100% !important;
-  background: rgba(3, 3, 10, 0.95) !important;
-  border-top: 1px solid rgba(255, 107, 0, 0.15) !important;
+
+  background: linear-gradient(
+    to top,
+    rgba(3,3,10,0.95) 0%,
+    rgba(3,3,10,0.75) 35%,
+    rgba(3,3,10,0.40) 65%,
+    rgba(3,3,10,0.12) 85%,
+    rgba(3,3,10,0) 100%
+  ) !important;
+
+  border-top: none !important;
   margin: 0 !important;
   padding: 0 !important;
   height: 70px !important;
+
   display: flex !important;
   align-items: center !important;
 }
