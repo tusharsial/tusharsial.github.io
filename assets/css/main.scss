@@ -70,7 +70,7 @@ body {
 .initial-content,
 #main {
   flex: 1 0 auto;
-  padding-top: 60px !important;
+  padding-top: 90px !important;
 }
 
 // =============================================
@@ -90,24 +90,35 @@ body {
   right: 0 !important;
   width: 100% !important;
   z-index: 10 !important;
-  animation: none !important;
-  -webkit-animation: none !important;
-  background: transparent !important;
-  background-color: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  backdrop-filter: none !important;
-  opacity: 1;
-  transition: opacity 0.7s ease !important;
+  min-height: 90px !important;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(3,3,10,0.95) 0%,
+    rgba(3,3,10,0.75) 35%,
+    rgba(3,3,10,0.40) 65%,
+    rgba(3,3,10,0.12) 85%,
+    rgba(3,3,10,0) 100%
+  ) !important;
+
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  pointer-events: auto !important;
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease !important;
+  will-change: opacity, transform;
 }
 
 .masthead.nav-hidden {
   opacity: 0 !important;
+  transform: translateY(-18px) !important;
   pointer-events: none !important;
 }
 
 .masthead.nav-visible {
   opacity: 1 !important;
+  transform: translateY(0) !important;
   pointer-events: auto !important;
 }
 
