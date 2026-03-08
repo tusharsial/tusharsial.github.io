@@ -30,7 +30,7 @@ redirect_from:
   </div>
 </div>
 
-<div class="orbit-divider"></div>
+<div class="orbit-divider fade-in"></div>
 
 ## About Me
 
@@ -42,7 +42,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 
 ## Research Interests
 
-<div class="research-tags">
+<div class="research-tags fade-in">
   <span class="rtag">Orbital Mechanics & Astrodynamics</span>
   <span class="rtag">Stochastic Systems & Control</span>
   <span class="rtag">GNC Architectures</span>
