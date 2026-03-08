@@ -3,11 +3,11 @@
 
 /*
  *    Minimal Mistakes Jekyll Theme
- *    Space Theme Override — Tushar Sial
+ *    Space Theme — Tushar Sial
 */
 
 // =============================================
-// STEP 1: Override SCSS variables BEFORE any imports
+// STEP 1: SCSS variables (before imports)
 // =============================================
 $background-color         : #03030a;
 $text-color               : #e0e0e0;
@@ -23,16 +23,14 @@ $border-color             : rgba(255, 107, 0, 0.2);
 $code-background-color    : rgba(255, 255, 255, 0.05);
 
 // =============================================
-// STEP 2: Import theme files
+// STEP 2: Theme imports
 // =============================================
 @import "vendor/breakpoint/breakpoint";
 @import "variables";
 @import "mixins";
 @import "vendor/susy/susy";
-
 @import "reset";
 @import "base";
-
 @import "utilities";
 @import "animations";
 @import "tables";
@@ -42,13 +40,10 @@ $code-background-color    : rgba(255, 255, 255, 0.05);
 @import "navigation";
 @import "footer";
 @import "syntax";
-
 @import "forms";
-
 @import "page";
 @import "archive";
 @import "sidebar";
-
 @import "vendor/font-awesome/fontawesome";
 @import "vendor/font-awesome/solid";
 @import "vendor/font-awesome/brands";
@@ -56,7 +51,7 @@ $code-background-color    : rgba(255, 255, 255, 0.05);
 @import "print";
 
 // =============================================
-// STEP 3: Layout — sticky footer + fixed masthead
+// STEP 3: Base layout
 // =============================================
 html, body {
   height: 100%;
@@ -76,6 +71,13 @@ body {
   flex: 1 0 auto;
 }
 
+#main {
+  padding-top: 10px !important;
+}
+
+// =============================================
+// STEP 4: Masthead (fixed to top)
+// =============================================
 .masthead {
   position: fixed !important;
   top: 0 !important;
@@ -110,10 +112,16 @@ body {
   }
 }
 
-#main {
-  padding-top: 10px !important;
+.masthead__inner-wrap {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 56px !important;
+  padding-right: 16px !important;
 }
 
+// =============================================
+// STEP 5: Footer (sticky at bottom)
+// =============================================
 .page__footer {
   flex-shrink: 0;
   background: rgba(3, 3, 10, 0.95) !important;
@@ -122,25 +130,36 @@ body {
   padding: 0 !important;
   a { color: #FF9A3C !important; }
 }
+
 .page__footer footer {
-  padding: 10px 16px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 10px 56px 10px 56px !important;
 }
-.page__footer .page__footer-follow {
-  margin: 0 0 4px 0 !important;
-  line-height: 1.4 !important;
+
+.footer-left a {
+  color: #FF9A3C !important;
+  font-size: 1.6rem !important;
+  transition: color 0.3s;
+  &:hover { color: #FF6B00 !important; }
 }
-.page__footer .page__footer-follow ul,
-.page__footer .page__footer-follow li {
-  margin: 0 !important;
-  padding: 0 !important;
+
+.footer-right {
+  font-size: 0.75rem !important;
+  color: #888 !important;
+  font-family: 'Exo 2', sans-serif !important;
 }
-.page__footer .page__footer-copyright {
-  margin: 0 !important;
-  line-height: 1.4 !important;
+
+.page__footer-follow,
+.page__footer-copyright {
+  display: none !important;
 }
 
 // =============================================
-// STEP 4: Transparent backgrounds (canvas shows through)
+// STEP 6: Transparent backgrounds (canvas shows through)
 // =============================================
 .page,
 .page__content,
@@ -165,7 +184,7 @@ body {
   background-color: transparent !important;
 }
 
-// All page elements above the canvas
+// Ensure all elements sit above the star canvas
 .masthead,
 #main,
 .initial-content,
@@ -188,12 +207,13 @@ body {
 }
 
 // =============================================
-// STEP 5: Typography & colors
+// STEP 7: Typography
 // =============================================
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Orbitron', sans-serif !important;
   color: #ffffff !important;
 }
+
 h2 {
   border-bottom: 1px solid rgba(255, 107, 0, 0.3) !important;
   padding-bottom: 8px;
@@ -204,7 +224,9 @@ a { color: #FF9A3C !important; &:hover { color: #FF6B00 !important; } }
 .page__title { display: none !important; }
 .page__meta  { display: none !important; }
 
-// Sidebar
+// =============================================
+// STEP 8: Sidebar
+// =============================================
 .sidebar .author__name {
   font-family: 'Orbitron', sans-serif !important;
   color: #ffffff !important;
@@ -216,6 +238,10 @@ a { color: #FF9A3C !important; &:hover { color: #FF6B00 !important; } }
   box-shadow: 0 0 20px rgba(255, 107, 0, 0.15) !important;
 }
 
+// =============================================
+// STEP 9: Components
+// =============================================
+
 // Archive cards
 .archive__item-title a {
   color: #ffffff !important;
@@ -223,6 +249,13 @@ a { color: #FF9A3C !important; &:hover { color: #FF6B00 !important; } }
   font-size: 0.85rem !important;
 }
 .archive__item-excerpt { color: #b0b8c8 !important; }
+
+// Archive full width
+.archive {
+  width: 100% !important;
+  max-width: 100% !important;
+  float: none !important;
+}
 
 // Buttons
 .btn {
@@ -255,44 +288,6 @@ td { border-color: rgba(255,107,0,0.1) !important; }
 .fade-in.visible {
   opacity: 1;
   transform: none;
-}
-
-// Hide sidebar and expand content when no-sidebar class is set
-body.no-sidebar .sidebar {
-  display: none !important;
-}
-
-body.no-sidebar .page {
-  float: none !important;
-  width: 100% !important;
-  padding-right: 0 !important;
-}
-.archive {
-  width: 100% !important;
-  max-width: 100% !important;
-  float: none !important;
-}
-
-body.left-align .page__content {
-  text-align: left !important;
-}
-
-body.left-align .archive {
-  text-align: left !important;
-}
-
-.masthead__inner-wrap {
-  max-width: 100% !important;
-  width: 100% !important;
-  padding-left: 56px !important;
-  padding-right: 16px !important;
-}
-
-.page__footer footer {
-  max-width: 100% !important;
-  width: 100% !important;
-  padding-left: 56px !important;
-  padding-right: 1px !important;
 }
 
 // Scrollbar
