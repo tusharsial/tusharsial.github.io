@@ -92,3 +92,10 @@ classes: no-sidebar left-align
 * EEE F313 - Analog & Digital VLSI Design
 
 </div>
+
+
+<style>
+  .page__content, .archive {
+    text-align: left !important;
+  }
+</style>
