@@ -11,7 +11,7 @@ author_profile: true
 
 # Relevant Graduate Courses
 
-<div class="fade-in">
+<div class="fade-in" markdown="1">
 
 ## _Astrodynamics and Flight Dynamics_
 * AERE 5510 - Orbital Mechanics
@@ -19,7 +19,7 @@ author_profile: true
 
 </div>
 
-<div class="fade-in">
+<div class="fade-in" markdown="1">
 
 ## _Guidance, Navigation, and Control_
 * AERE 6510 - Spacecraft Trajectory Optimization
@@ -28,7 +28,7 @@ author_profile: true
 
 </div>
 
-<div class="fade-in">
+<div class="fade-in" markdown="1">
 
 ## _Electrical_
 * EE 5710 - Introduction to Convex Optimization
@@ -36,14 +36,14 @@ author_profile: true
 
 </div>
 
-<div class="fade-in">
+<div class="fade-in" markdown="1">
 
 ## _Systems and Design_
 * AERE 5630 - Introduction to Multidisciplinary Design Optimization
 
 </div>
 
-<div class="fade-in">
+<div class="fade-in" markdown="1">
 
 ## _Formal Methods_
 * AERE 5070 - Applied Formal Methods
@@ -54,7 +54,7 @@ author_profile: true
 
 # Relevant Undergraduate Courses
 
-<div class="fade-in">
+<div class="fade-in" markdown="1">
 
 ## _Mathematics_
 * MATH F112 - Linear & Complex Algebra
@@ -64,7 +64,7 @@ author_profile: true
 
 </div>
 
-<div class="fade-in">
+<div class="fade-in" markdown="1">
 
 ## _Dynamics & Control_
 * EEE F242 - Control Systems
@@ -73,7 +73,7 @@ author_profile: true
 
 </div>
 
-<div class="fade-in">
+<div class="fade-in" markdown="1">
 
 ## _Robotics_
 * BITS F451 - Autonomous Mobile Robotics
@@ -83,7 +83,7 @@ author_profile: true
 
 </div>
 
-<div class="fade-in">
+<div class="fade-in" markdown="1">
 
 ## _Electronics_
 * EEE F215 - Digital Design
