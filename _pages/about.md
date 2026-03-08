@@ -57,11 +57,15 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 
 <div class="fade-in" markdown="1">
 ## News
+</div>
+
+<div class="fade-in">
 
 | Date | Update |
 |------|--------|
 | **Fall 2024** | Started PhD program at [University Name] |
 | **Fall 2024** | Joined Prof. Halder's lab as Graduate Research Assistant |
+
 </div>
 
 <style>
