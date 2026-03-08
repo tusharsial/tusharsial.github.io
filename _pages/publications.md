@@ -207,15 +207,15 @@ author_profile: false
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 1px;
 }
+.pub-primordial {
   font-size: 0.97rem;
   font-weight: 600;
-  margin-top: 8px;
   line-height: 1.55;
 }
 .pub-primordial a {
   color: #FF9A3C !important;
   text-decoration: none !important;
-  transition: color 0.3s;
+  transition: text-decoration 0.3s;
 }
 .pub-primordial a:hover {
   color: #FF9A3C !important;
