@@ -185,6 +185,9 @@ body {
     rgba(3,3,10,0.12) 85%,
     rgba(3,3,10,0) 100%
   ) !important;
+
+  display: flex !important;
+  align-items: center !important;
 }
 
 .page__footer footer {
@@ -195,29 +198,39 @@ body {
   box-sizing: border-box !important;
 }
 
-/* Make the custom footer row span the full width */
+.custom-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .footer-left,
 .footer-right {
-  position: fixed;
-  bottom: 20px;
-  z-index: 5;
+  position: static !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-.footer-left {
-  left: 56px;
+.footer-left a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #FF9A3C !important;
+  text-decoration: none !important;
+}
+
+.footer-left i {
+  font-size: 1.7rem !important;
+  line-height: 1 !important;
 }
 
 .footer-right {
-  right: 16px;
-  margin: 0 !important;
+  margin-left: auto !important;
   text-align: right !important;
   font-size: 0.75rem !important;
   color: #888 !important;
   font-family: 'Exo 2', sans-serif !important;
-}
-
-.footer-left i {
-  font-size: 1.8rem !important;
 }
 // =============================================
 // STEP 6: Transparent backgrounds + z-index
