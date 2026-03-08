@@ -86,21 +86,17 @@ body {
   background: transparent !important;
   border-bottom: none !important;
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition: opacity 0.6s ease;
 
   &.nav-hidden {
     opacity: 0;
-    transform: translateY(-100%);
     pointer-events: none !important;
   }
 
   &.nav-visible {
     opacity: 1;
-    transform: translateY(0);
     pointer-events: auto !important;
   }
-
   .site-title {
     font-family: 'Orbitron', sans-serif !important;
     color: #FF6B00 !important;
