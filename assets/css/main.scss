@@ -70,14 +70,14 @@ body {
 .initial-content,
 #main {
   flex: 1 0 auto;
-  padding-top: 70px !important;
+  padding-top: 60px !important;
 }
 
 // =============================================
 // STEP 4: Masthead
 // =============================================
 .masthead {
-  position: fixed;
+  position: fixed !important;
   top: 0 !important;
   left: 0 !important;
   right: 0 !important;
@@ -90,7 +90,17 @@ body {
   backdrop-filter: none !important;
 
   opacity: 1;
-  will-change: opacity;
+  transition: opacity 0.7s ease !important;
+}
+
+.masthead.nav-hidden {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.masthead.nav-visible {
+  opacity: 1 !important;
+  pointer-events: auto !important;
 }
 
 .masthead .site-title {
@@ -135,6 +145,7 @@ body {
   padding-left: 56px !important;
   padding-right: 16px !important;
 }
+
 // =============================================
 // STEP 5: Footer
 // =============================================
