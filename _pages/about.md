@@ -167,9 +167,10 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   transition: all 0.3s;
 }
 .btn-space-outline:hover {
+  background: rgba(255, 107, 0, 0.15) !important;
   border-color: #FF6B00 !important;
   color: #FF9A3C !important;
-  box-shadow: 0 0 14px rgba(255,107,0,0.2);
+  box-shadow: 0 0 16px rgba(255, 107, 0, 0.3) !important;
 }
 
 /* Divider */
