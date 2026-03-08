@@ -28,12 +28,10 @@ redirect_from:
     <a href="/publications/" class="btn btn-space-primary">View Research</a>
     <a href="/contact/" class="btn btn-space-outline">Get in Touch</a>
   </div>
-  <div class="scroll-hint">Scroll</div>
 </div>
 
-<div class="orbit-divider fade-in"></div>
+<div class="orbit-divider"></div>
 
-<div class="fade-in" markdown="1">
 ## About Me
 
 I am a **PhD candidate in Aerospace Engineering** at [University Name]. Since fall 2024, I have been working as a Graduate Research Assistant under [Professor Abhishek Halder](https://abhishekhalder.org/index.html), at the intersection of **Stochastic Systems, Dynamics & Control, and Optimization**.
@@ -41,9 +39,7 @@ I am a **PhD candidate in Aerospace Engineering** at [University Name]. Since fa
 My enduring curiosity for control systems led me to major in Electrical and Electronics Engineering at **Birla Institute of Technology and Science (BITS) Pilani**. My undergraduate and master's research experiences have helped me identify my interests in bridging astrodynamics, control theory, optimization, and stochastic systems to advance **Guidance, Navigation, and Control (GNC)** architectures of space systems.
 
 Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies include trekking, cricket, badminton, running, and cycling.
-</div>
 
-<div class="fade-in" markdown="1">
 ## Research Interests
 
 <div class="research-tags">
@@ -54,19 +50,13 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   <span class="rtag">Optimization in Dynamical Systems</span>
   <span class="rtag">Multi-body Dynamics</span>
 </div>
-</div>
-
-<div class="fade-in" markdown="1">
 
 ## News
 
-<table>
-  <tr><th>Date</th><th>Update</th></tr>
-  <tr><td><strong>Fall 2024</strong></td><td>Started PhD program at [University Name]</td></tr>
-  <tr><td><strong>Fall 2024</strong></td><td>Joined Prof. Halder's lab as Graduate Research Assistant</td></tr>
-</table>
-
-</div>
+| Date | Update |
+|------|--------|
+| **Fall 2024** | Started PhD program at [University Name] |
+| **Fall 2024** | Joined Prof. Halder's lab as Graduate Research Assistant |
 
 <style>
 /* Orbit rings */
@@ -83,9 +73,9 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   top: 50%; left: 50%;
   animation: o-spin linear infinite;
 }
-.ring-1 { width: 460px; height: 460px; margin: -230px 0 0 -230px; animation-duration: 35s; }
-.ring-2 { width: 360px; height: 360px; margin: -180px 0 0 -180px; animation-duration: 25s; border-color: rgba(255,154,60,0.13); }
-.ring-3 { width: 260px; height: 260px; margin: -130px 0 0 -130px; animation-duration: 14s; border-color: rgba(255,107,0,0.20); }
+.ring-1 { width: 260px; height: 260px; margin: -130px 0 0 -130px; animation-duration: 14s; }
+.ring-2 { width: 400px; height: 400px; margin: -200px 0 0 -200px; animation-duration: 26s; border-color: rgba(255,154,60,0.13); }
+.ring-3 { width: 560px; height: 560px; margin: -280px 0 0 -280px; animation-duration: 44s; border-color: rgba(255,107,0,0.07); }
 .o-dot {
   position: absolute;
   width: 7px; height: 7px;
@@ -161,8 +151,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 .btn-space-primary:hover {
   background: #FF9A3C !important;
   box-shadow: 0 0 20px rgba(255,107,0,0.5);
-  color: #000 !important;
-}  
+}
 .btn-space-outline {
   padding: 12px 28px;
   background: transparent !important;
@@ -177,10 +166,9 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   transition: all 0.3s;
 }
 .btn-space-outline:hover {
-  background: rgba(255, 107, 0, 0.15) !important;
   border-color: #FF6B00 !important;
   color: #FF9A3C !important;
-  box-shadow: 0 0 16px rgba(255, 107, 0, 0.3) !important;
+  box-shadow: 0 0 14px rgba(255,107,0,0.2);
 }
 
 /* Divider */
@@ -207,38 +195,4 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 0.5px;
 }
-
-/* Scroll hint */
-.scroll-hint {
-  margin-top: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  opacity: 0.4;
-  font-size: 0.7rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-family: 'Orbitron', sans-serif;
-  color: #ffffff;
-}
-.scroll-hint::after {
-  content: '';
-  width: 1px;
-  height: 40px;
-  background: linear-gradient(to bottom, #FF6B00, transparent);
-}
-
-/* Fade-in animation */
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-.fade-in.visible {
-  opacity: 1;
-  transform: none;
-}  
 </style>
-
-
