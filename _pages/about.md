@@ -28,6 +28,7 @@ redirect_from:
     <a href="/publications/" class="btn btn-space-primary">View Research</a>
     <a href="/contact/" class="btn btn-space-outline">Get in Touch</a>
   </div>
+  <div class="scroll-hint">Scroll</div>
 </div>
 
 <div class="orbit-divider fade-in"></div>
@@ -206,4 +207,38 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 0.5px;
 }
+
+/* Scroll hint */
+.scroll-hint {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.4;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: 'Orbitron', sans-serif;
+  color: #ffffff;
+}
+.scroll-hint::after {
+  content: '';
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, #FF6B00, transparent);
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}  
 </style>
+
+
