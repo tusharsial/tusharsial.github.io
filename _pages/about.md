@@ -32,7 +32,9 @@ redirect_from:
 
 <div class="orbit-divider fade-in"></div>
 
+<div class="fade-in">
 ## About Me
+</div>
 
 I am a **PhD candidate in Aerospace Engineering** at [University Name]. Since fall 2024, I have been working as a Graduate Research Assistant under [Professor Abhishek Halder](https://abhishekhalder.org/index.html), at the intersection of **Stochastic Systems, Dynamics & Control, and Optimization**.
 
@@ -40,7 +42,9 @@ My enduring curiosity for control systems led me to major in Electrical and Elec
 
 Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies include trekking, cricket, badminton, running, and cycling.
 
+<div class="fade-in">
 ## Research Interests
+</div>
 
 <div class="research-tags fade-in">
   <span class="rtag">Orbital Mechanics & Astrodynamics</span>
@@ -51,7 +55,9 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   <span class="rtag">Multi-body Dynamics</span>
 </div>
 
+<div class="fade-in">
 ## News
+</div>
 
 | Date | Update |
 |------|--------|
