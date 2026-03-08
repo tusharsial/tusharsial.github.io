@@ -70,7 +70,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 
 <div class="fade-in">
   <div class="section-eyebrow">Let's Connect</div>
-  <h2 class="section-heading">Get In Touch</h2>
+  <div class="section-heading">Get In Touch</div>
   <p class="contact-intro">Whether you're interested in collaborating on research, discussing GNC and stochastic control, or just want to say hello — my inbox is always open.</p>
 
   <div class="contact-grid">
@@ -293,16 +293,19 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   color: #FF6B00;
   text-transform: uppercase;
   margin-bottom: 6px;
+  margin-top: 48px;
 }
 .section-heading {
   font-family: 'Orbitron', sans-serif !important;
   font-size: clamp(1.4rem, 3vw, 2rem) !important;
   font-weight: 800 !important;
-  margin-bottom: 0 !important;
+  color: #ffffff;
+  margin: 0 0 0 0 !important;
   padding-bottom: 12px !important;
   border: none !important;
   position: relative;
   display: inline-block;
+  line-height: 1.2;
 }
 .section-heading::after {
   content: '';
@@ -316,7 +319,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 .contact-intro {
   color: #b0b8c8;
   line-height: 1.85;
-  margin: 16px 0 28px;
+  margin: 20px 0 28px;
   max-width: 580px;
   font-size: 0.95rem;
 }
