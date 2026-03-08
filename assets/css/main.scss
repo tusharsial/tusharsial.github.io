@@ -135,9 +135,10 @@ body {
 
 .page__footer > footer {
   width: 100% !important;
+  max-width: none !important;
   height: 100% !important;
   margin: 0 !important;
-  padding: 0 20px !important;
+  padding: 0 8px 0 20px !important;
   box-sizing: border-box !important;
   display: flex !important;
   justify-content: space-between !important;
