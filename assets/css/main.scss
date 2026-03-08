@@ -172,6 +172,10 @@ body {
 .page__footer {
   flex-shrink: 0;
   width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 70px !important;
+  border-top: none !important;
 
   background: linear-gradient(
     to top,
@@ -181,63 +185,36 @@ body {
     rgba(3,3,10,0.12) 85%,
     rgba(3,3,10,0) 100%
   ) !important;
-
-  border-top: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  height: 70px !important;
-
-  display: flex !important;
-  align-items: center !important;
 }
 
-.page__footer > footer {
+.page__footer footer {
   width: 100% !important;
-  height: 100% !important;
+  max-width: 100% !important;
   margin: 0 !important;
   padding: 0 16px 0 56px !important;
   box-sizing: border-box !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
 }
 
+/* Make the custom footer row span the full width */
 .footer-left,
 .footer-right {
-  display: flex !important;
-  align-items: center !important;
-  height: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  position: fixed;
+  bottom: 20px;
+  z-index: 5;
 }
 
 .footer-left {
-  flex: 0 0 auto !important;
-  a {
-    display: inline-flex !important;
-    align-items: center !important;
-    line-height: 1 !important;
-    color: #FF9A3C !important;
-    font-size: 1.45rem !important;
-    &:hover { color: #FF6B00 !important; }
-  }
-  i { display: block !important; line-height: 1 !important; }
+  left: 56px;
 }
 
 .footer-right {
-  flex: 0 0 auto !important;
-  margin-left: auto !important;
+  right: 16px;
+  margin: 0 !important;
+  text-align: right !important;
   font-size: 0.75rem !important;
   color: #888 !important;
   font-family: 'Exo 2', sans-serif !important;
-  padding-right: 6px !important;
 }
-
-.page__footer-follow,
-.page__footer-copyright {
-  display: none !important;
-}
-
 // =============================================
 // STEP 6: Transparent backgrounds + z-index
 // =============================================
