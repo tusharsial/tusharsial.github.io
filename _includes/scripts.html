@@ -12,41 +12,49 @@ document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
 
 <!-- Smart Navbar -->
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const nav = document.querySelector(".masthead");
+(function () {
+  const nav = document.querySelector('.masthead');
   if (!nav) return;
 
   let lastY = window.scrollY;
-  let hidden = false;
+  let ticking = false;
 
-  nav.style.opacity = "1";
-  nav.style.transition = "opacity 0.7s ease";
-  nav.style.pointerEvents = "auto";
+  const hideThreshold = 120;   // how far to scroll before hiding
+  const showThreshold = 5;     // near top always visible
 
-  window.addEventListener("scroll", function () {
-    const currentY = window.scrollY;
+  nav.classList.add('nav-visible');
 
-    if (currentY <= 10) {
-      nav.style.opacity = "1";
-      nav.style.pointerEvents = "auto";
-      hidden = false;
+  window.addEventListener('scroll', function () {
+
+    if (ticking) return;
+
+    window.requestAnimationFrame(function () {
+
+      const currentY = window.scrollY;
+
+      if (currentY <= showThreshold) {
+        nav.classList.remove('nav-hidden');
+        nav.classList.add('nav-visible');
+
+      } else if (currentY > lastY && currentY > hideThreshold) {
+        // scrolling down
+        nav.classList.remove('nav-visible');
+        nav.classList.add('nav-hidden');
+
+      } else if (currentY < lastY) {
+        // scrolling up
+        nav.classList.remove('nav-hidden');
+        nav.classList.add('nav-visible');
+      }
+
       lastY = currentY;
-      return;
-    }
+      ticking = false;
 
-    if (currentY > lastY && !hidden) {
-      // scrolling down -> fade out
-      nav.style.opacity = "0";
-      nav.style.pointerEvents = "none";
-      hidden = true;
-    } else if (currentY < lastY && hidden) {
-      // scrolling up -> fade in
-      nav.style.opacity = "1";
-      nav.style.pointerEvents = "auto";
-      hidden = false;
-    }
+    });
 
-    lastY = currentY;
+    ticking = true;
+
   }, { passive: true });
-});
+
+})();
 </script>
