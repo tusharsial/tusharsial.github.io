@@ -60,24 +60,28 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   <div class="section-eyebrow" style="margin-top:48px;">Latest</div>
   <div class="news-heading">News</div>
 
-  <table class="news-table">
-    <tr>
-      <td class="news-date">RTAS 2026</td>
-      <td>Paper accepted at the 32nd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2026).</td>
-    </tr>
-    <tr>
-      <td class="news-date">EMSOFT 2025</td>
-      <td>Journal paper published in <em>ACM Transactions on Embedded Computing Systems</em> (TECS), also presented at EMSOFT 2025.</td>
-    </tr>
-    <tr>
-      <td class="news-date">Oct 2024</td>
-      <td>Preprint submitted — <em>Fixed Horizon Linear Quadratic Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost</em>. Under review at IEEE TAC.</td>
-    </tr>
-    <tr>
-      <td class="news-date">Fall 2024</td>
-      <td>Started PhD program at Iowa State University. Joined Prof. Halder's lab as Graduate Research Assistant.</td>
-    </tr>
-  </table>
+  <div class="news-table-wrap">
+    <table class="news-table">
+      <tr>
+        <td class="news-date">RTAS 2026</td>
+        <td>Paper accepted at the 32nd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2026).</td>
+      </tr>
+      <tr>
+        <td class="news-date">EMSOFT 2025</td>
+        <td>Journal paper published in <em>ACM Transactions on Embedded Computing Systems</em> (TECS), also presented at EMSOFT 2025.</td>
+      </tr>
+      <tr>
+        <td class="news-date">Oct 2024</td>
+        <td>Preprint submitted — <em>Fixed Horizon Linear Quadratic Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost</em>. Under review at IEEE TAC.</td>
+      </tr>
+      <tr>
+        <td class="news-date">Fall 2024</td>
+        <td>Started PhD program at Iowa State University. Joined Prof. Halder's lab as Graduate Research Assistant.</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="news-divider"></div>
 </div>
 
 <div class="fade-in">
@@ -319,34 +323,53 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   height: 2px;
   background: #FF6B00;
 }
+.news-table-wrap {
+  margin-top: 24px;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
 .news-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 24px;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 .news-table tr {
-  border-bottom: 1px solid rgba(255, 107, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 107, 0, 0.1) !important;
+  background: none !important;
+  box-shadow: none !important;
 }
 .news-table tr:last-child {
-  border-bottom: none;
+  border-bottom: none !important;
 }
-.news-table td {
-  padding: 14px 8px;
-  font-size: 0.9rem;
-  color: #b0b8c8;
-  vertical-align: top;
-  line-height: 1.6;
-  background: transparent !important;
+.news-table td,
+.news-table th {
+  padding: 14px 8px !important;
+  font-size: 0.9rem !important;
+  color: #b0b8c8 !important;
+  vertical-align: top !important;
+  line-height: 1.6 !important;
+  background: none !important;
   border: none !important;
+  box-shadow: none !important;
 }
 .news-date {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron', sans-serif !important;
   font-size: 0.68rem !important;
-  letter-spacing: 2px;
+  letter-spacing: 2px !important;
   color: #FF6B00 !important;
-  white-space: nowrap;
+  white-space: nowrap !important;
   padding-right: 32px !important;
-  width: 140px;
+  width: 140px !important;
+}
+.news-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(255,107,0,0.35), transparent);
+  margin: 40px 0 0;
 }
 
 /* ── GET IN TOUCH ── */
