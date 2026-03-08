@@ -8,30 +8,53 @@ author_profile: true
 
 {% include base_path %}
 
+
 # Relevant Graduate Courses
 
-## _Astrodynamics and Flight Dynamics_ 
+<div class="fade-in">
+
+## _Astrodynamics and Flight Dynamics_
 * AERE 5510 - Orbital Mechanics
 * AERE 5770 - Linear Systems
 
+</div>
+
+<div class="fade-in">
+
 ## _Guidance, Navigation, and Control_
-* AERE 6510 Spacecraft Trajectory Optimization
-* AERE 5730 Random Signal Analysis and Kalman Filtering
-* AERE 5740 Optimal Control
+* AERE 6510 - Spacecraft Trajectory Optimization
+* AERE 5730 - Random Signal Analysis and Kalman Filtering
+* AERE 5740 - Optimal Control
+
+</div>
+
+<div class="fade-in">
 
 ## _Electrical_
 * EE 5710 - Introduction to Convex Optimization
 * EE 5230 - Random Processes for Communications and Signal Processing
 
-## _Systems and Design_ 
+</div>
+
+<div class="fade-in">
+
+## _Systems and Design_
 * AERE 5630 - Introduction to Multidisciplinary Design Optimization
+
+</div>
+
+<div class="fade-in">
 
 ## _Formal Methods_
 * AERE 5070 - Applied Formal Methods
 
---- 
+</div>
+
+---
 
 # Relevant Undergraduate Courses
+
+<div class="fade-in">
 
 ## _Mathematics_
 * MATH F112 - Linear & Complex Algebra
@@ -39,10 +62,18 @@ author_profile: true
 * MATH F211 - Ordinary Differential Equations
 * MATH F212 - Optimization
 
-## _Dynamics & Control_ 
+</div>
+
+<div class="fade-in">
+
+## _Dynamics & Control_
 * EEE F242 - Control Systems
 * EEE F422 - Modern Control Systems
 * BITS F316 - Nonlinear Dynamics & Chaos
+
+</div>
+
+<div class="fade-in">
 
 ## _Robotics_
 * BITS F451 - Autonomous Mobile Robotics
@@ -50,8 +81,14 @@ author_profile: true
 * EEE F243 - Signals & Systems
 * EEE F411 - Internet of Things
 
+</div>
+
+<div class="fade-in">
+
 ## _Electronics_
 * EEE F215 - Digital Design
 * EEE F241 - Microprocessors & Interfacing
 * EEE F244 - Microelectronic Circuits
 * EEE F313 - Analog & Digital VLSI Design
+
+</div>
