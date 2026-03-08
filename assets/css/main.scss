@@ -90,18 +90,16 @@ body {
   backdrop-filter: none !important;
 
   opacity: 1;
-  transition: opacity 3.5s ease !important;
+  transition: opacity 3.7s ease !important;
   will-change: opacity;
 }
 
 .masthead.nav-hidden {
   opacity: 0 !important;
-  pointer-events: none !important;
 }
 
 .masthead.nav-visible {
   opacity: 1 !important;
-  pointer-events: auto !important;
 }
 
 .masthead .site-title {
