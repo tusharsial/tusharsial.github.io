@@ -151,7 +151,8 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 .btn-space-primary:hover {
   background: #FF9A3C !important;
   box-shadow: 0 0 20px rgba(255,107,0,0.5);
-}
+  color: #000 !important;
+}  
 .btn-space-outline {
   padding: 12px 28px;
   background: transparent !important;
