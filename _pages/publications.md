@@ -51,8 +51,9 @@ author_profile: false
     <div class="pub-authors">Georgiy A. Bondar, Abigail Eisenklam, Yifan Cai, Robert Gifford, <strong>Tushar Sial</strong>, Linh Thi Xuan Phan, and Abhishek Halder.</div>
     <div class="pub-venue">To appear at the 32nd IEEE Real-Time and Embedded Technology and Applications Symposium <span class="pub-status">· RTAS 2026</span></div>
     <div class="pub-meta">Last 5-yr acceptance rate: <a href="https://openaccept.org/c/sys/rtas/" target="_blank" rel="noopener">25.83%</a></div>
+    <div class="pub-meta" style="margin-top:10px;">Primordial version</div>
     <div class="pub-primordial">
-      Primordial version: <a href="https://arxiv.org/pdf/2501.08484" target="_blank" rel="noopener">CORD: Co-design of Resource Allocation and Deadline Decomposition with Generative Profiling →</a>
+      <a href="https://arxiv.org/pdf/2501.08484" target="_blank" rel="noopener">CORD: Co-design of Resource Allocation and Deadline Decomposition with Generative Profiling</a>
     </div>
   </div>
 </div>
@@ -202,20 +203,19 @@ author_profile: false
   color: #FF9A3C !important;
 }
 .pub-primordial {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.35);
+  font-size: 0.97rem;
+  font-weight: 600;
   margin-top: 8px;
+  line-height: 1.55;
 }
 .pub-primordial a {
-  color: #FF6B00 !important;
+  color: #FF9A3C !important;
   text-decoration: none !important;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 0.72rem;
-  letter-spacing: 1px;
   transition: color 0.3s;
 }
 .pub-primordial a:hover {
   color: #FF9A3C !important;
+  text-decoration: underline !important;
 }
 
 /* ── FADE IN ── */
