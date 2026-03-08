@@ -273,6 +273,14 @@ body.no-sidebar .page {
   float: none !important;
 }
 
+body.left-align .page__content {
+  text-align: left !important;
+}
+
+body.left-align .archive {
+  text-align: left !important;
+}
+
 // Scrollbar
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #03030a; }
