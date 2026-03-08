@@ -146,6 +146,18 @@ body {
   padding-right: 16px !important;
 }
 
+.masthead,
+.masthead__inner-wrap,
+.masthead .greedy-nav,
+.masthead .greedy-nav .visible-links,
+.masthead .greedy-nav .hidden-links,
+.masthead nav {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
 // =============================================
 // STEP 5: Footer
 // =============================================
