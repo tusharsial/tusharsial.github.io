@@ -11,6 +11,18 @@ layout: compress
   <body>
     {% include browser-upgrade.html %}
     {% include masthead.html %}
+    <script>
+  // Force masthead transparent before any CSS animation runs
+  document.addEventListener('DOMContentLoaded', function() {
+    const m = document.querySelector('.masthead');
+    if (m) {
+      m.style.setProperty('background', 'transparent', 'important');
+      m.style.setProperty('background-color', 'transparent', 'important');
+      m.style.setProperty('animation', 'none', 'important');
+      m.style.setProperty('-webkit-animation', 'none', 'important');
+    }
+  });
+</script>
     {{ content }}
     <div class="page__footer">
       <footer>
