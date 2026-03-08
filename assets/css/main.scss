@@ -37,6 +37,9 @@ $code-background-color    : rgba(255, 255, 255, 0.05);
 @import "buttons";
 @import "notices";
 @import "masthead";
+// Force masthead transparent immediately after import
+.masthead { background: transparent !important; background-color: transparent !important; }
+
 @import "navigation";
 @import "footer";
 @import "syntax";
