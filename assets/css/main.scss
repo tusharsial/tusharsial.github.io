@@ -90,19 +90,17 @@ body {
   backdrop-filter: none !important;
 
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.45s ease, transform 0.45s ease !important;
+  transition: opacity 0.7s ease !important;
+  will-change: opacity;
 }
 
 .masthead.nav-hidden {
   opacity: 0 !important;
-  transform: translateY(-100%) !important;
   pointer-events: none !important;
 }
 
 .masthead.nav-visible {
   opacity: 1 !important;
-  transform: translateY(0) !important;
   pointer-events: auto !important;
 }
 
