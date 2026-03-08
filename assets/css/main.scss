@@ -281,6 +281,16 @@ body.left-align .archive {
   text-align: left !important;
 }
 
+.masthead__inner-wrap {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+.page__footer footer {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
 // Scrollbar
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #03030a; }
