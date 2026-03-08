@@ -56,16 +56,28 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 </div>
 </div>
 
-<div class="fade-in" markdown="1">
+<div class="fade-in">
+  <div class="section-eyebrow" style="margin-top:48px;">Latest</div>
+  <div class="news-heading">News</div>
 
-## News
-
-<table>
-  <tr><th>Date</th><th>Update</th></tr>
-  <tr><td><strong>Fall 2024</strong></td><td>Started PhD program at [University Name]</td></tr>
-  <tr><td><strong>Fall 2024</strong></td><td>Joined Prof. Halder's lab as Graduate Research Assistant</td></tr>
-</table>
-
+  <table class="news-table">
+    <tr>
+      <td class="news-date">RTAS 2026</td>
+      <td>Paper accepted at the 32nd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2026).</td>
+    </tr>
+    <tr>
+      <td class="news-date">EMSOFT 2025</td>
+      <td>Journal paper published in <em>ACM Transactions on Embedded Computing Systems</em> (TECS), also presented at EMSOFT 2025.</td>
+    </tr>
+    <tr>
+      <td class="news-date">Oct 2024</td>
+      <td>Preprint submitted — <em>Fixed Horizon Linear Quadratic Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost</em>. Under review at IEEE TAC.</td>
+    </tr>
+    <tr>
+      <td class="news-date">Fall 2024</td>
+      <td>Started PhD program at Iowa State University. Joined Prof. Halder's lab as Graduate Research Assistant.</td>
+    </tr>
+  </table>
 </div>
 
 <div class="fade-in">
@@ -283,6 +295,58 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 .fade-in.visible {
   opacity: 1;
   transform: none;
+}
+
+/* ── NEWS TABLE ── */
+.news-heading {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 6px 0 0 0;
+  padding-bottom: 12px;
+  border: none;
+  position: relative;
+  display: inline-block;
+  line-height: 1.2;
+}
+.news-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #FF6B00;
+}
+.news-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+}
+.news-table tr {
+  border-bottom: 1px solid rgba(255, 107, 0, 0.1);
+}
+.news-table tr:last-child {
+  border-bottom: none;
+}
+.news-table td {
+  padding: 14px 8px;
+  font-size: 0.9rem;
+  color: #b0b8c8;
+  vertical-align: top;
+  line-height: 1.6;
+  background: transparent !important;
+  border: none !important;
+}
+.news-date {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.68rem !important;
+  letter-spacing: 2px;
+  color: #FF6B00 !important;
+  white-space: nowrap;
+  padding-right: 32px !important;
+  width: 140px;
 }
 
 /* ── GET IN TOUCH ── */
