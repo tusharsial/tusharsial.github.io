@@ -52,7 +52,7 @@ author_profile: false
     <div class="pub-venue">To appear at the 32nd IEEE Real-Time and Embedded Technology and Applications Symposium <span class="pub-status">· RTAS 2026</span></div>
     <div class="pub-meta">Last 5-yr acceptance rate: <a href="https://openaccept.org/c/sys/rtas/" target="_blank" rel="noopener">25.83%</a></div>
     <div class="pub-primordial">
-      Primordial version: <a href="https://arxiv.org/pdf/2501.08484" target="_blank" rel="noopener">CORD: Co-design of Resource Allocation and Deadline Decomposition with Generative Profiling </a>
+      Primordial version: <a href="https://arxiv.org/pdf/2501.08484" target="_blank" rel="noopener">CORD: Co-design of Resource Allocation and Deadline Decomposition with Generative Profiling →</a>
     </div>
   </div>
 </div>
@@ -158,12 +158,13 @@ author_profile: false
   line-height: 1.55;
 }
 .pub-title a {
-  color: #ffffff !important;
+  color: #FF9A3C !important;
   text-decoration: none !important;
-  transition: color 0.3s;
+  transition: color 0.3s, text-decoration 0.3s;
 }
 .pub-title a:hover {
   color: #FF9A3C !important;
+  text-decoration: underline !important;
 }
 .pub-authors {
   font-size: 0.87rem;
