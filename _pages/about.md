@@ -17,12 +17,10 @@ redirect_from:
     <div class="o-ring ring-3"><div class="o-dot"></div></div>
   </div>
 
-  <div class="hero-badge">PhD Researcher · Aerospace Engineering</div>
+  <div class="hero-badge">Astrodynamics · Stochastic Control · Optimization </div>
   <h1 class="hero-title">Exploring the<br/>Final Frontier</h1>
   <p class="hero-sub">
-    Bridging astrodynamics, control theory, optimization, and stochastic systems
-    to advance the GNC architectures of space systems — enabling autonomous
-    decision-making in uncertain multi-body environments.
+    Bridging astrodynamics, control theory, and optimization to advance the GNC architectures of space systems capable of autonomous decision-making in uncertain multi-body environments.
   </p>
   <div class="hero-btns">
     <a href="/research/" class="btn btn-space-primary">View Research</a>
