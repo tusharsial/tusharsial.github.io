@@ -22,8 +22,24 @@ author_profile: false
     max-width: 100% !important;
     width: 100% !important;
   }
-</style>
 
+  @media (max-width: 1024px) {
+    #main {
+      padding-left: 60px !important;
+      padding-right: 60px !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #main {
+      padding-left: 18px !important;
+      padding-right: 18px !important;
+    }
+    .page__content, .archive {
+      padding-left: 0 !important;
+    }
+  }
+</style>
 
 
 <div class="pub-hero fade-in">
