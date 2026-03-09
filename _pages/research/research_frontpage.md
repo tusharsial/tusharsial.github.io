@@ -26,7 +26,7 @@ author_profile: false
 
   <div class="rp-hero">
     <div>
-      <div class="rp-eyebrow">Ideas in Action</div>
+      <div class="rp-eyebrow">Ideas in action</div>
       <div class="rp-pagetitle">Research Projects</div>
     </div>
     <div class="rp-filters">
@@ -357,13 +357,15 @@ author_profile: false
   text-transform: uppercase !important; margin-bottom: 9px !important;
 }
 
-/* Tag pulse on card hover */
-@keyframes tagPulse {
-  0%   { color: #FF6B00; border-color: rgba(255,107,0,0.3); }
-  50%  { color: #FFCC88; border-color: rgba(255,180,80,0.8); }
-  100% { color: #FF6B00; border-color: rgba(255,107,0,0.3); }
+/* Tag — one-shot flash on card hover entry, returns to default */
+@keyframes tagFlash {
+  0%   { color: #FF6B00;  border-color: rgba(255,107,0,0.3);  text-shadow: none; }
+  35%  { color: #FFD49A;  border-color: rgba(255,200,100,0.9); text-shadow: 0 0 8px rgba(255,180,80,0.7); }
+  100% { color: #FF6B00;  border-color: rgba(255,107,0,0.3);  text-shadow: none; }
 }
-.opt1-card:hover .opt1-tag { animation: tagPulse 2s ease-in-out infinite !important; }
+.opt1-card:hover .opt1-tag {
+  animation: tagFlash 0.7s ease-out forwards !important;
+}
 .opt1-title {
   font-family: 'Orbitron', sans-serif !important;
   font-size: 0.78rem !important; font-weight: 700 !important;
