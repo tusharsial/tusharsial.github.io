@@ -530,7 +530,7 @@ table.news-table td.news-date {
   .hero-intro {
     padding: 70px 0px 40px !important;
     min-height: 320px !important;
-    overflow: visible !important;
+    overflow: hidden !important;
   }
 
   .orbit-wrap {
