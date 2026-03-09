@@ -25,7 +25,7 @@ redirect_from:
     decision-making in uncertain multi-body environments.
   </p>
   <div class="hero-btns">
-    <a href="/publications/" class="btn btn-space-primary">View Research</a>
+    <a href="/research/" class="btn btn-space-primary">View Research</a>
     <a href="/files/CV.pdf" target="_blank" rel="noopener" class="btn btn-space-outline">Download CV</a>
     <a href="/contact/" class="btn btn-space-outline">Get in Touch</a>
   </div>
@@ -123,7 +123,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
         <textarea class="form-input form-textarea" placeholder="Research collaboration, questions, or just hello..."></textarea>
       </div>
       <button class="btn btn-space-primary" style="width:100%;cursor:pointer;border:none;" onclick="handleContactSubmit(this)">
-        Launch Message 🚀
+        Launch Message 
       </button>
       <p class="form-note" id="form-success" style="display:none;">✓ Message sent! I'll get back to you soon.</p>
     </div>
@@ -528,7 +528,7 @@ table.news-table td.news-date {
 /* ── MOBILE ── */
 @media (max-width: 768px) {
   .hero-intro {
-    padding: 70px 12px 40px !important;
+    padding: 70px 0px 40px !important;
     min-height: 320px !important;
     overflow: visible !important;
   }
