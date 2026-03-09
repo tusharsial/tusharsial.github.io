@@ -17,8 +17,8 @@ author_profile: false
   }
 
   #main {
-    padding-left: 182px !important;
-    padding-right: 16px !important;
+    padding-left: 212px !important;
+    padding-right: 212px !important;
     margin-left: auto !important;
     margin-right: auto !important;
     max-width: 100% !important;
