@@ -408,9 +408,9 @@ table.news-table td.news-date {
   margin: 40px 0 0;
 }
 
-.news-table a:hover {
+/* .news-table a:hover {
   text-decoration: underline !important;
-}
+} */
   
 /* ── GET IN TOUCH ── */
 .section-eyebrow {
