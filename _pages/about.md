@@ -32,6 +32,7 @@ redirect_from:
 
 <div class="orbit-divider fade-in"></div>
 
+<!-- About me -->
 <div class="fade-in" markdown="1">
 ## About Me
 
@@ -42,6 +43,7 @@ My enduring curiosity for control systems led me to major in Electrical and Elec
 Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies include trekking, cricket, badminton, running, and cycling.
 </div>
 
+<!-- Research Interests -->
 <div class="fade-in" markdown="1">
 ## Research Interests
 
@@ -55,6 +57,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 </div>
 </div>
 
+<!-- News -->
 <div class="fade-in">
   <div class="section-eyebrow" style="margin-top:48px;">Latest</div>
   <div class="news-heading">News</div>
@@ -62,20 +65,24 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   <div class="news-table-wrap">
     <table class="news-table">
       <tr>
-        <td class="news-date">RTAS 2026</td>
+        <td class="news-date">Feb 27, 2026</td>
+        <td>I successfully defended my MS thesis.</td>
+      </tr>
+      <tr>
+        <td class="news-date">Jan 29, 2026</td>
         <td>Paper accepted at the 32nd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2026).</td>
       </tr>
       <tr>
-        <td class="news-date">EMSOFT 2025</td>
+        <td class="news-date">July 11, 2025</td>
         <td>Journal paper published in <em>ACM Transactions on Embedded Computing Systems</em> (TECS), also presented at EMSOFT 2025.</td>
       </tr>
       <tr>
-        <td class="news-date">Oct 2024</td>
-        <td>Preprint submitted — <em>Fixed Horizon Linear Quadratic Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost</em>. Under review at IEEE TAC.</td>
+        <td class="news-date">Oct 24, 2024</td>
+        <td>New Manuscript: <em>Fixed Horizon Linear Quadratic Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost</em>. Under review at IEEE TAC.</td>
       </tr>
       <tr>
         <td class="news-date">Fall 2024</td>
-        <td>Started PhD program at Iowa State University. Joined Prof. Halder's lab as Graduate Research Assistant.</td>
+        <td>Started MS in Aerospace Engineering at Iowa State University. Joined Prof. Halder's lab as Graduate Research Assistant.</td>
       </tr>
     </table>
   </div>
@@ -83,6 +90,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   <div class="news-divider"></div>
 </div>
 
+<!-- Contact -->
 <div class="fade-in" id="contact">
   <div class="section-eyebrow">Let's Connect</div>
   <div class="section-heading">Get In Touch</div>
@@ -128,6 +136,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   </div>
 </div>
 
+<!-- CSS of the about.md page -->
 <style>
   
 /* Orbit rings */
