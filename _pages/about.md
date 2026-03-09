@@ -132,12 +132,13 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 
 <style>
   
-/* Orbit rings */.orbit-wrap {
+/* Orbit rings */
+.orbit-wrap {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 460px;
-  height: 460px;
+  width: min(460px, 90vw);
+  aspect-ratio: 1 / 1;
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: 0;
@@ -145,55 +146,58 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 
 .o-ring {
   position: absolute;
-  top: 50%;
-  left: 50%;
   border-radius: 50%;
   border: 1px solid rgba(255, 107, 0, 0.22);
-  transform-origin: center center;
-  animation: o-spin linear infinite;
   box-sizing: border-box;
+  animation: o-spin linear infinite;
+  transform-origin: center center;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  will-change: transform;
 }
 
 .ring-1 {
-  width: 460px;
-  height: 460px;
-  margin: -230px 0 0 -230px;
+  inset: 0;
   animation-duration: 35s;
 }
 
 .ring-2 {
-  width: 360px;
-  height: 360px;
-  margin: -180px 0 0 -180px;
-  animation-duration: 25s;
+  inset: 50px;
   border-color: rgba(255,154,60,0.13);
+  animation-duration: 25s;
 }
 
 .ring-3 {
-  width: 260px;
-  height: 260px;
-  margin: -130px 0 0 -130px;
-  animation-duration: 14s;
+  inset: 100px;
   border-color: rgba(255,107,0,0.20);
+  animation-duration: 14s;
 }
-  
+
 .o-dot {
   position: absolute;
-  width: 7px; height: 7px;
+  width: 7px;
+  height: 7px;
   background: #FF6B00;
   border-radius: 50%;
   box-shadow: 0 0 10px #FF6B00;
-  top: -3.5px; left: 50%;
+  top: -3.5px;
+  left: 50%;
   margin-left: -3.5px;
 }
+
 @keyframes o-spin {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
 }
 
+.hero-badge,
+.hero-title,
+.hero-sub,
+.hero-btns,
+.scroll-hint {
+  position: relative;
+  z-index: 1;
+}
+  
 /* Hero Section */
 .hero-intro {
   text-align: center;
@@ -533,13 +537,21 @@ table.news-table td.news-date {
 /* ── MOBILE ── */
 @media (max-width: 768px) {
   .hero-intro {
-    padding: 70px 0 40px !important;
+    padding: 70px 12px 40px !important;
     min-height: 320px !important;
     overflow: visible !important;
   }
 
   .orbit-wrap {
-    transform: translate(-50%, -50%) scale(0.55);
+    width: min(280px, 82vw) !important;
+  }
+
+  .ring-2 {
+    inset: 32px !important;
+  }
+
+  .ring-3 {
+    inset: 64px !important;
   }
 
   .hero-title {
@@ -553,6 +565,7 @@ table.news-table td.news-date {
 
   .hero-sub {
     font-size: 0.88rem !important;
+    max-width: 100% !important;
   }
 
   .hero-btns {
@@ -565,35 +578,6 @@ table.news-table td.news-date {
   .btn-space-outline {
     width: 100% !important;
     text-align: center !important;
-  }
-
-  .contact-grid {
-    grid-template-columns: 1fr !important;
-    gap: 28px !important;
-  }
-
-  .news-table tr {
-    display: flex !important;
-    flex-direction: column !important;
-    padding: 10px 0 !important;
-  }
-
-  .news-table td {
-    display: block !important;
-    width: 100% !important;
-    padding: 2px 0 !important;
-  }
-
-  .news-date {
-    width: 100% !important;
-    white-space: normal !important;
-    padding-right: 0 !important;
-    margin-bottom: 4px !important;
-  }
-
-  .rtag {
-    font-size: 0.65rem !important;
-    padding: 5px 10px !important;
   }
 }
 </style>
