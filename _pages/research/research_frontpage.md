@@ -24,11 +24,21 @@ author_profile: false
 
 <div class="rp-page">
 
-  <div class="rp-eyebrow">Ideas in Action</div>
-  <div class="rp-pagetitle">Research Projects</div>
+  <div class="rp-hero">
+    <div>
+      <div class="rp-eyebrow">Ideas in Action</div>
+      <div class="rp-pagetitle">Research Projects</div>
+    </div>
+    <div class="rp-filters">
+      <button class="rp-filter active" onclick="rpFilter('all',this)">All</button>
+      <button class="rp-filter" onclick="rpFilter('ms',this)">MS</button>
+      <button class="rp-filter" onclick="rpFilter('ug',this)">UG</button>
+    </div>
+  </div>
+  <div class="rp-divider"></div>
 
   <!-- ── MASTERS ── -->
-  <div class="rp-group">
+  <div class="rp-group" data-filter="ms">
     <div class="rp-eyebrow">Masters Research</div>
     <div class="rp-sectiontitle">Graduate Work</div>
     <div class="opt1-grid">
@@ -85,7 +95,7 @@ author_profile: false
   </div>
 
   <!-- ── UNDERGRAD ── -->
-  <div class="rp-group">
+  <div class="rp-group" data-filter="ug">
     <div class="rp-eyebrow">Undergraduate Research</div>
     <div class="rp-sectiontitle">Undergrad Work</div>
     <div class="opt1-grid">
@@ -189,21 +199,75 @@ author_profile: false
   position: relative; z-index: 1;
 }
 
-/* Page title */
+/* Hero row */
+.rp-hero {
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+  gap: 20px !important;
+  padding: 48px 0 0 !important;
+}
+
+/* Eyebrow */
 .rp-eyebrow {
   font-family: 'Orbitron', sans-serif !important;
   font-size: 0.56rem; letter-spacing: 5px;
   color: #FF6B00 !important; text-transform: uppercase;
   display: block; margin-bottom: 6px !important;
 }
+
+/* Page title — gradient matches publications page */
 .rp-pagetitle {
   font-family: 'Orbitron', sans-serif !important;
-  font-size: clamp(1.6rem, 3vw, 2.4rem) !important;
-  font-weight: 900 !important; color: #fff !important;
-  display: block; margin-bottom: 44px !important;
-  padding-bottom: 16px !important;
-  border-bottom: 1px solid rgba(255,107,0,0.2) !important;
+  font-size: clamp(1.8rem, 4vw, 3rem) !important;
+  font-weight: 900 !important;
+  margin: 6px 0 0 !important;
+  padding-bottom: 14px !important;
+  border: none !important;
+  position: relative !important;
+  display: inline-block !important;
+  line-height: 1.15 !important;
+  background: linear-gradient(135deg, #fff 40%, #FF9A3C) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
 }
+.rp-pagetitle::after {
+  content: '' !important; position: absolute !important;
+  bottom: 0; left: 0; width: 60px; height: 2px;
+  background: #FF6B00 !important;
+}
+
+/* Divider — matches publications orbit-divider */
+.rp-divider {
+  width: 100% !important; height: 1px !important;
+  background: linear-gradient(to right, transparent, rgba(255,107,0,0.35), transparent) !important;
+  margin: 24px 0 40px !important;
+  display: block !important;
+}
+
+/* Filter buttons */
+.rp-filters {
+  display: flex !important;
+  gap: 8px !important;
+  align-items: center !important;
+  padding-bottom: 14px !important;
+}
+.rp-filter {
+  padding: 7px 18px !important;
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: 0.52rem !important; letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  border: 1px solid rgba(255,107,0,0.2) !important;
+  border-radius: 3px !important;
+  background: transparent !important;
+  color: #6a7385 !important;
+  cursor: pointer !important;
+  transition: all 0.2s !important;
+}
+.rp-filter:hover { border-color: #FF6B00 !important; color: #FF6B00 !important; background: rgba(255,107,0,0.06) !important; }
+.rp-filter.active { border-color: #FF6B00 !important; color: #000 !important; background: #FF6B00 !important; font-weight: 700 !important; }
 
 /* Section headings */
 .rp-sectiontitle {
@@ -218,7 +282,10 @@ author_profile: false
   content: ''; position: absolute;
   bottom: 0; left: 0; width: 36px; height: 2px; background: #FF6B00;
 }
-.rp-group { margin-bottom: 64px; }
+
+/* Group — fade transition */
+.rp-group { margin-bottom: 64px; transition: opacity 0.35s, transform 0.35s; }
+.rp-group.rp-hidden { opacity: 0 !important; transform: translateY(12px) !important; pointer-events: none !important; height: 0 !important; overflow: hidden !important; margin: 0 !important; }
 
 /* Grid */
 .opt1-grid {
@@ -307,5 +374,19 @@ author_profile: false
 .opt1-icon { width: 13px !important; height: 13px !important; flex-shrink: 0 !important; vertical-align: middle; }
 
 @media (max-width: 900px) { .opt1-grid { grid-template-columns: repeat(2, 1fr) !important; } }
-@media (max-width: 600px) { .opt1-grid { grid-template-columns: 1fr !important; } }
+@media (max-width: 600px) { .opt1-grid { grid-template-columns: 1fr !important; } .rp-hero { flex-direction: column !important; align-items: flex-start !important; } }
 </style>
+
+<script>
+function rpFilter(type, btn) {
+  document.querySelectorAll('.rp-filter').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.rp-group[data-filter]').forEach(function(g) {
+    if (type === 'all' || g.dataset.filter === type) {
+      g.classList.remove('rp-hidden');
+    } else {
+      g.classList.add('rp-hidden');
+    }
+  });
+}
+</script>
