@@ -346,27 +346,28 @@ author_profile: false
 .opt1-card:hover .opt1-body::before { opacity: 1 !important; }
 .opt1-body > * { position: relative !important; z-index: 1 !important; }
 
-/* Tag */
+/* Tag — uses CSS vars so animation wins over static !important declarations */
 .opt1-tag {
   display: inline-block !important;
   font-family: 'Orbitron', sans-serif !important;
   font-size: 0.5rem !important; letter-spacing: 2px;
-  color: #FF6B00;
-  border: 1px solid rgba(255,107,0,0.3);
+  --tc: #FF8C3A; --bc: rgba(255,107,0,0.28);
+  color: var(--tc) !important;
+  border: 1px solid var(--bc) !important;
   border-radius: 2px !important; padding: 3px 7px !important;
   text-transform: uppercase !important; margin-bottom: 9px !important;
-  transition: color 0.3s, border-color 0.3s;
 }
 
-/* Tag — one-shot flash on card hover entry */
 @keyframes tagFlash {
-  0%   { color: #FF6B00;  border-color: rgba(255,107,0,0.3);  text-shadow: none; }
-  35%  { color: #FFD49A;  border-color: rgba(255,200,120,0.95); text-shadow: 0 0 10px rgba(255,180,80,0.8); box-shadow: 0 0 8px rgba(255,150,50,0.4); }
-  100% { color: #FF6B00;  border-color: rgba(255,107,0,0.3);  text-shadow: none; box-shadow: none; }
+  0%   { --tc: #FF8C3A; --bc: rgba(255,107,0,0.28); }
+  35%  { --tc: #FF6B00; --bc: rgba(255,107,0,0.15); }
+  100% { --tc: #FF8C3A; --bc: rgba(255,107,0,0.28); }
 }
 .opt1-card:hover .opt1-tag {
   animation: tagFlash 0.7s ease-out forwards;
 }
+@property --tc { syntax: '<color>'; inherits: false; initial-value: #FF8C3A; }
+@property --bc { syntax: '<color>'; inherits: false; initial-value: rgba(255,107,0,0.28); }
 .opt1-title {
   font-family: 'Orbitron', sans-serif !important;
   font-size: 0.78rem !important; font-weight: 700 !important;
