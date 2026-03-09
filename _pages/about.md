@@ -67,8 +67,8 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
       <tr>
         <td class="news-date">Feb 27, 2026</td>
         <td>Successfully defended my MS thesis: <a href="/files/Tushar_MS_Thesis_Slides.pdf" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Fixed Horizon Linear Quadratic Optimal Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost</a>.</td>
+      </tr>
       <tr>
-      </tr>   
         <td class="news-date">Jan 29, 2026</td>
         <td>Conference Paper: <span style="color:#FF9A3C !important;">Generative Profiling for Soft Real-Time Systems and its Applications to Resource Allocation</span> accepted at the <a href="https://2026.rtas.org/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">32nd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2026)</a>.</td>
       </tr>
@@ -100,43 +100,77 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   <div class="section-heading">Get In Touch</div>
   <p class="contact-intro">Interested in collaborating on space research, seeking guidance, or simply saying hello? My inbox is always open.</p>
 
-  <div class="contact-grid">
-    <div class="contact-links">
-      <a href="mailto:sialtushar@gmail.com" class="c-link">
-        <span class="c-icon">✉️</span>sialtushar@gmail.com
-      </a>
-      <a href="https://www.linkedin.com/in/tushar-sial-726001195" class="c-link" target="_blank">
-        <span class="c-icon">🔗</span>linkedin.com/in/tushar-sial
-      </a>
-      <a href="https://github.com/tusharsial" class="c-link" target="_blank">
-        <span class="c-icon">🐙</span>github.com/tusharsial
-      </a>
-      <a href="https://scholar.google.com/citations?hl=en&user=2vdL-1wAAAAJ" class="c-link" target="_blank">
-        <span class="c-icon">📄</span>Google Scholar Profile
-      </a>
-      <a href="https://orcid.org/0009-0003-3864-1217" class="c-link" target="_blank">
-        <span class="c-icon">🔬</span>ORCID: 0009-0003-3864-1217
-      </a>
-    </div>
+  <!-- SVG icon defs -->
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <symbol id="ico-email" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="4" width="20" height="16" rx="2"/>
+        <path d="m2 7 10 7 10-7"/>
+      </symbol>
+      <symbol id="ico-linkedin" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+        <rect x="2" y="9" width="4" height="12"/>
+        <circle cx="4" cy="4" r="2"/>
+      </symbol>
+      <symbol id="ico-github" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+      </symbol>
+      <symbol id="ico-scholar" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3z"/>
+        <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+      </symbol>
+      <symbol id="ico-orcid" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1.5 5.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-.5 3.5h2v7H10v-7z"/>
+      </symbol>
+    </defs>
+  </svg>
 
-    <div class="contact-form">
-      <div class="form-group">
-        <label class="form-label">Name</label>
-        <input type="text" class="form-input" placeholder="Your name"/>
+  <div class="contact-cards">
+    <a href="mailto:sialtushar@gmail.com" class="contact-card">
+      <div class="contact-icon-wrap" style="--brand:#EA4335;">
+        <svg class="contact-icon"><use href="#ico-email"/></svg>
       </div>
-      <div class="form-group">
-        <label class="form-label">Email</label>
-        <input type="email" class="form-input" placeholder="your@email.com"/>
+      <div>
+        <div class="contact-card-platform">Email</div>
+        <div class="contact-card-value">sialtushar@gmail.com</div>
       </div>
-      <div class="form-group">
-        <label class="form-label">Message</label>
-        <textarea class="form-input form-textarea" placeholder="Research collaboration, questions, or just hello..."></textarea>
+    </a>
+    <a href="https://www.linkedin.com/in/tushar-sial-726001195" target="_blank" rel="noopener" class="contact-card">
+      <div class="contact-icon-wrap" style="--brand:#0A66C2;">
+        <svg class="contact-icon"><use href="#ico-linkedin"/></svg>
       </div>
-      <button class="btn btn-space-primary" style="width:100%;cursor:pointer;border:none;" onclick="handleContactSubmit(this)">
-        Launch Message 
-      </button>
-      <p class="form-note" id="form-success" style="display:none;">✓ Message sent! I'll get back to you soon.</p>
-    </div>
+      <div>
+        <div class="contact-card-platform">LinkedIn</div>
+        <div class="contact-card-value">tushar-sial</div>
+      </div>
+    </a>
+    <a href="https://github.com/tusharsial" target="_blank" rel="noopener" class="contact-card">
+      <div class="contact-icon-wrap" style="--brand:#e6edf3;">
+        <svg class="contact-icon"><use href="#ico-github"/></svg>
+      </div>
+      <div>
+        <div class="contact-card-platform">GitHub</div>
+        <div class="contact-card-value">tusharsial</div>
+      </div>
+    </a>
+    <a href="https://scholar.google.com/citations?hl=en&user=2vdL-1wAAAAJ" target="_blank" rel="noopener" class="contact-card">
+      <div class="contact-icon-wrap" style="--brand:#4285F4;">
+        <svg class="contact-icon"><use href="#ico-scholar"/></svg>
+      </div>
+      <div>
+        <div class="contact-card-platform">Scholar</div>
+        <div class="contact-card-value">Google Scholar Profile</div>
+      </div>
+    </a>
+    <a href="https://orcid.org/0009-0003-3864-1217" target="_blank" rel="noopener" class="contact-card">
+      <div class="contact-icon-wrap" style="--brand:#A6CE39;">
+        <svg class="contact-icon"><use href="#ico-orcid"/></svg>
+      </div>
+      <div>
+        <div class="contact-card-platform">ORCID</div>
+        <div class="contact-card-value">0009-0003-3864-1217</div>
+      </div>
+    </a>
   </div>
 </div>
 
@@ -154,7 +188,6 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   pointer-events: none;
   z-index: 0;
 }
-
 .o-ring {
   position: absolute;
   border-radius: 50%;
@@ -165,41 +198,23 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
-
-.ring-1 {
-  inset: 0;
-  animation-duration: 35s;
-}
-
-.ring-2 {
-  inset: 70px;
-  border-color: rgba(255,154,60,0.13);
-  animation-duration: 25s;
-}
-
-.ring-3 {
-  inset: 140px;
-  border-color: rgba(255,107,0,0.20);
-  animation-duration: 14s;
-}
-
+.ring-1 { inset: 0; animation-duration: 35s; }
+.ring-2 { inset: 70px; border-color: rgba(255,154,60,0.13); animation-duration: 25s; }
+.ring-3 { inset: 140px; border-color: rgba(255,107,0,0.20); animation-duration: 14s; }
 .o-dot {
   position: absolute;
-  width: 7px;
-  height: 7px;
+  width: 7px; height: 7px;
   background: #FF6B00;
   border-radius: 50%;
   box-shadow: 0 0 10px #FF6B00;
-  top: -3.5px;
-  left: 50%;
+  top: -3.5px; left: 50%;
   margin-left: -3.5px;
 }
-
 @keyframes o-spin {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
 }
-  
+
 /* Hero Section */
 .hero-intro {
   text-align: center;
@@ -262,7 +277,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   background: #FF9A3C !important;
   box-shadow: 0 0 20px rgba(255,107,0,0.5);
   color: #000 !important;
-}  
+}
 .btn-space-outline {
   padding: 12px 28px;
   background: transparent !important;
@@ -356,10 +371,8 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 .news-heading::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50px;
-  height: 2px;
+  bottom: 0; left: 0;
+  width: 50px; height: 2px;
   background: #FF6B00;
 }
 .news-table-wrap {
@@ -381,11 +394,8 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   background: none !important;
   box-shadow: none !important;
 }
-.news-table tr:last-child {
-  border-bottom: none !important;
-}
-.news-table td,
-.news-table th {
+.news-table tr:last-child { border-bottom: none !important; }
+.news-table td, .news-table th {
   padding: 14px 8px !important;
   font-size: 0.9rem !important;
   color: #b0b8c8 !important;
@@ -412,11 +422,8 @@ table.news-table td.news-date {
   background: linear-gradient(to right, transparent, rgba(255,107,0,0.35), transparent);
   margin: 40px 0 0;
 }
+.news-table a:hover { text-decoration: underline !important; }
 
-/* .news-table a:hover {
-  text-decoration: underline !important;
-} */
-  
 /* ── GET IN TOUCH ── */
 .section-eyebrow {
   font-family: 'Orbitron', sans-serif;
@@ -442,10 +449,8 @@ table.news-table td.news-date {
 .section-heading::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50px;
-  height: 2px;
+  bottom: 0; left: 0;
+  width: 50px; height: 2px;
   background: #FF6B00;
 }
 .contact-intro {
@@ -455,90 +460,70 @@ table.news-table td.news-date {
   max-width: 580px;
   font-size: 0.95rem;
 }
-.contact-grid {
+
+/* ── CONTACT CARDS ── */
+.contact-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: start;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }
-.contact-links {
+.contact-card {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-}
-.c-link {
-  display: flex;
   align-items: center;
-  gap: 12px;
-  color: #b0b8c8 !important;
+  gap: 14px;
+  padding: 32px 20px;
+  border: 1px solid rgba(255,107,0,0.12);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.02);
   text-decoration: none !important;
-  font-size: 0.88rem;
-  padding: 11px 14px;
-  border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 6px;
-  transition: all 0.3s;
+  color: #b0b8c8;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
-.c-link:hover {
-  color: #FF9A3C !important;
-  border-color: rgba(255,107,0,0.35) !important;
-  background: rgba(255,107,0,0.04);
+.contact-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #FF6B00, transparent);
+  transform: scaleX(0);
+  transition: transform 0.35s ease;
 }
-.c-icon {
-  width: 32px;
-  height: 32px;
+.contact-card:hover { border-color: rgba(255,107,0,0.4); background: rgba(255,107,0,0.04); }
+.contact-card:hover::before { transform: scaleX(1); }
+.contact-icon-wrap {
+  width: 52px; height: 52px;
   border-radius: 50%;
-  background: rgba(255,107,0,0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.9rem;
-  flex-shrink: 0;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.3s ease;
+  color: var(--brand, #b0b8c8);
 }
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
+.contact-card:hover .contact-icon-wrap {
+  border-color: rgba(255,107,0,0.5);
+  box-shadow: 0 0 16px rgba(255,107,0,0.3);
+  background: rgba(255,107,0,0.08);
 }
-.form-group {
-  margin-bottom: 18px;
-}
-.form-label {
-  display: block;
+.contact-icon { width: 22px; height: 22px; }
+.contact-card-platform {
   font-family: 'Orbitron', sans-serif;
-  font-size: 0.62rem;
-  letter-spacing: 2px;
+  font-size: 0.58rem;
+  letter-spacing: 3px;
   color: #FF6B00;
-  margin-bottom: 7px;
   text-transform: uppercase;
 }
-.form-input {
-  width: 100%;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,107,0,0.2);
-  border-radius: 4px;
-  padding: 11px 14px;
-  color: #ffffff;
-  font-family: 'Exo 2', sans-serif;
-  font-size: 0.92rem;
-  outline: none;
-  transition: border 0.3s;
-  box-sizing: border-box;
+.contact-card-value {
+  font-size: 0.78rem;
+  color: #7a8499;
+  word-break: break-all;
+  line-height: 1.5;
+  transition: color 0.3s;
 }
-.form-input:focus {
-  border-color: #FF6B00;
-}
-.form-textarea {
-  resize: vertical;
-  min-height: 110px;
-}
-.form-note {
-  margin-top: 12px;
-  font-size: 0.82rem;
-  color: #FF9A3C;
-  font-family: 'Orbitron', sans-serif;
-  letter-spacing: 1px;
-}
-
+.contact-card:hover .contact-card-value { color: #b0b8c8; }
 
 /* ── MOBILE ── */
 @media (max-width: 768px) {
@@ -547,74 +532,23 @@ table.news-table td.news-date {
     min-height: 320px !important;
     overflow: hidden !important;
   }
-
-  .orbit-wrap {
-    width: min(320px, 82vw) !important;
-  }
-
-  .ring-2 {
-    inset: 32px !important;
-  }
-
-  .ring-3 {
-    inset: 64px !important;
-  }
-
-  .hero-title {
-    font-size: clamp(1.6rem, 8vw, 2.4rem) !important;
-  }
-
-  .hero-badge {
-    font-size: 0.6rem !important;
-    letter-spacing: 2px !important;
-  }
-
-  .hero-sub {
-    font-size: 0.88rem !important;
-    max-width: 100% !important;
-  }
-
-  .hero-btns {
-    flex-direction: column !important;
-    align-items: center !important;
-    width: 100% !important;
-  }
-
-  .btn-space-primary,
-  .btn-space-outline {
-    width: 100% !important;
-    text-align: center !important;
-  }
-  
-  .contact-grid {
-  grid-template-columns: 1fr !important;
-  gap: 28px !important;
-  }
+  .orbit-wrap { width: min(320px, 82vw) !important; }
+  .ring-2 { inset: 32px !important; }
+  .ring-3 { inset: 64px !important; }
+  .hero-title { font-size: clamp(1.6rem, 8vw, 2.4rem) !important; }
+  .hero-badge { font-size: 0.6rem !important; letter-spacing: 2px !important; }
+  .hero-sub { font-size: 0.88rem !important; max-width: 100% !important; }
+  .hero-btns { flex-direction: column !important; align-items: center !important; width: 100% !important; }
+  .btn-space-primary, .btn-space-outline { width: 100% !important; text-align: center !important; }
+  .contact-cards { grid-template-columns: repeat(2, 1fr) !important; gap: 12px !important; }
 }
 </style>
 
 <script>
-// Fade-in on scroll
 (function(){
   var obs = new IntersectionObserver(function(entries){
     entries.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-in').forEach(function(el){ obs.observe(el); });
 })();
-
-function handleContactSubmit(btn) {
-  var name    = document.querySelector('.contact-form .form-input[type="text"]').value.trim();
-  var email   = document.querySelector('.contact-form .form-input[type="email"]').value.trim();
-  var message = document.querySelector('.contact-form .form-textarea').value.trim();
-  if (!name || !email || !message) {
-    alert('Please fill in all fields before sending.');
-    return;
-  }
-  btn.disabled = true;
-  btn.textContent = 'Launching… 🚀';
-  setTimeout(function(){
-    btn.textContent = 'Sent ✓';
-    document.getElementById('form-success').style.display = 'block';
-  }, 1000);
-}
 </script>
