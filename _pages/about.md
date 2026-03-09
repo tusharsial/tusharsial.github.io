@@ -120,9 +120,32 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
         <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
       </symbol>
       <symbol id="ico-orcid" viewBox="0 0 24 24">
-          <circle cx="12" cy="12" r="10" fill="currentColor"/>
-          <text x="12" y="16" text-anchor="middle" font-size="8" font-weight="700" font-family="Arial, sans-serif" fill="white">ID</text>
-      </symbol>
+  <!-- Green circular background -->
+  <circle cx="12" cy="12" r="10" fill="currentColor"/>
+
+  <!-- Dot above the i -->
+  <circle cx="8.2" cy="7.3" r="0.9" fill="#ffffff"/>
+
+  <!-- i stem -->
+  <rect x="7.5" y="9.3" width="1.4" height="8.2" fill="#ffffff"/>
+
+  <!-- D shape -->
+  <path
+    d="M11.0 9.3
+       H14.4
+       C17.0 9.3 18.4 10.9 18.4 13.4
+       C18.4 15.9 17.0 17.5 14.4 17.5
+       H11.0
+       Z
+       M12.4 10.7
+       V16.1
+       H14.2
+       C15.9 16.1 17.0 15.1 17.0 13.4
+       C17.0 11.7 15.9 10.7 14.2 10.7
+       H12.4
+       Z"
+    fill="#ffffff"/>
+</symbol>
     </defs>
   </svg>
 
