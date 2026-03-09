@@ -24,7 +24,7 @@ author_profile: false
 
 <div class="rp-page">
 
-  <div class="rp-eyebrow">Iowa State University · BITS Pilani</div>
+  <div class="rp-eyebrow">Ideas in Action</div>
   <div class="rp-pagetitle">Research Projects</div>
 
   <!-- ── MASTERS ── -->
