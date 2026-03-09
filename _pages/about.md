@@ -498,14 +498,12 @@ table.news-table td.news-date {
   letter-spacing: 1px;
 }
 
+
+/* ── MOBILE ── */
 @media (max-width: 768px) {
   .hero-intro {
     padding: 70px 0 40px !important;
     min-height: 320px !important;
-    overflow: hidden !important;
-  }
-  .orbit-wrap {
-    width: 100% !important;
     overflow: hidden !important;
   }
   .ring-1 {
@@ -542,14 +540,6 @@ table.news-table td.news-date {
   .btn-space-outline {
     width: 100% !important;
     text-align: center !important;
-  }
-  .ring-2, .ring-3 {
-    display: none !important;
-  }
-  .ring-1 {
-    width: 220px !important;
-    height: 220px !important;
-    margin: -110px 0 0 -110px !important;
   }
   .contact-grid {
     grid-template-columns: 1fr !important;
