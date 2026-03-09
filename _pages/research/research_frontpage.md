@@ -26,7 +26,7 @@ author_profile: false
 
   <div class="rp-hero">
     <div>
-      <div class="rp-eyebrow">Ideas in action</div>
+      <div class="rp-eyebrow">Ideas in Action</div>
       <div class="rp-pagetitle">Research Projects</div>
     </div>
     <div class="rp-filters">
@@ -351,20 +351,21 @@ author_profile: false
   display: inline-block !important;
   font-family: 'Orbitron', sans-serif !important;
   font-size: 0.5rem !important; letter-spacing: 2px;
-  color: #FF6B00 !important;
-  border: 1px solid rgba(255,107,0,0.3) !important;
+  color: #FF6B00;
+  border: 1px solid rgba(255,107,0,0.3);
   border-radius: 2px !important; padding: 3px 7px !important;
   text-transform: uppercase !important; margin-bottom: 9px !important;
+  transition: color 0.3s, border-color 0.3s;
 }
 
-/* Tag — one-shot flash on card hover entry, returns to default */
+/* Tag — one-shot flash on card hover entry */
 @keyframes tagFlash {
   0%   { color: #FF6B00;  border-color: rgba(255,107,0,0.3);  text-shadow: none; }
-  35%  { color: #FFD49A;  border-color: rgba(255,200,100,0.9); text-shadow: 0 0 8px rgba(255,180,80,0.7); }
-  100% { color: #FF6B00;  border-color: rgba(255,107,0,0.3);  text-shadow: none; }
+  35%  { color: #FFD49A;  border-color: rgba(255,200,120,0.95); text-shadow: 0 0 10px rgba(255,180,80,0.8); box-shadow: 0 0 8px rgba(255,150,50,0.4); }
+  100% { color: #FF6B00;  border-color: rgba(255,107,0,0.3);  text-shadow: none; box-shadow: none; }
 }
 .opt1-card:hover .opt1-tag {
-  animation: tagFlash 0.7s ease-out forwards !important;
+  animation: tagFlash 0.7s ease-out forwards;
 }
 .opt1-title {
   font-family: 'Orbitron', sans-serif !important;
