@@ -570,6 +570,11 @@ table.news-table td.news-date {
     width: 100% !important;
     text-align: center !important;
   }
+  
+  .contact-grid {
+  grid-template-columns: 1fr !important;
+  gap: 28px !important;
+  }
 }
 </style>
 
