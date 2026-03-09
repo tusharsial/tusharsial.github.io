@@ -7,25 +7,6 @@ author_profile: false
 
 {% include base_path %}
 
-<style>
-  .page__content, .archive {
-    text-align: left !important;
-    max-width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: auto !important;
-    padding-left: 16px !important;
-  }
-
-  #main {
-    padding-left: 212px !important;
-    padding-right: 212px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    max-width: 100% !important;
-    width: 100% !important;
-  }
-</style>
-
 # Relevant Graduate Courses
 
 <div class="fade-in" markdown="1">
