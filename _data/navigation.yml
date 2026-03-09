@@ -28,8 +28,8 @@ main:
   - title: "CV"
     url: /files/CV.pdf
 
-  - title: "Contact"
-    url: /contact/
+  #- title: "Contact"
+  #  url: /contact/
     
   #- title: "Guide"
   #  url: /markdown/
