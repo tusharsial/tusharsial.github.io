@@ -119,8 +119,9 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
         <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3z"/>
         <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
       </symbol>
-      <symbol id="ico-orcid" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1.5 5.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-.5 3.5h2v7H10v-7z"/>
+      <symbol id="ico-orcid" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" fill="currentColor"/>
+          <text x="12" y="16" text-anchor="middle" font-size="8" font-weight="700" font-family="Arial, sans-serif" fill="white">ID</text>
       </symbol>
     </defs>
   </svg>
