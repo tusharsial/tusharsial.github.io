@@ -70,7 +70,7 @@ author_profile: false
 
   <div class="pub-item">
     <div class="pub-title">
-      <a href="LINK_HERE" target="_blank" rel="noopener">LQ Covariance Control with Deadline Constraint and Frobenius Terminal Loss</a>
+      LQ Covariance Control with Deadline Constraint and Frobenius Terminal Loss
     </div>
     <div class="pub-authors"> <strong>Tushar Sial</strong>, and Abhishek Halder.</div>
     <div class="pub-venue">2026 AIAA Regional Student Conference <span class="pub-status">· To appear </span></div>
@@ -78,8 +78,7 @@ author_profile: false
   
   <div class="pub-item">
     <div class="pub-title">
-      <a href="LINK_HERE" target="_blank" rel="noopener">Multidisciplinary Design Optimization of a Low-Thrust Asteroid Orbit Insertion
-Using Electric Propulsion</a>
+      Multidisciplinary Design Optimization of a Low-Thrust Asteroid Orbit Insertion Using Electric Propulsion
     </div>
     <div class="pub-authors">Yacob Medhin, <strong>Tushar Sial</strong>, and Simone Servadio.</div>
     <div class="pub-venue">2026 AIAA Regional Student Conference <span class="pub-status">· To appear </span></div>
