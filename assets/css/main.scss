@@ -386,3 +386,186 @@ td { border-color: rgba(255,107,0,0.1) !important; color: #b0b8c8 !important; }
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #03030a; }
 ::-webkit-scrollbar-thumb { background: #FF6B00; border-radius: 3px; }
+// =============================================
+// STEP 10: Mobile Responsiveness
+// =============================================
+
+// Base fix — prevent anything from overflowing the screen
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden !important;
+  width: 100% !important;
+}
+
+@media (max-width: 768px) {
+
+  // Layout
+  .initial-content,
+  #main {
+    padding-top: 70px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .page,
+  .page__inner-wrap,
+  .page__content {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+    width: 100% !important;
+    float: none !important;
+  }
+
+  // Masthead
+  .masthead__inner-wrap {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  // Footer
+  .page__footer footer {
+    padding: 0 18px !important;
+  }
+  .custom-footer {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+  .footer-right {
+    margin-left: 0 !important;
+    text-align: center !important;
+  }
+
+  // Hero orbit rings — hide large ones on small screens
+  .ring-2,
+  .ring-3 {
+    display: none !important;
+  }
+  .ring-1 {
+    width: 220px !important;
+    height: 220px !important;
+    margin: -110px 0 0 -110px !important;
+  }
+
+  // Hero text
+  .hero-intro {
+    padding: 70px 18px 40px !important;
+    min-height: 320px !important;
+  }
+  .hero-title {
+    font-size: clamp(1.6rem, 8vw, 2.4rem) !important;
+  }
+  .hero-sub {
+    font-size: 0.9rem !important;
+  }
+  .hero-btns {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+  .btn-space-primary,
+  .btn-space-outline {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 12px 16px !important;
+  }
+
+  // About / contact grids
+  .contact-grid,
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  // Research tags
+  .research-tags {
+    gap: 8px !important;
+  }
+  .rtag {
+    font-size: 0.65rem !important;
+    padding: 5px 12px !important;
+  }
+
+  // News table
+  .news-table,
+  .news-table-wrap {
+    display: block !important;
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  .news-table tr {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 12px 0 !important;
+  }
+  .news-table td {
+    display: block !important;
+    width: 100% !important;
+    padding: 2px 0 !important;
+  }
+  .news-date {
+    width: 100% !important;
+    white-space: normal !important;
+    padding-right: 0 !important;
+    margin-bottom: 4px !important;
+  }
+
+  // Publication cards
+  .pub-item {
+    padding: 16px !important;
+  }
+  .pub-title {
+    font-size: 0.9rem !important;
+  }
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.82rem !important;
+  }
+
+  // Experience cards
+  .exp-card {
+    padding: 20px 16px !important;
+  }
+  .exp-header {
+    flex-direction: column !important;
+    gap: 4px !important;
+  }
+
+  // Section headings
+  .pub-page-title,
+  .news-heading,
+  .section-heading {
+    font-size: clamp(1.2rem, 6vw, 1.8rem) !important;
+  }
+
+  // Contact links
+  .c-link {
+    font-size: 0.82rem !important;
+    padding: 10px 12px !important;
+  }
+
+  // Form inputs
+  .form-input {
+    font-size: 0.88rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: clamp(1.4rem, 9vw, 2rem) !important;
+  }
+  .hero-badge {
+    font-size: 0.6rem !important;
+    letter-spacing: 2px !important;
+  }
+  .pub-group-label,
+  .section-eyebrow {
+    font-size: 0.6rem !important;
+    letter-spacing: 3px !important;
+  }
+}
