@@ -131,6 +131,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 </div>
 
 <style>
+  
 /* Orbit rings */
 .orbit-wrap {
   position: absolute;
@@ -497,10 +498,82 @@ table.news-table td.news-date {
   letter-spacing: 1px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
+  .hero-intro {
+    padding: 70px 0 40px !important;
+    min-height: 320px !important;
+    overflow: hidden !important;
+  }
+  .orbit-wrap {
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+  .ring-1 {
+    width: 260px !important;
+    height: 260px !important;
+    margin: -130px 0 0 -130px !important;
+  }
+  .ring-2 {
+    width: 190px !important;
+    height: 190px !important;
+    margin: -95px 0 0 -95px !important;
+  }
+  .ring-3 {
+    width: 120px !important;
+    height: 120px !important;
+    margin: -60px 0 0 -60px !important;
+  }
+  .hero-title {
+    font-size: clamp(1.6rem, 8vw, 2.4rem) !important;
+  }
+  .hero-badge {
+    font-size: 0.6rem !important;
+    letter-spacing: 2px !important;
+  }
+  .hero-sub {
+    font-size: 0.88rem !important;
+  }
+  .hero-btns {
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  .btn-space-primary,
+  .btn-space-outline {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .ring-2, .ring-3 {
+    display: none !important;
+  }
+  .ring-1 {
+    width: 220px !important;
+    height: 220px !important;
+    margin: -110px 0 0 -110px !important;
+  }
   .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+  .news-table tr {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 10px 0 !important;
+  }
+  .news-table td {
+    display: block !important;
+    width: 100% !important;
+    padding: 2px 0 !important;
+  }
+  .news-date {
+    width: 100% !important;
+    white-space: normal !important;
+    padding-right: 0 !important;
+    margin-bottom: 4px !important;
+  }
+  .rtag {
+    font-size: 0.65rem !important;
+    padding: 5px 10px !important;
   }
 }
 </style>
