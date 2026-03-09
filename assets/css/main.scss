@@ -88,12 +88,20 @@ body {
 
 @media (max-width: 768px) {
   #main {
-    padding-left: 18px !important;
-    padding-right: 18px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
   }
   .page__content,
   .archive {
     padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  // Prevent any element from bleeding outside the screen
+  .page__content *,
+  .archive * {
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
   }
 }
 
