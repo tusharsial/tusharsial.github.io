@@ -26,6 +26,7 @@ redirect_from:
   </p>
   <div class="hero-btns">
     <a href="/publications/" class="btn btn-space-primary">View Research</a>
+    <a href="/files/CV.pdf" target="_blank" rel="noopener" class="btn btn-space-outline">Download CV</a>
     <a href="/contact/" class="btn btn-space-outline">Get in Touch</a>
   </div>
   <div class="scroll-hint">Scroll</div>
@@ -84,7 +85,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   <div class="news-divider"></div>
 </div>
 
-<div class="fade-in">
+<div class="fade-in" id="contact">
   <div class="section-eyebrow">Let's Connect</div>
   <div class="section-heading">Get In Touch</div>
   <p class="contact-intro">Whether you're interested in collaborating on research, discussing GNC and stochastic control, or just want to say hello — my inbox is always open.</p>
@@ -130,24 +131,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 </div>
 
 <style>
-
-/* ── KILL SIDEBAR SPACE ── 
-.page {
-  float: none !important;
-  width: 100% !important;
-  padding-right: 0 !important;
-}
-.page__inner-wrap {
-  float: none !important;
-  width: 100% !important;
-}
-.sidebar,
-.sidebar.sticky,
-.author__urls-wrapper {
-  display: none !important;
-  width: 0 !important;
-} */
-
+  
 /* Orbit rings */
 .orbit-wrap {
   position: absolute;
@@ -521,6 +505,7 @@ table.news-table td.news-date {
     overflow: hidden !important;
   }
   .orbit-wrap {
+    width: 100% !important;
     overflow: hidden !important;
   }
   .ring-1 {
@@ -558,78 +543,18 @@ table.news-table td.news-date {
     width: 100% !important;
     text-align: center !important;
   }
-  .contact-grid {
-    grid-template-columns: 1fr !important;
-    gap: 28px !important;
-  }
-  .news-table tr {
-    display: flex !important;
-    flex-direction: column !important;
-    padding: 10px 0 !important;
-  }
-  .news-table td {
-    display: block !important;
-    width: 100% !important;
-    padding: 2px 0 !important;
-  }
-  .news-date {
-    width: 100% !important;
-    white-space: normal !important;
-    padding-right: 0 !important;
-    margin-bottom: 4px !important;
-  }
-  .rtag {
-    font-size: 0.65rem !important;
-    padding: 5px 10px !important;
-  }
-}
-  /* Scale rings down to fit mobile screen */
-  .orbit-wrap {
-    overflow: hidden !important;
+  .ring-2, .ring-3 {
+    display: none !important;
   }
   .ring-1 {
-    width: 260px !important;
-    height: 260px !important;
-    margin: -130px 0 0 -130px !important;
+    width: 220px !important;
+    height: 220px !important;
+    margin: -110px 0 0 -110px !important;
   }
-  .ring-2 {
-    width: 190px !important;
-    height: 190px !important;
-    margin: -95px 0 0 -95px !important;
-  }
-  .ring-3 {
-    width: 120px !important;
-    height: 120px !important;
-    margin: -60px 0 0 -60px !important;
-  }
-  /* Text */
-  .hero-title {
-    font-size: clamp(1.6rem, 8vw, 2.4rem) !important;
-  }
-  .hero-badge {
-    font-size: 0.6rem !important;
-    letter-spacing: 2px !important;
-  }
-  .hero-sub {
-    font-size: 0.88rem !important;
-  }
-  /* Buttons */
-  .hero-btns {
-    flex-direction: column !important;
-    align-items: center !important;
-    width: 100% !important;
-  }
-  .btn-space-primary,
-  .btn-space-outline {
-    width: 100% !important;
-    text-align: center !important;
-  }
-  /* Contact */
   .contact-grid {
     grid-template-columns: 1fr !important;
     gap: 28px !important;
   }
-  /* News table */
   .news-table tr {
     display: flex !important;
     flex-direction: column !important;
@@ -646,7 +571,6 @@ table.news-table td.news-date {
     padding-right: 0 !important;
     margin-bottom: 4px !important;
   }
-  /* Tags */
   .rtag {
     font-size: 0.65rem !important;
     padding: 5px 10px !important;
