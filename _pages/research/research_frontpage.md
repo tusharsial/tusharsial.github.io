@@ -173,7 +173,7 @@ author_profile: false
         </div>
         <div class="opt1-body">
           <span class="opt1-tag">Robotics · Control Systems · DL</span>
-          <div class="opt1-title">Autonomous Delivery Quadcopter</div>
+          <div class="opt1-title">Vitran Drone: Autonomous Delivery Quadcopter</div>
           <div class="opt1-desc">Designed an autonomous navigation framework for an autonomous delivery quadcopter.</div>
           <div class="opt1-btns">
             <a href="/research/delivery-quadcopter/" class="opt1-btn opt1-btn-primary">Learn More</a>
