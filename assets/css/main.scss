@@ -10,7 +10,7 @@
 // STEP 1: SCSS variables (before imports)
 // =============================================
 $background-color         : #03030a;
-$text-color               : #e0e0e0;
+$text-color               : #b0b8c8;
 $muted-text-color         : #b0b8c8;
 $primary-color            : #FF6B00;
 $link-color               : #FF9A3C;
@@ -65,6 +65,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Exo 2', sans-serif !important;
+  color: #b0b8c8 !important;
 }
 
 .initial-content,
@@ -232,6 +233,7 @@ body {
   color: #888 !important;
   font-family: 'Exo 2', sans-serif !important;
 }
+
 // =============================================
 // STEP 6: Transparent backgrounds + z-index
 // =============================================
@@ -296,6 +298,26 @@ a { color: #FF9A3C !important; &:hover { color: #FF6B00 !important; } }
 .page__title { display: none !important; }
 .page__meta  { display: none !important; }
 
+// Global text color — override theme's dark grey defaults
+p,
+li,
+td,
+th,
+span,
+blockquote,
+figcaption,
+.page__content,
+.page__content p,
+.page__content li,
+.archive__item-excerpt,
+.author__bio,
+.toc__menu a,
+.nav__list a,
+.sidebar p,
+.sidebar li {
+  color: #b0b8c8 !important;
+}
+
 // =============================================
 // STEP 8: Sidebar
 // =============================================
@@ -341,13 +363,13 @@ a { color: #FF9A3C !important; &:hover { color: #FF6B00 !important; } }
 }
 
 // Tables
-table { background: rgba(255,255,255,0.02) !important; color: #ccc !important; }
+table { background: rgba(255,255,255,0.02) !important; color: #b0b8c8 !important; }
 th {
   background: rgba(255,107,0,0.1) !important;
   color: #FF9A3C !important;
   font-family: 'Orbitron', sans-serif !important;
 }
-td { border-color: rgba(255,107,0,0.1) !important; }
+td { border-color: rgba(255,107,0,0.1) !important; color: #b0b8c8 !important; }
 
 // Fade-in on scroll
 .fade-in {
