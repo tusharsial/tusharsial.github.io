@@ -77,11 +77,15 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
       </tr>
       <tr>
         <td class="news-date">Oct 24, 2024</td>
-        <td>New Manuscript: <em>Fixed Horizon Linear Quadratic Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost</em>. Under review at IEEE TAC.</td>
+        <td>New Manuscript: [Fixed Horizon Linear Quadratic Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost](https://arxiv.org/abs/2510.21944). </td>
       </tr>
       <tr>
-        <td class="news-date">Fall 2024</td>
-        <td>Started MS in Aerospace Engineering at Iowa State University. Joined Prof. Halder's lab as Graduate Research Assistant.</td>
+        <td class="news-date">Aug 15, 2024</td>
+        <td>Joined [Prof. Abhishek Halder's lab](https://abhishekhalder.org/index.html) as Graduate Research Assistant at ISU.</td>
+      </tr>
+      <tr>
+        <td class="news-date">Aug 07, 2024</td>
+        <td>Started MS in the [Department of Aerospace Engineering, Iowa State University](https://www.aere.iastate.edu/). </td>
       </tr>
     </table>
   </div>
