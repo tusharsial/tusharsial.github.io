@@ -26,13 +26,13 @@ author_profile: false
 
   <div class="rp-hero">
     <div>
-      <div class="rp-eyebrow">Iowa State University · BITS Pilani</div>
+      <div class="rp-eyebrow">Ideas in Action</div>
       <div class="rp-pagetitle">Research Projects</div>
     </div>
     <div class="rp-filters">
       <button class="rp-filter active" onclick="rpFilter('all',this)">All</button>
       <button class="rp-filter" onclick="rpFilter('ms',this)">MS</button>
-      <button class="rp-filter" onclick="rpFilter('ug',this)">Undergraduate</button>
+      <button class="rp-filter" onclick="rpFilter('ug',this)">UG</button>
     </div>
   </div>
   <div class="rp-divider"></div>
@@ -351,7 +351,7 @@ author_profile: false
   display: inline-block !important;
   font-family: 'Orbitron', sans-serif !important;
   font-size: 0.5rem !important; letter-spacing: 2px;
-  --tc: #FF8C3A; --bc: rgba(255,107,0,0.28);
+  --tc: #FF6B00; --bc: rgba(255,107,0,0.28);
   color: var(--tc) !important;
   border: 1px solid var(--bc) !important;
   border-radius: 2px !important; padding: 3px 7px !important;
@@ -359,14 +359,14 @@ author_profile: false
 }
 
 @keyframes tagFlash {
-  0%   { --tc: #FF8C3A; --bc: rgba(255,107,0,0.28); }
-  35%  { --tc: #FF6B00; --bc: rgba(255,107,0,0.15); }
-  100% { --tc: #FF8C3A; --bc: rgba(255,107,0,0.28); }
+  0%   { --tc: #FF6B00; --bc: rgba(255,107,0,0.28); }
+  35%  { --tc: #994000; --bc: rgba(255,107,0,0.12); }
+  100% { --tc: #FF6B00; --bc: rgba(255,107,0,0.28); }
 }
 .opt1-card:hover .opt1-tag {
   animation: tagFlash 0.7s ease-out forwards;
 }
-@property --tc { syntax: '<color>'; inherits: false; initial-value: #FF8C3A; }
+@property --tc { syntax: '<color>'; inherits: false; initial-value: #FF6B00; }
 @property --bc { syntax: '<color>'; inherits: false; initial-value: rgba(255,107,0,0.28); }
 .opt1-title {
   font-family: 'Orbitron', sans-serif !important;
