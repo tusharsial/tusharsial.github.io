@@ -331,8 +331,22 @@ author_profile: false
   background-size: 22px 22px !important; z-index: 0 !important; pointer-events: none;
 }
 
-/* Body */
-.opt1-body { padding: 18px !important; display: flex !important; flex-direction: column !important; flex: 1 !important; }
+/* Body — spotlight host */
+.opt1-body {
+  padding: 18px !important; display: flex !important; flex-direction: column !important; flex: 1 !important;
+  position: relative !important; overflow: hidden !important;
+}
+/* Spotlight radial layer, position driven by JS --mx/--my */
+.opt1-body::before {
+  content: '' !important; position: absolute !important; inset: 0 !important;
+  background: radial-gradient(circle 130px at var(--mx,50%) var(--my,50%), rgba(255,107,0,0.11) 0%, transparent 70%) !important;
+  opacity: 0 !important; transition: opacity 0.4s !important;
+  pointer-events: none !important; z-index: 0 !important;
+}
+.opt1-card:hover .opt1-body::before { opacity: 1 !important; }
+.opt1-body > * { position: relative !important; z-index: 1 !important; }
+
+/* Tag */
 .opt1-tag {
   display: inline-block !important;
   font-family: 'Orbitron', sans-serif !important;
@@ -342,6 +356,14 @@ author_profile: false
   border-radius: 2px !important; padding: 3px 7px !important;
   text-transform: uppercase !important; margin-bottom: 9px !important;
 }
+
+/* Tag pulse on card hover */
+@keyframes tagPulse {
+  0%   { color: #FF6B00; border-color: rgba(255,107,0,0.3); }
+  50%  { color: #FFCC88; border-color: rgba(255,180,80,0.8); }
+  100% { color: #FF6B00; border-color: rgba(255,107,0,0.3); }
+}
+.opt1-card:hover .opt1-tag { animation: tagPulse 2s ease-in-out infinite !important; }
 .opt1-title {
   font-family: 'Orbitron', sans-serif !important;
   font-size: 0.78rem !important; font-weight: 700 !important;
@@ -378,6 +400,7 @@ author_profile: false
 </style>
 
 <script>
+/* Filter */
 function rpFilter(type, btn) {
   document.querySelectorAll('.rp-filter').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
@@ -389,4 +412,26 @@ function rpFilter(type, btn) {
     }
   });
 }
+
+/* Spotlight: track mouse over .opt1-body, update CSS custom props */
+(function() {
+  function attach() {
+    document.querySelectorAll('.opt1-body').forEach(function(body) {
+      if (body._spotInit) return;
+      body._spotInit = true;
+
+      body.addEventListener('mousemove', function(e) {
+        var rect = body.getBoundingClientRect();
+        var x = ((e.clientX - rect.left) / rect.width  * 100).toFixed(1) + '%';
+        var y = ((e.clientY - rect.top)  / rect.height * 100).toFixed(1) + '%';
+        body.style.setProperty('--mx', x);
+        body.style.setProperty('--my', y);
+      });
+    });
+  }
+  /* Run once DOM ready, re-run after any filter toggle */
+  document.addEventListener('DOMContentLoaded', attach);
+  /* Fallback if DOMContentLoaded already fired (Jekyll inline) */
+  if (document.readyState !== 'loading') attach();
+})();
 </script>
