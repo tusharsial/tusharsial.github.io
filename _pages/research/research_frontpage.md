@@ -364,7 +364,7 @@ author_profile: false
   100% { --tc: #FF6B00; --bc: rgba(255,107,0,0.28); }
 }
 .opt1-card:hover .opt1-tag {
-  animation: tagFlash 0.7s ease-out forwards;
+  animation: tagFlash 0.4s ease-out forwards;
 }
 @property --tc { syntax: '<color>'; inherits: false; initial-value: #FF6B00; }
 @property --bc { syntax: '<color>'; inherits: false; initial-value: rgba(255,107,0,0.28); }
