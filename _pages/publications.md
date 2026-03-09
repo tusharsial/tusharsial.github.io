@@ -4,6 +4,27 @@ title: " "
 permalink: /publications/
 author_profile: false
 ---
+<!-- Control Spacing of the contents in the page-->
+<style>
+  .page__content, .archive {
+    text-align: left !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    padding-left: 16px !important;
+  }
+
+  #main {
+    padding-left: 182px !important;
+    padding-right: 16px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+</style>
+
+
 
 <div class="pub-hero fade-in">
   <div class="section-eyebrow">Scholarly Work</div>
