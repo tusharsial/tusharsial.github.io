@@ -356,6 +356,7 @@ author_profile: false
   border: 1px solid var(--bc) !important;
   border-radius: 2px !important; padding: 3px 7px !important;
   text-transform: uppercase !important; margin-bottom: 9px !important;
+  text-align: center !important;
 }
 
 @keyframes tagFlash {
