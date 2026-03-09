@@ -26,6 +26,7 @@ redirect_from:
   </p>
   <div class="hero-btns">
     <a href="/publications/" class="btn btn-space-primary">View Research</a>
+    <a href="/files/CV.pdf" target="_blank" rel="noopener" class="btn btn-space-outline">Download CV</a>
     <a href="/contact/" class="btn btn-space-outline">Get in Touch</a>
   </div>
   <div class="scroll-hint">Scroll</div>
