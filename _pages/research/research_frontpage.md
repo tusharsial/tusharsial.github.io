@@ -123,7 +123,7 @@ author_profile: false
           <img src="/images/Mars Rover Image.png" alt="Autonomous Mars Rover"/>
         </div>
         <div class="opt1-body">
-          <span class="opt1-tag">Robotics · Control Systems · Electronics</span>
+          <span class="opt1-tag">Robotics · Control Systems </span>
           <div class="opt1-title">Autonomous Mars Rover</div>
           <div class="opt1-desc">Co-founded CRISS Robotics. Developed high-level electrical architecture and electronic differential drive system. Won International Rover Design Challenge 2023.</div>
           <div class="opt1-btns">
@@ -141,7 +141,7 @@ author_profile: false
           </video>
         </div>
         <div class="opt1-body">
-          <span class="opt1-tag">Control Systems · UAV · BITS Pilani</span>
+          <span class="opt1-tag">Control Systems · UAV </span>
           <div class="opt1-title">Flight Stabilizing Controllers for Agile Fixed-Wing UAV</div>
           <div class="opt1-desc">Backstepping-based longitudinal and lateral-directional stability controllers with a wind observer for robustness against atmospheric disturbances.</div>
           <div class="opt1-btns">
