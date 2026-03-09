@@ -348,7 +348,9 @@ author_profile: false
 
 /* Tag — uses CSS vars so animation wins over static !important declarations */
 .opt1-tag {
-  display: inline-block !important;
+  display: inline-flex !important;
+  align-self: flex-start !important;
+  text-align: center !important;
   font-family: 'Orbitron', sans-serif !important;
   font-size: 0.5rem !important; letter-spacing: 2px;
   --tc: #FF6B00; --bc: rgba(255,107,0,0.28);
@@ -356,7 +358,6 @@ author_profile: false
   border: 1px solid var(--bc) !important;
   border-radius: 2px !important; padding: 3px 7px !important;
   text-transform: uppercase !important; margin-bottom: 9px !important;
-  text-align: center !important;
 }
 
 @keyframes tagFlash {
