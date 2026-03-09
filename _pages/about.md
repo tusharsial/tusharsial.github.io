@@ -66,7 +66,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
     <table class="news-table">
       <tr>
         <td class="news-date">Feb 27, 2026</td>
-        <td>I successfully defended my MS thesis: <a href="/files/Tushar_MS_Thesis_Slides.pdf" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Fixed Horizon Linear Quadratic Optimal Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost</a>.</td>
+        <td>Successfully defended my MS thesis: <a href="/files/Tushar_MS_Thesis_Slides.pdf" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Fixed Horizon Linear Quadratic Optimal Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost</a>.</td>
       <tr>
       </tr>   
         <td class="news-date">Jan 29, 2026</td>
