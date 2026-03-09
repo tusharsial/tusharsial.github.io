@@ -70,11 +70,11 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
       <tr>
       </tr>   
         <td class="news-date">Jan 29, 2026</td>
-        <td>Paper accepted at the 32nd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2026).</td>
+        <td>Conference Paper: <span style="color:#FF9A3C;">Generative Profiling for Soft Real-Time Systems and its Applications to Resource Allocation</span> accepted at the <a href="https://2026.rtas.org/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">32nd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2026)</a>.</td>
       </tr>
       <tr>
         <td class="news-date">July 11, 2025</td>
-        <td>Journal paper published in <em>ACM Transactions on Embedded Computing Systems</em> (TECS), also presented at EMSOFT 2025.</td>
+        <td>Journal paper: <a href="https://dl.acm.org/doi/pdf/10.1145/3761814" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Rasco: Resource Allocation and Scheduling Co-design for DAG Applications on Multicore</a> accepted in ACM Transactions on Embedded Computing Systems (TECS). Also accepted to be presented at <a href="https://esweek.org/emsoft/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">2025 ACM SIGBED International Conference on Embedded Software (EMSOFT)</a>.</td>
       </tr>
       <tr>
         <td class="news-date">Oct 24, 2024</td>
@@ -82,7 +82,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
       </tr>
       <tr>
         <td class="news-date">Aug 15, 2024</td>
-        <td>Joined <a href="https://abhishekhalder.org/index.html" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Prof. Abhishek Halder's lab</a> as a Graduate Research Assistant at ISU.</td>
+        <td>Joined Prof. <a href="https://abhishekhalder.org/index.html" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Abhishek Halder's group</a> as a Graduate Research Assistant at ISU.</td>
       </tr>
       <tr>
         <td class="news-date">Aug 07, 2024</td>
