@@ -98,7 +98,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 <div class="fade-in" id="contact">
   <div class="section-eyebrow">Let's Connect</div>
   <div class="section-heading">Get In Touch</div>
-  <p class="contact-intro">Whether you're interested in collaborating on research, discussing GNC and stochastic control, or just want to say hello — my inbox is always open.</p>
+  <p class="contact-intro">Interested in collaborating on space research, seeking guidance, or simply saying hello? My inbox is always open.</p>
 
   <div class="contact-grid">
     <div class="contact-links">
