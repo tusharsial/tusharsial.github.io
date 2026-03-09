@@ -26,13 +26,13 @@ author_profile: false
 
   <div class="rp-hero">
     <div>
-      <div class="rp-eyebrow">Ideas in Action</div>
+      <div class="rp-eyebrow">Iowa State University · BITS Pilani</div>
       <div class="rp-pagetitle">Research Projects</div>
     </div>
     <div class="rp-filters">
       <button class="rp-filter active" onclick="rpFilter('all',this)">All</button>
       <button class="rp-filter" onclick="rpFilter('ms',this)">MS</button>
-      <button class="rp-filter" onclick="rpFilter('ug',this)">UG</button>
+      <button class="rp-filter" onclick="rpFilter('ug',this)">Undergraduate</button>
     </div>
   </div>
   <div class="rp-divider"></div>
