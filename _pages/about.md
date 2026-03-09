@@ -188,15 +188,6 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
 }
-
-.hero-badge,
-.hero-title,
-.hero-sub,
-.hero-btns,
-.scroll-hint {
-  position: relative;
-  z-index: 1;
-}
   
 /* Hero Section */
 .hero-intro {
