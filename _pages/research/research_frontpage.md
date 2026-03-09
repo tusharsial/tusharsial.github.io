@@ -48,13 +48,13 @@ author_profile: false
           <img src="/images/Trajectory_only.jpeg" alt="Coupled Trajectory-Power"/>
         </div>
         <div class="opt1-body">
-          <span class="opt1-tag">MDO · Astrodynamics · 2025</span>
+          <span class="opt1-tag">MDO · Astrodynamics</span>
           <div class="opt1-title">Coupled Spacecraft Trajectory–Power Subsystem Design Optimization</div>
-          <div class="opt1-desc">MDO framework coupling trajectory dynamics, power generation, and electric propulsion for a low-thrust orbit-lowering maneuver around asteroid 16-Psyche. Reduces transfer time by 8.09%.</div>
+          <div class="opt1-desc">Developed an MDO framework coupling trajectory dynamics and power subsystem design for a low-thrust orbit-lowering maneuver around asteroid 16-Psyche. </div>
           <div class="opt1-btns">
             <a href="/research/coupled-trajectory-power/" class="opt1-btn opt1-btn-primary">Learn More</a>
             <a href="https://github.com/tusharsial/Coupled-Power-Space-Trajectory-Optimization-using-MDO" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-gh"/></svg>Code</a>
-            <a href="#" class="opt1-btn opt1-btn-ghost">Paper</a>
+            <a href="#" class="opt1-btn opt1-btn-ghost">Preprint</a>
           </div>
         </div>
       </div>
@@ -64,9 +64,9 @@ author_profile: false
           <img src="/images/StateCovariancesAndSamplePaths_CW.png" alt="Optimal Covariance Control"/>
         </div>
         <div class="opt1-body">
-          <span class="opt1-tag">Stochastic Control · Optimization · 2024–2026</span>
+          <span class="opt1-tag">Stochastic Control · Optimization</span>
           <div class="opt1-title">Optimal Covariance Control</div>
-          <div class="opt1-desc">MS thesis — fixed-horizon LQ covariance steering in continuous time with Hilbert-Schmidt terminal cost. Novel Matricial Recursive Algorithm validated on Clohessy-Wiltshire spacecraft dynamics.</div>
+          <div class="opt1-desc"> Developed a computationally efficient novel covariance steering algorithm in continuous time with applications to control of aerospace and robotic systems under stochastic disturbances.</div>
           <div class="opt1-btns">
             <a href="/research/optimal-covariance-control/" class="opt1-btn opt1-btn-primary">Learn More</a>
             <a href="https://github.com/tusharsial/Covariance-Steering" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-gh"/></svg>Code</a>
@@ -80,9 +80,9 @@ author_profile: false
           <img src="https://github.com/user-attachments/assets/25a0be0b-ef75-42e4-be34-c95b650defdb" alt="Earth-Moon Trajectory"/>
         </div>
         <div class="opt1-body">
-          <span class="opt1-tag">Trajectory Optimization · 2025</span>
+          <span class="opt1-tag">Astrodynamics · Optimal Control</span>
           <div class="opt1-title">Earth–Moon Low-Thrust Trajectory Optimization</div>
-          <div class="opt1-desc">Extended the classical three-stage Pierson-Kluever LEO-to-LLO method with variable thrust magnitude as a free control variable under restricted three-body dynamics.</div>
+          <div class="opt1-desc">Extended the classical Pierson–Kluever three-stage method for optimal low-thrust cislunar transfers by allowing variable thrust magnitude under CR3BP dynamics.</div>
           <div class="opt1-btns">
             <a href="/research/earth-moon-trajectory/" class="opt1-btn opt1-btn-primary">Learn More</a>
             <a href="https://github.com/tusharsial/Earth-Moon-Low-Thrust-Trajectory-Optimization/tree/main" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-gh"/></svg>Code</a>
@@ -107,13 +107,13 @@ author_profile: false
           </video>
         </div>
         <div class="opt1-body">
-          <span class="opt1-tag">GNC · Koopman Operator · IISc</span>
-          <div class="opt1-title">In-Orbit Servicing: Rendezvous with Tumbling Satellite</div>
-          <div class="opt1-desc">Koopman operator-based control for thrust-vectoring satellite rendezvous with a tumbling non-cooperative target. Under Prof. Debasish Ghose at IISc Bengaluru.</div>
+          <span class="opt1-tag">Astrodynamics · Optimal Control</span>
+          <div class="opt1-title">In-Orbit Autonomous Servicing</div>
+          <div class="opt1-desc">Developed a guidance and control framework for in-orbit spacecraft servicing missions.</div>
           <div class="opt1-btns">
             <a href="/research/in-orbit-servicing/" class="opt1-btn opt1-btn-primary">Learn More</a>
             <a href="https://github.com/tusharsial/Spacecraft-Rendezvous" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-gh"/></svg>Code</a>
-            <a href="https://drive.google.com/file/d/1sgt0afIj0nHNnJGHqSqTLT09nrHZbITw/view?usp=sharing" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost">Thesis</a>
+            <a href="https://drive.google.com/file/d/1sgt0afIj0nHNnJGHqSqTLT09nrHZbITw/view?usp=sharing" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost">UG Thesis</a>
           </div>
         </div>
       </div>
@@ -123,8 +123,8 @@ author_profile: false
           <img src="/images/Mars Rover Image.png" alt="Autonomous Mars Rover"/>
         </div>
         <div class="opt1-body">
-          <span class="opt1-tag">Robotics · Autonomous Systems · BITS Pilani</span>
-          <div class="opt1-title">Autonomous Mars Rover — CRISS Robotics</div>
+          <span class="opt1-tag">Robotics · Control Systems · Electronics</span>
+          <div class="opt1-title">Autonomous Mars Rover</div>
           <div class="opt1-desc">Co-founded CRISS Robotics. Developed high-level electrical architecture and electronic differential drive system. Won International Rover Design Challenge 2023.</div>
           <div class="opt1-btns">
             <a href="/research/mars-rover/" class="opt1-btn opt1-btn-primary">Learn More</a>
@@ -156,13 +156,13 @@ author_profile: false
           <img src="https://github.com/user-attachments/assets/87618281-0039-48f7-b009-a133d43f052f" alt="Formula Electric Vehicle"/>
         </div>
         <div class="opt1-body">
-          <span class="opt1-tag">Electric Powertrain · Formula Student · 2020</span>
+          <span class="opt1-tag">Motor Control · CAD</span>
           <div class="opt1-title">Powertrain of a Formula-Style Electric Vehicle</div>
-          <div class="opt1-desc">High-fidelity Simulink/Simscape powertrain model for motor selection, battery sizing, and control optimization. 1st place in FSEV Concept Challenge India 2020.</div>
+          <div class="opt1-desc">Designed a High-fidelity Simulink powertrain model for motor selection, battery sizing, and motor control optimization.</div>
           <div class="opt1-btns">
             <a href="/research/electric-vehicle/" class="opt1-btn opt1-btn-primary">Learn More</a>
             <a href="https://docs.google.com/document/u/1/d/e/2PACX-1vQuObctRIT1pGiuUQN05OE-FDu31f3r085TjL3lFPOHDcydQl3Sj4Ll3P8LhzXQuDx47tkLKqnTsIDy/pub" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost">Report</a>
-            <a href="https://youtu.be/fUpCTI_xb6E" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-yt"/></svg>CAD Video</a>
+            <a href="https://youtu.be/fUpCTI_xb6E" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-yt"/></svg>Video</a>
           </div>
         </div>
       </div>
@@ -172,9 +172,9 @@ author_profile: false
           <img src="https://github.com/tusharsial/Autonomous-Delivery-Quadcopter/assets/74113713/c56264c6-2ec6-44e3-9ae6-a69bd2d922ca" alt="Delivery Quadcopter"/>
         </div>
         <div class="opt1-body">
-          <span class="opt1-tag">ROS · Autonomous Navigation · e-Yantra IIT Bombay</span>
+          <span class="opt1-tag">Robotics · Control Systems · DL</span>
           <div class="opt1-title">Autonomous Delivery Quadcopter</div>
-          <div class="opt1-desc">ROS/Python/Gazebo-based autonomous navigation with attitude control, position control, obstacle avoidance, and QR-tag detection for urban package delivery.</div>
+          <div class="opt1-desc">Designed an autonomous navigation framework for an autonomous delivery quadcopter.</div>
           <div class="opt1-btns">
             <a href="/research/delivery-quadcopter/" class="opt1-btn opt1-btn-primary">Learn More</a>
             <a href="https://github.com/tusharsial/Autonomous-Delivery-Quadcopter/tree/main" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-gh"/></svg>Code</a>
