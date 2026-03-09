@@ -137,7 +137,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
   position: absolute;
   top: 50%;
   left: 50%;
-  width: min(460px, 90vw);
+  width: min(580px, 90vw);
   aspect-ratio: 1 / 1;
   transform: translate(-50%, -50%);
   pointer-events: none;
@@ -161,13 +161,13 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
 }
 
 .ring-2 {
-  inset: 50px;
+  inset: 70px;
   border-color: rgba(255,154,60,0.13);
   animation-duration: 25s;
 }
 
 .ring-3 {
-  inset: 100px;
+  inset: 140px;
   border-color: rgba(255,107,0,0.20);
   animation-duration: 14s;
 }
@@ -534,7 +534,7 @@ table.news-table td.news-date {
   }
 
   .orbit-wrap {
-    width: min(280px, 82vw) !important;
+    width: min(320px, 82vw) !important;
   }
 
   .ring-2 {
