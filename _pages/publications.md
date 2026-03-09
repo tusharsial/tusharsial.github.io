@@ -12,6 +12,7 @@ author_profile: false
 
 <div class="orbit-divider fade-in"></div>
 
+<!-- ── Preprint ── -->
 <div class="pub-group fade-in">
   <div class="pub-group-label">Preprint</div>
 
@@ -26,6 +27,7 @@ author_profile: false
   </div>
 </div>
 
+<!-- ── Journal ── -->
 <div class="pub-group fade-in">
   <div class="pub-group-label">Journal</div>
 
@@ -36,28 +38,48 @@ author_profile: false
       </a>
     </div>
     <div class="pub-authors">Abigail Eisenklam, Robert Gifford, Georgiy A. Bondar, Yifan Cai, <strong>Tushar Sial</strong>, Linh Thi Xuan Phan, and Abhishek Halder.</div>
-    <div class="pub-venue">ACM Transactions on Embedded Computing Systems <span class="pub-status">· also in EMSOFT 2025</span></div>
+    <div class="pub-venue">ACM Transactions on Embedded Computing Systems (also in EMSOFT 2025) </div>
     <div class="pub-meta">Last 5-yr acceptance rate: <a href="https://openaccept.org/c/new/emsoft/" target="_blank" rel="noopener">24.21%</a></div>
   </div>
 </div>
 
+<!-- ── Conference ── -->
 <div class="pub-group fade-in">
   <div class="pub-group-label">Conference</div>
 
   <div class="pub-item">
     <div class="pub-title">
+      <a href="LINK_HERE" target="_blank" rel="noopener">LQ Covariance Control with Deadline Constraint and Frobenius Terminal Loss</a>
+    </div>
+    <div class="pub-authors"> <strong>Tushar Sial</strong>, and Abhishek Halder.</div>
+    <div class="pub-venue">2026 AIAA Regional Student Conference <span class="pub-status">· To appear </span></div>
+  </div>
+  
+  <div class="pub-item">
+    <div class="pub-title">
+      <a href="LINK_HERE" target="_blank" rel="noopener">Multidisciplinary Design Optimization of a Low-Thrust Asteroid Orbit Insertion
+Using Electric Propulsion</a>
+    </div>
+    <div class="pub-authors">Yacob Medhin, <strong>Tushar Sial</strong>, and Simone Servadio.</div>
+    <div class="pub-venue">2026 AIAA Regional Student Conference <span class="pub-status">· To appear </span></div>
+  </div>
+  
+  <div class="pub-item">
+    <div class="pub-title">
       Generative Profiling for Soft Real-Time Systems and its Applications to Resource Allocation
     </div>
     <div class="pub-authors">Georgiy A. Bondar, Abigail Eisenklam, Yifan Cai, Robert Gifford, <strong>Tushar Sial</strong>, Linh Thi Xuan Phan, and Abhishek Halder.</div>
-    <div class="pub-venue">To appear at the 32nd IEEE Real-Time and Embedded Technology and Applications Symposium <span class="pub-status">· RTAS 2026</span></div>
+    <div class="pub-venue">32nd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2026) <span class="pub-status">· To appear</span></div>
     <div class="pub-meta">Last 5-yr acceptance rate: <a href="https://openaccept.org/c/sys/rtas/" target="_blank" rel="noopener">25.83%</a></div>
     <div class="pub-primordial" style="margin-top:10px;">
       <span class="pub-primordial-label">Primordial version:</span> <a href="https://arxiv.org/pdf/2501.08484" target="_blank" rel="noopener">CORD: Co-design of Resource Allocation and Deadline Decomposition with Generative Profiling</a>
     </div>
   </div>
+  
 </div>
 
 <style>
+
 /* ── PAGE HERO ── */
 .pub-hero {
   padding: 48px 0 8px;
