@@ -70,7 +70,7 @@ Apart from research, I keep a keen interest in **Electric Vehicles**. My hobbies
       <tr>
       </tr>   
         <td class="news-date">Jan 29, 2026</td>
-        <td>Conference Paper: <span style="color:#FF9A3C;">Generative Profiling for Soft Real-Time Systems and its Applications to Resource Allocation</span> accepted at the <a href="https://2026.rtas.org/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">32nd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2026)</a>.</td>
+        <td>Conference Paper: <span style="color:#FF9A3C !important;">Generative Profiling for Soft Real-Time Systems and its Applications to Resource Allocation</span> accepted at the <a href="https://2026.rtas.org/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">32nd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2026)</a>.</td>
       </tr>
       <tr>
         <td class="news-date">July 11, 2025</td>
