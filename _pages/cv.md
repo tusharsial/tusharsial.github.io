@@ -9,6 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-<a class="btn" href="/files/CV.pdf" target="_blank" rel="noopener noreferrer">
+<a class="btn" href="/files/CV.pdf" onclick="window.open('/files/CV.pdf','_blank'); return false;">
   Download CV
 </a>
