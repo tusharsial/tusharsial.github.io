@@ -17,11 +17,11 @@ custom_css: research-project
 
   <div class="pd-section-label">Project Overview</div>
   <div class="pd-body">
-    With a growing debris population, robots that can perform routine tasks autonomously — such as repairs, refueling, or debris removal — may become increasingly essential for preventing disaster in orbit. Autonomous missions to uncooperative targets, which can be tumbling and orbiting the Earth elliptically, require robust rendezvous and docking procedures.
+    Research into the autonomy of spacecraft has become increasingly important. Indeed, with a growing debris population, robots capable of performing routine tasks autonomously (such as simple repairs/maintenance, refueling, or debris removal) may become increasingly essential for actively preventing disasters. In this context, several autonomous missions to uncooperative targets (which are generally tumbling or orbiting the Earth in an elliptical orbit) will require rendezvous and docking procedures.
     <br/><br/>
-    In this project, conducted under Prof. <a href="https://aero.iisc.ac.in/people/debasish-ghose/" target="_blank" rel="noopener">Debasish Ghose</a> at the Indian Institute of Science (IISc), Bengaluru, I designed a <strong>Control Scheme for a Thrust-Vectoring Satellite</strong> using a <strong>Koopman operator-based approach</strong> to rendezvous with a tumbling non-cooperative satellite. The Koopman operator provides a linear, infinite-dimensional representation of the nonlinear dynamics, enabling the use of linear control synthesis tools on an inherently nonlinear problem.
+    In this project, I've worked on designing a <strong>Control Scheme for a Thrust-Vectoring Satellite</strong> using a <strong>Koopman operator-based approach</strong> for it to rendezvous with a tumbling noncooperative Satellite under Prof. <a href="https://aero.iisc.ac.in/people/debasish-ghose/" target="_blank" rel="noopener">Debasish Ghose</a> at the Indian Institute of Science (IISc), Bengaluru. The Koopman operator provides a linear, infinite-dimensional representation of the nonlinear dynamics, enabling the use of linear control synthesis tools on an inherently nonlinear problem.
     <br/><br/>
-    The framework was validated in simulation, demonstrating successful rendezvous and proximity operations with a target undergoing complex tumbling motion under orbital mechanics constraints.
+    The framework was validated in simulation, demonstrating successful rendezvous and proximity operations with a non-cooperative target undergoing complex tumbling motion under orbital mechanics constraints.
   </div>
 
   <div class="pd-divider"></div>
