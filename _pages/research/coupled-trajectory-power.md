@@ -30,7 +30,7 @@ custom_css: research-project
 
   <div class="pd-divider"></div>
 
-  <div class="pd-section-label">Results &amp; Figures</div>
+  <div class="pd-section-label fade-in">Results &amp; Figures</div>
   <div class="pd-figures">
     <div class="pd-fig-placeholder">Figure 1</div>
     <div class="pd-fig-placeholder">Figure 2</div>
@@ -40,9 +40,9 @@ custom_css: research-project
 
   <div class="pd-divider"></div>
 
-  <div class="pd-section-title">Publications</div>
+  <div class="pd-section-title fade-in">Publications</div>
   <div class="pub-group">
-    <div class="pub-group-label">Conference</div>
+    <div class="pub-group-label fade-in">Conference</div>
     <div class="pub-item">
       <div class="pub-title">Multidisciplinary Design Optimization of a Low-Thrust Asteroid Orbit Insertion Using Electric Propulsion</div>
       <div class="pub-authors">Yacob Medhin, <strong>Tushar Sial</strong>, and Simone Servadio.</div>
