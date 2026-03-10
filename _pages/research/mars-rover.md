@@ -19,9 +19,7 @@ custom_css: research-project
   <div class="pd-body">
     In 2020, I co-founded <strong>CRISS Robotics</strong>, a student research technical team of 60+ members at BITS Pilani dedicated to designing and manufacturing an all-terrain 6-wheeled autonomous Mars rover. I developed the <strong>high-level electrical architecture</strong> and an <strong>electronic differential-based drive control system</strong> for the rover, capable of autonomous traversal, equipment servicing using a 6-DOF robotic manipulator, and life detection using a science module.
     <br/><br/>
-    The rover was designed to compete in international rover challenges, evaluated on tasks including terrain traversal, equipment servicing, autonomous navigation, and science operations. Our electrical and control systems were engineered for reliability under the computational and power constraints of a rover platform.
-    <br/><br/>
-    CRISS qualified for the <strong>International Rover Challenge (IRC)</strong> 2022 finals at Chennai, India, among 16 international teams, and subsequently won the <strong>International Rover Design Challenge (IRDC)</strong> in 2023 — a design-focused competition evaluating the engineering quality of the complete system.
+    CRISS qualified for the <strong>International Rover Challenge (IRC)</strong> 2022 finals at Chennai, India, among 16 international teams, and subsequently won the <strong>International Rover Design Challenge (IRDC)</strong> in 2023.
   </div>
 
   <div class="pd-divider"></div>
