@@ -13,10 +13,10 @@ author_profile: false
 <div class="orbit-divider fade-in"></div>
 
 <!-- ── Preprint ── -->
-<div class="pub-group fade-in">
-  <div class="pub-group-label">Preprint</div>
+<div class="pub-group">
+  <div class="pub-group-label fade-in">Preprint</div>
 
-  <div class="pub-item">
+  <div class="pub-item fade-in">
     <div class="pub-title">
       <a href="https://arxiv.org/abs/2510.21944" target="_blank" rel="noopener">
         Fixed Horizon Linear Quadratic Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost
@@ -28,10 +28,10 @@ author_profile: false
 </div>
 
 <!-- ── Journal ── -->
-<div class="pub-group fade-in">
-  <div class="pub-group-label">Journal</div>
+<div class="pub-group">
+  <div class="pub-group-label fade-in">Journal</div>
 
-  <div class="pub-item">
+  <div class="pub-item fade-in">
     <div class="pub-title">
       <a href="https://dl.acm.org/doi/pdf/10.1145/3761814" target="_blank" rel="noopener">
         Rasco: Resource Allocation and Scheduling Co-design for DAG Applications on Multicore
@@ -44,10 +44,10 @@ author_profile: false
 </div>
 
 <!-- ── Conference ── -->
-<div class="pub-group fade-in">
-  <div class="pub-group-label">Conference</div>
+<div class="pub-group">
+  <div class="pub-group-label fade-in">Conference</div>
 
-  <div class="pub-item">
+  <div class="pub-item fade-in">
     <div class="pub-title">
       LQ Covariance Control with Deadline Constraint and Frobenius Terminal Loss
     </div>
@@ -55,7 +55,7 @@ author_profile: false
     <div class="pub-venue">2026 AIAA Regional Student Conference <span class="pub-status">· To appear </span></div>
   </div>
   
-  <div class="pub-item">
+  <div class="pub-item fade-in">
     <div class="pub-title">
       Multidisciplinary Design Optimization of a Low-Thrust Asteroid Orbit Insertion Using Electric Propulsion
     </div>
@@ -63,7 +63,7 @@ author_profile: false
     <div class="pub-venue">2026 AIAA Regional Student Conference <span class="pub-status">· To appear </span></div>
   </div>
   
-  <div class="pub-item">
+  <div class="pub-item fade-in">
     <div class="pub-title">
       Generative Profiling for Soft Real-Time Systems and its Applications to Resource Allocation
     </div>
