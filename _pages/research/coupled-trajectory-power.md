@@ -41,9 +41,9 @@ custom_css: research-project
   <div class="pd-divider"></div>
 
   <div class="pd-section-title fade-in">Publications</div>
-  <div class="pub-group fade-in">
-    <div class="pub-group-label">Conference</div>
-    <div class="pub-item">
+  <div class="pub-group">
+    <div class="pub-group-label fade-in">Conference</div>
+    <div class="pub-item fade-in">
       <div class="pub-title">Multidisciplinary Design Optimization of a Low-Thrust Asteroid Orbit Insertion Using Electric Propulsion</div>
       <div class="pub-authors">Yacob Medhin, <strong>Tushar Sial</strong>, and Simone Servadio.</div>
       <div class="pub-venue">2026 AIAA Regional Student Conference <span class="pub-status">· To appear</span></div>
