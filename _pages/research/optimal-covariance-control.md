@@ -30,20 +30,20 @@ custom_css: research-project
     The proposed algorithm was tested and validated on a close-proximity rendezvous scenario by modeling the relative motion of a service spacecraft to a target satellite in LEO using Clohessy–Wiltshire dynamics with stochastic disturbances. Our broader motivation is to derive a custom algorithm to solve the boundary-value problem with a Wasserstein terminal cost. This work takes a significant step in that direction, laying the algorithmic groundwork toward handling the full Wasserstein gradient in future extensions.
   </div>
 
-  <div class="pd-divider"></div>
+  <div class="pd-divider fade-in"></div>
 
-  <div class="pd-section-label">Results &amp; Figures</div>
-  <div class="pd-figures">
+  <div class="pd-section-label fade-in">Results &amp; Figures</div>
+  <div class="pd-figures fade-in">
     <div class="pd-fig-placeholder">Figure 1</div>
     <div class="pd-fig-placeholder">Figure 2</div>
     <div class="pd-fig-placeholder">Figure 3</div>
     <div class="pd-fig-placeholder">Figure 4</div>
   </div>
 
-  <div class="pd-divider"></div>
+  <div class="pd-divider fade-in"></div>
 
-  <div class="pd-section-title">Publications</div>
-  <div class="pub-group">
+  <div class="pd-section-title fade-in">Publications</div>
+  <div class="pub-group fade-in">
     <div class="pub-group-label">Preprint</div>
     <div class="pub-item">
       <div class="pub-title"><a href="https://arxiv.org/abs/2510.21944" target="_blank" rel="noopener">Fixed Horizon Linear Quadratic Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost</a></div>
@@ -51,7 +51,7 @@ custom_css: research-project
       <div class="pub-venue">IEEE Transactions on Automatic Control <span class="pub-status">· Under Review</span></div>
     </div>
   </div>
-  <div class="pub-group">
+  <div class="pub-group fade-in">
     <div class="pub-group-label">Conference</div>
     <div class="pub-item">
       <div class="pub-title">LQ Covariance Control with Deadline Constraint and Frobenius Terminal Loss</div>
