@@ -107,7 +107,7 @@ author_profile: false
         <div class="opt1-body">
           <span class="opt1-tag">Astrodynamics · Optimal Control</span>
           <div class="opt1-title">In-Orbit Autonomous Servicing</div>
-          <div class="opt1-desc">Developed a guidance and control framework for in-orbit spacecraft servicing missions.</div>
+          <div class="opt1-desc">Developed a guidance and control framework for an autonomous spacecraft capable of performing in-orbit servicing on noncooperative tumbling satellites.</div>
           <div class="opt1-btns">
             <a href="/research/in-orbit-servicing/" class="opt1-btn opt1-btn-primary">Learn More</a>
             <a href="https://github.com/tusharsial/Spacecraft-Rendezvous" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-gh"/></svg>Code</a>
