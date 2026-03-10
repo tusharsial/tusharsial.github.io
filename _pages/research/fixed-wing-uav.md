@@ -25,10 +25,10 @@ custom_css: research-project
     Additionally, I designed a <span class="pd-highlight">wind observer</span> to estimate environmental disturbances, including wind shears, wind gusts, and atmospheric turbulence. By incorporating the estimated disturbance into the control law, the controllers achieve robust performance under realistic flight conditions, significantly improving the UAV's agility and flight envelope.
   </div>
 
-  <div class="pd-divider"></div>
+  <div class="pd-divider fade-in"></div>
 
-  <div class="pd-section-label">Results &amp; Figures</div>
-  <div class="pd-figures">
+  <div class="pd-section-label fade-in">Results &amp; Figures</div>
+  <div class="pd-figures fade-in">
     <div class="pd-fig-placeholder">Figure 1</div>
     <div class="pd-fig-placeholder">Figure 2</div>
     <div class="pd-fig-placeholder">Figure 3</div>
