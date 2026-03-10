@@ -95,10 +95,10 @@ author_profile: false
 
   <!-- ── UNDERGRAD ── -->
   <div class="rp-group" data-filter="ug">
-    <div class="rp-sectiontitle">UG Research</div>
-    <div class="opt1-grid">
+    <div class="rp-sectiontitle fade-in">UG Research</div>
+    <div class="opt1-grid fade-in">
 
-      <div class="opt1-card">
+      <div class="opt1-card fade-in">
         <div class="opt1-img">
           <img src="/images/In-orbit servicing.png" alt="In-orbit servicing"/>
         </div>
@@ -114,7 +114,7 @@ author_profile: false
         </div>
       </div>
 
-      <div class="opt1-card">
+      <div class="opt1-card fade-in">
         <div class="opt1-img">
           <img src="/images/Mars Rover Image.png" alt="Autonomous Mars Rover"/>
         </div>
@@ -130,7 +130,7 @@ author_profile: false
         </div>
       </div>
 
-      <div class="opt1-card">
+      <div class="opt1-card fade-in">
         <div class="opt1-img">
           <img src="/images/Fixed Drone.jpeg" alt="Agile Fixed-Wing UAV"/>
         </div>
@@ -145,7 +145,7 @@ author_profile: false
         </div>
       </div>
 
-      <div class="opt1-card">
+      <div class="opt1-card fade-in">
         <div class="opt1-img">
           <img src="https://github.com/user-attachments/assets/87618281-0039-48f7-b009-a133d43f052f" alt="Formula Electric Vehicle"/>
         </div>
@@ -161,7 +161,7 @@ author_profile: false
         </div>
       </div>
 
-      <div class="opt1-card">
+      <div class="opt1-card fade-in">
         <div class="opt1-img">
           <img src="https://github.com/tusharsial/Autonomous-Delivery-Quadcopter/assets/74113713/c56264c6-2ec6-44e3-9ae6-a69bd2d922ca" alt="Delivery Quadcopter"/>
         </div>
