@@ -17,11 +17,8 @@ custom_css: research-project
 
   <div class="pd-section-label">Project Overview</div>
   <div class="pd-body">
-    This project was designed for the <a href="https://portal.e-yantra.org/" target="_blank" rel="noopener">e-Yantra Robotics Competition</a> hosted by IIT Bombay and sponsored by the Ministry of Education of India. I designed autonomous navigation algorithms for a 3D-simulated quadcopter capable of autonomously delivering packages in an urban environment.
-    <br/><br/>
-    The system was implemented using <strong>ROS, Python, and Gazebo</strong>, covering the full navigation stack: flight attitude control, position control, and obstacle avoidance. To detect QR tags on delivery packages and identify drop-off locations, I implemented a <strong>pyzbar library-based computer vision algorithm</strong>.
-    <br/><br/>
-    The complete flight control architecture integrates a cascaded PID controller for attitude stabilization, a position controller for waypoint navigation, and a local planner for obstacle avoidance — all operating in a realistic simulated urban environment with dynamic obstacles and constrained airspace.
+    In today's fast-paced world, the integration of Unmanned Aerial Vehicles (UAVs) has marked a paradigm shift in various industries, particularly in transportation and logistics. Among these cutting-edge technologies, autonomous quadcopters have emerged as frontrunners in revolutionizing the delivery landscape.
+    In this project, I've designed autonomous navigation (flight attitude, position control, & obstacle avoidance) algorithms using ROS, Python, and Gazebo for a 3-D simulated quadcopter capable of autonomously delivering packages in an urban environment. To detect QR codes on delivery packages and identify drop-off locations, I implemented a <strong>pyzbar library-based computer vision algorithm</strong>. This project was designed for the <a href="https://portal.e-yantra.org/" target="_blank" rel="noopener">e-Yantra Robotics Competition</a> hosted by IIT Bombay and sponsored by the Ministry of Education of India.
   </div>
 
   <div class="pd-divider"></div>
