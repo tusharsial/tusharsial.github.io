@@ -75,6 +75,9 @@
   line-height: 1.85 !important;
   color: #b0b8c8 !important;
 }
+.pd-highlight {
+  color: #FF9A3C !important;
+}
 .pd-body strong { color: #FF9A3C !important; }
 .pd-body a { color: #FF9A3C !important; text-decoration: none !important; }
 .pd-body a:hover { text-decoration: underline !important; }
