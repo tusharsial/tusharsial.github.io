@@ -17,11 +17,11 @@ custom_css: research-project
 
   <div class="pd-section-label">Project Overview</div>
   <div class="pd-body">
-    In my freshman year, I joined the Electric Powertrain Subsystem at <strong>Inspired Karters Electric</strong>, the Formula Student Electric Vehicle (FSEV) team of BITS Pilani. The team comprises ~50 members working to build a single-seater Formula One-style car.
+    In my freshman year, I joined the Electric Powertrain Subsystem at <strong>Inspired Karters Electric</strong>, the Formula Student Electric Vehicle (FSEV) team of BITS Pilani. The team comprises roughly 50 talented and focused members who work tirelessly throughout the year to build a single-seater Formula One Car.
     <br/><br/>
-    With endurance as the primary goal, I developed a <strong>high-fidelity model of the electric powertrain package</strong> using Simulink and Simscape to calculate torque and current requirements for motor selection, battery capacity requirements, and optimization of motor control strategies. The powertrain model was incorporated into our proprietary laptime simulator to validate our endurance-optimized design.
+    Given endurance as the primary goal of our first electric vehicle, I developed a <strong>high-fidelity model of the electric powertrain package</strong> in Simulink and Simscape to calculate torque and current requirements for motor selection, determine battery capacity requirements, and optimize motor control strategies. The powertrain model was incorporated into our proprietary laptime simulator to validate our endurance-optimized design.
     <br/><br/>
-    My experience in the Mechanical subsystem also allowed me to assemble and package the electrical components of the car's CAD model using <strong>Fusion 360</strong>. Our team achieved an overall <strong>1st position across India</strong> in the 4th Annual Formula Student Electric Vehicle (FSEV) Concept Challenge, hosted by Formula Bharat in 2020. I subsequently headed the Electric Powertrain Subsystem as the team began manufacturing the EV for the Formula Bharat competition.
+    My experience in the Mechanical subsystem also enabled me to assemble and package the car's electrical components from its CAD model using <strong>Fusion 360</strong>. Our team achieved an overall <strong>1st position across India</strong> in the 4th Annual Formula Student Electric Vehicle (FSEV) Concept Challenge, hosted by Formula Bharat in 2020. I subsequently headed the Electric Powertrain Subsystem as the team began manufacturing the EV to showcase in the Formula Bharat competition.
   </div>
 
   <div class="pd-divider"></div>
