@@ -30,7 +30,7 @@ custom_css: research-project
 
   <div class="pd-divider"></div>
 
-  <div class="pd-section-title">Results &amp; Figures</div>
+  <div class="pd-section-label">Results &amp; Figures</div>
   <div class="pd-figures">
     <div class="pd-fig-placeholder">Figure 1</div>
     <div class="pd-fig-placeholder">Figure 2</div>
