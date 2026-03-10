@@ -36,7 +36,7 @@ redirect_from:
 <div class="fade-in" markdown="1">
 ## About Me
 
-I am a **PhD candidate in Aerospace Engineering** at [University Name]. Since fall 2024, I have been working as a Graduate Research Assistant under [Professor Abhishek Halder](https://abhishekhalder.org/index.html), at the intersection of **Stochastic Systems, Dynamics & Control, and Optimization**.
+I am a **final year Master's student in Aerospace Engineering** at Iowa State University. Since fall 2024, I have been working as a Graduate Research Assistant under [Professor Abhishek Halder](https://abhishekhalder.org/index.html), at the intersection of **Stochastic Systems, Dynamics & Control, and Optimization**.
 
 My enduring curiosity for control systems led me to major in Electrical and Electronics Engineering at **Birla Institute of Technology and Science (BITS) Pilani**. My undergraduate and master's research experiences have helped me identify my interests in bridging astrodynamics, control theory, optimization, and stochastic systems to advance **Guidance, Navigation, and Control (GNC)** architectures of space systems.
 
