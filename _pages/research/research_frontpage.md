@@ -111,7 +111,7 @@ author_profile: false
           <div class="opt1-btns">
             <a href="/research/in-orbit-servicing/" class="opt1-btn opt1-btn-primary">Learn More</a>
             <a href="https://github.com/tusharsial/Spacecraft-Rendezvous" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-gh"/></svg>Code</a>
-            <a href="https://drive.google.com/file/d/1sgt0afIj0nHNnJGHqSqTLT09nrHZbITw/view?usp=sharing" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-doc"/></svg>Thesis</a>
+            <a href="/files/Tushar_Sial__2019A3TS0215P__BE_Thesis.pdf" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-doc"/></svg>Thesis</a>
           </div>
         </div>
       </div>
@@ -126,8 +126,8 @@ author_profile: false
           <div class="opt1-desc">Co-founded CRISS Robotics, a student research technical team consisting of 60+ members for designing and manufacturing an all-terrain 6-wheeled Mars Rover.</div>
           <div class="opt1-btns">
             <a href="/research/mars-rover/" class="opt1-btn opt1-btn-primary">Learn More</a>
-            <a href="https://drive.google.com/file/d/1kP_tj-SH4lCFHxSWdpxNRr5fvlEZZh0U/view" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-doc"/></svg>IRC</a>
-            <a href="https://drive.google.com/file/d/1R8cpztHJwczZH3zVnijbmGaEj1i9xp4E/view" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-doc"/></svg>IRDC</a>
+            <a href="/files/SDDR Report.pdf" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-doc"/></svg>IRC</a>
+            <a href="/files/IRDC Report 2021.pdf" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-doc"/></svg>IRDC</a>
           </div>
         </div>
       </div>
