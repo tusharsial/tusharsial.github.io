@@ -65,7 +65,9 @@ author_profile: false
   
   <div class="pub-item fade-in">
     <div class="pub-title">
+      <a href="https://arxiv.org/abs/2603.03479" target="_blank" rel="noopener">
       Multidisciplinary Design Optimization of a Low-Thrust Asteroid Orbit Insertion Using Electric Propulsion
+      </a>
     </div>
     <div class="pub-authors">Yacob Medhin, <strong>Tushar Sial</strong>, and Simone Servadio.</div>
     <div class="pub-venue">2026 AIAA Regional Student Conference <span class="pub-status">· To appear </span></div>
