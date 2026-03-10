@@ -26,10 +26,10 @@ custom_css: research-project
     CRISS qualified for the  <a href="https://roverchallenge.org/irc/" target="_blank" rel="noopener">International Rover Challenge (IRC)</a> 2022 finals at Chennai, India, among 16 international teams, and subsequently won the <a href="https://southasia.marssociety.org/irdc/" target="_blank" rel="noopener">International Rover Design Challenge (IRDC)</a> in 2023.
   </div>
 
-  <div class="pd-divider"></div>
+  <div class="pd-divider fade-in"></div>
 
-  <div class="pd-section-label">Results &amp; Figures</div>
-  <div class="pd-figures">
+  <div class="pd-section-label fade-in">Results &amp; Figures</div>
+  <div class="pd-figures fade-in">
     <div class="pd-fig-placeholder">Figure 1</div>
     <div class="pd-fig-placeholder">Figure 2</div>
     <div class="pd-fig-placeholder">Figure 3</div>
