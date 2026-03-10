@@ -8,7 +8,7 @@ custom_css: research-project
 <div class="pd-page">
 
   <div class="pd-header">
-    <div class="pd-eyebrow">GNC · Koopman Operator · IISc</div>
+    <div class="pd-eyebrow">GNC · Koopman Operator</div>
     <div class="pd-title">In-Orbit Autonomous Servicing</div>
     <div class="pd-date">March 9, 2023</div>
   </div>
