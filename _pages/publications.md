@@ -15,7 +15,15 @@ author_profile: false
 <!-- ── Preprint ── -->
 <div class="pub-group">
   <div class="pub-group-label fade-in">Preprint</div>
-
+  
+  <div class="pub-item fade-in">
+    <div class="pub-title">
+        Continuous Time LQ Covariance Control over a Fixed Horizon: Optimal Transport and Bregman Divergence Terminal Costs
+    </div>
+    <div class="pub-authors"><strong>Tushar Sial</strong>, and Abhishek Halder.</div>
+    <div class="pub-venue">65th IEEE Conference on Decision and Control <span class="pub-status">· Under Review</span></div>
+  </div>
+  
   <div class="pub-item fade-in">
     <div class="pub-title">
       <a href="https://arxiv.org/abs/2510.21944" target="_blank" rel="noopener">
