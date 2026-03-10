@@ -285,6 +285,13 @@ author_profile: false
   gap: 18px !important;
 }
 
+@keyframes groupBlink {
+  0%   { opacity: 1; }
+  35%  { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+.rp-group.rp-blink { animation: groupBlink 0.4s ease-out forwards; }
+  
 /* Card */
 .opt1-card {
   border: 1px solid rgba(255,107,0,0.15) !important;
@@ -403,8 +410,16 @@ function rpFilter(type, btn) {
   document.querySelectorAll('.rp-filter').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   document.querySelectorAll('.rp-group[data-filter]').forEach(function(g) {
-    if (type === 'all' || g.dataset.filter === type) {
-      g.classList.remove('rp-hidden');
+    const shouldShow = type === 'all' || g.dataset.filter === type;
+    if (shouldShow) {
+      if (g.classList.contains('rp-hidden')) {
+        g.classList.remove('rp-hidden');
+      } else {
+        // already visible — force re-flash by toggling a blink class
+        g.classList.add('rp-blink');
+        void g.offsetWidth; // force reflow
+        g.classList.remove('rp-blink');
+      }
     } else {
       g.classList.add('rp-hidden');
     }
