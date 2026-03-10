@@ -25,10 +25,10 @@ custom_css: research-project
     In this project, I've designed <span class="pd-highlight">autonomous navigation</span> (flight attitude, position control, & obstacle avoidance) algorithms using ROS, Python, and Gazebo for a 3-D simulated quadcopter capable of autonomously delivering packages in an urban environment. To detect QR codes on delivery packages and identify drop-off locations, I implemented a <span class="pd-highlight">pyzbar library-based computer vision algorithm</span>. This project was designed for the <a href="https://portal.e-yantra.org/" target="_blank" rel="noopener">e-Yantra Robotics Competition</a> hosted by IIT Bombay and sponsored by the Ministry of Education of India.
   </div>
 
-  <div class="pd-divider"></div>
+  <div class="pd-divider fade-in"></div>
 
-  <div class="pd-section-label">Results &amp; Figures</div>
-  <div class="pd-figures">
+  <div class="pd-section-label fade-in">Results &amp; Figures</div>
+  <div class="pd-figures fade-in">
     <div class="pd-fig-placeholder">Figure 1</div>
     <div class="pd-fig-placeholder">Figure 2</div>
     <div class="pd-fig-placeholder">Figure 3</div>
