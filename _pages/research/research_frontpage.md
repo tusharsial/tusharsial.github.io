@@ -70,7 +70,7 @@ author_profile: false
           <div class="opt1-btns">
             <a href="/research/optimal-covariance-control/" class="opt1-btn opt1-btn-primary">Learn More</a>
             <a href="https://github.com/tusharsial/Covariance-Steering" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-gh"/></svg>Code</a>
-            <a href="https://arxiv.org/abs/2510.21944" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost">Preprint</a>
+            <a href="https://arxiv.org/abs/2510.21944" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-doc"/></svg>Preprint</a>
           </div>
         </div>
       </div>
@@ -113,7 +113,7 @@ author_profile: false
           <div class="opt1-btns">
             <a href="/research/in-orbit-servicing/" class="opt1-btn opt1-btn-primary">Learn More</a>
             <a href="https://github.com/tusharsial/Spacecraft-Rendezvous" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-gh"/></svg>Code</a>
-            <a href="https://drive.google.com/file/d/1sgt0afIj0nHNnJGHqSqTLT09nrHZbITw/view?usp=sharing" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost">UG Thesis</a>
+            <a href="https://drive.google.com/file/d/1sgt0afIj0nHNnJGHqSqTLT09nrHZbITw/view?usp=sharing" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-doc"/></svg>Thesis</a>
           </div>
         </div>
       </div>
@@ -128,8 +128,8 @@ author_profile: false
           <div class="opt1-desc">Co-founded CRISS Robotics, a student research technical team consisting of 60+ members for designing and manufacturing an all-terrain 6-wheeled Mars Rover. </div>
           <div class="opt1-btns">
             <a href="/research/mars-rover/" class="opt1-btn opt1-btn-primary">Learn More</a>
-            <a href="https://drive.google.com/file/d/1kP_tj-SH4lCFHxSWdpxNRr5fvlEZZh0U/view" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost">IRC Report</a>
-            <a href="https://drive.google.com/file/d/1R8cpztHJwczZH3zVnijbmGaEj1i9xp4E/view" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost">IRDC Report</a>
+            <a href="https://drive.google.com/file/d/1kP_tj-SH4lCFHxSWdpxNRr5fvlEZZh0U/view" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-doc"/></svg>IRC</a>
+            <a href="https://drive.google.com/file/d/1R8cpztHJwczZH3zVnijbmGaEj1i9xp4E/view" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-doc"/></svg>IRDC</a>
           </div>
         </div>
       </div>
@@ -161,7 +161,7 @@ author_profile: false
           <div class="opt1-desc">Designed a High-fidelity Simulink powertrain model for motor selection, battery sizing, and motor control optimization.</div>
           <div class="opt1-btns">
             <a href="/research/electric-vehicle/" class="opt1-btn opt1-btn-primary">Learn More</a>
-            <a href="https://docs.google.com/document/u/1/d/e/2PACX-1vQuObctRIT1pGiuUQN05OE-FDu31f3r085TjL3lFPOHDcydQl3Sj4Ll3P8LhzXQuDx47tkLKqnTsIDy/pub" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost">Report</a>
+            <a href="https://docs.google.com/document/u/1/d/e/2PACX-1vQuObctRIT1pGiuUQN05OE-FDu31f3r085TjL3lFPOHDcydQl3Sj4Ll3P8LhzXQuDx47tkLKqnTsIDy/pub" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-doc"/></svg>Report</a>
             <a href="https://youtu.be/fUpCTI_xb6E" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-yt"/></svg>Video</a>
           </div>
         </div>
