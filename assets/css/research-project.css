@@ -79,9 +79,16 @@
   color: #FF9A3C !important;
 }
 .pd-body strong { color: #FF9A3C !important; }
-.pd-body a { color: #FF9A3C !important; text-decoration: none !important; }
-.pd-body a:hover { text-decoration: underline !important; }
-
+.pd-body a {
+  color: #FF9A3C !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+.pd-body a:hover {
+  color: #FF6B00 !important;
+  text-decoration: none !important;
+  border-bottom: 1px dotted #cc4400 !important;
+}
 /* Figures grid */
 .pd-figures {
   display: grid; grid-template-columns: 1fr 1fr;
