@@ -70,7 +70,7 @@ author_profile: false
           <div class="opt1-btns">
             <a href="/research/optimal-covariance-control/" class="opt1-btn opt1-btn-primary">Learn More</a>
             <a href="https://github.com/tusharsial/Covariance-Steering" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-gh"/></svg>Code</a>
-            <a href="https://arxiv.org/abs/2510.21944" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost">Preprint</a>
+            <a href="https://arxiv.org/abs/2510.21944" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-doc"/>Preprint</a>
           </div>
         </div>
       </div>
