@@ -415,10 +415,12 @@ function rpFilter(type, btn) {
       if (g.classList.contains('rp-hidden')) {
         g.classList.remove('rp-hidden');
       } else {
-        // already visible — force re-flash by toggling a blink class
         g.classList.add('rp-blink');
-        void g.offsetWidth; // force reflow
-        g.classList.remove('rp-blink');
+        void g.offsetWidth;
+        g.addEventListener('animationend', function handler() {
+          g.classList.remove('rp-blink');
+          g.removeEventListener('animationend', handler);
+        });
       }
     } else {
       g.classList.add('rp-hidden');
