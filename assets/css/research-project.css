@@ -1,5 +1,5 @@
 /* ── Project Detail Page ── */
-.pd-page { max-width: 820px; margin: 0 auto; padding: 0 0 60px; }
+/* .pd-page { max-width: 820px; margin: 0 auto; padding: 0 0 60px; } */
 .pd-page *, .pd-page *::before, .pd-page *::after { box-sizing: border-box !important; }
 
 .pd-header { padding: 20px 0 0; }
