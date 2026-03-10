@@ -28,10 +28,10 @@ custom_css: research-project
     My experience in the Mechanical subsystem also enabled me to assemble and package the car's electrical components from its CAD model using Fusion 360. Our team achieved an overall <span class="pd-highlight">1st position across India</span> in the <a href="https://formulabharat.com/portfolio/fsev-concept-challenge-2020/" target="_blank" rel="noopener">4th Annual Formula Student Electric Vehicle (FSEV) Concept Challenge</a>, hosted by Formula Bharat in 2020. I subsequently headed the Electric Powertrain Subsystem as the team began manufacturing the EV to showcase in the <a href="https://formulabharat.com/" target="_blank" rel="noopener">Formula Bharat competition</a>.
   </div>
 
-  <div class="pd-divider"></div>
+  <div class="pd-divider fade-in"></div>
 
-  <div class="pd-section-label">Results &amp; Figures</div>
-  <div class="pd-figures">
+  <div class="pd-section-label fade-in">Results &amp; Figures</div>
+  <div class="pd-figures fade-in">
     <div class="pd-fig-placeholder">Figure 1</div>
     <div class="pd-fig-placeholder">Figure 2</div>
     <div class="pd-fig-placeholder">Figure 3</div>
