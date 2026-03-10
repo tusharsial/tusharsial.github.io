@@ -28,7 +28,7 @@ custom_css: research-project
     Due to the computational complexity of the fully coupled problem, the final optimization was performed on a high-performance computing platform. The simulation results show that the coupled optimization model outperforms the baseline trajectory-only model by simultaneously optimizing the trajectory, power usage, and solar array area. The coupled model reduces the transfer time by <span class="pd-highlight">8.09%</span> while satisfying all physical and system constraints.
   </div>
 
-  <div class="pd-divider"></div>
+  <div class="pd-divider fade-in"></div>
 
   <div class="pd-section-label fade-in">Results &amp; Figures</div>
   <div class="pd-figures">
@@ -41,8 +41,8 @@ custom_css: research-project
   <div class="pd-divider"></div>
 
   <div class="pd-section-title fade-in">Publications</div>
-  <div class="pub-group">
-    <div class="pub-group-label fade-in">Conference</div>
+  <div class="pub-group fade-in">
+    <div class="pub-group-label">Conference</div>
     <div class="pub-item">
       <div class="pub-title">Multidisciplinary Design Optimization of a Low-Thrust Asteroid Orbit Insertion Using Electric Propulsion</div>
       <div class="pub-authors">Yacob Medhin, <strong>Tushar Sial</strong>, and Simone Servadio.</div>
