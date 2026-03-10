@@ -100,9 +100,7 @@ author_profile: false
 
       <div class="opt1-card">
         <div class="opt1-img">
-          <video autoplay loop muted playsinline>
-            <source src="https://github.com/user-attachments/assets/b0d779a0-9210-41bb-9884-691e1c44e9d4" type="video/mp4"/>
-          </video>
+          <img src="/images/In-orbit servicing.png" alt="In-orbit servicing"/>
         </div>
         <div class="opt1-body">
           <span class="opt1-tag">Astrodynamics · Optimal Control</span>
