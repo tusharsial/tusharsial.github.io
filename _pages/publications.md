@@ -184,7 +184,7 @@ author_profile: false
   border-bottom: none !important;
 }
 .pub-title a:hover {
-  color: #FF6B00 !important;
+  color: #FF9A3C !important;
   text-decoration: none !important;
   border-bottom: 1px dotted #cc4400 !important;
 }
@@ -233,6 +233,7 @@ author_profile: false
   font-size: 0.97rem;
   font-weight: 600;
   line-height: 1.55;
+  color: rgba(255, 255, 255, 0.3);
 }
 .pub-primordial a {
   color: #FF9A3C !important;
@@ -241,8 +242,9 @@ author_profile: false
 }
 .pub-primordial a:hover {
   color: #FF9A3C !important;
-  text-decoration: underline !important;
-}
+  text-decoration: none !important;
+  border-bottom: 1px dotted #cc4400 !important;
+} 
 
 /* ── FADE IN ── */
 .fade-in {
