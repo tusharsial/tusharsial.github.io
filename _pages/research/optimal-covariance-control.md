@@ -43,17 +43,17 @@ custom_css: research-project
   <div class="pd-divider fade-in"></div>
 
   <div class="pd-section-title fade-in">Publications</div>
-  <div class="pub-group fade-in">
-    <div class="pub-group-label">Preprint</div>
-    <div class="pub-item">
+  <div class="pub-group">
+    <div class="pub-group-label fade-in">Preprint</div>
+    <div class="pub-item fade-in">
       <div class="pub-title"><a href="https://arxiv.org/abs/2510.21944" target="_blank" rel="noopener">Fixed Horizon Linear Quadratic Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost</a></div>
       <div class="pub-authors"><strong>Tushar Sial</strong>, and Abhishek Halder.</div>
       <div class="pub-venue">IEEE Transactions on Automatic Control <span class="pub-status">· Under Review</span></div>
     </div>
   </div>
-  <div class="pub-group fade-in">
-    <div class="pub-group-label">Conference</div>
-    <div class="pub-item">
+  <div class="pub-group">
+    <div class="pub-group-label fade-in">Conference</div>
+    <div class="pub-item fade-in">
       <div class="pub-title">LQ Covariance Control with Deadline Constraint and Frobenius Terminal Loss</div>
       <div class="pub-authors"><strong>Tushar Sial</strong>, and Abhishek Halder.</div>
       <div class="pub-venue">2026 AIAA Regional Student Conference <span class="pub-status">· To appear</span></div>
