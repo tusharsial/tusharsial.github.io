@@ -172,7 +172,7 @@ author_profile: false
           <div class="opt1-btns">
             <a href="/research/delivery-quadcopter/" class="opt1-btn opt1-btn-primary">Learn More</a>
             <a href="https://github.com/tusharsial/Autonomous-Delivery-Quadcopter/tree/main" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-gh"/></svg>Code</a>
-            <a href="#" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-yt"/></svg>Video</a>
+            <a href="https://www.youtube.com/watch?v=wfkGoL0VYp4" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-yt"/></svg>Video</a>
           </div>
         </div>
       </div>
