@@ -182,7 +182,6 @@ author_profile: false
 </div>
 
 <style>
-.rp-page { display: block; padding: 20px 0 80px; }
 .rp-page *, .rp-page *::before, .rp-page *::after { box-sizing: border-box !important; }
 
 .rp-page img, .rp-page video {
