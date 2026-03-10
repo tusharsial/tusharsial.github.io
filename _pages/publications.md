@@ -181,11 +181,12 @@ author_profile: false
 .pub-title a {
   color: #FF9A3C !important;
   text-decoration: none !important;
-  transition: color 0.3s, text-decoration 0.3s;
+  border-bottom: none !important;
 }
 .pub-title a:hover {
-  color: #FF9A3C !important;
-  text-decoration: underline !important;
+  color: #FF6B00 !important;
+  text-decoration: none !important;
+  border-bottom: 1px dotted #cc4400 !important;
 }
 .pub-authors {
   font-size: 0.87rem;
