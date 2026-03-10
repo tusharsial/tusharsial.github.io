@@ -9,7 +9,7 @@ author_profile: false
   <div class="pd-header">
     <div class="pd-eyebrow">Stochastic Control · Optimization</div>
     <div class="pd-title">Optimal Covariance Control</div>
-    <div class="pd-date">August 2024 – Present · MS Thesis · Iowa State University</div>
+    <div class="pd-date">October 27, 2025</div>
   </div>
 
   <div class="pd-divider"></div>
