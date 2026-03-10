@@ -203,7 +203,6 @@ author_profile: false
   justify-content: space-between !important;
   flex-wrap: wrap !important;
   gap: 20px !important;
-  padding: 48px 0 0 !important;
 }
 
 /* Eyebrow */
