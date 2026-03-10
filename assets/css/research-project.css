@@ -129,6 +129,16 @@
   background: linear-gradient(to right, #FF6B00, transparent);
   opacity: 0; transition: opacity 0.3s;
 }
+.pub-item::after {
+  content: ''; position: absolute; inset: 0; background: radial-gradient(circle 130px at var(--mx, 50%) var(--my, 50%), rgba(255,107,0,0.08) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s;
+  pointer-events: none;
+  z-index: 0;
+}
+.pub-item:hover::after { opacity: 1; }
+.pub-item > * { position: relative; z-index: 1; }
+
 .pub-item:hover { border-color: rgba(255,107,0,0.4) !important; box-shadow: 0 0 32px rgba(255,107,0,0.07) !important; transform: translateY(-3px); }
 .pub-item:hover::before { opacity: 1; }
 .pub-title { font-size: 0.97rem; font-weight: 600; color: #ffffff; margin-bottom: 8px; line-height: 1.55; }
