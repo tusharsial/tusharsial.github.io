@@ -85,7 +85,7 @@ author_profile: false
           <div class="opt1-btns">
             <a href="/research/earth-moon-trajectory/" class="opt1-btn opt1-btn-primary">Learn More</a>
             <a href="https://github.com/tusharsial/Earth-Moon-Low-Thrust-Trajectory-Optimization/tree/main" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-gh"/></svg>Code</a>
-            <a href="#" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-doc"/></svg>Report</a>
+            <a href="/files/AERE-6510-Final-Project-Tushar-Sial.pdf" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-doc"/></svg>Report</a>
           </div>
         </div>
       </div>
