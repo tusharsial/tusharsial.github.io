@@ -173,6 +173,19 @@ author_profile: false
   opacity: 0;
   transition: opacity 0.3s;
 }
+.pub-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle 130px at var(--mx, 50%) var(--my, 50%), rgba(255,107,0,0.08) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s;
+  pointer-events: none;
+  z-index: 0;
+}
+.pub-item:hover::after { opacity: 1; }
+.pub-item > * { position: relative; z-index: 1; }
+  
 .pub-item:hover {
   border-color: rgba(255, 107, 0, 0.4) !important;
   box-shadow: 0 0 32px rgba(255, 107, 0, 0.07) !important;
@@ -274,5 +287,15 @@ author_profile: false
     entries.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-in').forEach(function(el){ obs.observe(el); });
+
+  document.querySelectorAll('.pub-item').forEach(function(item) {
+    item.addEventListener('mousemove', function(e) {
+      var rect = item.getBoundingClientRect();
+      var x = ((e.clientX - rect.left) / rect.width  * 100).toFixed(1) + '%';
+      var y = ((e.clientY - rect.top)  / rect.height * 100).toFixed(1) + '%';
+      item.style.setProperty('--mx', x);
+      item.style.setProperty('--my', y);
+    });
+  });
 })();
 </script>
