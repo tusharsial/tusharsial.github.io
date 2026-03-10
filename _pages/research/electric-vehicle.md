@@ -21,7 +21,7 @@ custom_css: research-project
 
   <div class="pd-section-label">Overview</div>
   <div class="pd-body">
-    In my freshman year, I joined the Electric Powertrain Subsystem at <span class="pd-highlight">Inspired Karters Electric</span>, the Formula Student Electric Vehicle (FSEV) team of BITS Pilani. The team comprises roughly 50 talented and focused members who work tirelessly throughout the year to build a single-seater Formula One Car.
+    In my freshman year, I joined the Electric Powertrain Subsystem at <a href="https://www.linkedin.com/company/inspired-karters-fs/" target="_blank" rel="noopener">Inspired Karters Electric</a>, the Formula Student Electric Vehicle (FSEV) team of BITS Pilani. The team comprises roughly 50 talented and focused members who work tirelessly throughout the year to build a single-seater Formula One Car.
     <br/><br/>
     Given endurance as the primary goal of our first electric vehicle, I developed a high-fidelity model of the electric powertrain package in Simulink and Simscape to calculate torque and current requirements for motor selection, determine battery capacity requirements, and optimize motor control strategies. The powertrain model was incorporated into our proprietary laptime simulator to validate our endurance-optimized design.
     <br/><br/>
