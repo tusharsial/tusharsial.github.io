@@ -31,7 +31,7 @@ custom_css: research-project
   <div class="pd-divider fade-in"></div>
 
   <div class="pd-section-label fade-in">Results &amp; Figures</div>
-  <div class="pd-figures">
+  <div class="pd-figures fade-in">
     <div class="pd-fig-placeholder">Figure 1</div>
     <div class="pd-fig-placeholder">Figure 2</div>
     <div class="pd-fig-placeholder">Figure 3</div>
