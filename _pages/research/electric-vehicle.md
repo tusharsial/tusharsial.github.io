@@ -3,6 +3,7 @@ layout: archive
 permalink: /research/electric-vehicle/
 author_profile: false
 custom_css: research-project
+custom_js: research-project
 ---
 
 <div class="pd-page">
