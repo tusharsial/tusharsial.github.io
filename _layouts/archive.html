@@ -17,6 +17,11 @@ layout: default
   <link rel="stylesheet" href="{{ '/assets/css/' | append: page.custom_css | append: '.css' | relative_url }}">
 {% endif %}
 
+<!-- JS script for Individual Research Project Cards -->
+{% if page.custom_js %}
+  <script src="{{ '/assets/js/' | append: page.custom_js | append: '.js' | relative_url }}"></script>
+{% endif %}
+
 <div id="main" role="main">
   {% include sidebar.html %}
 
