@@ -134,9 +134,7 @@ author_profile: false
 
       <div class="opt1-card">
         <div class="opt1-img">
-          <video autoplay loop muted playsinline>
-            <source src="https://user-images.githubusercontent.com/74113713/188335543-a0279f09-67d2-4ec2-a6ab-815ede3acb67.mp4" type="video/mp4"/>
-          </video>
+          <img src="/images/Fixed Drone.jpeg" alt="Agile Fixed-Wing UAV"/>
         </div>
         <div class="opt1-body">
           <span class="opt1-tag">Control Systems · UAV</span>
