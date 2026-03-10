@@ -21,7 +21,7 @@ custom_css: research-project
 
   <div class="pd-section-label">Overview</div>
   <div class="pd-body">
-    This work was completed as my final project for AERE 6510 Space Trajectory Optimization under Prof. <a href="https://www.aere.iastate.edu/ossama/" target="_blank" rel="noopener">Ossama Abdelkhalik</a>. I extended the classic three-stage method for computing optimal low-thrust trajectories from low Earth orbit (LEO) to low lunar orbit (LLO) originally proposed by <span class="pd-highlight">Pierson and Kluever (1994)</span>.
+    This work was completed as my final project for the course: <span class="pd-highlight">AERE 6510 Space Trajectory Optimization</span> under Prof. <a href="https://www.aere.iastate.edu/ossama/" target="_blank" rel="noopener">Ossama Abdelkhalik</a>. I extended the classic three-stage method for computing optimal low-thrust trajectories from low Earth orbit (LEO) to low lunar orbit (LLO) originally proposed by <span class="pd-highlight">Pierson and Kluever (1994)</span>.
     <br/><br/>
     The original three-stage method systematically decomposes the complex optimal trajectory problem into simpler subproblems: maximum-energy Earth-escape and moon-capture spirals, an all-coasting translunar trajectory, and a complete optimization using a hybrid direct/indirect numerical method. Unlike the original formulation, which assumes constant thrust magnitude, my work allowed thrust magnitude to be a <span class="pd-highlight">free variable</span> within the optimal control framework.
     <br/><br/>
