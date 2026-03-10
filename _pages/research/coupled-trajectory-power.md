@@ -3,6 +3,7 @@ layout: archive
 permalink: /research/coupled-trajectory-power/
 author_profile: false
 custom_css: research-project
+custom_js: research-project
 ---
 
 <div class="pd-page">
