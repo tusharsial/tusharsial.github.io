@@ -7,7 +7,7 @@ custom_css: research-project
 
 <div class="pd-page">
   <div class="pd-header">
-    <div class="pd-title">Earth–Moon Low-Thrust Trajectory Optimization</div>
+    <div class="pd-title">Cislunar Low-Thrust Trajectory Optimization</div>
     <div class="pd-meta">
       <div class="pd-date">May 7, 2025</div>
       <div class="pd-links">
@@ -25,7 +25,7 @@ custom_css: research-project
     <br/><br/>
     The original three-stage method systematically decomposes the complex optimal trajectory problem into simpler subproblems: maximum-energy Earth-escape and moon-capture spirals, an all-coasting translunar trajectory, and a complete optimization using a hybrid direct/indirect numerical method. Unlike the original formulation, which assumes constant thrust magnitude, my work allowed thrust magnitude to be a <span class="pd-highlight">free variable</span> within the optimal control framework.
     <br/><br/>
-    Starting from the necessary conditions for optimality, I derived the modified equations and solved them numerically to obtain optimal trajectories. The classical restricted three-body problem (CR3BP) governs spacecraft trajectories and involves highly sensitive numerical computations. Our extended methodology enables a more flexible approach to modeling low-thrust cis-lunar transfers. Simulation results demonstrated the approach's effectiveness, yielding energy-efficient transfer trajectories that improve upon the constant-thrust assumption.
+    Starting from the necessary conditions for optimality, I derived the modified equations and solved them numerically to obtain optimal trajectories. The classical restricted three-body problem (CR3BP) governs spacecraft trajectories and involves highly sensitive numerical computations. Our extended methodology enables a more flexible approach to modeling low-thrust cislunar transfers. Simulation results demonstrated the approach's effectiveness, yielding energy-efficient transfer trajectories that improve upon the constant-thrust assumption.
   </div>
 
   <div class="pd-divider"></div>
