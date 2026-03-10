@@ -42,7 +42,7 @@ author_profile: false
     <div class="rp-sectiontitle">MS Research</div>
     <div class="opt1-grid">
 
-      <div class="opt1-card">
+      <div class="opt1-card fade-in">
         <div class="opt1-img">
           <img src="/images/Trajectory_only.jpeg" alt="Coupled Trajectory-Power"/>
         </div>
@@ -58,7 +58,7 @@ author_profile: false
         </div>
       </div>
 
-      <div class="opt1-card">
+      <div class="opt1-card fade-in">
         <div class="opt1-img">
           <img src="/images/StateCovariancesAndSamplePaths_CW.png" alt="Optimal Covariance Control"/>
         </div>
@@ -74,7 +74,7 @@ author_profile: false
         </div>
       </div>
 
-      <div class="opt1-card">
+      <div class="opt1-card fade-in">
         <div class="opt1-img">
           <img src="https://github.com/user-attachments/assets/25a0be0b-ef75-42e4-be34-c95b650defdb" alt="Earth-Moon Trajectory"/>
         </div>
