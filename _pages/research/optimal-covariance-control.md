@@ -21,11 +21,11 @@ custom_css: research-project
 
   <div class="pd-section-label">Project Overview</div>
   <div class="pd-body">
-    My Master's thesis under Prof. <a href="https://abhishekhalder.org/index.html" target="_blank" rel="noopener">Abhishek Halder</a> focuses on designing an <strong>Optimal Covariance Steering Algorithm in Continuous Time with Hilbert-Schmidt Terminal Cost for Linear Stochastic Systems over a finite time horizon</strong>. While there has been a growing literature on fixed-horizon LQ covariance steering problems with terminal cost for the discrete-time case, its continuous-time version remains relatively unexplored.
+    My Master's thesis under Prof. <a href="https://abhishekhalder.org/index.html" target="_blank" rel="noopener">Abhishek Halder</a> focuses on designing an <span class="pd-highlight">Optimal Covariance Steering Algorithm in Continuous Time with Hilbert-Schmidt Terminal Cost for Linear Stochastic Systems over a finite time horizon</span>. While there has been a growing literature on fixed-horizon LQ covariance steering problems with terminal cost for the discrete-time case, its continuous-time version remains relatively unexplored.
     <br/><br/>
     A key reason for the imbalance between discrete- and continuous-time formulations lies in computational tractability. The discrete-time problem naturally leads to a semidefinite program that can be solved with off-the-shelf interior-point solvers. In contrast, the continuous-time formulation with terminal cost gives rise to a coupled nonlinear system of matricial ODEs, for which a principled and computationally efficient algorithm had remained unclear.
     <br/><br/>
-    My research introduces a soft constraint via the <strong>Hilbert–Schmidt Terminal Cost</strong>, along with a quadratic cost on the control input and the state. The necessary conditions of optimality lead to a coupled matrix ODE two-point boundary value problem with nonlinear split boundary conditions. To solve this, I designed a <strong>Matricial Recursive Algorithm</strong> with a fast convergence rate, grounded in linear fractional transformations parameterized by the state transition matrix of the associated Hamiltonian system.
+    My research introduces a soft constraint via the <span class="pd-highlight">Hilbert–Schmidt Terminal Cost</span>, along with a quadratic cost on the control input and the state. The necessary conditions of optimality lead to a coupled matrix ODE two-point boundary value problem with nonlinear split boundary conditions. To solve this, I designed a <span class="pd-highlight">Matricial Recursive Algorithm</span> with a fast convergence rate, grounded in linear fractional transformations parameterized by the state transition matrix of the associated Hamiltonian system.
     <br/><br/>
     The proposed algorithm was tested and validated on a close-proximity rendezvous scenario by modeling the relative motion of a service spacecraft to a target satellite in LEO using Clohessy–Wiltshire dynamics with stochastic disturbances. Our broader motivation is to derive a custom algorithm to solve the boundary-value problem with a Wasserstein terminal cost. This work takes a significant step in that direction, laying the algorithmic groundwork toward handling the full Wasserstein gradient in future extensions.
   </div>
@@ -56,7 +56,7 @@ custom_css: research-project
     <div class="pub-item">
       <div class="pub-title">LQ Covariance Control with Deadline Constraint and Frobenius Terminal Loss</div>
       <div class="pub-authors"><strong>Tushar Sial</strong>, and Abhishek Halder.</div>
-      <div class="pub-venue">To appear at AIAA Regional Student Conference <span class="pub-status">· 2026</span></div>
+      <div class="pub-venue">2026 AIAA Regional Student Conference <span class="pub-status">· To appear</span></div>
     </div>
   </div>
 
