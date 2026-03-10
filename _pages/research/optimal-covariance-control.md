@@ -19,7 +19,7 @@ custom_css: research-project
 
   <div class="pd-divider"></div>
 
-  <div class="pd-section-label">Project Overview</div>
+  <div class="pd-section-label">Overview</div>
   <div class="pd-body">
     My Master's thesis under Prof. <a href="https://abhishekhalder.org/index.html" target="_blank" rel="noopener">Abhishek Halder</a> focuses on designing an <span class="pd-highlight">Optimal Covariance Steering Algorithm in Continuous Time with Hilbert-Schmidt Terminal Cost for Linear Stochastic Systems over a finite time horizon</span>. While there has been a growing literature on fixed-horizon LQ covariance steering problems with terminal cost for the discrete-time case, its continuous-time version remains relatively unexplored.
     <br/><br/>
