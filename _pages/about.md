@@ -446,7 +446,6 @@ table.news-table td.news-date {
   background: linear-gradient(to right, transparent, rgba(255,107,0,0.35), transparent);
   margin: 40px 0 0;
 }
-.news-table a:hover { text-decoration: underline !important; }
 
 /* ── GET IN TOUCH ── */
 .section-eyebrow {
