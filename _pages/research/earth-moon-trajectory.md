@@ -28,10 +28,10 @@ custom_css: research-project
     Starting from the necessary conditions for optimality, I derived the modified equations and solved them numerically to obtain optimal trajectories. The classical restricted three-body problem (CR3BP) governs spacecraft trajectories and involves highly sensitive numerical computations. Our extended methodology enables a more flexible approach to modeling low-thrust cislunar transfers. Simulation results demonstrated the approach's effectiveness, yielding energy-efficient transfer trajectories that improve upon the constant-thrust assumption.
   </div>
 
-  <div class="pd-divider"></div>
+  <div class="pd-divider fade-in"></div>
 
-  <div class="pd-section-label">Results &amp; Figures</div>
-  <div class="pd-figures">
+  <div class="pd-section-label fade-in">Results &amp; Figures</div>
+  <div class="pd-figures fade-in">
     <div class="pd-fig-placeholder">Figure 1</div>
     <div class="pd-fig-placeholder">Figure 2</div>
     <div class="pd-fig-placeholder">Figure 3</div>
