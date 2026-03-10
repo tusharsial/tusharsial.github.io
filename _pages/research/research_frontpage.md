@@ -80,7 +80,7 @@ author_profile: false
         </div>
         <div class="opt1-body">
           <span class="opt1-tag">Astrodynamics · Optimal Control</span>
-          <div class="opt1-title">Earth–Moon Low-Thrust Trajectory Optimization</div>
+          <div class="opt1-title">Cislunar Low-Thrust Trajectory Optimization</div>
           <div class="opt1-desc">Extended the classical Pierson–Kluever three-stage method for optimal low-thrust cislunar transfers by allowing variable thrust magnitude under CR3BP dynamics.</div>
           <div class="opt1-btns">
             <a href="/research/earth-moon-trajectory/" class="opt1-btn opt1-btn-primary">Learn More</a>
