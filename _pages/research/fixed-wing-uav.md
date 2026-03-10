@@ -17,11 +17,9 @@ custom_css: research-project
 
   <div class="pd-section-label">Project Overview</div>
   <div class="pd-body">
-    In this project, conducted under Prof. Bijoy Krishna Mukherjee of the Department of EEE at BITS Pilani, I designed <strong>flight stability controllers</strong> for an agile fixed-wing UAV. The work focused on both the longitudinal and lateral-directional axes of the aircraft.
+    In this project, conducted under Prof. Bijoy Krishna Mukherjee of the Department of EEE at BITS Pilani, I designed <strong>flight stability controllers</strong> for an agile fixed-wing UAV. In particular, I designed and modeled the Longitudinal and Lateral-Directional stability movement controllers of the UAV using the <strong>Backstepping Control technique</strong> in MATLAB and Simulink. Backstepping is a recursive Lyapunov-based design methodology that systematically handles the cascaded structure of flight dynamics, providing rigorous stability guarantees. The longitudinal controller manages pitch, altitude, and airspeed, while the lateral-directional controller handles roll and yaw coordination.
     <br/><br/>
-    I designed and modeled the stability controllers using the <strong>Backstepping Control technique</strong> in MATLAB and Simulink. Backstepping is a recursive Lyapunov-based design methodology that systematically handles the cascaded structure of flight dynamics, providing rigorous stability guarantees. The longitudinal controller manages pitch, altitude, and airspeed, while the lateral-directional controller handles roll and yaw coordination.
-    <br/><br/>
-    Additionally, I designed a <strong>wind observer</strong> to estimate and compensate for environmental disturbances including wind shears, wind gusts, and atmospheric turbulence. By incorporating the estimated disturbance into the control law, the controllers achieve robust performance under realistic flight conditions, significantly improving the UAV's agility and flight envelope.
+    Additionally, I designed a <strong>wind observer</strong> to estimate environmental disturbances, including wind shears, wind gusts, and atmospheric turbulence. By incorporating the estimated disturbance into the control law, the controllers achieve robust performance under realistic flight conditions, significantly improving the UAV's agility and flight envelope.
   </div>
 
   <div class="pd-divider"></div>
