@@ -20,14 +20,14 @@ custom_css: research-project
 
   <div class="pd-section-label">Overview</div>
   <div class="pd-body">
-    In this project, conducted under Prof. <a href="https://idesign-lab.github.io/" target="_blank" rel="noopener">Bijoy Krishna Mukherjee</a>, I designed <span class="pd-highlight">flight stability controllers</span> for an agile fixed-wing UAV. In particular, I designed and modeled the Longitudinal and Lateral-Directional stability movement controllers of the UAV using the <span class="pd-highlight">Backstepping Control technique</span> in MATLAB and Simulink. Backstepping is a recursive Lyapunov-based design methodology that systematically handles the cascaded structure of flight dynamics, providing rigorous stability guarantees. The longitudinal controller manages pitch, altitude, and airspeed, while the lateral-directional controller handles roll and yaw coordination.
+    In this project, conducted under Prof. <a href="https://nerist.ac.in/faculty/dr-bijoy-krishna-mukherjee/" target="_blank" rel="noopener">Bijoy Krishna Mukherjee</a>, I designed <span class="pd-highlight">flight stability controllers</span> for an agile fixed-wing UAV. In particular, I designed and modeled the Longitudinal and Lateral-Directional stability movement controllers of the UAV using the <span class="pd-highlight">Backstepping Control technique</span> in MATLAB and Simulink. Backstepping is a recursive Lyapunov-based design methodology that systematically handles the cascaded structure of flight dynamics, providing rigorous stability guarantees. The longitudinal controller manages pitch, altitude, and airspeed, while the lateral-directional controller handles roll and yaw coordination.
     <br/><br/>
     Additionally, I designed a <span class="pd-highlight">wind observer</span> to estimate environmental disturbances, including wind shears, wind gusts, and atmospheric turbulence. By incorporating the estimated disturbance into the control law, the controllers achieve robust performance under realistic flight conditions, significantly improving the UAV's agility and flight envelope.
   </div>
 
   <div class="pd-divider"></div>
 
-  <div class="pd-section-title">Results &amp; Figures</div>
+  <div class="pd-section-label">Results &amp; Figures</div>
   <div class="pd-figures">
     <div class="pd-fig-placeholder">Figure 1</div>
     <div class="pd-fig-placeholder">Figure 2</div>
