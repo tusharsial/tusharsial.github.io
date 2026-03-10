@@ -140,7 +140,7 @@ author_profile: false
         </div>
         <div class="opt1-body">
           <span class="opt1-tag">Control Systems · UAV</span>
-          <div class="opt1-title">Flight Stabilizing Controllers for Agile Fixed-Wing UAV</div>
+          <div class="opt1-title">Control of Agile Fixed-Wing UAV</div>
           <div class="opt1-desc">Backstepping-based longitudinal and lateral-directional stability controllers with a wind observer for robustness against atmospheric disturbances.</div>
           <div class="opt1-btns">
             <a href="/research/fixed-wing-uav/" class="opt1-btn opt1-btn-primary">Learn More</a>
