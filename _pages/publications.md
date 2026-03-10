@@ -80,9 +80,9 @@ author_profile: false
 <style>
 
 /* ── PAGE HERO ── */
-.pub-hero {
+/*.pub-hero {
   padding: 48px 0 8px;
-}
+}*/
 .pub-page-title {
   font-family: 'Orbitron', sans-serif;
   font-size: clamp(1.8rem, 4vw, 3rem);
