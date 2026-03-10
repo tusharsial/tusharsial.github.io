@@ -125,7 +125,7 @@ author_profile: false
         <div class="opt1-body">
           <span class="opt1-tag">Robotics · Control Systems </span>
           <div class="opt1-title">Autonomous Mars Rover</div>
-          <div class="opt1-desc">Co-founded CRISS Robotics. Developed high-level electrical architecture and electronic differential drive system. Won International Rover Design Challenge 2023.</div>
+          <div class="opt1-desc">Co-founded CRISS Robotics, a student research technical team consisting of 60+ members for designing and manufacturing an all-terrain 6-wheeled Mars Rover. </div>
           <div class="opt1-btns">
             <a href="/research/mars-rover/" class="opt1-btn opt1-btn-primary">Learn More</a>
             <a href="https://drive.google.com/file/d/1kP_tj-SH4lCFHxSWdpxNRr5fvlEZZh0U/view" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost">IRC Report</a>
