@@ -172,7 +172,7 @@ author_profile: false
         <div class="opt1-body">
           <span class="opt1-tag">Robotics · Control Systems · DL</span>
           <div class="opt1-title">Vitran Drone: Autonomous Delivery Quadcopter</div>
-          <div class="opt1-desc">Designed an autonomous navigation framework for an autonomous delivery quadcopter.</div>
+          <div class="opt1-desc">Designed a flight controller and autonomous navigation framework for a delivery quadcopter operating in city environments.</div>
           <div class="opt1-btns">
             <a href="/research/delivery-quadcopter/" class="opt1-btn opt1-btn-primary">Learn More</a>
             <a href="https://github.com/tusharsial/Autonomous-Delivery-Quadcopter/tree/main" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-gh"/></svg>Code</a>
