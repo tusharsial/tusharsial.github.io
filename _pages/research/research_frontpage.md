@@ -39,8 +39,7 @@ author_profile: false
 
   <!-- ── MASTERS ── -->
   <div class="rp-group" data-filter="ms">
-    <div class="rp-eyebrow">Masters Research</div>
-    <div class="rp-sectiontitle">Graduate Work</div>
+    <div class="rp-sectiontitle">MS Research</div>
     <div class="opt1-grid">
 
       <div class="opt1-card">
@@ -50,7 +49,7 @@ author_profile: false
         <div class="opt1-body">
           <span class="opt1-tag">MDO · Astrodynamics</span>
           <div class="opt1-title">Coupled Spacecraft Trajectory–Power Subsystem Design Optimization</div>
-          <div class="opt1-desc">Developed an MDO framework coupling trajectory dynamics and power subsystem design for a low-thrust orbit-lowering maneuver around asteroid 16-Psyche. </div>
+          <div class="opt1-desc">Developed an MDO framework coupling trajectory dynamics and power subsystem design for a low-thrust orbit-lowering maneuver around asteroid 16-Psyche.</div>
           <div class="opt1-btns">
             <a href="/research/coupled-trajectory-power/" class="opt1-btn opt1-btn-primary">Learn More</a>
             <a href="https://github.com/tusharsial/Coupled-Power-Space-Trajectory-Optimization-using-MDO" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-gh"/></svg>Code</a>
@@ -66,7 +65,7 @@ author_profile: false
         <div class="opt1-body">
           <span class="opt1-tag">Stochastic Control · Optimization</span>
           <div class="opt1-title">Optimal Covariance Control</div>
-          <div class="opt1-desc"> Developed a computationally efficient novel covariance steering algorithm in continuous time with applications to control of aerospace and robotic systems under stochastic disturbances.</div>
+          <div class="opt1-desc">Developed a computationally efficient novel covariance steering algorithm in continuous time with applications to control of aerospace and robotic systems under stochastic disturbances.</div>
           <div class="opt1-btns">
             <a href="/research/optimal-covariance-control/" class="opt1-btn opt1-btn-primary">Learn More</a>
             <a href="https://github.com/tusharsial/Covariance-Steering" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-gh"/></svg>Code</a>
@@ -96,8 +95,7 @@ author_profile: false
 
   <!-- ── UNDERGRAD ── -->
   <div class="rp-group" data-filter="ug">
-    <div class="rp-eyebrow">Undergraduate Research</div>
-    <div class="rp-sectiontitle">Undergrad Work</div>
+    <div class="rp-sectiontitle">UG Research</div>
     <div class="opt1-grid">
 
       <div class="opt1-card">
@@ -123,9 +121,9 @@ author_profile: false
           <img src="/images/Mars Rover Image.png" alt="Autonomous Mars Rover"/>
         </div>
         <div class="opt1-body">
-          <span class="opt1-tag">Robotics · Control Systems </span>
+          <span class="opt1-tag">Robotics · Control Systems</span>
           <div class="opt1-title">Autonomous Mars Rover</div>
-          <div class="opt1-desc">Co-founded CRISS Robotics, a student research technical team consisting of 60+ members for designing and manufacturing an all-terrain 6-wheeled Mars Rover. </div>
+          <div class="opt1-desc">Co-founded CRISS Robotics, a student research technical team consisting of 60+ members for designing and manufacturing an all-terrain 6-wheeled Mars Rover.</div>
           <div class="opt1-btns">
             <a href="/research/mars-rover/" class="opt1-btn opt1-btn-primary">Learn More</a>
             <a href="https://drive.google.com/file/d/1kP_tj-SH4lCFHxSWdpxNRr5fvlEZZh0U/view" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-doc"/></svg>IRC</a>
@@ -141,7 +139,7 @@ author_profile: false
           </video>
         </div>
         <div class="opt1-body">
-          <span class="opt1-tag">Control Systems · UAV </span>
+          <span class="opt1-tag">Control Systems · UAV</span>
           <div class="opt1-title">Flight Stabilizing Controllers for Agile Fixed-Wing UAV</div>
           <div class="opt1-desc">Backstepping-based longitudinal and lateral-directional stability controllers with a wind observer for robustness against atmospheric disturbances.</div>
           <div class="opt1-btns">
@@ -158,7 +156,7 @@ author_profile: false
         <div class="opt1-body">
           <span class="opt1-tag">Motor Control · CAD</span>
           <div class="opt1-title">Powertrain of a Formula-Style Electric Vehicle</div>
-          <div class="opt1-desc">Designed a High-fidelity Simulink powertrain model for motor selection, battery sizing, and motor control optimization.</div>
+          <div class="opt1-desc">Designed a high-fidelity Simulink powertrain model for motor selection, battery sizing, and motor control optimization.</div>
           <div class="opt1-btns">
             <a href="/research/electric-vehicle/" class="opt1-btn opt1-btn-primary">Learn More</a>
             <a href="https://docs.google.com/document/u/1/d/e/2PACX-1vQuObctRIT1pGiuUQN05OE-FDu31f3r085TjL3lFPOHDcydQl3Sj4Ll3P8LhzXQuDx47tkLKqnTsIDy/pub" target="_blank" rel="noopener" class="opt1-btn opt1-btn-ghost"><svg class="opt1-icon"><use href="#ico-doc"/></svg>Report</a>
@@ -188,7 +186,6 @@ author_profile: false
 </div>
 
 <style>
-/* Scope all styles under .rp-page to beat MM globals */
 .rp-page { display: block; padding: 20px 0 80px; }
 .rp-page *, .rp-page *::before, .rp-page *::after { box-sizing: border-box !important; }
 
@@ -217,7 +214,7 @@ author_profile: false
   display: block; margin-bottom: 6px !important;
 }
 
-/* Page title — gradient matches publications page */
+/* Page title */
 .rp-pagetitle {
   font-family: 'Orbitron', sans-serif !important;
   font-size: clamp(1.8rem, 4vw, 3rem) !important;
@@ -239,7 +236,7 @@ author_profile: false
   background: #FF6B00 !important;
 }
 
-/* Divider — matches publications orbit-divider */
+/* Divider */
 .rp-divider {
   width: 100% !important; height: 1px !important;
   background: linear-gradient(to right, transparent, rgba(255,107,0,0.35), transparent) !important;
@@ -247,7 +244,7 @@ author_profile: false
   display: block !important;
 }
 
-/* Filter buttons */
+/* ── Filter buttons — match btn-space-outline from about.md ── */
 .rp-filters {
   display: flex !important;
   gap: 8px !important;
@@ -259,17 +256,17 @@ author_profile: false
   font-family: 'Orbitron', sans-serif !important;
   font-size: 0.52rem !important; letter-spacing: 2px !important;
   text-transform: uppercase !important;
-  border: 1px solid rgba(255,107,0,0.2) !important;
+  border: 1px solid rgba(255,107,0,0.5) !important;
   border-radius: 3px !important;
   background: transparent !important;
-  color: #6a7385 !important;
+  color: #fff !important;
   cursor: pointer !important;
   transition: all 0.2s !important;
 }
-.rp-filter:hover { border-color: #FF6B00 !important; color: #FF6B00 !important; background: rgba(255,107,0,0.06) !important; }
+.rp-filter:hover { border-color: #FF6B00 !important; color: #FF9A3C !important; background: rgba(255,107,0,0.15) !important; }
 .rp-filter.active { border-color: #FF6B00 !important; color: #000 !important; background: #FF6B00 !important; font-weight: 700 !important; }
 
-/* Section headings */
+/* Section title — single heading, no eyebrow */
 .rp-sectiontitle {
   font-family: 'Orbitron', sans-serif !important;
   font-size: clamp(1.1rem, 2.5vw, 1.6rem) !important;
@@ -336,7 +333,6 @@ author_profile: false
   padding: 18px !important; display: flex !important; flex-direction: column !important; flex: 1 !important;
   position: relative !important; overflow: hidden !important;
 }
-/* Spotlight radial layer, position driven by JS --mx/--my */
 .opt1-body::before {
   content: '' !important; position: absolute !important; inset: 0 !important;
   background: radial-gradient(circle 130px at var(--mx,50%) var(--my,50%), rgba(255,107,0,0.11) 0%, transparent 70%) !important;
@@ -346,7 +342,9 @@ author_profile: false
 .opt1-card:hover .opt1-body::before { opacity: 1 !important; }
 .opt1-body > * { position: relative !important; z-index: 1 !important; }
 
-/* Tag — uses CSS vars so animation wins over static !important declarations */
+/* Tag */
+@property --tc { syntax: '<color>'; inherits: false; initial-value: #FF6B00; }
+@property --bc { syntax: '<color>'; inherits: false; initial-value: rgba(255,107,0,0.28); }
 .opt1-tag {
   display: inline-flex !important;
   align-self: flex-start !important;
@@ -359,17 +357,14 @@ author_profile: false
   border-radius: 2px !important; padding: 3px 7px !important;
   text-transform: uppercase !important; margin-bottom: 9px !important;
 }
-
 @keyframes tagFlash {
   0%   { --tc: #FF6B00; --bc: rgba(255,107,0,0.28); }
   35%  { --tc: #994000; --bc: rgba(255,107,0,0.12); }
   100% { --tc: #FF6B00; --bc: rgba(255,107,0,0.28); }
 }
-.opt1-card:hover .opt1-tag {
-  animation: tagFlash 0.4s ease-out forwards;
-}
-@property --tc { syntax: '<color>'; inherits: false; initial-value: #FF6B00; }
-@property --bc { syntax: '<color>'; inherits: false; initial-value: rgba(255,107,0,0.28); }
+.opt1-card:hover .opt1-tag { animation: tagFlash 0.4s ease-out forwards; }
+
+/* Card title — pure #fff to match about.md hero brightness */
 .opt1-title {
   font-family: 'Orbitron', sans-serif !important;
   font-size: 0.78rem !important; font-weight: 700 !important;
@@ -377,11 +372,11 @@ author_profile: false
   margin-bottom: 9px !important; flex: 1 !important;
 }
 .opt1-desc {
-  font-size: 0.8rem !important; color: #6a7385 !important;
+  font-size: 0.8rem !important; color: #b0b8c8 !important;
   line-height: 1.6 !important; margin-bottom: 16px !important;
 }
 
-/* Buttons */
+/* ── Ghost buttons — match btn-space-outline from about.md ── */
 .opt1-btns { display: flex !important; gap: 7px !important; flex-wrap: wrap !important; }
 .opt1-btn {
   padding: 6px 13px !important;
@@ -397,8 +392,12 @@ author_profile: false
 }
 .opt1-btn-primary { background: #FF6B00 !important; color: #000 !important; font-weight: 700 !important; border: none !important; }
 .opt1-btn-primary:hover { background: #FF9A3C !important; color: #000 !important; text-decoration: none !important; }
-.opt1-btn-ghost { background: transparent !important; color: #6a7385 !important; border: 1px solid rgba(255,255,255,0.1) !important; }
-.opt1-btn-ghost:hover { border-color: rgba(255,107,0,0.4) !important; color: #FF9A3C !important; text-decoration: none !important; }
+.opt1-btn-ghost {
+  background: transparent !important;
+  color: #fff !important;
+  border: 1px solid rgba(255,107,0,0.5) !important;
+}
+.opt1-btn-ghost:hover { border-color: #FF6B00 !important; color: #FF9A3C !important; background: rgba(255,107,0,0.15) !important; text-decoration: none !important; }
 .opt1-icon { width: 13px !important; height: 13px !important; flex-shrink: 0 !important; vertical-align: middle; }
 
 @media (max-width: 900px) { .opt1-grid { grid-template-columns: repeat(2, 1fr) !important; } }
@@ -406,7 +405,6 @@ author_profile: false
 </style>
 
 <script>
-/* Filter */
 function rpFilter(type, btn) {
   document.querySelectorAll('.rp-filter').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
@@ -419,13 +417,11 @@ function rpFilter(type, btn) {
   });
 }
 
-/* Spotlight: track mouse over .opt1-body, update CSS custom props */
 (function() {
   function attach() {
     document.querySelectorAll('.opt1-body').forEach(function(body) {
       if (body._spotInit) return;
       body._spotInit = true;
-
       body.addEventListener('mousemove', function(e) {
         var rect = body.getBoundingClientRect();
         var x = ((e.clientX - rect.left) / rect.width  * 100).toFixed(1) + '%';
@@ -435,9 +431,7 @@ function rpFilter(type, btn) {
       });
     });
   }
-  /* Run once DOM ready, re-run after any filter toggle */
   document.addEventListener('DOMContentLoaded', attach);
-  /* Fallback if DOMContentLoaded already fired (Jekyll inline) */
   if (document.readyState !== 'loading') attach();
 })();
 </script>
