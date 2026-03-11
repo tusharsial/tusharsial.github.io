@@ -406,6 +406,12 @@ figcaption,
   }
 }
 
+.btn-space-primary:hover,
+.btn-space-outline:hover,
+.contact-card:hover {
+  border-bottom: none !important;
+}
+
 // Tables
 table { background: rgba(255,255,255,0.02) !important; color: #b0b8c8 !important; }
 th {
