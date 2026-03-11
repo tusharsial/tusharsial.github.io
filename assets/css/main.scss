@@ -331,7 +331,7 @@ a {
   } 
 }
 
-.page__content a:hover,
+.page__content a:not(.btn-space-primary):not(.btn-space-outline):not(.contact-card):hover,
 .pd-body a:hover,
 .news-table a:hover,
 .pub-primordial a:hover {
@@ -404,12 +404,6 @@ figcaption,
     background: #FF9A3C !important;
     box-shadow: 0 0 20px rgba(255, 107, 0, 0.4) !important;
   }
-}
-
-.btn-space-primary:hover,
-.btn-space-outline:hover,
-.contact-card:hover {
-  border-bottom: none !important;
 }
 
 // Tables
