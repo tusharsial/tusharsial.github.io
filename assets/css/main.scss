@@ -328,9 +328,15 @@ a {
   color: #FF9A3C !important; 
   &:hover { 
     color: #FF6B00 !important;
-    text-decoration: none !important;
-    border-bottom: 1px dotted #cc4400 !important;
   } 
+}
+
+.page__content a:hover,
+.pd-body a:hover,
+.news-table a:hover,
+.pub-primordial a:hover {
+  text-decoration: none !important;
+  border-bottom: 1px dotted #cc4400 !important;
 }
 
 .page__title { display: none !important; }
