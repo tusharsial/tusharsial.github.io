@@ -8,14 +8,14 @@ author_profile: false
 
 <style>
 .page__content { padding: 0 !important; margin: 0 !important; }
-.page { padding: 0 !important; }
-#main { padding: 0 !important; max-width: 100% !important; }
-.archive { margin: 0 !important; }
-body { overflow: hidden !important; }
+.page { padding: 0 !important; margin: 0 !important; }
+#main { padding: 0 !important; margin: 0 !important; max-width: 100% !important; }
+.archive { margin: 0 !important; padding: 0 !important; }
+body { overflow: hidden !important; margin: 0 !important; padding: 0 !important; }
 </style>
 
 <iframe
   src="/assets/courses-solar.html"
-  style="width:100vw;height:calc(100vh - 66px);border:none;display:block;margin-left:calc(-1 * (100vw - 100%) / 2);"
+  style="position:fixed;left:0;top:66px;width:100vw;height:calc(100vh - 66px);border:none;display:block;"
   allowfullscreen>
 </iframe>
