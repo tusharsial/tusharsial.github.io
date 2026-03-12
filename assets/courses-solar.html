@@ -29,20 +29,24 @@ html,body{width:100%;height:100%;overflow:hidden;background:#03030a;font-family:
 .pdesc{font-size:0.84rem;color:#d0d8e8;line-height:1.82;margin-bottom:16px}
 .pmoons-title{font-family:'Orbitron',sans-serif;font-size:0.38rem;letter-spacing:3px;color:#FF6B00;text-transform:uppercase;margin-bottom:8px}
 .pmoons{display:flex;flex-direction:column;gap:5px}
-.pmoon-item{display:flex;align-items:flex-start;gap:8px;padding:7px 10px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:4px;font-size:0.78rem;color:#8a94a8;line-height:1.35;transition:background 0.15s,color 0.15s;cursor:pointer}
+.pmoon-item{display:flex;align-items:flex-start;gap:8px;padding:7px 10px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:4px;font-size:0.78rem;color:#8a94a8;line-height:1.35;transition:background 0.15s,color 0.15s,opacity 0.5s ease;cursor:pointer}
 .pmoon-item:hover{background:rgba(255,107,0,0.07);color:#d0d8e8;border-color:rgba(255,107,0,0.2)}
 .pmoon-dot{width:5px;height:5px;border-radius:50%;flex-shrink:0;margin-top:5px}
 .pmoon-code{font-family:'Orbitron',sans-serif;font-size:0.34rem;letter-spacing:1.5px;color:rgba(255,107,0,0.85);text-transform:uppercase;margin-bottom:1px}
-#leg{position:fixed;left:32px;top:34px;z-index:400;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);border-radius:10px;padding:10px 12px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 8px 32px rgba(0,0,0,0.25),inset 0 1px 0 rgba(255,255,255,0.04);display:flex;flex-direction:column;gap:2px;opacity:0;transition:opacity 0.5s ease;pointer-events:none;min-width:180px}
-.li{display:flex;align-items:center;gap:7px;font-size:0.72rem;color:#8a94a8;padding:4px 7px;border:1px solid rgba(255,255,255,0.08);border-radius:4px;background:rgba(3,3,10,0.75);cursor:pointer;transition:background 0.15s,color 0.15s,border-color 0.15s;letter-spacing:0.3px}
+#leg{position:fixed;left:18px;top:14px;z-index:400;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);border-radius:10px;padding:10px 12px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 8px 32px rgba(0,0,0,0.25),inset 0 1px 0 rgba(255,255,255,0.04);display:flex;flex-direction:column;gap:2px;opacity:0;transition:opacity 0.5s ease;pointer-events:none;min-width:180px}
+.li{display:flex;align-items:center;gap:7px;font-size:0.72rem;color:#8a94a8;padding:4px 7px;border:1px solid rgba(255,255,255,0.08);border-radius:4px;background:rgba(3,3,10,0.75);cursor:pointer;transition:background 0.15s,color 0.15s,border-color 0.15s,opacity 0.5s ease;letter-spacing:0.3px}
 .li:hover{background:rgba(255,107,0,0.07);color:#d0d8e8;border-color:rgba(255,107,0,0.2)}
 .ld{width:6px;height:6px;border-radius:50%;flex-shrink:0}
 #hud{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:400;display:flex;gap:6px}
-#homeBtn{position:fixed;bottom:18px;left:18px;z-index:400;width:34px;height:34px;background:rgba(3,3,10,0.75);border:1px solid rgba(255,107,0,0.35);border-radius:8px;color:#FF9A3C;font-size:1rem;display:flex;align-items:center;justify-content:center;cursor:pointer;backdrop-filter:blur(10px);transition:background 0.15s,border-color 0.15s}
-#homeBtn:hover{background:rgba(255,107,0,0.12);border-color:rgba(255,107,0,0.6)}
+#homeBtn{position:fixed;bottom:18px;left:18px;z-index:400;width:34px;height:34px;background:transparent;border:1px solid rgba(255,107,0,0.5);border-radius:3px;color:rgba(255,255,255,0.55);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.2s}
+#homeBtn:hover{border-color:#FF6B00;color:#FF9A3C;background:rgba(255,107,0,0.15)}
+#filterBtns{position:fixed;top:14px;right:80px;z-index:400;display:flex;gap:8px;align-items:center}
+.fbtn{font-family:'Orbitron',sans-serif;font-size:0.52rem;letter-spacing:2px;text-transform:uppercase;padding:7px 18px;background:transparent;border:1px solid rgba(255,107,0,0.5);border-radius:3px;color:#fff;cursor:pointer;transition:all 0.2s}
+.fbtn:hover{border-color:#FF6B00;color:#FF9A3C;background:rgba(255,107,0,0.15)}
+.fbtn.active{border-color:#FF6B00;color:#000;background:#FF6B00;font-weight:700}
 .hp{font-family:'Orbitron',sans-serif;font-size:0.36rem;letter-spacing:2px;color:rgba(255,107,0,0.7);text-transform:uppercase;padding:3px 9px;border:1px solid rgba(255,107,0,0.35);border-radius:20px;white-space:nowrap;transition:opacity 0.4s ease,max-width 0.4s ease,padding 0.4s ease,border-width 0.4s ease;overflow:hidden;max-width:200px}
 .hp.hidden{opacity:0;max-width:0;padding-left:0;padding-right:0;border-width:0}
-#backBtn{position:fixed;top:44px;right:18px;z-index:720;display:none;background:rgba(3,3,10,0.95);border:1px solid rgba(255,107,0,0.35);color:#FF9A3C;font-family:'Orbitron',sans-serif;font-size:0.46rem;letter-spacing:1.5px;padding:8px 12px;border-radius:6px;cursor:pointer}
+#backBtn{position:fixed;top:14px;right:18px;z-index:720;display:none;background:rgba(3,3,10,0.95);border:1px solid rgba(255,107,0,0.35);color:#FF9A3C;font-family:'Orbitron',sans-serif;font-size:0.46rem;letter-spacing:1.5px;padding:8px 12px;border-radius:6px;cursor:pointer}
 #backBtn.show{display:block}
 #backBtn:hover{background:rgba(255,107,0,0.1)}
 </style>
@@ -54,6 +58,11 @@ html,body{width:100%;height:100%;overflow:hidden;background:#03030a;font-family:
 <div id="panel"><div class="pcode" id="pc"></div><span class="pname" id="pn"></span><div class="pcat" id="pct"></div><div class="pinst" id="pi"></div><div class="pdesc" id="pd"></div><div class="pmoons-title" id="pmoons-title"></div><div class="pmoons" id="pmoons"></div></div>
 <div id="leg"></div>
 <button id="homeBtn" title="Return to default view" onclick="focusPlanet=null;focusMoon=null;closePanel();setBack(false);ctrl.reset(0.9);"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9.5z"/><polyline points="9 21 9 12 15 12 15 21"/></svg></button>
+<div id="filterBtns">
+  <button class="fbtn active" data-filter="all">All</button>
+  <button class="fbtn" data-filter="MS">MS</button>
+  <button class="fbtn" data-filter="UG">UG</button>
+</div>
 <div id="hud"><div class="hp">drag · rotate</div><div class="hp" id="hudZoom">scroll · zoom</div><div class="hp">hover · inspect</div><div class="hp">click · details</div></div>
 <button id="backBtn" onclick="handleBack()">Back</button>
 
@@ -217,6 +226,43 @@ function tiltedOrbitPoint(r,inc,a){return new THREE.Vector3(r*Math.cos(a),r*Math
 const planetObjs=[],moonObjs=[],allPicks=[],planetMap=new Map(),moonMap=new Map();
 const grps={};C.forEach(c=>{(grps[c.cat]||(grps[c.cat]=[])).push(c);});
 let focusPlanet=null,focusMoon=null;
+let activeFilter='all';
+
+// Determine if a planet is visible under current filter
+function planetMatchesFilter(p){
+  if(activeFilter==='all')return true;
+  return p.courses.some(c=>c.inst.includes(activeFilter));
+}
+
+// Wire filter buttons
+document.getElementById('filterBtns').addEventListener('click',e=>{
+  const btn=e.target.closest('.fbtn');
+  if(!btn)return;
+  const f=btn.dataset.filter;
+  if(f===activeFilter)return;
+  activeFilter=f;
+  document.querySelectorAll('.fbtn').forEach(b=>b.classList.toggle('active',b.dataset.filter===f));
+  // Dim legend rows for hidden planets
+  document.querySelectorAll('.li[data-cat]').forEach(row=>{
+    const p=planetObjs.find(pp=>pp.dept.cat===row.dataset.cat);
+    const shown=!p||planetMatchesFilter(p);
+    row.style.opacity=shown?'1':'0.25';
+    row.style.pointerEvents=shown?'auto':'none';
+  });
+  // Dim panel moon rows for hidden courses
+  document.querySelectorAll('#pmoons .pmoon-item').forEach(row=>{
+    const idx=parseInt(row.dataset.idx);
+    const m=moonObjs.find(mo=>mo.planetObj===focusPlanet&&moonObjs.filter(x=>x.planetObj===focusPlanet).indexOf(mo)===idx);
+    if(!m)return;
+    const shown=activeFilter==='all'||m.course.inst.includes(activeFilter);
+    row.style.opacity=shown?'1':'0.25';
+    row.style.pointerEvents=shown?'auto':'none';
+  });
+  // If focused planet becomes hidden, reset
+  if(focusPlanet&&!planetMatchesFilter(focusPlanet)){
+    focusPlanet=null;focusMoon=null;closePanel();setBack(false);ctrl.reset(0.9);
+  }
+});
 
 DEPTS.forEach((dept,di)=>{
   const orbitMat=new THREE.LineBasicMaterial({color:dept.col,transparent:true,opacity:0.17});
@@ -225,7 +271,7 @@ DEPTS.forEach((dept,di)=>{
   const planet=new THREE.Mesh(new THREE.SphereGeometry(dept.ps,28,28),new THREE.MeshPhongMaterial({color:dept.dark,emissive:dept.col,emissiveIntensity:0.14,shininess:24}));
   planet.add(new THREE.Mesh(new THREE.SphereGeometry(dept.ps*1.24,20,20),new THREE.MeshBasicMaterial({color:dept.col,transparent:true,opacity:0.055,side:THREE.BackSide,depthWrite:false})));
   scene.add(planet);
-  const pObj={planet,orbitMat,inc:dept.inc,r:dept.r,anomaly:di*(Math.PI*2/DEPTS.length),speed:dept.speed,dept};
+  const pObj={planet,orbitMat,inc:dept.inc,r:dept.r,anomaly:di*(Math.PI*2/DEPTS.length),speed:dept.speed,dept,courses:grps[dept.cat]||[],targetOp:1.0,currentOp:1.0};
   pObj.placePlanet=function(){planet.position.copy(tiltedOrbitPoint(pObj.r,pObj.inc,pObj.anomaly));};
   pObj.placePlanet();planetObjs.push(pObj);allPicks.push(planet);
   planetMap.set(planet,{code:'',name:dept.name,cat:'Course Group',inst:'',desc:`${dept.name} — click a moon to explore individual courses.`});
@@ -259,6 +305,13 @@ function openPanel(c, moons, planetMoonObjs){
   if(moons&&moons.length){
     titleEl.textContent='Courses in this group';
     listEl.innerHTML=moons.map((m,i)=>`<div class="pmoon-item" data-idx="${i}"><div class="pmoon-dot" style="background:#${m.col.toString(16).padStart(6,'0')}"></div><div><div class="pmoon-code">${m.code}</div>${m.name}</div></div>`).join('');
+    // Apply current filter state to rows
+    listEl.querySelectorAll('.pmoon-item').forEach((row,i)=>{
+      const mo=planetMoonObjs[i];
+      const shown=!mo||activeFilter==='all'||mo.course.inst.includes(activeFilter);
+      row.style.opacity=shown?'1':'0.25';
+      row.style.pointerEvents=shown?'auto':'none';
+    });
     // delegated hover + click on the list
     listEl.onmouseenter=null;listEl.onmouseleave=null;listEl.onclick=null;
     listEl.addEventListener('mouseover',e=>{
@@ -290,7 +343,7 @@ function setPlanetFocus(p){
   const pMoonObjs=moonObjs.filter(m=>m.planetObj===p);
   openPanel(planetMap.get(p.planet),grps[p.dept.cat]||[],pMoonObjs);
 }
-function setMoonFocus(m){focusPlanet=m.planetObj;focusMoon=m;const pos=m.moon.position.clone();const rel=cam.position.clone().sub(pos);ctrl.flyTo(5.2,Math.acos(rel.y/Math.max(1e-6,rel.length())),Math.atan2(rel.x,rel.z),0.9,pos);setBack(true);openPanel(moonMap.get(m.moon));}
+function setMoonFocus(m){focusPlanet=m.planetObj;focusMoon=m;const pos=m.moon.position.clone();const rel=cam.position.clone().sub(pos);ctrl.flyTo(5.2,Math.acos(rel.y/Math.max(1e-6,rel.length())),Math.atan2(rel.x,rel.z),0.9,pos);setBack(true);const pMoonObjs=moonObjs.filter(mo=>mo.planetObj===m.planetObj);openPanel(moonMap.get(m.moon),pMoonObjs.map(mo=>mo.course),pMoonObjs);}
 function handleBack(){if(focusMoon){const parent=focusMoon.planetObj;focusMoon=null;setPlanetFocus(parent);}else if(focusPlanet){focusPlanet=null;closePanel();setBack(false);ctrl.reset(0.9);}}
 window.handleBack=handleBack;
 
@@ -353,13 +406,34 @@ function loop(){
   coronaGroup.rotation.y+=0.001;
   sunPt.intensity=9+Math.sin(t*0.35)*1.2;
   dust3a.update();dust3b.update();dust3c.update();dust3cW.update();dust3d.update();
-  planetObjs.forEach(p=>{p.anomaly+=p.speed;p.placePlanet();const isH=p.planet===hovered||p===legendHovered;p.orbitMat.opacity+=((isH?0.5:0.17)-p.orbitMat.opacity)*0.12;p.planet.scale.setScalar(isH?1.22:1.0);});
+  planetObjs.forEach(p=>{
+    p.anomaly+=p.speed;p.placePlanet();
+    const isH=p.planet===hovered||p===legendHovered;
+    const visible=planetMatchesFilter(p);
+    p.targetOp=visible?1.0:0.0;
+    p.currentOp+=(p.targetOp-p.currentOp)*0.07;
+    const op=p.currentOp;
+    p.orbitMat.opacity=(isH?0.5:0.17)*op;
+    p.planet.scale.setScalar(isH?1.22:1.0);
+    p.planet.material.opacity=op;p.planet.material.transparent=true;
+    p.planet.children.forEach(ch=>{if(ch.material){ch.material.opacity=0.055*op;}});
+    p.planet.visible=op>0.01;
+  });
   moonObjs.forEach(m=>{
     m.anomaly+=m.speed;updateMoonWorld(m);updateMoonRing(m);
     const isH=m.moon===hovered||m===panelHovered;
     m.mMat.emissiveIntensity=isH?1.0+Math.sin(t*5+m.phase)*0.12:0.38+Math.sin(t+m.phase)*0.07;
     m.moon.scale.setScalar(isH?1.8:1.0);
-    m.moonRing.material.opacity+=((isH?0.5:0.21)-m.moonRing.material.opacity)*0.12;
+    const moonVisible=activeFilter==='all'||m.course.inst.includes(activeFilter);
+    const mTargetOp=moonVisible?1.0:0.0;
+    if(m.currentOp===undefined)m.currentOp=1.0;
+    m.currentOp+=(mTargetOp-m.currentOp)*0.07;
+    const mOp=m.currentOp;
+    m.mMat.opacity=mOp;m.mMat.transparent=true;
+    m.moon.children.forEach(ch=>{if(ch.material)ch.material.opacity=0.07*mOp;});
+    m.moon.visible=mOp>0.01;
+    m.moonRing.material.opacity+=((moonVisible?(isH?0.5:0.21):0)-m.moonRing.material.opacity)*0.12;
+    m.moonRing.visible=mOp>0.01;
   });
   if(focusMoon)ctrl.setTarget(focusMoon.moon.position.clone());
   else if(focusPlanet)ctrl.setTarget(focusPlanet.planet.position.clone());
