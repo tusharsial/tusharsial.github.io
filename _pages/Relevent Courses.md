@@ -15,7 +15,7 @@ author_profile: false
 </style>
 
 <iframe
-  src="{{ base_path }}/assets/solar-demo.html"
+  src="{{ base_path }}/assets/courses-solar.html"
   style="width:100%;height:calc(100vh - 66px);border:none;display:block;"
   allowfullscreen>
 </iframe>
