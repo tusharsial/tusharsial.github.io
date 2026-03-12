@@ -258,9 +258,23 @@ document.getElementById('filterBtns').addEventListener('click',e=>{
     row.style.opacity=shown?'1':'0.25';
     row.style.pointerEvents=shown?'auto':'none';
   });
-  // If focused planet becomes hidden, reset
-  if(focusPlanet&&!planetMatchesFilter(focusPlanet)){
-    focusPlanet=null;focusMoon=null;closePanel();setBack(false);ctrl.reset(0.9);
+  // Smart zoom-out when switching away from 'all' (not when switching TO 'all')
+  if(f!=='all'){
+    if(focusMoon){
+      // In moon zoom: check if the moon's course matches new filter
+      const moonVisible=focusMoon.course.inst.includes(f);
+      if(!moonVisible){
+        // Step back to planet if planet is visible, else full reset
+        if(planetMatchesFilter(focusMoon.planetObj)){
+          const parent=focusMoon.planetObj;focusMoon=null;setPlanetFocus(parent);
+        } else {
+          focusPlanet=null;focusMoon=null;closePanel();setBack(false);ctrl.reset(0.9);
+        }
+      }
+    } else if(focusPlanet&&!planetMatchesFilter(focusPlanet)){
+      // In planet zoom: planet hidden by new filter — full reset
+      focusPlanet=null;focusMoon=null;closePanel();setBack(false);ctrl.reset(0.9);
+    }
   }
 });
 
@@ -343,7 +357,7 @@ function setPlanetFocus(p){
   const pMoonObjs=moonObjs.filter(m=>m.planetObj===p);
   openPanel(planetMap.get(p.planet),grps[p.dept.cat]||[],pMoonObjs);
 }
-function setMoonFocus(m){focusPlanet=m.planetObj;focusMoon=m;const pos=m.moon.position.clone();const rel=cam.position.clone().sub(pos);ctrl.flyTo(5.2,Math.acos(rel.y/Math.max(1e-6,rel.length())),Math.atan2(rel.x,rel.z),0.9,pos);setBack(true);const pMoonObjs=moonObjs.filter(mo=>mo.planetObj===m.planetObj);openPanel(moonMap.get(m.moon),pMoonObjs.map(mo=>mo.course),pMoonObjs);}
+function setMoonFocus(m){focusPlanet=m.planetObj;focusMoon=m;const pos=m.moon.position.clone();const rel=cam.position.clone().sub(pos);ctrl.flyTo(5.2,Math.acos(rel.y/Math.max(1e-6,rel.length())),Math.atan2(rel.x,rel.z),0.9,pos);setBack(true);openPanel(moonMap.get(m.moon),[],[]);}
 function handleBack(){if(focusMoon){const parent=focusMoon.planetObj;focusMoon=null;setPlanetFocus(parent);}else if(focusPlanet){focusPlanet=null;closePanel();setBack(false);ctrl.reset(0.9);}}
 window.handleBack=handleBack;
 
