@@ -11,10 +11,11 @@ author_profile: false
 .page { padding: 0 !important; }
 #main { padding: 0 !important; max-width: 100% !important; }
 .archive { margin: 0 !important; }
+body { overflow: hidden !important; }
 </style>
 
 <iframe
   src="/assets/courses-solar.html"
-  style="width:100%;height:calc(100vh - 66px);border:none;display:block;"
+  style="width:100vw;height:calc(100vh - 66px);border:none;display:block;margin-left:calc(-1 * (100vw - 100%) / 2);"
   allowfullscreen>
 </iframe>
