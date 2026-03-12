@@ -9,7 +9,7 @@ author_profile: false
 <style>
 /* Strip all Minimal Mistakes page padding so iframe fills cleanly */
 .page__content { 
-  padding: 30px 0 0 0 !important;   /* top right bottom left */
+  padding: 70px 0 0 0 !important;   /* top right bottom left */
   margin: 0 !important; 
 }
 
