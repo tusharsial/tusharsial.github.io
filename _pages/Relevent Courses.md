@@ -16,6 +16,6 @@ body { overflow: hidden !important; margin: 0 !important; padding: 0 !important;
 
 <iframe
   src="/assets/courses-solar.html"
-  style="position:fixed;left:0;top:66px;width:100vw;height:calc(100vh - 66px);border:none;display:block;"
+  style="position:fixed;left:0;top:0;width:100vw;height:100vh;border:none;display:block;z-index:0;"
   allowfullscreen>
 </iframe>
