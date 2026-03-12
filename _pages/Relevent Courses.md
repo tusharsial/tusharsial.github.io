@@ -12,7 +12,7 @@ author_profile: false
 #main { padding: 0 !important; margin: 0 !important; max-width: 100% !important; }
 .archive { margin: 0 !important; padding: 0 !important; }
 body { overflow: hidden !important; margin: 0 !important; padding: 0 !important; }
-.page__footer { display: none !important; }
+footer, .page__footer, #footer, footer.page__footer { display: none !important; visibility: hidden !important; height: 0 !important; }
 </style>
 
 <iframe
