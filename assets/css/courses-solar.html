@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Solar System — Course Visualization Demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;background:#03030a;font-family:'Exo 2',sans-serif;color:#b0b8c8}
+#cv{position:fixed;top:0;left:0;width:100%;height:100%;display:block;cursor:grab}
+#cv:active{cursor:grabbing}
+
+#tip{position:fixed;pointer-events:none;z-index:700;opacity:0;transition:opacity 0.15s;transform:translateY(-4px)}
+.tb{background:rgba(3,3,10,0.97);border:1px solid rgba(255,107,0,0.4);border-radius:6px;padding:10px 14px;max-width:260px;backdrop-filter:blur(12px);box-shadow:0 8px 32px rgba(0,0,0,0.7),inset 0 1px 0 rgba(255,107,0,0.08)}
+.tc{font-family:'Orbitron',sans-serif;font-size:0.4rem;letter-spacing:2px;color:rgba(255,107,0,0.55);text-transform:uppercase;margin-bottom:3px}
+.tc:empty{display:none}
+.tn{font-size:0.82rem;font-weight:600;color:#fff;line-height:1.3;margin-bottom:3px}
+.tcat{font-family:'Orbitron',sans-serif;font-size:0.38rem;letter-spacing:2px;color:#FF6B00;text-transform:uppercase}
+#panel{position:fixed;right:0;top:48px;bottom:0;width:310px;background:rgba(3,3,10,0.98);border-left:1px solid rgba(255,107,0,0.15);z-index:650;transform:translateX(100%);transition:transform 0.42s cubic-bezier(0.23,1,0.32,1);padding:26px 20px 28px;overflow-y:auto}
+#panel.open{transform:translateX(0)}
+.pcode{font-family:'Orbitron',sans-serif;font-size:0.42rem;letter-spacing:3px;color:rgba(255,107,0,0.8);text-transform:uppercase;margin-bottom:6px}
+.pcode:empty{display:none}
+.pname{font-family:'Orbitron',sans-serif;font-size:0.9rem;font-weight:900;color:#fff;line-height:1.3;padding-bottom:10px;margin-bottom:10px;border-bottom:2px solid #FF6B00;display:block}
+.pcat{font-family:'Orbitron',sans-serif;font-size:0.4rem;letter-spacing:3px;color:#FF6B00;text-transform:uppercase;margin-bottom:2px}
+.pinst{font-size:0.74rem;color:#6a7a94;margin-bottom:14px}
+.pdesc{font-size:0.84rem;color:#d0d8e8;line-height:1.82;margin-bottom:16px}
+.pmoons-title{font-family:'Orbitron',sans-serif;font-size:0.38rem;letter-spacing:3px;color:#FF6B00;text-transform:uppercase;margin-bottom:8px}
+.pmoons{display:flex;flex-direction:column;gap:5px}
+.pmoon-item{display:flex;align-items:flex-start;gap:8px;padding:7px 10px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:4px;font-size:0.78rem;color:#8a94a8;line-height:1.35;transition:background 0.15s,color 0.15s;cursor:pointer}
+.pmoon-item:hover{background:rgba(255,107,0,0.07);color:#d0d8e8;border-color:rgba(255,107,0,0.2)}
+.pmoon-dot{width:5px;height:5px;border-radius:50%;flex-shrink:0;margin-top:5px}
+.pmoon-code{font-family:'Orbitron',sans-serif;font-size:0.34rem;letter-spacing:1.5px;color:rgba(255,107,0,0.85);text-transform:uppercase;margin-bottom:1px}
+#leg{position:fixed;left:18px;top:14px;z-index:400;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);border-radius:10px;padding:10px 12px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 8px 32px rgba(0,0,0,0.25),inset 0 1px 0 rgba(255,255,255,0.04);display:flex;flex-direction:column;gap:2px;opacity:0;transition:opacity 0.5s ease;pointer-events:none;min-width:180px}
+.li{display:flex;align-items:center;gap:7px;font-size:0.72rem;color:#8a94a8;padding:4px 7px;border:1px solid rgba(255,255,255,0.08);border-radius:4px;background:rgba(3,3,10,0.75);cursor:pointer;transition:background 0.15s,color 0.15s,border-color 0.15s;letter-spacing:0.3px}
+.li:hover{background:rgba(255,107,0,0.07);color:#d0d8e8;border-color:rgba(255,107,0,0.2)}
+.ld{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+#hud{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:400;display:flex;gap:6px}
+#homeBtn{position:fixed;bottom:18px;left:18px;z-index:400;width:34px;height:34px;background:rgba(3,3,10,0.75);border:1px solid rgba(255,107,0,0.35);border-radius:8px;color:#FF9A3C;font-size:1rem;display:flex;align-items:center;justify-content:center;cursor:pointer;backdrop-filter:blur(10px);transition:background 0.15s,border-color 0.15s}
+#homeBtn:hover{background:rgba(255,107,0,0.12);border-color:rgba(255,107,0,0.6)}
+.hp{font-family:'Orbitron',sans-serif;font-size:0.36rem;letter-spacing:2px;color:rgba(255,107,0,0.7);text-transform:uppercase;padding:3px 9px;border:1px solid rgba(255,107,0,0.35);border-radius:20px;white-space:nowrap;transition:opacity 0.4s ease,max-width 0.4s ease,padding 0.4s ease,border-width 0.4s ease;overflow:hidden;max-width:200px}
+.hp.hidden{opacity:0;max-width:0;padding-left:0;padding-right:0;border-width:0}
+#backBtn{position:fixed;top:14px;right:18px;z-index:720;display:none;background:rgba(3,3,10,0.95);border:1px solid rgba(255,107,0,0.35);color:#FF9A3C;font-family:'Orbitron',sans-serif;font-size:0.46rem;letter-spacing:1.5px;padding:8px 12px;border-radius:6px;cursor:pointer}
+#backBtn.show{display:block}
+#backBtn:hover{background:rgba(255,107,0,0.1)}
+</style>
+</head>
+<body>
+
+<canvas id="cv"></canvas>
+<div id="tip"><div class="tb"><div class="tc" id="tc"></div><div class="tn" id="tn"></div><div class="tcat" id="tcat"></div></div></div>
+<div id="panel"><div class="pcode" id="pc"></div><span class="pname" id="pn"></span><div class="pcat" id="pct"></div><div class="pinst" id="pi"></div><div class="pdesc" id="pd"></div><div class="pmoons-title" id="pmoons-title"></div><div class="pmoons" id="pmoons"></div></div>
+<div id="leg"></div>
+<button id="homeBtn" title="Return to default view" onclick="focusPlanet=null;focusMoon=null;closePanel();setBack(false);ctrl.reset(0.9);"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9.5z"/><polyline points="9 21 9 12 15 12 15 21"/></svg></button>
+<div id="hud"><div class="hp">drag · rotate</div><div class="hp" id="hudZoom">scroll · zoom</div><div class="hp">hover · inspect</div><div class="hp">click · details</div></div>
+<button id="backBtn" onclick="handleBack()">Back</button>
+
+<script>
+const C=[
+  {code:'MATH F112',name:'Linear & Complex Algebra',cat:'Applied Mathematics',inst:'BITS Pilani · UG',col:0x29B6F6,desc:'Vector spaces, eigenvalue problems, complex analysis, and engineering applications.'},
+  {code:'MATH F211',name:'Ordinary Differential Equations',cat:'Applied Mathematics',inst:'BITS Pilani · UG',col:0x29B6F6,desc:'First and higher-order ODEs, Laplace transforms, series solutions, and ODE systems.'},
+  {code:'MATH F113',name:'Probability & Statistics',cat:'Applied Mathematics',inst:'BITS Pilani · UG',col:0x29B6F6,desc:'Probability theory, distributions, hypothesis testing, and regression analysis.'},
+  {code:'MATH F212',name:'Optimization',cat:'Applied Mathematics',inst:'BITS Pilani · UG',col:0x29B6F6,desc:'Linear, nonlinear, and dynamic programming; gradient methods; constrained optimization.'},
+  {code:'EE 5710',name:'Convex Optimization',cat:'Applied Mathematics',inst:'Iowa State · MS',col:0x29B6F6,desc:'Convex sets, duality, interior-point methods, SDP with applications to control and signal processing.'},
+  {code:'AERE 5770',name:'Linear Systems',cat:'Controls & Estimation',inst:'Iowa State · MS',col:0x4CAF50,desc:'State-space representations, controllability, observability, stability analysis, and pole-placement for LTI systems.'},
+  {code:'EEE F242',name:'Control Systems',cat:'Controls & Estimation',inst:'BITS Pilani · UG',col:0x4CAF50,desc:'Transfer functions, root locus, Bode plots, stability margins, and PID controller design.'},
+  {code:'EEE F422',name:'Modern Control Systems',cat:'Controls & Estimation',inst:'BITS Pilani · UG',col:0x4CAF50,desc:'State-space design, observers, LQR, introduction to robust control.'},
+  {code:'AERE 5740',name:'Optimal Control',cat:'Controls & Estimation',inst:'Iowa State · MS',col:0x4CAF50,desc:'Calculus of variations, HJB equation, LQR, minimum-time and minimum-energy optimal control.'},
+  {code:'AERE 5730',name:'Random Signal Analysis & Kalman Filtering',cat:'Controls & Estimation',inst:'Iowa State · MS',col:0x4CAF50,desc:'Stochastic processes, power spectral density, Wiener filtering, discrete/continuous Kalman filter for aerospace.'},
+  {code:'AERE 5510',name:'Orbital Mechanics',cat:'Astrodynamics',inst:'Iowa State · MS',col:0xFF6600,desc:'Two-body and restricted three-body orbital mechanics, Kepler equations, orbital maneuvers, and interplanetary trajectories.'},
+  {code:'AERE 6510',name:'Spacecraft Trajectory Optimization',cat:'Astrodynamics',inst:'Iowa State · MS',col:0xFF6600,desc:'Direct and indirect methods for optimal trajectory design, Pontryagin\'s minimum principle, collocation, pseudospectral methods.'},
+  {code:'AERE 5630',name:'Multidisciplinary Design Optimization',cat:'Systems & Design',inst:'Iowa State · MS',col:0xFFCC44,desc:'MDO architectures, surrogate modeling, OpenMDAO framework, co-design of coupled aerospace systems.'},
+  {code:'AERE 5070',name:'Applied Formal Methods',cat:'Formal Methods',inst:'Iowa State · MS',col:0xFF8800,desc:'Temporal logic, model checking, formal verification for safety-critical aerospace systems.'},
+  {code:'BITS F451',name:'Autonomous Mobile Robotics',cat:'Robotics',inst:'BITS Pilani · UG',col:0xAB47BC,desc:'Localization, SLAM, motion planning, sensor fusion for autonomous ground vehicles.'},
+  {code:'BITS F441',name:'Robotic Manipulators',cat:'Robotics',inst:'BITS Pilani · UG',col:0xAB47BC,desc:'Forward/inverse kinematics, dynamics, Jacobians, trajectory planning for robotic arms.'},
+  {code:'EEE F411',name:'Internet of Things',cat:'Robotics',inst:'BITS Pilani · UG',col:0xAB47BC,desc:'Embedded systems, communication protocols, sensor networks, and IoT architecture.'},
+  {code:'EE 5230',name:'Random Processes for Communications & Signal Processing',cat:'Signal Processing',inst:'Iowa State · MS',col:0x26C6DA,desc:'Probability, random variables, stochastic processes, spectral analysis, and communications applications.'},
+  {code:'EEE F243',name:'Signals & Systems',cat:'Signal Processing',inst:'BITS Pilani · UG',col:0x26C6DA,desc:'Continuous and discrete-time signals, Fourier and Z transforms, filtering, and sampling theory.'},
+  {code:'EEE F215',name:'Digital Design',cat:'Electronics',inst:'BITS Pilani · UG',col:0xEC407A,desc:'Combinational and sequential logic, FSMs, HDL design, FPGA implementation.'},
+  {code:'EEE F241',name:'Microprocessors & Interfacing',cat:'Electronics',inst:'BITS Pilani · UG',col:0xEC407A,desc:'Assembly language, memory organization, I/O interfacing, embedded programming.'},
+  {code:'EEE F244',name:'Microelectronic Circuits',cat:'Electronics',inst:'BITS Pilani · UG',col:0xEC407A,desc:'BJT and MOSFET amplifiers, frequency response, feedback, op-amp circuits.'},
+  {code:'EEE F313',name:'VLSI Design',cat:'Electronics',inst:'BITS Pilani · UG',col:0xEC407A,desc:'CMOS logic design, layout, timing analysis, analog/digital VLSI design.'},
+];
+const CAT_CSS={'Applied Mathematics':'#29B6F6','Controls & Estimation':'#4CAF50','Astrodynamics':'#FF6600','Systems & Design':'#FFCC44','Formal Methods':'#FF8800','Robotics':'#AB47BC','Signal Processing':'#26C6DA','Electronics':'#EC407A'};
+
+const canvas=document.getElementById('cv');
+const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:false});
+renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
+renderer.setClearColor(0x03030a,1);
+let W=canvas.clientWidth,H=canvas.clientHeight;
+renderer.setSize(W,H,false);
+window.addEventListener('resize',()=>{
+  W=canvas.clientWidth;H=canvas.clientHeight;
+  renderer.setSize(W,H,false);
+  cam.aspect=W/H;cam.updateProjectionMatrix();
+});
+
+// ── ORBIT CONTROLS ──
+function mkCtrl(cam,el,initPhi,initTheta,initR){
+  let phi=initPhi,theta=initTheta,r=initR,target=new THREE.Vector3();
+  let tPhi=phi,tTheta=theta,tR=r,tTarget=target.clone();
+  let drag=false,px=0,py=0,vT=0,vP=0;
+  el.addEventListener('mousedown',e=>{drag=true;px=e.clientX;py=e.clientY;vT=vP=0;});
+  window.addEventListener('mouseup',()=>drag=false);
+  window.addEventListener('mousemove',e=>{if(!drag)return;const dx=(e.clientX-px)*0.007,dy=(e.clientY-py)*0.007;vT=dx;vP=dy;tTheta+=dx;tPhi=Math.max(0.05,Math.min(Math.PI-0.05,tPhi+dy));px=e.clientX;py=e.clientY;});
+  el.addEventListener('wheel',e=>{
+    e.preventDefault();
+    // Only allow zoom in default (unfocused) state
+    if(focusPlanet||focusMoon)return;
+    tR=Math.max(6,Math.min(140,tR+e.deltaY*0.055));
+  },{passive:false});
+  return{
+    update(){
+      if(!drag){tTheta+=vT*0.93;tPhi+=vP*0.93;vT*=0.93;vP*=0.93;}
+      phi+=(tPhi-phi)*0.09;theta+=(tTheta-theta)*0.09;r+=(tR-r)*0.09;
+      target.lerp(tTarget,0.12);
+      cam.position.set(target.x+r*Math.sin(phi)*Math.sin(theta),target.y+r*Math.cos(phi),target.z+r*Math.sin(phi)*Math.cos(theta));
+      cam.lookAt(target);
+    },
+    flyTo(nr,np,nt,dur=1.2,ntarget=null){
+      const obj={r,phi,theta,tx:tTarget.x,ty:tTarget.y,tz:tTarget.z};
+      gsap.to(obj,{r:nr,phi:np,theta:nt,tx:ntarget?ntarget.x:tTarget.x,ty:ntarget?ntarget.y:tTarget.y,tz:ntarget?ntarget.z:tTarget.z,duration:dur,ease:'power3.inOut',onUpdate:()=>{r=obj.r;phi=obj.phi;theta=obj.theta;tR=r;tPhi=phi;tTheta=theta;tTarget.set(obj.tx,obj.ty,obj.tz);}});
+    },
+    reset(dur=1.0){this.flyTo(initR,initPhi,initTheta,dur,new THREE.Vector3());},
+    setTarget(v){tTarget.copy(v);},
+    getR(){return r;}
+  };
+}
+
+function mkStars(n=2800,rMin=100,rMax=320){
+  const pos=new Float32Array(n*3),col=new Float32Array(n*3);
+  for(let i=0;i<n;i++){
+    const r=rMin+Math.random()*(rMax-rMin),th=Math.random()*Math.PI*2,ph=Math.acos(2*Math.random()-1);
+    pos[i*3]=r*Math.sin(ph)*Math.cos(th);pos[i*3+1]=r*Math.sin(ph)*Math.sin(th);pos[i*3+2]=r*Math.cos(ph);
+    const t=Math.random();col[i*3]=0.55+t*0.45;col[i*3+1]=0.6+t*0.35;col[i*3+2]=0.8+t*0.2;
+  }
+  const geo=new THREE.BufferGeometry();
+  geo.setAttribute('position',new THREE.BufferAttribute(pos,3));
+  geo.setAttribute('color',new THREE.BufferAttribute(col,3));
+  return new THREE.Points(geo,new THREE.PointsMaterial({size:0.28,vertexColors:true,transparent:true,opacity:0.72}));
+}
+
+const _dustTex=(()=>{
+  const c=document.createElement('canvas');c.width=c.height=32;
+  const ctx=c.getContext('2d');
+  const g=ctx.createRadialGradient(16,16,0,16,16,16);
+  g.addColorStop(0,'rgba(255,255,255,1)');g.addColorStop(0.4,'rgba(255,255,255,0.8)');g.addColorStop(1,'rgba(255,255,255,0)');
+  ctx.fillStyle=g;ctx.fillRect(0,0,32,32);
+  return new THREE.CanvasTexture(c);
+})();
+
+function mkOrbitingDust(n,rMin,rMax,colorBias=[0.08,0.25,0.72],yScale=0.18){
+  const pos=new Float32Array(n*3),particles=[];
+  for(let i=0;i<n;i++)particles.push({r:rMin+Math.pow(Math.random(),0.6)*(rMax-rMin),inc:(Math.random()-0.5)*yScale,anomaly:Math.random()*Math.PI*2,speed:(0.00018+Math.random()*0.00025)*(Math.random()<0.5?1:-1)});
+  const geo=new THREE.BufferGeometry();
+  const attr=new THREE.BufferAttribute(pos,3);attr.setUsage(THREE.DynamicDrawUsage);geo.setAttribute('position',attr);
+  const tc=colorBias;
+  const mesh=new THREE.Points(geo,new THREE.PointsMaterial({color:new THREE.Color(tc[0]+0.06,tc[1]+0.15,tc[2]+0.04),size:0.38,transparent:true,opacity:0.55,sizeAttenuation:true,map:_dustTex,alphaMap:_dustTex,alphaTest:0.01,depthWrite:false}));
+  return{mesh,update(){for(let i=0;i<n;i++){const p=particles[i];p.anomaly+=p.speed;pos[i*3]=p.r*Math.cos(p.anomaly);pos[i*3+1]=p.r*Math.sin(p.anomaly)*Math.sin(p.inc);pos[i*3+2]=p.r*Math.sin(p.anomaly)*Math.cos(p.inc);}attr.needsUpdate=true;}};
+}
+
+function mkGaussBelt(n,rMid,sigma,rMin,rMax,yScale){
+  const pos=new Float32Array(n*3),particles=[];
+  for(let i=0;i<n;i++){const u=1-Math.random(),v=Math.random();const g=Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v);particles.push({r:Math.max(rMin,Math.min(rMax,rMid+g*sigma)),inc:(Math.random()-0.5)*yScale,anomaly:Math.random()*Math.PI*2,speed:(0.00009+Math.random()*0.00012)*(Math.random()<0.5?1:-1)});}
+  const geo=new THREE.BufferGeometry();
+  const attr=new THREE.BufferAttribute(pos,3);attr.setUsage(THREE.DynamicDrawUsage);geo.setAttribute('position',attr);
+  const mesh=new THREE.Points(geo,new THREE.PointsMaterial({color:new THREE.Color(0.14,0.40,0.76),size:0.36,transparent:true,opacity:0.60,sizeAttenuation:true,map:_dustTex,alphaMap:_dustTex,alphaTest:0.01,depthWrite:false}));
+  return{mesh,update(){for(let i=0;i<n;i++){const p=particles[i];p.anomaly+=p.speed;pos[i*3]=p.r*Math.cos(p.anomaly);pos[i*3+1]=p.r*Math.sin(p.anomaly)*Math.sin(p.inc);pos[i*3+2]=p.r*Math.sin(p.anomaly)*Math.cos(p.inc);}attr.needsUpdate=true;}};
+}
+
+function buildGradientSphere(radius,seg=40){
+  const geo=new THREE.SphereGeometry(radius,seg,seg);
+  const c=new Float32Array(geo.attributes.position.count*3);
+  for(let i=0;i<geo.attributes.position.count;i++){
+    const x=geo.attributes.position.getX(i)/radius,y=geo.attributes.position.getY(i)/radius,z=geo.attributes.position.getZ(i)/radius;
+    const h=(y+1)*0.5,swirl=0.12*Math.sin(7*x+5*z)+0.07*Math.cos(11*y+3*x),t=Math.max(0,Math.min(1,h+swirl));
+    c[i*3]=1.0;c[i*3+1]=0.18+t*0.68;c[i*3+2]=0.02+t*0.34;
+  }
+  geo.setAttribute('color',new THREE.BufferAttribute(c,3));
+  return new THREE.Mesh(geo,new THREE.MeshBasicMaterial({vertexColors:true}));
+}
+
+// ── SCENE ──
+const scene=new THREE.Scene();scene.fog=new THREE.FogExp2(0x03030a,0.003);
+const cam=new THREE.PerspectiveCamera(52,W/H,0.1,900);
+const ctrl=mkCtrl(cam,canvas,1.35,0.48,60);
+
+scene.add(mkStars());
+const dust3a=mkOrbitingDust(3500,17,68,[0.08,0.25,0.72],0.20);scene.add(dust3a.mesh);
+const dust3b=mkOrbitingDust(30,9,16,[0.08,0.25,0.72],0.06);scene.add(dust3b.mesh);
+const dust3c=mkGaussBelt(5000,37.0,0.9,30,43,0.05);scene.add(dust3c.mesh);
+const dust3cW=mkGaussBelt(2500,37.0,2.0,30,43,0.09);scene.add(dust3cW.mesh);
+const dust3d=mkOrbitingDust(800,10,62,[0.08,0.25,0.72],2.8);scene.add(dust3d.mesh);
+scene.add(new THREE.AmbientLight(0x050510,4));
+const sunPt=new THREE.PointLight(0xFFCC88,10,220);scene.add(sunPt);
+const d3Light=new THREE.DirectionalLight(0x2244aa,0.3);d3Light.position.set(-40,25,-20);scene.add(d3Light);
+const sunMesh=buildGradientSphere(3.6,48);scene.add(sunMesh);
+const coronaGroup=new THREE.Group();
+[[5.0,0.12],[7.5,0.07],[11.0,0.04],[16.0,0.02]].forEach(([r,op],i)=>coronaGroup.add(new THREE.Mesh(new THREE.SphereGeometry(r,24,24),new THREE.MeshBasicMaterial({color:new THREE.Color(1.0,0.55-i*0.1,0.0),transparent:true,opacity:op,side:THREE.BackSide,depthWrite:false}))));
+scene.add(coronaGroup);
+
+const DEPTS=[
+  {name:'Applied Mathematics',  cat:'Applied Mathematics',  col:0x29B6F6,r:16,inc:0.18, speed:0.00110,ps:1.1, dark:0x0a1a30},
+  {name:'Controls & Estimation',cat:'Controls & Estimation',col:0x4CAF50,r:21,inc:-0.28,speed:0.00082,ps:1.2, dark:0x0a200a},
+  {name:'Astrodynamics',        cat:'Astrodynamics',        col:0xFF6600,r:27,inc:0.32, speed:0.00062,ps:1.35,dark:0x241000},
+  {name:'Systems & Design',     cat:'Systems & Design',     col:0xFFCC44,r:34,inc:-0.20,speed:0.00048,ps:0.9, dark:0x1a1200},
+  {name:'Formal Methods',       cat:'Formal Methods',       col:0xFF8800,r:40,inc:0.24, speed:0.00037,ps:0.85,dark:0x1a0e00},
+  {name:'Robotics',             cat:'Robotics',             col:0xAB47BC,r:46,inc:-0.22,speed:0.00028,ps:1.05,dark:0x180820},
+  {name:'Signal Processing',    cat:'Signal Processing',    col:0x26C6DA,r:52,inc:0.14, speed:0.00021,ps:0.9, dark:0x001a1e},
+  {name:'Electronics',          cat:'Electronics',          col:0xEC407A,r:59,inc:-0.12,speed:0.00015,ps:0.85,dark:0x1e0010},
+];
+
+function tiltedOrbitPoint(r,inc,a){return new THREE.Vector3(r*Math.cos(a),r*Math.sin(a)*Math.sin(inc),r*Math.sin(a)*Math.cos(inc));}
+
+const planetObjs=[],moonObjs=[],allPicks=[],planetMap=new Map(),moonMap=new Map();
+const grps={};C.forEach(c=>{(grps[c.cat]||(grps[c.cat]=[])).push(c);});
+let focusPlanet=null,focusMoon=null;
+
+DEPTS.forEach((dept,di)=>{
+  const orbitMat=new THREE.LineBasicMaterial({color:dept.col,transparent:true,opacity:0.17});
+  const orbitPts=[];for(let k=0;k<=256;k++)orbitPts.push(tiltedOrbitPoint(dept.r,dept.inc,(k/256)*Math.PI*2));
+  scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(orbitPts),orbitMat));
+  const planet=new THREE.Mesh(new THREE.SphereGeometry(dept.ps,28,28),new THREE.MeshPhongMaterial({color:dept.dark,emissive:dept.col,emissiveIntensity:0.14,shininess:24}));
+  planet.add(new THREE.Mesh(new THREE.SphereGeometry(dept.ps*1.24,20,20),new THREE.MeshBasicMaterial({color:dept.col,transparent:true,opacity:0.055,side:THREE.BackSide,depthWrite:false})));
+  scene.add(planet);
+  const pObj={planet,orbitMat,inc:dept.inc,r:dept.r,anomaly:di*(Math.PI*2/DEPTS.length),speed:dept.speed,dept};
+  pObj.placePlanet=function(){planet.position.copy(tiltedOrbitPoint(pObj.r,pObj.inc,pObj.anomaly));};
+  pObj.placePlanet();planetObjs.push(pObj);allPicks.push(planet);
+  planetMap.set(planet,{code:'',name:dept.name,cat:'Course Group',inst:'',desc:`${dept.name} — click a moon to explore individual courses.`});
+  const dCourses=grps[dept.cat]||[];
+  dCourses.forEach((course,mi)=>{
+    const moonR=dept.ps*2.8+mi*1.55,moonIncl=((mi%3)-1)*0.18;
+    const moon=new THREE.Mesh(new THREE.SphereGeometry(0.28,14,14),new THREE.MeshPhongMaterial({color:dept.col,emissive:dept.col,emissiveIntensity:0.42,shininess:60}));
+    moon.add(new THREE.Mesh(new THREE.SphereGeometry(0.5,8,8),new THREE.MeshBasicMaterial({color:dept.col,transparent:true,opacity:0.07,side:THREE.BackSide,depthWrite:false})));
+    scene.add(moon);
+    const moonRing=new THREE.Line(new THREE.BufferGeometry(),new THREE.LineBasicMaterial({color:dept.col,transparent:true,opacity:0.21}));
+    scene.add(moonRing);
+    moonObjs.push({moon,planetObj:pObj,moonRing,mMat:moon.material,moonR,moonIncl,anomaly:mi*(Math.PI*2/Math.max(dCourses.length,1)),speed:0.0028-mi*0.0005,phase:Math.random()*Math.PI*2,course});
+    allPicks.push(moon);moonMap.set(moon,course);
+  });
+});
+
+function updateMoonWorld(m){const local=tiltedOrbitPoint(m.moonR,m.moonIncl,m.anomaly);m.moon.position.copy(m.planetObj.planet.position).add(local);}
+function updateMoonRing(m){const pts=[];for(let kk=0;kk<=120;kk++){const local=tiltedOrbitPoint(m.moonR,m.moonIncl,(kk/120)*Math.PI*2);pts.push(m.planetObj.planet.position.clone().add(local));}m.moonRing.geometry.dispose();m.moonRing.geometry=new THREE.BufferGeometry().setFromPoints(pts);}
+
+// ── Panel-row → scene highlight ──
+let panelHovered=null; // the moonObj currently highlighted from the panel list
+
+function openPanel(c, moons, planetMoonObjs){
+  document.getElementById('pc').textContent=c.code||'';
+  document.getElementById('pn').textContent=c.name||'';
+  document.getElementById('pct').textContent=c.cat||'';
+  document.getElementById('pi').textContent=c.inst||'';
+  document.getElementById('pd').textContent=c.desc||'';
+  const titleEl=document.getElementById('pmoons-title');
+  const listEl=document.getElementById('pmoons');
+  if(moons&&moons.length){
+    titleEl.textContent='Courses in this group';
+    listEl.innerHTML=moons.map((m,i)=>`<div class="pmoon-item" data-idx="${i}"><div class="pmoon-dot" style="background:#${m.col.toString(16).padStart(6,'0')}"></div><div><div class="pmoon-code">${m.code}</div>${m.name}</div></div>`).join('');
+    // delegated hover + click on the list
+    listEl.onmouseenter=null;listEl.onmouseleave=null;listEl.onclick=null;
+    listEl.addEventListener('mouseover',e=>{
+      const row=e.target.closest('.pmoon-item');
+      if(!row)return;
+      const idx=parseInt(row.dataset.idx);
+      panelHovered=planetMoonObjs?planetMoonObjs[idx]||null:null;
+    });
+    listEl.addEventListener('mouseleave',()=>{panelHovered=null;});
+    listEl.addEventListener('click',e=>{
+      const row=e.target.closest('.pmoon-item');
+      if(!row)return;
+      const idx=parseInt(row.dataset.idx);
+      const mObj=planetMoonObjs?planetMoonObjs[idx]:null;
+      if(mObj)setMoonFocus(mObj);
+    });
+  }else{titleEl.textContent='';listEl.innerHTML='';panelHovered=null;}
+  document.getElementById('panel').classList.add('open');
+}
+function closePanel(){document.getElementById('panel').classList.remove('open');panelHovered=null;}
+function setBack(v){document.getElementById('backBtn').classList.toggle('show',!!v);}
+
+function setPlanetFocus(p){
+  focusPlanet=p;focusMoon=null;
+  const pos=p.planet.position.clone();const rel=cam.position.clone().sub(pos);
+  ctrl.flyTo(11,Math.acos(rel.y/Math.max(1e-6,rel.length())),Math.atan2(rel.x,rel.z),0.9,pos);
+  setBack(true);
+  // Gather moonObjs for this planet in course order
+  const pMoonObjs=moonObjs.filter(m=>m.planetObj===p);
+  openPanel(planetMap.get(p.planet),grps[p.dept.cat]||[],pMoonObjs);
+}
+function setMoonFocus(m){focusPlanet=m.planetObj;focusMoon=m;const pos=m.moon.position.clone();const rel=cam.position.clone().sub(pos);ctrl.flyTo(5.2,Math.acos(rel.y/Math.max(1e-6,rel.length())),Math.atan2(rel.x,rel.z),0.9,pos);setBack(true);openPanel(moonMap.get(m.moon));}
+function handleBack(){if(focusMoon){const parent=focusMoon.planetObj;focusMoon=null;setPlanetFocus(parent);}else if(focusPlanet){focusPlanet=null;closePanel();setBack(false);ctrl.reset(0.9);}}
+window.handleBack=handleBack;
+
+// ── INTERACTION ──
+const ray=new THREE.Raycaster(),mouse=new THREE.Vector2();let hovered=null;
+const tip=document.getElementById('tip');
+canvas.addEventListener('mousemove',e=>{
+  const rect=canvas.getBoundingClientRect();
+  mouse.x=((e.clientX-rect.left)/rect.width)*2-1;
+  mouse.y=-((e.clientY-rect.top)/rect.height)*2+1;
+  ray.setFromCamera(mouse,cam);
+  const hits=ray.intersectObjects(allPicks);
+  if(hits.length){
+    hovered=hits[0].object;
+    const c=moonMap.get(hovered)||planetMap.get(hovered);
+    if(c){document.getElementById('tc').textContent=c.code||'';document.getElementById('tn').textContent=c.name||'';document.getElementById('tcat').textContent=(c.cat||'')+(c.inst?' · '+c.inst:'');tip.style.left=(e.clientX+16)+'px';tip.style.top=(e.clientY-8)+'px';tip.style.opacity='1';}
+    canvas.style.cursor='pointer';
+  }else{hovered=null;tip.style.opacity='0';canvas.style.cursor='grab';}
+});
+canvas.addEventListener('click',()=>{
+  ray.setFromCamera(mouse,cam);
+  const hits=ray.intersectObjects(allPicks);
+  if(!hits.length)return;
+  const obj=hits[0].object;
+  const m=moonObjs.find(mm=>mm.moon===obj);
+  if(m){setMoonFocus(m);return;}
+  const p=planetObjs.find(pp=>pp.planet===obj);
+  if(p)setPlanetFocus(p);
+});
+
+// ── LEGEND ──
+let legendHovered=null; // planetObj currently highlighted from legend
+document.getElementById('leg').innerHTML=
+  `<div style="font-family:'Orbitron',sans-serif;font-size:0.34rem;letter-spacing:3px;color:rgba(255,107,0,1);text-transform:uppercase;margin-bottom:5px;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,0.08)">Disciplines</div>`+
+  Object.entries(CAT_CSS).map(([k,v])=>`<div class="li" data-cat="${k}"><div class="ld" style="background:${v};box-shadow:0 0 5px ${v}"></div>${k}</div>`).join('');
+const legListEl=document.getElementById('leg');
+legListEl.addEventListener('mouseover',e=>{
+  const row=e.target.closest('.li[data-cat]');
+  legendHovered=row?planetObjs.find(p=>p.dept.cat===row.dataset.cat)||null:null;
+});
+legListEl.addEventListener('mouseleave',()=>{legendHovered=null;});
+legListEl.addEventListener('click',e=>{
+  const row=e.target.closest('.li[data-cat]');
+  if(!row)return;
+  const p=planetObjs.find(pp=>pp.dept.cat===row.dataset.cat);
+  if(p)setPlanetFocus(p);
+});
+
+// ── RENDER LOOP ──
+const legEl=document.getElementById('leg');
+const hudZoomEl=document.getElementById('hudZoom');
+let legVisible=false;
+let hudZoomVisible=true;
+let t=0;
+function loop(){
+  requestAnimationFrame(loop);
+  t+=0.006;
+  ctrl.update();
+  sunMesh.rotation.y+=0.0015;
+  coronaGroup.rotation.y+=0.001;
+  sunPt.intensity=9+Math.sin(t*0.35)*1.2;
+  dust3a.update();dust3b.update();dust3c.update();dust3cW.update();dust3d.update();
+  planetObjs.forEach(p=>{p.anomaly+=p.speed;p.placePlanet();const isH=p.planet===hovered||p===legendHovered;p.orbitMat.opacity+=((isH?0.5:0.17)-p.orbitMat.opacity)*0.12;p.planet.scale.setScalar(isH?1.22:1.0);});
+  moonObjs.forEach(m=>{
+    m.anomaly+=m.speed;updateMoonWorld(m);updateMoonRing(m);
+    const isH=m.moon===hovered||m===panelHovered;
+    m.mMat.emissiveIntensity=isH?1.0+Math.sin(t*5+m.phase)*0.12:0.38+Math.sin(t+m.phase)*0.07;
+    m.moon.scale.setScalar(isH?1.8:1.0);
+    m.moonRing.material.opacity+=((isH?0.5:0.21)-m.moonRing.material.opacity)*0.12;
+  });
+  if(focusMoon)ctrl.setTarget(focusMoon.moon.position.clone());
+  else if(focusPlanet)ctrl.setTarget(focusPlanet.planet.position.clone());
+  // Legend: show only when zoomed out (r > 85)
+  const nowVisible=ctrl.getR()>15;
+  if(nowVisible!==legVisible){legVisible=nowVisible;legEl.style.opacity=nowVisible?'1':'0';legEl.style.pointerEvents=nowVisible?'auto':'none';}
+  const zoomVisible=!(focusPlanet||focusMoon);
+  if(zoomVisible!==hudZoomVisible){hudZoomVisible=zoomVisible;hudZoomEl.classList.toggle('hidden',!zoomVisible);}
+  renderer.render(scene,cam);
+}
+loop();
+</script>
+</body>
+</html>
