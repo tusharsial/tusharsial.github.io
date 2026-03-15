@@ -9,7 +9,10 @@ main:
     
   #- title: "Portfolio"
   #  url: /portfolio/
-
+  
+  - title: "News"
+    url: /news/
+  
   - title: "Experience"
     url: /experience/
 
