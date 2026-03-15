@@ -219,10 +219,7 @@ author_profile: false
             <div class="C-loc">Iowa State University, Ames, IA</div>
             <div class="C-desc">I'm researching the intersection of Stochastic Systems, Dynamics & Control, and Optimization under Professor <a href="https://abhishekhalder.org/index.html" target="_blank" style="color:#FF9A3C"><strong>Abhishek Halder</strong></a>. The current project that I'm working on involves designing an Optimal Covariance Steering Algorithm for a Stochastic System over a finite time horizon. In addition, I'm contributing to the design and testing of generative profiling algorithms for adaptive resource allocation and scheduling on single- and multicore real-time embedded systems. This project was in collaboration between researchers from the University of California, Santa Cruz, Iowa State University, and the University of Pennsylvania.</div>
             <div class="C-tags">
-              <span class="C-tag">Covariance Steering</span>
-              <span class="C-tag">Stochastic Control</span>
-              <span class="C-tag">Optimization</span>
-              <span class="C-tag">GNC</span>
+              <span class="C-tag">MATLAB</span>
             </div>
           </div>
           <div class="C-photo">
@@ -242,10 +239,8 @@ author_profile: false
             <div class="C-loc">Indian Institute of Science, Bengaluru, India</div>
             <div class="C-desc">With a growing debris population in low Earth orbit, robots performing routine tasks autonomously (such as simple repairs/maintenance, refueling, or debris removal) may become increasingly essential for actively preventing disasters. Several missions to uncooperative targets will require Autonomous Rendezvous and Docking (AR&amp;D) operations. I interned in the Aerospace Department at the Indian Institute of Science, Bengaluru, under the guidance of Professor <a href="https://aero.iisc.ac.in/people/debasish-ghose/" target="_blank">Debasish Ghose</a>, where I developed control algorithms for AR&amp;D of spacecraft with non-cooperative tumbling satellites.</div>
             <div class="C-tags">
-              <span class="C-tag">AR&amp;D</span>
-              <span class="C-tag">Rendezvous</span>
-              <span class="C-tag">Proximity Ops</span>
-              <span class="C-tag">Non-Cooperative Targets</span>
+              <span class="C-tag">MATLAB</span>
+              <span class="C-tag">Simulink</span>
             </div>
           </div>
           <div class="C-photo">
@@ -268,12 +263,12 @@ author_profile: false
             <div class="C-role">DevSecOps Engineer</div>
             <div class="C-org">HDFC Bank</div>
             <div class="C-loc">Digital Factory Vertical, HDFC Bank, Bengaluru, India</div>
-            <div class="C-desc">I worked as a <strong style="color:#e0e8f0">DevSecOps</strong> (Development, Security, &amp; Operations) Engineer in the Digital Factory Vertical of the IT Team at HDFC Bank, Bengaluru. My primary tasks involved designing, maintaining &amp; securing <strong style="color:#e0e8f0">CI/CD pipelines</strong> using Jenkins, Git, Kubernetes, and Docker. In addition, I was tasked with implementing <strong style="color:#e0e8f0">infrastructure-as-code (IAC) principles</strong> using tools such as Terraform and Ansible, ensuring secure, compliant cloud environments.</div>
+            <div class="C-desc">I worked as a DevSecOps (Development, Security, &amp; Operations) Engineer in the Digital Factory Vertical of the IT Team at HDFC Bank, Bengaluru. My primary tasks involved designing, maintaining &amp; securing CI/CD pipelines using Jenkins, Git, Kubernetes, and Docker. In addition, I was tasked with implementing infrastructure-as-code (IAC) principles using tools such as Terraform and Ansible, ensuring secure, compliant cloud environments.</div>
             <div class="C-tags">
-              <span class="C-tag">DevSecOps</span>
-              <span class="C-tag">CI/CD</span>
-              <span class="C-tag">Kubernetes</span>
               <span class="C-tag">Docker</span>
+              <span class="C-tag">Kubernetes</span>
+              <span class="C-tag">Jenkins</span>
+              <span class="C-tag">Groovy</span>
               <span class="C-tag">Terraform</span>
               <span class="C-tag">Ansible</span>
             </div>
@@ -292,18 +287,17 @@ author_profile: false
           <div class="C-body">
             <div class="C-meta">
               <span class="C-period">2024 — Present</span>
-              <span class="C-badge">Journal Reviewer</span>
             </div>
             <div class="C-role">Journal Manuscript Reviewer</div>
             <div class="C-desc">Peer review of manuscripts submitted to the following journals:</div>
             <ul class="C-review-list">
               <li class="C-review-item">
                 <span class="C-review-name">Systems and Control Letters</span>
-                <span class="C-review-count">5 reviews</span>
+                <span class="C-review-count">8 reviews</span>
               </li>
               <li class="C-review-item">
                 <span class="C-review-name">ASME Journal of Dynamical Systems, Measurement, and Control</span>
-                <span class="C-review-count">1 review</span>
+                <span class="C-review-count">2 reviews</span>
               </li>
             </ul>
           </div>
