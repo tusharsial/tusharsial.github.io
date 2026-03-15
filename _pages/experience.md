@@ -11,22 +11,35 @@ author_profile: false
 .exp-page *, .exp-page *::before, .exp-page *::after { box-sizing: border-box !important; }
 
 /* ── PAGE SHELL ── */
-/*.C-wrap { max-width: 1100px !important; margin: 0 auto !important; padding: 48px 32px !important; } */
-.C-hero { margin-bottom: 40px !important; }
+.C-wrap { max-width: 1100px !important; margin: 0 auto !important; padding: 0 32px 48px !important; }
+.C-hero {
+  display: flex !important; align-items: flex-end !important;
+  justify-content: space-between !important; flex-wrap: wrap !important;
+  gap: 20px !important; padding: 48px 0 0 !important; margin-bottom: 0 !important;
+}
 .C-eyebrow {
-  font-family: 'Orbitron', sans-serif !important; font-size: 0.38rem !important;
-  letter-spacing: 4px !important; color: rgba(255,107,0,0.6) !important;
-  text-transform: uppercase !important; margin-bottom: 8px !important; display: block !important;
+  font-family: 'Orbitron', sans-serif !important; font-size: 0.56rem !important;
+  letter-spacing: 5px !important; color: #FF6B00 !important;
+  text-transform: uppercase !important; display: block !important; margin-bottom: 6px !important;
 }
 .C-title {
   font-family: 'Orbitron', sans-serif !important;
-  font-size: clamp(1.4rem, 3vw, 2rem) !important; font-weight: 900 !important;
-  color: #fff !important; position: relative !important; display: inline-block !important;
-  padding-bottom: 12px !important;
+  font-size: clamp(1.8rem, 4vw, 3rem) !important; font-weight: 900 !important;
+  margin: 6px 0 0 !important; padding-bottom: 14px !important;
+  border: none !important; position: relative !important; display: inline-block !important;
+  line-height: 1.15 !important;
+  background: linear-gradient(135deg, #fff 40%, #FF9A3C) !important;
+  -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
 }
 .C-title::after {
   content: '' !important; position: absolute !important; bottom: 0 !important;
-  left: 0 !important; width: 40px !important; height: 2px !important; background: #FF6B00 !important;
+  left: 0 !important; width: 60px !important; height: 2px !important; background: #FF6B00 !important;
+}
+.C-divider {
+  width: 100% !important; height: 1px !important;
+  background: linear-gradient(to right, transparent, rgba(255,107,0,0.35), transparent) !important;
+  margin: 24px 0 40px !important; display: block !important;
 }
 
 /* ── LAYOUT ── */
@@ -160,9 +173,12 @@ author_profile: false
 <div class="C-wrap">
 
   <div class="C-hero">
-    <span class="C-eyebrow">Career &amp; Contributions</span>
-    <div class="C-title">Experience</div>
+    <div>
+      <span class="C-eyebrow">Career &amp; Contributions</span>
+      <div class="C-title">Experience</div>
+    </div>
   </div>
+  <div class="C-divider"></div>
 
   <div class="C-layout">
 
@@ -297,40 +313,3 @@ function cNav(id, btn) {
   document.getElementById(id).classList.add('active');
 }
 </script>
-
-
-<!-- ---
-layout: archive
-#title: "Experience"
-permalink: /experience/
-author_profile: false
-
----
-
-{% include base_path %}
-
-Research Experience
-------
-**Halder Group (Stochastic Control & Optimization)** <span style="float: right;">(August 2024 – Present)</span> 
-
-![ISU RA](/images/ISU.jpeg){: .align-right width="350px"}
-I'm researching the intersection of Stochastic Systems, Dynamics & Control, and Optimization under Professor Abhishek Halder. The current project that I'm working on involves designing an Optimal Covariance Steering Algorithm for a Stochastic System over a finite time horizon. In addition, I'm contributing to the design and testing of generative profiling algorithms for adaptive resource allocation and scheduling on single- and multicore real-time embedded systems. This project was in collaboration between researchers from the University of California, Santa Cruz, Iowa State University, and the University of Pennsylvania.
-
-**Guidance, Control & Decision Systems Lab (GCDSL)** <span style="float: right;">(June 2022 – June 2023)</span> 
-
-![IISc](/images/IISc Team.jpg){: .align-right width="350px"}
-With a growing debris population in low Earth orbit, robots performing routine tasks autonomously (such as simple repairs/maintenance, refueling, or debris removal) may become increasingly essential for actively preventing disasters. Several missions to uncooperative targets will require **Autonomous Rendezvous and Docking (AR&D)** operations. I interned in the Aerospace Department at the Indian Institute of Science, Bengaluru, under the guidance of Professor [Debasish Ghose](https://sites.google.com/view/gcdsl-iisc/home), where I developed control algorithms for **AR&D** of spacecraft with non-cooperative tumbling satellites.
-
-Professional Experience
-------------
-**HDFC Bank** <span style="float: right;">(July 2023 – July 2024)</span>
-
-![HDFC Team Photo](/images/HDFC Team.jpg){: .align-right width="350px"}
-I worked as a **DevSecOps** (Development, Security, & Operations) Engineer in the Digital Factory Vertical of the IT Team at HDFC Bank, Bengaluru. My primary tasks involved designing, maintaining & securing **CI/CD pipelines** using Jenkins, Git, Kubernetes, and Docker. In addition, I was tasked with implementing **infrastructure-as-code (IAC) principles** using tools such as Terraform and Ansible, ensuring secure, compliant cloud environments.
-
-Review Service
-------------
-**Journal Manuscript Reviewer**         
-* System and Control Letters. (5)
-* ASME Journal of Dynamical Systems, Measurement, and Control. (1)
--->
