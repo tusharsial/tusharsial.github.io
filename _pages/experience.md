@@ -8,7 +8,7 @@ author_profile: false
 
 <style>
 /* ── RESET ── */
-.exp-page *, .exp-page *::before, .exp-page *::after { box-sizing: border-box !important; }
+ .exp-page *, .exp-page *::before, .exp-page *::after { box-sizing: border-box !important; } 
 
 /* ── PAGE SHELL ── */
 /* .C-wrap { max-width: 1100px !important; margin: 0 auto !important; padding: 0 32px 48px !important; } */
@@ -66,12 +66,13 @@ author_profile: false
 .C-sechead {
   font-family: 'Orbitron', sans-serif !important; font-size: 0.44rem !important;
   letter-spacing: 3px !important; color: #FF6B00 !important; text-transform: uppercase !important;
-  margin-bottom: 28px !important; padding-bottom: 10px !important;
-  border-bottom: 1px solid rgba(255,107,0,0.15) !important; position: relative !important;
+  margin-bottom: 28px !important; padding-bottom: 12px !important;
+  border-bottom: none !important; position: relative !important;
 }
 .C-sechead::after {
-  content: '' !important; position: absolute !important; bottom: -1px !important;
-  left: 0 !important; width: 36px !important; height: 1px !important; background: #FF6B00 !important;
+  content: '' !important; position: absolute !important; bottom: 0 !important;
+  left: 0 !important; right: 0 !important; height: 1px !important;
+  background: linear-gradient(to right, rgba(255,107,0,0.5), rgba(255,107,0,0.08), transparent) !important;
 }
 
 /* ── ENTRY CARD ── */
@@ -140,20 +141,21 @@ author_profile: false
 .C-entry:hover .C-photo img { transform: scale(1.04) !important; }
 
 /* ── SERVICE LIST ── */
-.C-review-list { list-style: none !important; margin-top: 10px !important; display: flex !important; flex-direction: column !important; gap: 8px !important; }
+.C-review-list { list-style: none !important; margin-top: 14px !important; display: flex !important; flex-direction: column !important; gap: 10px !important; }
 .C-review-item {
-  display: flex !important; align-items: center !important; gap: 10px !important;
-  font-size: 0.78rem !important; color: #8a94a8 !important; line-height: 1.6 !important;
+  display: flex !important; align-items: center !important; justify-content: space-between !important;
+  gap: 12px !important; font-size: 0.78rem !important; color: #8a94a8 !important; line-height: 1.6 !important;
+  padding: 10px 14px !important; background: rgba(255,255,255,0.02) !important;
+  border: 1px solid rgba(255,255,255,0.06) !important; border-radius: 4px !important;
+  border-left: 2px solid rgba(255,107,0,0.4) !important; transition: border-color 0.2s, background 0.2s !important;
 }
-.C-review-item::before {
-  content: '' !important; width: 5px !important; height: 5px !important; border-radius: 50% !important;
-  background: #FF6B00 !important; flex-shrink: 0 !important;
-}
+.C-review-item:hover { background: rgba(255,107,0,0.04) !important; border-left-color: #FF6B00 !important; color: #c0c8d8 !important; }
+.C-review-name { flex: 1 !important; }
 .C-review-count {
   font-family: 'Orbitron', sans-serif !important; font-size: 0.32rem !important;
-  letter-spacing: 1.5px !important; padding: 2px 7px !important;
+  letter-spacing: 1.5px !important; padding: 3px 9px !important; white-space: nowrap !important;
   border: 1px solid rgba(255,107,0,0.3) !important; border-radius: 2px !important;
-  color: rgba(255,107,0,0.7) !important; margin-left: auto !important;
+  color: rgba(255,107,0,0.7) !important; flex-shrink: 0 !important;
 }
 
 /* ── RESPONSIVE ── */
@@ -288,11 +290,11 @@ author_profile: false
             <div class="C-desc">Peer review of manuscripts submitted to the following journals:</div>
             <ul class="C-review-list">
               <li class="C-review-item">
-                Systems and Control Letters
+                <span class="C-review-name">Systems and Control Letters</span>
                 <span class="C-review-count">5 reviews</span>
               </li>
               <li class="C-review-item">
-                ASME Journal of Dynamical Systems, Measurement, and Control
+                <span class="C-review-name">ASME Journal of Dynamical Systems, Measurement, and Control</span>
                 <span class="C-review-count">1 review</span>
               </li>
             </ul>
