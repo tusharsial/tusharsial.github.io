@@ -254,6 +254,9 @@ redirect_from:
 .about-desc{font-size:0.92rem;color:#b0b8c8;line-height:1.85;margin-bottom:20px}
 .about-desc strong{color:#e0e8f0}
 
+.about-desc a{color:#FF9A3C !important;text-decoration:none !important;}
+.about-desc a:hover{color:#FF6B00 !important;border-bottom:1px dotted #cc4400 !important;}  
+
 /* Research tags */
 .about-tags-label{font-family:'Orbitron',sans-serif;font-size:0.36rem;letter-spacing:3px;color:#FF6B00 !important;text-transform:uppercase;margin-bottom:12px;display:block}
 .research-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
