@@ -175,7 +175,7 @@ author_profile: false
 }
 @media (max-width: 600px) {
   .C-sidenav { flex-direction: column !important; }
-  .C-wrap { padding: 32px 20px !important; }
+  /* .C-wrap { padding: 32px 20px !important; } */
 }
 </style>
 
