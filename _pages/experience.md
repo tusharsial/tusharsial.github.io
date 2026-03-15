@@ -213,8 +213,8 @@ author_profile: false
             </div>
             <div class="C-role">Graduate Research Assistant</div>
             <div class="C-org">Halder Group (Stochastic Control &amp; Optimization)</div>
-            <div class="C-loc">Iowa State University · Ames, IA · Prof. Abhishek Halder</div>
-            <div class="C-desc">I'm researching the intersection of Stochastic Systems, Dynamics & Control, and Optimization under Professor Abhishek Halder. The current project that I'm working on involves designing an Optimal Covariance Steering Algorithm for a Stochastic System over a finite time horizon. In addition, I'm contributing to the design and testing of generative profiling algorithms for adaptive resource allocation and scheduling on single- and multicore real-time embedded systems. This project was in collaboration between researchers from the University of California, Santa Cruz, Iowa State University, and the University of Pennsylvania.</div>
+            <div class="C-loc">Iowa State University, Ames, IA</div>
+            <div class="C-desc">I'm researching the intersection of Stochastic Systems, Dynamics & Control, and Optimization under Professor <strong style="color:#e0e8f0">Abhishek Halder</strong>. The current project that I'm working on involves designing an Optimal Covariance Steering Algorithm for a Stochastic System over a finite time horizon. In addition, I'm contributing to the design and testing of generative profiling algorithms for adaptive resource allocation and scheduling on single- and multicore real-time embedded systems. This project was in collaboration between researchers from the University of California, Santa Cruz, Iowa State University, and the University of Pennsylvania.</div>
             <div class="C-tags">
               <span class="C-tag">Covariance Steering</span>
               <span class="C-tag">Stochastic Control</span>
@@ -236,7 +236,7 @@ author_profile: false
             </div>
             <div class="C-role">Research Intern</div>
             <div class="C-org">Guidance, Control &amp; Decision Systems Lab (GCDSL)</div>
-            <div class="C-loc">Indian Institute of Science · Bengaluru, India · Prof. Debasish Ghose</div>
+            <div class="C-loc">Indian Institute of Science, Bengaluru, India</div>
             <div class="C-desc">With a growing debris population in low Earth orbit, robots performing routine tasks autonomously (such as simple repairs/maintenance, refueling, or debris removal) may become increasingly essential for actively preventing disasters. Several missions to uncooperative targets will require <strong style="color:#e0e8f0">Autonomous Rendezvous and Docking (AR&amp;D)</strong> operations. I interned in the Aerospace Department at the Indian Institute of Science, Bengaluru, under the guidance of Professor Debasish Ghose, where I developed control algorithms for <strong style="color:#e0e8f0">AR&amp;D</strong> of spacecraft with non-cooperative tumbling satellites.</div>
             <div class="C-tags">
               <span class="C-tag">AR&amp;D</span>
@@ -264,7 +264,7 @@ author_profile: false
             </div>
             <div class="C-role">DevSecOps Engineer</div>
             <div class="C-org">HDFC Bank</div>
-            <div class="C-loc">Digital Factory Vertical · IT Team · Bengaluru, India</div>
+            <div class="C-loc">Digital Factory Vertical, HDFC Bank, Bengaluru, India</div>
             <div class="C-desc">I worked as a <strong style="color:#e0e8f0">DevSecOps</strong> (Development, Security, &amp; Operations) Engineer in the Digital Factory Vertical of the IT Team at HDFC Bank, Bengaluru. My primary tasks involved designing, maintaining &amp; securing <strong style="color:#e0e8f0">CI/CD pipelines</strong> using Jenkins, Git, Kubernetes, and Docker. In addition, I was tasked with implementing <strong style="color:#e0e8f0">infrastructure-as-code (IAC) principles</strong> using tools such as Terraform and Ansible, ensuring secure, compliant cloud environments.</div>
             <div class="C-tags">
               <span class="C-tag">DevSecOps</span>
