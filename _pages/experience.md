@@ -92,10 +92,7 @@ author_profile: false
 .C-entry::after { display: none !important; }
 .C-spotlight {
   position: absolute !important; inset: 0 !important; pointer-events: none !important; z-index: 0 !important;
-  opacity: 0 !important; transition: opacity 0.3s !important;
-  grid-column: 1 / -1 !important;
 }
-.C-entry:hover .C-spotlight { opacity: 1 !important; }
 .C-entry:hover { border-color: rgba(255,107,0,0.3) !important; transform: translateY(-2px) !important; box-shadow: 0 10px 32px rgba(255,107,0,0.07) !important; }
 .C-entry:hover::before { transform: scaleX(1) !important; }
 .C-body { position: relative !important; z-index: 1 !important; }
@@ -331,8 +328,9 @@ document.querySelectorAll('.C-entry').forEach(card => {
     const r = card.getBoundingClientRect();
     const x = (e.clientX - r.left).toFixed(0) + 'px';
     const y = (e.clientY - r.top).toFixed(0) + 'px';
-    spotlight.style.background = `radial-gradient(circle 220px at ${x} ${y}, rgba(255,107,0,0.12) 0%, transparent 70%)`;
+    spotlight.style.background = `radial-gradient(circle 220px at ${x} ${y}, rgba(255,107,0,0.13) 0%, transparent 70%)`;
+    spotlight.style.opacity = '1';
   });
-  card.addEventListener('mouseleave', () => { spotlight.style.background = ''; });
+  card.addEventListener('mouseleave', () => { spotlight.style.opacity = '0'; });
 });
 </script>
