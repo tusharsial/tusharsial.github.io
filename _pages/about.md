@@ -3,6 +3,7 @@ permalink: /
 title: " "
 excerpt: "PhD Researcher · Aerospace Engineering"
 author_profile: false
+layout: archive
 redirect_from:
   - /about/
   - /about.html
