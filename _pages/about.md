@@ -95,6 +95,7 @@ redirect_from:
 </div>
 
 <!-- ══ NEWS ══ -->
+<div class="orbit-divider fade-in"></div>
 <div class="fade-in">
   <div class="section-eyebrow" style="margin-top:48px;">Latest</div>
   <div class="news-heading">News</div>
@@ -225,8 +226,8 @@ redirect_from:
 
 /* ── ABOUT ME ── */
 .about-section{margin-bottom:64px}
-.about-eyebrow{font-family:'Orbitron',sans-serif;font-size:0.56rem;letter-spacing:5px;color:#FF6B00;text-transform:uppercase;display:block;margin-bottom:6px}
-.about-title{font-family:'Orbitron',sans-serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:800;color:#fff;padding-bottom:12px;border:none;position:relative;display:inline-block;line-height:1.2}
+.about-eyebrow{font-family:'Orbitron',sans-serif;font-size:0.56rem;letter-spacing:5px;color:#FF6B00 !important;text-transform:uppercase;display:block;margin-bottom:6px}
+.about-title{font-family:'Orbitron',sans-serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:800;color:#fff !important;padding-bottom:12px;border:none;position:relative;display:inline-block;line-height:1.2}
 .about-title::after{content:'';position:absolute;bottom:0;left:0;width:50px;height:2px;background:#FF6B00}
 .about-divider{visibility:hidden;height:1px;margin:0 0 24px}
 .about-grid{display:grid;grid-template-columns:260px 1fr;gap:48px;align-items:start}
@@ -254,15 +255,15 @@ redirect_from:
 .about-desc strong{color:#e0e8f0}
 
 /* Research tags */
-.about-tags-label{font-family:'Orbitron',sans-serif;font-size:0.36rem;letter-spacing:3px;color:#FF6B00;text-transform:uppercase;margin-bottom:12px;display:block}
+.about-tags-label{font-family:'Orbitron',sans-serif;font-size:0.36rem;letter-spacing:3px;color:#FF6B00 !important;text-transform:uppercase;margin-bottom:12px;display:block}
 .research-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
-.rtag{padding:5px 14px;border:1px solid rgba(255,107,0,0.35);border-radius:20px;font-size:0.72rem;color:#fff;font-family:'Orbitron',sans-serif;letter-spacing:0.5px;transition:border-color 0.2s,color 0.2s;background:transparent}
-.rtag:hover{background:transparent;border-color:#FF6B00;color:#FF9A3C}
+.rtag{padding:5px 14px;border:1px solid rgba(255,107,0,0.35);border-radius:20px;font-size:0.72rem;color:#fff !important;font-family:'Orbitron',sans-serif;letter-spacing:0.5px;transition:border-color 0.2s,color 0.2s;background:transparent}
+.rtag:hover{background:transparent !important;border-color:#FF6B00 !important;color:#FF9A3C !important}
 
 /* Hobbies */
-.about-personal-label{font-family:'Orbitron',sans-serif;font-size:0.36rem;letter-spacing:3px;color:#FF6B00;text-transform:uppercase;margin-bottom:10px;display:block}
+.about-personal-label{font-family:'Orbitron',sans-serif;font-size:0.36rem;letter-spacing:3px;color:#FF6B00 !important;text-transform:uppercase;margin-bottom:10px;display:block}
 .about-personal{display:flex;flex-wrap:wrap;gap:8px}
-.hobby-tag{padding:4px 12px;border:1px solid rgba(255,255,255,0.08);border-radius:20px;font-size:0.72rem;color:#8a94a8}
+.hobby-tag{padding:4px 12px;border:1px solid rgba(255,107,0,0.25);border-radius:20px;font-size:0.72rem;color:#8a94a8 !important}
 
 /* ── NEWS ── */
 .section-eyebrow{font-family:'Orbitron',sans-serif;font-size:0.65rem;letter-spacing:5px;color:#FF6B00;text-transform:uppercase;margin-bottom:6px;margin-top:48px}
@@ -279,7 +280,7 @@ redirect_from:
 /* ── CONTACT ── */
 .section-heading{font-family:'Orbitron',sans-serif !important;font-size:clamp(1.4rem,3vw,2rem) !important;font-weight:800 !important;color:#ffffff;margin:0 !important;padding-bottom:12px !important;border:none !important;position:relative;display:inline-block;line-height:1.2}
 .section-heading::after{content:'';position:absolute;bottom:0;left:0;width:50px;height:2px;background:#FF6B00}
-.contact-intro{color:#b0b8c8;line-height:1.85;margin:20px 0 28px;max-width:580px;font-size:0.95rem}
+.contact-intro{color:#b0b8c8;line-height:1.85;margin:20px 0 28px;max-width:100%;font-size:0.95rem;white-space:nowrap}
 .contact-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .contact-card{display:flex;flex-direction:column;align-items:center;gap:14px;padding:32px 20px;border:1px solid rgba(255,107,0,0.12);border-radius:8px;background:rgba(255,255,255,0.02);text-decoration:none !important;color:#b0b8c8;text-align:center;transition:all 0.3s ease;position:relative;overflow:hidden}
 .contact-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,transparent,#FF6B00,transparent);transform:scaleX(0);transition:transform 0.35s ease}
