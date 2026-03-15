@@ -98,7 +98,10 @@ redirect_from:
 <div class="orbit-divider fade-in"></div>
 <div class="fade-in">
   <div class="section-eyebrow" style="margin-top:48px;">Latest</div>
-  <div class="news-heading">News</div>
+  <div class="news-header-row">
+    <div class="news-heading">News</div>
+    <a href="/news/" target="_blank" rel="noopener" class="btn-all-news">All News</a>
+  </div>
   <div class="news-scroll-wrap" id="newsWrap">
     <div class="news-scroll-inner" id="newsInner">
       <table class="news-table" id="newsTable">
@@ -282,13 +285,16 @@ redirect_from:
 .section-eyebrow{font-family:'Orbitron',sans-serif;font-size:0.65rem;letter-spacing:5px;color:#FF6B00;text-transform:uppercase;margin-bottom:6px;margin-top:48px}
 .news-heading{font-family:'Orbitron',sans-serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:800;color:#ffffff;margin:6px 0 0 0;padding-bottom:12px;border:none;position:relative;display:inline-block;line-height:1.2}
 .news-heading::after{content:'';position:absolute;bottom:0;left:0;width:50px;height:2px;background:#FF6B00}
-.news-scroll-wrap{position:relative;max-height:280px;overflow:hidden;margin-top:24px}
+.news-header-row{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:0;flex-wrap:wrap;gap:12px}
+.btn-all-news{font-family:'Orbitron',sans-serif;font-size:0.38rem;letter-spacing:2px;text-transform:uppercase;padding:7px 16px;background:transparent;border:1px solid rgba(255,107,0,0.5);border-radius:3px;color:#fff !important;cursor:pointer;transition:all 0.2s;text-decoration:none !important}
+.btn-all-news:hover{border-color:#FF6B00 !important;color:#FF9A3C !important;background:rgba(255,107,0,0.08) !important}
+.news-scroll-wrap{position:relative;max-height:420px;overflow:hidden;margin-top:24px}
 .news-scroll-wrap::before,.news-scroll-wrap::after{content:'';position:absolute;left:0;right:0;height:60px;z-index:2;pointer-events:none;opacity:0;transition:opacity 0.3s ease}
 .news-scroll-wrap::before{top:0;background:linear-gradient(to bottom,#03030a,transparent)}
 .news-scroll-wrap::after{bottom:0;background:linear-gradient(to top,#03030a 40%,transparent)}
 .news-scroll-wrap.can-scroll-up::before{opacity:1}
 .news-scroll-wrap.can-scroll-down::after{opacity:1}
-.news-scroll-inner{overflow-y:scroll;max-height:280px;padding:0 0 48px;scrollbar-width:none}
+.news-scroll-inner{overflow-y:scroll;max-height:420px;padding:0 0 48px;scrollbar-width:none}
 .news-scroll-inner::-webkit-scrollbar{display:none}
 .news-table{width:100%;border-collapse:collapse;background:none !important;border:none !important;box-shadow:none !important}
 .news-table tr{border-bottom:1px solid rgba(255,107,0,0.1) !important;background:none !important;box-shadow:none !important;transition:opacity 0.4s ease,transform 0.4s ease}
