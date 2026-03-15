@@ -41,8 +41,8 @@ redirect_from:
     <!-- LEFT: photo + education timeline -->
     <div class="about-photo-col">
       <div class="about-photo">
-        <!-- Replace src with your photo: /images/your-photo.jpg -->
-        <img src="/images/profile.jpg" alt="Tushar Sial" onerror="this.style.display='none'"/>
+        <!-- Profile Photo -->
+        <img src="/images/Profit photo 1.jpg" alt="Tushar Sial" onerror="this.style.display='none'"/>
       </div>
       <div class="edu-timeline">
         <div class="edu-entry">
