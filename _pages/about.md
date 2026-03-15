@@ -99,33 +99,44 @@ redirect_from:
 <div class="fade-in">
   <div class="section-eyebrow" style="margin-top:48px;">Latest</div>
   <div class="news-heading">News</div>
-  <div class="news-table-wrap">
-    <table class="news-table">
-      <tr>
-        <td class="news-date">Feb 27, 2026</td>
-        <td>Successfully defended my MS thesis: <a href="/files/Tushar_MS_Thesis_Slides.pdf" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Fixed Horizon Linear Quadratic Optimal Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost</a>.</td>
-      </tr>
-      <tr>
-        <td class="news-date">Jan 29, 2026</td>
-        <td>Conference Paper: <span style="color:#FF9A3C !important;">Generative Profiling for Soft Real-Time Systems and its Applications to Resource Allocation</span> accepted at the <a href="https://2026.rtas.org/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">32nd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2026)</a>.</td>
-      </tr>
-      <tr>
-        <td class="news-date">July 11, 2025</td>
-        <td>Journal paper: <a href="https://dl.acm.org/doi/pdf/10.1145/3761814" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Rasco: Resource Allocation and Scheduling Co-design for DAG Applications on Multicore</a> accepted in ACM Transactions on Embedded Computing Systems (TECS). Also accepted to be presented at <a href="https://esweek.org/emsoft/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">2025 ACM SIGBED International Conference on Embedded Software (EMSOFT)</a>.</td>
-      </tr>
-      <tr>
-        <td class="news-date">Oct 24, 2024</td>
-        <td>New Manuscript: <a href="https://arxiv.org/abs/2510.21944" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Fixed Horizon Linear Quadratic Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost</a>.</td>
-      </tr>
-      <tr>
-        <td class="news-date">Aug 15, 2024</td>
-        <td>Joined Prof. <a href="https://abhishekhalder.org/index.html" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Abhishek Halder's group</a> as a Graduate Research Assistant at ISU.</td>
-      </tr>
-      <tr>
-        <td class="news-date">Aug 07, 2024</td>
-        <td>Started MS in the <a href="https://www.aere.iastate.edu/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Department of Aerospace Engineering, Iowa State University</a>.</td>
-      </tr>
-    </table>
+  <div class="news-scroll-wrap" id="newsWrap">
+    <div class="news-scroll-inner" id="newsInner">
+      <table class="news-table" id="newsTable">
+        <tr>
+          <td class="news-date">Feb 27, 2026</td>
+          <td>Successfully defended my MS thesis: <a href="/files/Tushar_MS_Thesis_Slides.pdf" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Fixed Horizon Linear Quadratic Optimal Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost</a>.</td>
+        </tr>
+        <tr>
+          <td class="news-date">Jan 29, 2026</td>
+          <td>Conference Paper: <span style="color:#FF9A3C !important;">Generative Profiling for Soft Real-Time Systems and its Applications to Resource Allocation</span> accepted at the <a href="https://2026.rtas.org/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">32nd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2026)</a>.</td>
+        </tr>
+        <tr>
+          <td class="news-date">July 11, 2025</td>
+          <td>Journal paper: <a href="https://dl.acm.org/doi/pdf/10.1145/3761814" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Rasco: Resource Allocation and Scheduling Co-design for DAG Applications on Multicore</a> accepted in ACM Transactions on Embedded Computing Systems (TECS). Also accepted to be presented at <a href="https://esweek.org/emsoft/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">2025 ACM SIGBED International Conference on Embedded Software (EMSOFT)</a>.</td>
+        </tr>
+        <tr>
+          <td class="news-date">Oct 24, 2024</td>
+          <td>New Manuscript: <a href="https://arxiv.org/abs/2510.21944" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Fixed Horizon Linear Quadratic Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost</a>.</td>
+        </tr>
+        <tr>
+          <td class="news-date">Aug 15, 2024</td>
+          <td>Joined Prof. <a href="https://abhishekhalder.org/index.html" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Abhishek Halder's group</a> as a Graduate Research Assistant at ISU.</td>
+        </tr>
+        <tr>
+          <td class="news-date">Aug 07, 2024</td>
+          <td>Started MS in the <a href="https://www.aere.iastate.edu/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Department of Aerospace Engineering, Iowa State University</a>.</td>
+        </tr>
+      </table>
+    </div>
+    <div class="news-scroll-indicator" id="newsIndicator">
+      <div class="news-chevrons">
+        <div class="news-chevron"></div>
+        <div class="news-chevron"></div>
+        <div class="news-chevron"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+    <div class="news-scroll-track"><div class="news-scroll-thumb" id="newsThumb"></div></div>
   </div>
   <div class="news-divider"></div>
 </div>
@@ -235,8 +246,7 @@ redirect_from:
 /* Photo */
 .about-photo-col{display:flex;flex-direction:column;gap:20px;align-items:center}
 .about-photo{width:200px;height:200px;border-radius:50%;overflow:hidden;border:2px solid rgba(255,107,0,0.4);position:relative;background:linear-gradient(135deg,rgba(255,107,0,0.08),rgba(3,3,10,0.95));box-shadow:0 0 20px rgba(255,107,0,0.15)}
-.about-photo::before{display:none}  
-/* .about-photo::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 60%,rgba(3,3,10,0.6));z-index:1;pointer-events:none} */
+.about-photo::before{display:none}
 .about-photo img{width:100%;height:100%;object-fit:cover;display:block}
 
 /* Education timeline */
@@ -254,9 +264,8 @@ redirect_from:
 /* Bio */
 .about-desc{font-size:0.92rem;color:#b0b8c8;line-height:1.85;margin-bottom:20px}
 .about-desc strong{color:#e0e8f0}
-
-.about-desc a{color:#FF9A3C !important;text-decoration:none !important;}
-.about-desc a:hover{color:#FF6B00 !important;border-bottom:1px dotted #cc4400 !important;}  
+.about-desc a{color:#FF9A3C !important;text-decoration:none !important}
+.about-desc a:hover{color:#FF6B00 !important;border-bottom:1px dotted #cc4400 !important}
 
 /* Research tags */
 .about-tags-label{font-family:'Orbitron',sans-serif;font-size:0.36rem;letter-spacing:3px;color:#FF6B00 !important;text-transform:uppercase;margin-bottom:12px;display:block}
@@ -273,12 +282,31 @@ redirect_from:
 .section-eyebrow{font-family:'Orbitron',sans-serif;font-size:0.65rem;letter-spacing:5px;color:#FF6B00;text-transform:uppercase;margin-bottom:6px;margin-top:48px}
 .news-heading{font-family:'Orbitron',sans-serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:800;color:#ffffff;margin:6px 0 0 0;padding-bottom:12px;border:none;position:relative;display:inline-block;line-height:1.2}
 .news-heading::after{content:'';position:absolute;bottom:0;left:0;width:50px;height:2px;background:#FF6B00}
-.news-table-wrap{margin-top:24px;background:none !important;border:none !important;box-shadow:none !important;padding:0 !important}
+.news-scroll-wrap{position:relative;max-height:280px;overflow:hidden;margin-top:24px}
+.news-scroll-wrap::before,.news-scroll-wrap::after{content:'';position:absolute;left:0;right:0;height:60px;z-index:2;pointer-events:none;opacity:0;transition:opacity 0.3s ease}
+.news-scroll-wrap::before{top:0;background:linear-gradient(to bottom,#03030a,transparent)}
+.news-scroll-wrap::after{bottom:0;background:linear-gradient(to top,#03030a 40%,transparent)}
+.news-scroll-wrap.can-scroll-up::before{opacity:1}
+.news-scroll-wrap.can-scroll-down::after{opacity:1}
+.news-scroll-inner{overflow-y:scroll;max-height:280px;padding:0 0 48px;scrollbar-width:none}
+.news-scroll-inner::-webkit-scrollbar{display:none}
 .news-table{width:100%;border-collapse:collapse;background:none !important;border:none !important;box-shadow:none !important}
-.news-table tr{border-bottom:1px solid rgba(255,107,0,0.1) !important;background:none !important;box-shadow:none !important}
+.news-table tr{border-bottom:1px solid rgba(255,107,0,0.1) !important;background:none !important;box-shadow:none !important;transition:opacity 0.4s ease,transform 0.4s ease}
 .news-table tr:last-child{border-bottom:none !important}
+.news-table tr.row-dim{opacity:0.15;transform:translateY(4px)}
+.news-table tr.row-show{opacity:1;transform:none}
 .news-table td,.news-table th{padding:14px 8px !important;font-size:0.9rem !important;color:#b0b8c8 !important;vertical-align:top !important;line-height:1.6 !important;background:none !important;border:none !important;box-shadow:none !important}
 .news-date,.news-table td.news-date,table.news-table td.news-date{font-family:'Orbitron',sans-serif !important;font-size:0.68rem !important;letter-spacing:2px !important;color:#ffffff !important;white-space:nowrap !important;padding-right:32px !important;width:140px !important}
+.news-scroll-indicator{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:3px;opacity:0.5;transition:opacity 0.3s;pointer-events:none;z-index:3}
+.news-scroll-indicator.hidden{opacity:0}
+.news-scroll-indicator span{font-family:'Orbitron',sans-serif;font-size:0.30rem;letter-spacing:2px;color:#FF6B00;text-transform:uppercase}
+.news-chevrons{display:flex;flex-direction:column;gap:2px;align-items:center}
+.news-chevron{width:10px;height:5px;border-left:1px solid #FF6B00;border-bottom:1px solid #FF6B00;transform:rotate(-45deg);animation:chevBounce 1.2s ease-in-out infinite}
+.news-chevron:nth-child(2){animation-delay:0.2s;opacity:0.6}
+.news-chevron:nth-child(3){animation-delay:0.4s;opacity:0.3}
+@keyframes chevBounce{0%,100%{transform:rotate(-45deg) translateY(0)}50%{transform:rotate(-45deg) translateY(3px)}}
+.news-scroll-track{position:absolute;right:0;top:0;bottom:0;width:2px;background:rgba(255,107,0,0.08);border-radius:2px;z-index:3}
+.news-scroll-thumb{position:absolute;right:0;width:2px;background:#FF6B00;border-radius:2px;transition:height 0.1s,top 0.1s;box-shadow:0 0 6px rgba(255,107,0,0.6)}
 .news-divider{width:100%;height:1px;background:linear-gradient(to right,transparent,rgba(255,107,0,0.35),transparent);margin:40px 0 0}
 
 /* ── CONTACT ── */
@@ -322,5 +350,45 @@ redirect_from:
     entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});
   },{threshold:0.1});
   document.querySelectorAll('.fade-in').forEach(function(el){obs.observe(el);});
+})();
+
+(function(){
+  var inner=document.getElementById('newsInner');
+  var thumb=document.getElementById('newsThumb');
+  var indicator=document.getElementById('newsIndicator');
+  var wrap=document.getElementById('newsWrap');
+  if(!inner)return;
+  function updateThumb(){
+    var ratio=inner.scrollTop/(inner.scrollHeight-inner.clientHeight)||0;
+    var trackH=wrap.clientHeight;
+    var thumbH=Math.max(24,trackH*(inner.clientHeight/inner.scrollHeight));
+    thumb.style.height=thumbH+'px';
+    thumb.style.top=(ratio*(trackH-thumbH))+'px';
+  }
+  function updateRows(){
+    var wrapTop=wrap.getBoundingClientRect().top;
+    var wrapBot=wrap.getBoundingClientRect().bottom;
+    document.querySelectorAll('#newsTable tr').forEach(function(row){
+      var r=row.getBoundingClientRect();
+      var inView=r.top>wrapTop-6&&r.bottom<wrapBot+6;
+      row.classList.toggle('row-show',inView);
+      row.classList.toggle('row-dim',!inView);
+    });
+  }
+  function updateMasks(){
+    var atTop=inner.scrollTop<=2;
+    var atBottom=inner.scrollTop+inner.clientHeight>=inner.scrollHeight-4;
+    wrap.classList.toggle('can-scroll-up',!atTop);
+    wrap.classList.toggle('can-scroll-down',!atBottom);
+  }
+  function updateIndicator(){
+    var atBottom=inner.scrollTop+inner.clientHeight>=inner.scrollHeight-4;
+    indicator.classList.toggle('hidden',atBottom);
+  }
+  document.querySelectorAll('#newsTable tr').forEach(function(r){r.classList.add('row-show');});
+  setTimeout(function(){updateThumb();updateRows();updateMasks();},100);
+  inner.addEventListener('scroll',function(){
+    updateThumb();updateRows();updateMasks();updateIndicator();
+  });
 })();
 </script>
