@@ -220,6 +220,7 @@ author_profile: false
             <div class="C-desc">I'm researching the intersection of Stochastic Systems, Dynamics & Control, and Optimization under Professor <a href="https://abhishekhalder.org/index.html" target="_blank" style="color:#FF9A3C"><strong>Abhishek Halder</strong></a>. The current project that I'm working on involves designing an Optimal Covariance Steering Algorithm for a Stochastic System over a finite time horizon. In addition, I'm contributing to the design and testing of generative profiling algorithms for adaptive resource allocation and scheduling on single- and multicore real-time embedded systems. This project was in collaboration between researchers from the University of California, Santa Cruz, Iowa State University, and the University of Pennsylvania.</div>
             <div class="C-tags">
               <span class="C-tag">MATLAB</span>
+              <span class="C-tag">Python</span>
             </div>
           </div>
           <div class="C-photo">
