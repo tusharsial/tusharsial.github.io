@@ -11,7 +11,7 @@ author_profile: false
 .exp-page *, .exp-page *::before, .exp-page *::after { box-sizing: border-box !important; }
 
 /* ── PAGE SHELL ── */
-.C-wrap { max-width: 1100px !important; margin: 0 auto !important; padding: 48px 32px !important; }
+/*.C-wrap { max-width: 1100px !important; margin: 0 auto !important; padding: 48px 32px !important; } */
 .C-hero { margin-bottom: 40px !important; }
 .C-eyebrow {
   font-family: 'Orbitron', sans-serif !important; font-size: 0.38rem !important;
