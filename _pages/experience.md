@@ -163,7 +163,7 @@ author_profile: false
   color: rgba(255,107,0,0.65) !important; flex-shrink: 0 !important;
 }
 
-.exp-page a { color: #FF9A3C !important; }
+.exp-page a { color: #FF9A3C !important; text-decoration: none !important; }
 .exp-page a:hover { color: #FF6B00 !important; text-decoration: none !important; border-bottom: 1px dotted #cc4400 !important; }
   
 /* ── RESPONSIVE ── */
