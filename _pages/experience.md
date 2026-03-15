@@ -8,7 +8,7 @@ author_profile: false
 
 <style>
 /* ── RESET ── */
- .exp-page *, .exp-page *::before, .exp-page *::after { box-sizing: border-box !important; } 
+.exp-page *, .exp-page *::before, .exp-page *::after { box-sizing: border-box !important; }
 
 /* ── PAGE SHELL ── */
 /* .C-wrap { max-width: 1100px !important; margin: 0 auto !important; padding: 0 32px 48px !important; } */
@@ -87,10 +87,17 @@ author_profile: false
   content: '' !important; position: absolute !important; top: 0 !important; left: 0 !important;
   right: 0 !important; height: 1px !important;
   background: linear-gradient(to right, transparent, #FF6B00, transparent) !important;
-  transform: scaleX(0) !important; transition: transform 0.35s !important;
+  transform: scaleX(0) !important; transition: transform 0.35s !important; z-index: 1 !important;
+}
+.C-entry::after {
+  content: '' !important; position: absolute !important; inset: 0 !important;
+  background: radial-gradient(circle 180px at var(--mx,50%) var(--my,50%), rgba(255,107,0,0.09) 0%, transparent 70%) !important;
+  opacity: 0 !important; transition: opacity 0.4s !important; pointer-events: none !important; z-index: 0 !important;
 }
 .C-entry:hover { border-color: rgba(255,107,0,0.3) !important; transform: translateY(-2px) !important; box-shadow: 0 10px 32px rgba(255,107,0,0.07) !important; }
 .C-entry:hover::before { transform: scaleX(1) !important; }
+.C-entry:hover::after { opacity: 1 !important; }
+.C-entry > * { position: relative !important; z-index: 1 !important; }
 .C-entry.no-photo { grid-template-columns: 1fr !important; }
 
 /* ── TEXT SIDE ── */
@@ -141,21 +148,21 @@ author_profile: false
 .C-entry:hover .C-photo img { transform: scale(1.04) !important; }
 
 /* ── SERVICE LIST ── */
-.C-review-list { list-style: none !important; margin-top: 14px !important; display: flex !important; flex-direction: column !important; gap: 10px !important; }
+.C-review-list { list-style: none !important; margin-top: 14px !important; display: flex !important; flex-direction: column !important; gap: 8px !important; }
 .C-review-item {
   display: flex !important; align-items: center !important; justify-content: space-between !important;
-  gap: 12px !important; font-size: 0.78rem !important; color: #8a94a8 !important; line-height: 1.6 !important;
-  padding: 10px 14px !important; background: rgba(255,255,255,0.02) !important;
+  gap: 12px !important; padding: 8px 12px !important;
   border: 1px solid rgba(255,255,255,0.06) !important; border-radius: 4px !important;
-  border-left: 2px solid rgba(255,107,0,0.4) !important; transition: border-color 0.2s, background 0.2s !important;
+  background: rgba(3,3,10,0.4) !important; transition: background 0.15s, color 0.15s !important;
 }
-.C-review-item:hover { background: rgba(255,107,0,0.04) !important; border-left-color: #FF6B00 !important; color: #c0c8d8 !important; }
-.C-review-name { flex: 1 !important; }
+.C-review-item:hover { background: rgba(255,107,0,0.07) !important; border-color: rgba(255,107,0,0.2) !important; }
+.C-review-name { font-size: 0.78rem !important; color: #8a94a8 !important; flex: 1 !important; line-height: 1.5 !important; }
+.C-review-item:hover .C-review-name { color: #d0d8e8 !important; }
 .C-review-count {
-  font-family: 'Orbitron', sans-serif !important; font-size: 0.32rem !important;
-  letter-spacing: 1.5px !important; padding: 3px 9px !important; white-space: nowrap !important;
-  border: 1px solid rgba(255,107,0,0.3) !important; border-radius: 2px !important;
-  color: rgba(255,107,0,0.7) !important; flex-shrink: 0 !important;
+  font-family: 'Orbitron', sans-serif !important; font-size: 0.30rem !important;
+  letter-spacing: 1.5px !important; padding: 2px 8px !important; white-space: nowrap !important;
+  border: 1px solid rgba(255,107,0,0.25) !important; border-radius: 2px !important;
+  color: rgba(255,107,0,0.65) !important; flex-shrink: 0 !important;
 }
 
 /* ── RESPONSIVE ── */
@@ -314,4 +321,13 @@ function cNav(id, btn) {
   btn.classList.add('active');
   document.getElementById(id).classList.add('active');
 }
+
+// Spotlight glow follows cursor on each card
+document.querySelectorAll('.C-entry').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const r = card.getBoundingClientRect();
+    card.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
+    card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
+  });
+});
 </script>
