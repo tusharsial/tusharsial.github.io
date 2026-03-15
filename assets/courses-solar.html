@@ -288,7 +288,7 @@ DEPTS.forEach((dept,di)=>{
   const pObj={planet,orbitMat,inc:dept.inc,r:dept.r,anomaly:di*(Math.PI*2/DEPTS.length),speed:dept.speed,dept,courses:grps[dept.cat]||[],targetOp:1.0,currentOp:1.0};
   pObj.placePlanet=function(){planet.position.copy(tiltedOrbitPoint(pObj.r,pObj.inc,pObj.anomaly));};
   pObj.placePlanet();planetObjs.push(pObj);allPicks.push(planet);
-  planetMap.set(planet,{code:'',name:dept.name,cat:'Course Group',inst:'',desc:`${dept.name} — click a moon to explore individual courses.`});
+  planetMap.set(planet,{code:'',name:dept.name,cat:'Course Group',inst:'',desc:`$Click a moon to explore individual courses.`});
   const dCourses=grps[dept.cat]||[];
   dCourses.forEach((course,mi)=>{
     const moonR=dept.ps*2.8+mi*1.55,moonIncl=((mi%3)-1)*0.18;
