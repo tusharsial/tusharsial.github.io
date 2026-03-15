@@ -233,9 +233,10 @@ redirect_from:
 .about-grid{display:grid;grid-template-columns:260px 1fr;gap:48px;align-items:start}
 
 /* Photo */
-.about-photo-col{display:flex;flex-direction:column;gap:20px}
-.about-photo{width:100%;aspect-ratio:3/4;border-radius:8px;overflow:hidden;border:1px solid rgba(255,107,0,0.2);position:relative;background:linear-gradient(135deg,rgba(255,107,0,0.08),rgba(3,3,10,0.95))}
-.about-photo::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 60%,rgba(3,3,10,0.6));z-index:1;pointer-events:none}
+.about-photo-col{display:flex;flex-direction:column;gap:20px;align-items:center}
+.about-photo{width:200px;height:200px;border-radius:50%;overflow:hidden;border:2px solid rgba(255,107,0,0.4);position:relative;background:linear-gradient(135deg,rgba(255,107,0,0.08),rgba(3,3,10,0.95));box-shadow:0 0 20px rgba(255,107,0,0.15)}
+.about-photo::before{display:none}  
+/* .about-photo::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 60%,rgba(3,3,10,0.6));z-index:1;pointer-events:none} */
 .about-photo img{width:100%;height:100%;object-fit:cover;display:block}
 
 /* Education timeline */
