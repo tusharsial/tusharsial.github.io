@@ -11,7 +11,7 @@ author_profile: false
 .exp-page *, .exp-page *::before, .exp-page *::after { box-sizing: border-box !important; }
 
 /* ── PAGE SHELL ── */
-.C-wrap { max-width: 1100px !important; margin: 0 auto !important; padding: 0 32px 48px !important; }
+/* .C-wrap { max-width: 1100px !important; margin: 0 auto !important; padding: 0 32px 48px !important; } */
 .C-hero {
   display: flex !important; align-items: flex-end !important;
   justify-content: space-between !important; flex-wrap: wrap !important;
