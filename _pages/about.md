@@ -56,7 +56,7 @@ redirect_from:
         <div class="edu-entry">
           <div class="edu-dot"></div>
           <div class="edu-card">
-            <div class="edu-degree">BE · EEE</div>
+            <div class="edu-degree">BE · Electrical &amp; Electronics Engineering</div>
             <div class="edu-inst">BITS Pilani</div>
             <div class="edu-period">2019 — 2023 · Rajasthan, India</div>
           </div>
@@ -67,19 +67,19 @@ redirect_from:
     <!-- RIGHT: bio + interests + hobbies -->
     <div class="about-content-col">
       <p class="about-desc">
-        I am a <strong>final year Master's student in Aerospace Engineering</strong> at Iowa State University. Since fall 2024, I have been working as a Graduate Research Assistant under <a href="https://abhishekhalder.org/index.html" target="_blank" rel="noopener">Professor Abhishek Halder</a>, at the intersection of <strong>Stochastic Systems, Dynamics &amp; Control, and Optimization</strong>.
+        I am a final year Master's student in Aerospace Engineering at Iowa State University. Since the fall of 2024, I have been working as a Graduate Research Assistant under <a href="https://abhishekhalder.org/index.html" target="_blank" rel="noopener">Professor Abhishek Halder</a>, at the intersection of Stochastic Systems, Dynamics &amp; Control, and Optimization.
       </p>
       <p class="about-desc">
-        My enduring curiosity for control systems led me to major in Electrical and Electronics Engineering at <strong>Birla Institute of Technology and Science (BITS) Pilani</strong>. My undergraduate and master's research experiences have helped me identify my interests in bridging astrodynamics, control theory, optimization, and stochastic systems to advance <strong>Guidance, Navigation, and Control (GNC)</strong> architectures of space systems.
+        My enduring curiosity for control systems led me to major in Electrical and Electronics Engineering at Birla Institute of Technology and Science (BITS) Pilani. My undergraduate and master's research experiences have helped me identify my interests in bridging astrodynamics, control theory, optimization, and stochastic systems to advance Guidance, Navigation, and Control (GNC) architectures of space systems.
       </p>
       <span class="about-tags-label">Research Interests</span>
       <div class="research-tags">
         <span class="rtag">Orbital Mechanics &amp; Astrodynamics</span>
-        <span class="rtag">Stochastic Systems &amp; Control</span>
-        <span class="rtag">GNC Architectures</span>
-        <span class="rtag">Spacecraft Mission Design</span>
-        <span class="rtag">Optimization in Dynamical Systems</span>
-        <span class="rtag">Multi-body Dynamics</span>
+        <span class="rtag">Optimal Control</span>
+        <span class="rtag">Stochastic Systems</span>
+        <span class="rtag">GNC of Aerial &amp; Space systems </span>
+        <span class="rtag">Space Trajectory Optimization</span>
+        <span class="rtag">Robotics</span>
       </div>
       <span class="about-personal-label">Beyond Research</span>
       <div class="about-personal">
