@@ -15,7 +15,7 @@ author_profile: false
 .C-hero {
   display: flex !important; align-items: flex-end !important;
   justify-content: space-between !important; flex-wrap: wrap !important;
-  gap: 20px !important; padding: 48px 0 0 !important; margin-bottom: 0 !important;
+  gap: 20px !important; padding: 0 0 0 !important; margin-bottom: 0 !important;
 }
 .C-eyebrow {
   font-family: 'Orbitron', sans-serif !important; font-size: 0.56rem !important;
