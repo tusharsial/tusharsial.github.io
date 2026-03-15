@@ -280,7 +280,7 @@ redirect_from:
 /* ── CONTACT ── */
 .section-heading{font-family:'Orbitron',sans-serif !important;font-size:clamp(1.4rem,3vw,2rem) !important;font-weight:800 !important;color:#ffffff;margin:0 !important;padding-bottom:12px !important;border:none !important;position:relative;display:inline-block;line-height:1.2}
 .section-heading::after{content:'';position:absolute;bottom:0;left:0;width:50px;height:2px;background:#FF6B00}
-.contact-intro{color:#b0b8c8;line-height:1.85;margin:20px 0 28px;max-width:100%;font-size:0.95rem;white-space:nowrap}
+.contact-intro{color:#b0b8c8;line-height:1.85;margin:20px 0 28px;max-width:900px;font-size:0.95rem;white-space:normal}
 .contact-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .contact-card{display:flex;flex-direction:column;align-items:center;gap:14px;padding:32px 20px;border:1px solid rgba(255,107,0,0.12);border-radius:8px;background:rgba(255,255,255,0.02);text-decoration:none !important;color:#b0b8c8;text-align:center;transition:all 0.3s ease;position:relative;overflow:hidden}
 .contact-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,transparent,#FF6B00,transparent);transform:scaleX(0);transition:transform 0.35s ease}
