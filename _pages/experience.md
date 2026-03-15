@@ -89,14 +89,15 @@ author_profile: false
   background: linear-gradient(to right, transparent, #FF6B00, transparent) !important;
   transform: scaleX(0) !important; transition: transform 0.35s !important; z-index: 1 !important;
 }
-.C-entry::after {
-  content: '' !important; position: absolute !important; inset: 0 !important;
-  background: radial-gradient(circle 180px at var(--mx,50%) var(--my,50%), rgba(255,107,0,0.09) 0%, transparent 70%) !important;
-  opacity: 0 !important; transition: opacity 0.4s !important; pointer-events: none !important; z-index: 0 !important;
+.C-entry::after { display: none !important; }
+.C-spotlight {
+  position: absolute !important; inset: 0 !important; pointer-events: none !important; z-index: 0 !important;
+  background: radial-gradient(circle 200px at var(--mx,50%) var(--my,50%), rgba(255,107,0,0.10) 0%, transparent 70%) !important;
+  opacity: 0 !important; transition: opacity 0.3s !important;
 }
+.C-entry:hover .C-spotlight { opacity: 1 !important; }
 .C-entry:hover { border-color: rgba(255,107,0,0.3) !important; transform: translateY(-2px) !important; box-shadow: 0 10px 32px rgba(255,107,0,0.07) !important; }
 .C-entry:hover::before { transform: scaleX(1) !important; }
-.C-entry:hover::after { opacity: 1 !important; }
 .C-entry > * { position: relative !important; z-index: 1 !important; }
 .C-entry.no-photo { grid-template-columns: 1fr !important; }
 
@@ -207,7 +208,7 @@ author_profile: false
         <div class="C-sechead">Research Experience</div>
 
         <!-- Halder Group -->
-        <div class="C-entry">
+        <div class="C-entry"><div class="C-spotlight"></div>
           <div class="C-body">
             <div class="C-meta">
               <span class="C-period">August 2024 — Present</span>
@@ -230,7 +231,7 @@ author_profile: false
         </div>
 
         <!-- GCDSL / IISc -->
-        <div class="C-entry">
+        <div class="C-entry"><div class="C-spotlight"></div>
           <div class="C-body">
             <div class="C-meta">
               <span class="C-period">June 2022 — June 2023</span>
@@ -258,7 +259,7 @@ author_profile: false
         <div class="C-sechead">Professional Experience</div>
 
         <!-- HDFC Bank -->
-        <div class="C-entry">
+        <div class="C-entry"><div class="C-spotlight"></div>
           <div class="C-body">
             <div class="C-meta">
               <span class="C-period">July 2023 — July 2024</span>
@@ -287,7 +288,7 @@ author_profile: false
       <div class="C-panel" id="C-service">
         <div class="C-sechead">Review Service</div>
 
-        <div class="C-entry no-photo">
+        <div class="C-entry no-photo"><div class="C-spotlight"></div>
           <div class="C-body">
             <div class="C-meta">
               <span class="C-period">2024 — Present</span>
@@ -324,10 +325,13 @@ function cNav(id, btn) {
 
 // Spotlight glow follows cursor on each card
 document.querySelectorAll('.C-entry').forEach(card => {
+  const spotlight = card.querySelector('.C-spotlight');
+  if (!spotlight) return;
   card.addEventListener('mousemove', e => {
     const r = card.getBoundingClientRect();
-    card.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
-    card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
+    const x = ((e.clientX - r.left) / r.width * 100).toFixed(1) + '%';
+    const y = ((e.clientY - r.top) / r.height * 100).toFixed(1) + '%';
+    spotlight.style.background = `radial-gradient(circle 200px at ${x} ${y}, rgba(255,107,0,0.10) 0%, transparent 70%)`;
   });
 });
 </script>
