@@ -77,8 +77,8 @@ author_profile: false
 
 /* ── ENTRY CARD ── */
 .C-entry {
-  display: grid !important; grid-template-columns: 1fr 280px !important; gap: 28px !important;
-  padding: 28px !important; margin-bottom: 20px !important;
+  display: grid !important; grid-template-columns: 1fr 220px !important; gap: 24px !important;
+  padding: 24px !important; margin-bottom: 20px !important;
   background: rgba(255,255,255,0.025) !important; border: 1px solid rgba(255,255,255,0.07) !important;
   border-radius: 8px !important; transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s !important;
   position: relative !important; overflow: hidden !important;
@@ -87,18 +87,18 @@ author_profile: false
   content: '' !important; position: absolute !important; top: 0 !important; left: 0 !important;
   right: 0 !important; height: 1px !important;
   background: linear-gradient(to right, transparent, #FF6B00, transparent) !important;
-  transform: scaleX(0) !important; transition: transform 0.35s !important; z-index: 1 !important;
+  transform: scaleX(0) !important; transition: transform 0.35s !important; z-index: 2 !important;
 }
 .C-entry::after { display: none !important; }
 .C-spotlight {
   position: absolute !important; inset: 0 !important; pointer-events: none !important; z-index: 0 !important;
-  background: radial-gradient(circle 200px at var(--mx,50%) var(--my,50%), rgba(255,107,0,0.10) 0%, transparent 70%) !important;
   opacity: 0 !important; transition: opacity 0.3s !important;
+  grid-column: 1 / -1 !important;
 }
 .C-entry:hover .C-spotlight { opacity: 1 !important; }
 .C-entry:hover { border-color: rgba(255,107,0,0.3) !important; transform: translateY(-2px) !important; box-shadow: 0 10px 32px rgba(255,107,0,0.07) !important; }
 .C-entry:hover::before { transform: scaleX(1) !important; }
-.C-entry > * { position: relative !important; z-index: 1 !important; }
+.C-body { position: relative !important; z-index: 1 !important; }
 .C-entry.no-photo { grid-template-columns: 1fr !important; }
 
 /* ── TEXT SIDE ── */
@@ -132,8 +132,8 @@ author_profile: false
 .C-photo {
   width: 100% !important; aspect-ratio: 4/3 !important; border-radius: 6px !important;
   overflow: hidden !important; background: linear-gradient(135deg, rgba(255,107,0,0.08), rgba(3,3,10,0.95)) !important;
-  border: 1px solid rgba(255,255,255,0.07) !important; position: relative !important; flex-shrink: 0 !important;
-  align-self: center !important;
+  border: 1px solid rgba(255,255,255,0.07) !important; position: relative !important;
+  flex-shrink: 0 !important; align-self: center !important; z-index: 1 !important;
 }
 .C-photo::after {
   content: '' !important; position: absolute !important; inset: 0 !important;
@@ -329,9 +329,10 @@ document.querySelectorAll('.C-entry').forEach(card => {
   if (!spotlight) return;
   card.addEventListener('mousemove', e => {
     const r = card.getBoundingClientRect();
-    const x = ((e.clientX - r.left) / r.width * 100).toFixed(1) + '%';
-    const y = ((e.clientY - r.top) / r.height * 100).toFixed(1) + '%';
-    spotlight.style.background = `radial-gradient(circle 200px at ${x} ${y}, rgba(255,107,0,0.10) 0%, transparent 70%)`;
+    const x = (e.clientX - r.left).toFixed(0) + 'px';
+    const y = (e.clientY - r.top).toFixed(0) + 'px';
+    spotlight.style.background = `radial-gradient(circle 220px at ${x} ${y}, rgba(255,107,0,0.12) 0%, transparent 70%)`;
   });
+  card.addEventListener('mouseleave', () => { spotlight.style.background = ''; });
 });
 </script>
