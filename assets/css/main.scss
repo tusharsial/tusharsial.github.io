@@ -96,7 +96,6 @@ body {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  // Prevent any element from bleeding outside the screen
   .page__content *,
   .archive * {
     max-width: 100% !important;
@@ -164,21 +163,36 @@ body {
   border: none !important;
 }
 
+// Inner wrap: flex container, title left, nav right
+.masthead__inner-wrap {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 56px !important;
+  padding-right: 16px !important;
+  border-bottom: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+// Site title anchored left
 .masthead .site-title {
   font-family: 'Orbitron', sans-serif !important;
   color: #FF6B00 !important;
   font-weight: 800;
   letter-spacing: 2px;
+  flex-shrink: 0 !important;
+  margin-right: auto !important;
   &:hover { color: #FF9A3C !important; }
 }
 
+// Greedy nav fills remaining space, links flush right
 .masthead .greedy-nav {
+  flex: 1 !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
   background: transparent !important;
-
-  // Push nav links to the right
-  .visible-links {
-    margin-left: auto !important;
-  }
 
   a {
     font-family: 'Orbitron', sans-serif !important;
@@ -190,14 +204,6 @@ body {
   }
   .visible-links a::before { background: #FF6B00 !important; }
   button { background: transparent !important; color: #b0b8c8 !important; }
-}
-
-.masthead__inner-wrap {
-  max-width: 100% !important;
-  width: 100% !important;
-  padding-left: 56px !important;
-  padding-right: 16px !important;
-  border-bottom: none !important;
 }
 
 // ── Mobile hamburger toggle button ──
@@ -252,7 +258,6 @@ body {
   padding: 0 !important;
   height: 120px !important;
   border-top: none !important;
-
   background: linear-gradient(
     to top,
     rgba(3,3,10,0.95) 0%,
@@ -261,7 +266,6 @@ body {
     rgba(3,3,10,0.12) 85%,
     rgba(3,3,10,0) 100%
   ) !important;
-
   display: flex !important;
   align-items: center !important;
 }
@@ -384,7 +388,6 @@ a {
 .page__title { display: none !important; }
 .page__meta  { display: none !important; }
 
-// Global text color — override theme's dark grey defaults
 p,
 li,
 td,
