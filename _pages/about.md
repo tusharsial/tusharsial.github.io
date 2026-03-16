@@ -114,12 +114,12 @@ redirect_from:
           <td>Conference Paper: <span style="color:#FF9A3C !important;">Generative Profiling for Soft Real-Time Systems and its Applications to Resource Allocation</span> accepted at the <a href="https://2026.rtas.org/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">32nd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2026)</a>.</td>
         </tr>
         <tr>
-          <td class="news-date">July 11, 2025</td>
-          <td>Journal paper: <a href="https://dl.acm.org/doi/pdf/10.1145/3761814" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Rasco: Resource Allocation and Scheduling Co-design for DAG Applications on Multicore</a> accepted in ACM Transactions on Embedded Computing Systems (TECS). Also accepted to be presented at <a href="https://esweek.org/emsoft/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">2025 ACM SIGBED International Conference on Embedded Software (EMSOFT)</a>.</td>
+          <td class="news-date">Oct 24, 2025</td>
+          <td>New Manuscript: <a href="https://arxiv.org/abs/2510.21944" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Fixed Horizon Linear Quadratic Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost</a>.</td>
         </tr>
         <tr>
-          <td class="news-date">Oct 24, 2024</td>
-          <td>New Manuscript: <a href="https://arxiv.org/abs/2510.21944" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Fixed Horizon Linear Quadratic Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost</a>.</td>
+          <td class="news-date">July 11, 2025</td>
+          <td>Journal paper: <a href="https://dl.acm.org/doi/pdf/10.1145/3761814" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Rasco: Resource Allocation and Scheduling Co-design for DAG Applications on Multicore</a> accepted in ACM Transactions on Embedded Computing Systems (TECS). Also accepted to be presented at <a href="https://esweek.org/emsoft/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">2025 ACM SIGBED International Conference on Embedded Software (EMSOFT)</a>.</td>
         </tr>
         <tr>
           <td class="news-date">Aug 15, 2024</td>
