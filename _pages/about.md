@@ -100,7 +100,7 @@ redirect_from:
   <div class="section-eyebrow" style="margin-top:48px;">Latest</div>
   <div class="news-header-row">
     <div class="news-heading">News</div>
-    <a href="/news/" target="_blank" rel="noopener" class="btn-all-news">All News</a>
+    <a href="/news/" class="btn-all-news">All News</a>
   </div>
   <div class="news-scroll-wrap" id="newsWrap">
     <div class="news-scroll-inner" id="newsInner">
