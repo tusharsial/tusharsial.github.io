@@ -6,7 +6,7 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/" style="display:flex;align-items:center;gap:8px;"><img src="{{ base_path }}/images/TS-logo.svg" alt="TS" style="width:60px;height:60px;flex-shrink:0;">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/" style="display:flex;align-items:center;gap:8px;"><img src="{{ base_path }}/images/TS-logo.svg" alt="TS" style="width:100px;height:100px;flex-shrink:0;">{{ site.title }}</a></li>
           {% for link in site.data.navigation.main %}
   {% if link.external %}
     {% if link.url contains 'http' %}
