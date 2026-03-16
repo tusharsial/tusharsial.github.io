@@ -155,7 +155,16 @@ body {
 .masthead,
 .masthead__inner-wrap,
 .masthead .greedy-nav,
-.masthead .greedy-nav .visible-links,
+// First li (Tushar Sial) stays left, rest push right
+.masthead .greedy-nav .visible-links {
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+.masthead .greedy-nav .visible-links .masthead__menu-item--lg {
+  margin-right: auto !important;
+}
 .masthead nav {
   background: transparent !important;
   background-color: transparent !important;
