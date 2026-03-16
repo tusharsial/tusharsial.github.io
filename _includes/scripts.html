@@ -1,11 +1,35 @@
-<!-- Disable greedy nav collapse entirely -->
+<!-- Override greedy nav: disable collapse, keep all links visible -->
 <script>
-// Remove the toggle button before main.min.js sees it
-// The greedy nav only collapses items when the toggle button exists
-document.addEventListener('DOMContentLoaded', function() {
-  var toggle = document.querySelector('.greedy-nav__toggle');
-  if (toggle) toggle.remove();
-});
+(function(){
+  // Wait for jQuery to be available
+  function waitForJQuery(cb) {
+    if (window.jQuery) { cb(window.jQuery); }
+    else { setTimeout(function(){ waitForJQuery(cb); }, 20); }
+  }
+
+  waitForJQuery(function($){
+    // Override the greedy nav plugin before it initialises
+    $.fn.greedyNav = function() { return this; };
+
+    // Also restore via jQuery after DOM ready
+    $(function(){
+      var $vis  = $('.greedy-nav .visible-links');
+      var $hid  = $('.greedy-nav .hidden-links');
+      var $btn  = $('.greedy-nav__toggle');
+
+      // Move everything back
+      $hid.children().appendTo($vis);
+
+      // Hide toggle button on desktop
+      $btn.hide();
+
+      // On resize, keep items visible
+      $(window).on('resize', function(){
+        $hid.children().appendTo($vis);
+      });
+    });
+  });
+})();
 </script>
 
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
