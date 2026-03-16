@@ -10,6 +10,24 @@ const obs = new IntersectionObserver(entries => {
 document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
 </script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Move all hidden-links items back to visible-links
+  var visibleLinks = document.querySelector('.visible-links');
+  var hiddenLinks  = document.querySelector('.hidden-links');
+  if (!visibleLinks || !hiddenLinks) return;
+
+  // Move all items from hidden back to visible
+  while (hiddenLinks.children.length > 0) {
+    visibleLinks.appendChild(hiddenLinks.children[0]);
+  }
+
+  // Prevent the greedy nav script from collapsing again
+  var toggle = document.querySelector('.greedy-nav__toggle');
+  if (toggle) toggle.style.display = 'none';
+});
+</script>
+
 <!-- Smart Navbar -->
 <script>
 (function () {
