@@ -155,16 +155,7 @@ body {
 .masthead,
 .masthead__inner-wrap,
 .masthead .greedy-nav,
-// First li (Tushar Sial) stays left, rest push right
-.masthead .greedy-nav .visible-links {
-  display: flex !important;
-  align-items: center !important;
-  width: 100% !important;
-}
-
-.masthead .greedy-nav .visible-links .masthead__menu-item--lg {
-  margin-right: auto !important;
-}
+.masthead .greedy-nav .visible-links,
 .masthead nav {
   background: transparent !important;
   background-color: transparent !important;
@@ -180,26 +171,20 @@ body {
   border-bottom: none !important;
 }
 
-.masthead .site-title {
-  font-family: 'Orbitron', sans-serif !important;
-  color: #FF6B00 !important;
-  font-weight: 800;
-  letter-spacing: 2px;
-  &:hover { color: #FF9A3C !important; }
+// Tushar Sial (masthead__menu-item--lg) anchored left,
+// all other links pushed to the right
+.masthead .greedy-nav .visible-links {
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
 }
 
-// greedy-nav is the real flex container:
-// site-title + visible-links + button are all direct children
-// Push visible-links right by giving site-title margin-right: auto
+.masthead .greedy-nav .visible-links .masthead__menu-item--lg {
+  margin-right: auto !important;
+}
+
 .masthead .greedy-nav {
   background: transparent !important;
-
-  // Anchor title to the left
-  .site-title {
-    margin-right: auto !important;
-    flex-shrink: 0 !important;
-  }
-
   a {
     font-family: 'Orbitron', sans-serif !important;
     font-size: 0.7rem !important;
@@ -210,6 +195,15 @@ body {
   }
   .visible-links a::before { background: #FF6B00 !important; }
   button { background: transparent !important; color: #b0b8c8 !important; }
+}
+
+// Site title (Tushar Sial) colour
+.masthead .greedy-nav .visible-links .masthead__menu-item--lg a {
+  font-family: 'Orbitron', sans-serif !important;
+  color: #FF6B00 !important;
+  font-weight: 800 !important;
+  letter-spacing: 2px !important;
+  &:hover { color: #FF9A3C !important; }
 }
 
 // ── Mobile hamburger toggle button ──
