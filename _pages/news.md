@@ -65,7 +65,7 @@ author_profile: false
 </div>
 
 <style>
-.news-eyebrow{font-family:'Orbitron',sans-serif;font-size:0.56rem;letter-spacing:5px;color:#FF6B00 !important;text-transform:uppercase;display:block;margin-bottom:6px;margin-top:48px}
+.news-eyebrow{font-family:'Orbitron',sans-serif;font-size:0.56rem;letter-spacing:5px;color:#FF6B00 !important;text-transform:uppercase;display:block;margin-bottom:6px;margin-top:0}
 .news-title{font-family:'Orbitron',sans-serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:900;padding-bottom:14px;border:none;position:relative;display:inline-block;line-height:1.15;background:linear-gradient(135deg,#fff 40%,#FF9A3C);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .news-title::after{content:'';position:absolute;bottom:0;left:0;width:60px;height:2px;background:#FF6B00}
 .news-divider{width:100%;height:1px;background:linear-gradient(to right,transparent,rgba(255,107,0,0.35),transparent);margin:24px 0 40px}
