@@ -1,3 +1,35 @@
+<!-- Patch greedy nav BEFORE it loads -->
+<script>
+(function(){
+  // Override the greedy nav collapse by patching it after main.min.js runs
+  // We intercept by replacing the resize/init logic after DOM is ready
+  function forceShowAll() {
+    var visibleLinks = document.querySelector('.greedy-nav .visible-links');
+    var hiddenLinks  = document.querySelector('.greedy-nav .hidden-links');
+    if (!visibleLinks || !hiddenLinks) return false;
+    var moved = false;
+    while (hiddenLinks.children.length > 0) {
+      visibleLinks.appendChild(hiddenLinks.children[0]);
+      moved = true;
+    }
+    var toggle = document.querySelector('.greedy-nav__toggle');
+    if (toggle) toggle.style.display = 'none';
+    return moved;
+  }
+
+  // Poll aggressively until stable
+  var attempts = 0;
+  var interval = setInterval(function() {
+    forceShowAll();
+    attempts++;
+    if (attempts > 40) clearInterval(interval);
+  }, 50);
+
+  // Also on every resize to prevent re-collapse
+  window.addEventListener('resize', forceShowAll);
+})();
+</script>
+
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
@@ -45,36 +77,5 @@ document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
     });
     ticking = true;
   }, { passive: true });
-})();
-</script>
-
-<!-- Greedy Nav Fix: restore all links to visible -->
-<script>
-(function () {
-  function restoreNav() {
-    var visibleLinks = document.querySelector('.greedy-nav .visible-links');
-    var hiddenLinks  = document.querySelector('.greedy-nav .hidden-links');
-    if (!visibleLinks || !hiddenLinks) return;
-    while (hiddenLinks.children.length > 0) {
-      visibleLinks.appendChild(hiddenLinks.children[0]);
-    }
-    var toggle = document.querySelector('.greedy-nav__toggle');
-    if (toggle) toggle.style.display = 'none';
-  }
-
-  // Run immediately, after short delay, and watch for changes
-  restoreNav();
-  setTimeout(restoreNav, 100);
-  setTimeout(restoreNav, 500);
-  setTimeout(restoreNav, 1000);
-
-  // MutationObserver: re-run whenever hidden-links gains children
-  var hiddenLinks = document.querySelector('.greedy-nav .hidden-links');
-  if (hiddenLinks) {
-    var observer = new MutationObserver(function() {
-      restoreNav();
-    });
-    observer.observe(hiddenLinks, { childList: true });
-  }
 })();
 </script>
