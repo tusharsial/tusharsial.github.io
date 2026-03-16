@@ -1,7 +1,6 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
-
 <!-- Fade-in on scroll -->
 <script>
 const obs = new IntersectionObserver(entries => {
@@ -10,69 +9,65 @@ const obs = new IntersectionObserver(entries => {
 document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
 </script>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Move all hidden-links items back to visible-links
-  var visibleLinks = document.querySelector('.visible-links');
-  var hiddenLinks  = document.querySelector('.hidden-links');
-  if (!visibleLinks || !hiddenLinks) return;
-
-  // Move all items from hidden back to visible
-  while (hiddenLinks.children.length > 0) {
-    visibleLinks.appendChild(hiddenLinks.children[0]);
-  }
-
-  // Prevent the greedy nav script from collapsing again
-  var toggle = document.querySelector('.greedy-nav__toggle');
-  if (toggle) toggle.style.display = 'none';
-});
-</script>
-
 <!-- Smart Navbar -->
 <script>
 (function () {
   const nav = document.querySelector('.masthead');
   if (!nav) return;
-
   let lastY = window.scrollY;
   let ticking = false;
   let delta = 0;
-
-  const hideThreshold = 120;   // hide only after scrolling down enough
-  const showThreshold = 5;     // near top always visible
-  const scrollDelta = 12;      // ignore tiny scroll movements
-
+  const hideThreshold = 120;
+  const showThreshold = 5;
+  const scrollDelta = 12;
   nav.classList.add('nav-visible');
-
   window.addEventListener('scroll', function () {
     if (ticking) return;
-
     window.requestAnimationFrame(function () {
       const currentY = window.scrollY;
       const diff = currentY - lastY;
       delta += diff;
-
       if (currentY <= showThreshold) {
         nav.classList.remove('nav-hidden');
         nav.classList.add('nav-visible');
         delta = 0;
       } else if (delta > scrollDelta && currentY > hideThreshold) {
-        // scrolling down
         nav.classList.remove('nav-visible');
         nav.classList.add('nav-hidden');
         delta = 0;
       } else if (delta < -scrollDelta) {
-        // scrolling up
         nav.classList.remove('nav-hidden');
         nav.classList.add('nav-visible');
         delta = 0;
       }
-
       lastY = currentY;
       ticking = false;
     });
-
     ticking = true;
   }, { passive: true });
+})();
+</script>
+
+<!-- Greedy Nav Fix: restore all links to visible -->
+<script>
+(function () {
+  function restoreNav() {
+    var visibleLinks = document.querySelector('.greedy-nav .visible-links');
+    var hiddenLinks  = document.querySelector('.greedy-nav .hidden-links');
+    if (!visibleLinks || !hiddenLinks) return;
+    while (hiddenLinks.children.length > 0) {
+      visibleLinks.appendChild(hiddenLinks.children[0]);
+    }
+    var toggle = document.querySelector('.greedy-nav__toggle');
+    if (toggle) toggle.style.display = 'none';
+  }
+  // Run after greedy nav JS has finished
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(restoreNav, 0);
+    });
+  } else {
+    setTimeout(restoreNav, 0);
+  }
 })();
 </script>
