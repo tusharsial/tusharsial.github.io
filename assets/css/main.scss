@@ -198,6 +198,49 @@ body {
   padding-right: 16px !important;
 }
 
+// ── Mobile hamburger toggle button ──
+.greedy-nav__toggle {
+  background: transparent !important;
+  border: 1px solid rgba(255, 107, 0, 0.5) !important;
+  border-radius: 3px !important;
+  padding: 4px 8px !important;
+  transition: all 0.2s !important;
+
+  &:hover {
+    border-color: #FF6B00 !important;
+    background: rgba(255, 107, 0, 0.12) !important;
+  }
+}
+
+.navicon,
+.navicon::before,
+.navicon::after {
+  background: #FF9A3C !important;
+  height: 1.5px !important;
+}
+
+// ── Dropdown menu ──
+.greedy-nav .hidden-links {
+  background: rgba(3, 3, 10, 0.97) !important;
+  border: 1px solid rgba(255, 107, 0, 0.2) !important;
+  border-radius: 4px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6) !important;
+
+  a {
+    color: #b0b8c8 !important;
+    font-family: 'Orbitron', sans-serif !important;
+    font-size: 0.7rem !important;
+    letter-spacing: 1.5px !important;
+    text-transform: uppercase !important;
+    border-bottom: 1px solid rgba(255, 107, 0, 0.08) !important;
+
+    &:hover {
+      color: #FF9A3C !important;
+      background: rgba(255, 107, 0, 0.06) !important;
+    }
+  }
+}
+
 // =============================================
 // STEP 5: Footer
 // =============================================
