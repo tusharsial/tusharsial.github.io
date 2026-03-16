@@ -96,6 +96,7 @@ body {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+  // Prevent any element from bleeding outside the screen
   .page__content *,
   .archive * {
     max-width: 100% !important;
@@ -111,7 +112,7 @@ body {
   0%   { opacity: 0; background: transparent; }
   100% { opacity: 1; background: transparent; }
 }
-
+ 
 .masthead {
   position: fixed !important;
   top: 0 !important;
@@ -120,8 +121,6 @@ body {
   width: 100% !important;
   z-index: 10 !important;
   min-height: 90px !important;
-  border: none !important;
-  border-bottom: none !important;
   background: linear-gradient(
     to bottom,
     rgba(3,3,10,0.95) 0%,
@@ -139,19 +138,19 @@ body {
   animation: none !important;
   -webkit-animation: none !important;
 }
-
+ 
 .masthead.nav-hidden {
   opacity: 0 !important;
   transform: translateY(-18px) !important;
   pointer-events: none !important;
 }
-
+ 
 .masthead.nav-visible {
   opacity: 1 !important;
   transform: translateY(0) !important;
   pointer-events: auto !important;
 }
-
+ 
 .masthead,
 .masthead__inner-wrap,
 .masthead .greedy-nav,
@@ -162,27 +161,15 @@ body {
   box-shadow: none !important;
   border: none !important;
 }
-
-.masthead__inner-wrap {
-  max-width: 100% !important;
-  width: 100% !important;
-  padding-left: 56px !important;
-  padding-right: 16px !important;
-  border-bottom: none !important;
+ 
+.masthead .site-title {
+  font-family: 'Orbitron', sans-serif !important;
+  color: #FF6B00 !important;
+  font-weight: 800;
+  letter-spacing: 2px;
+  &:hover { color: #FF9A3C !important; }
 }
-
-// Tushar Sial (masthead__menu-item--lg) anchored left,
-// all other links pushed to the right
-.masthead .greedy-nav .visible-links {
-  display: flex !important;
-  align-items: center !important;
-  flex: 1 !important;
-}
-
-.masthead .greedy-nav .visible-links .masthead__menu-item--lg {
-  margin-right: auto !important;
-}
-
+ 
 .masthead .greedy-nav {
   background: transparent !important;
   a {
@@ -196,16 +183,14 @@ body {
   .visible-links a::before { background: #FF6B00 !important; }
   button { background: transparent !important; color: #b0b8c8 !important; }
 }
-
-// Site title (Tushar Sial) — orange only on hover
-.masthead .greedy-nav .visible-links .masthead__menu-item--lg a {
-  color: #b0b8c8 !important;
-  font-family: 'Orbitron', sans-serif !important;
-  font-weight: 800 !important;
-  letter-spacing: 2px !important;
-  &:hover { color: #FF9A3C !important; }
+ 
+.masthead__inner-wrap {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 56px !important;
+  padding-right: 16px !important;
 }
-
+ 
 // ── Mobile hamburger toggle button ──
 .greedy-nav__toggle {
   background: transparent !important;
@@ -218,14 +203,14 @@ body {
     background: rgba(255, 107, 0, 0.12) !important;
   }
 }
-
+ 
 .navicon,
 .navicon::before,
 .navicon::after {
   background: #FF9A3C !important;
   height: 1.5px !important;
 }
-
+ 
 // ── Dropdown menu ──
 .masthead .greedy-nav .hidden-links {
   background: rgba(3, 3, 10, 0.97) !important;
@@ -233,7 +218,7 @@ body {
   border: 1px solid rgba(255, 107, 0, 0.2) !important;
   border-radius: 4px !important;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6) !important;
-
+ 
   a {
     color: #b0b8c8 !important;
     font-family: 'Orbitron', sans-serif !important;
@@ -258,6 +243,7 @@ body {
   padding: 0 !important;
   height: 120px !important;
   border-top: none !important;
+
   background: linear-gradient(
     to top,
     rgba(3,3,10,0.95) 0%,
@@ -266,6 +252,7 @@ body {
     rgba(3,3,10,0.12) 85%,
     rgba(3,3,10,0) 100%
   ) !important;
+
   display: flex !important;
   align-items: center !important;
 }
@@ -372,9 +359,11 @@ h2 {
   padding-bottom: 8px;
 }
 
-a {
-  color: #FF9A3C !important;
-  &:hover { color: #FF6B00 !important; }
+a { 
+  color: #FF9A3C !important; 
+  &:hover { 
+    color: #FF6B00 !important;
+  } 
 }
 
 .page__content a:not(.btn-space-primary):not(.btn-space-outline):not(.contact-card):hover,
@@ -388,6 +377,7 @@ a {
 .page__title { display: none !important; }
 .page__meta  { display: none !important; }
 
+// Global text color — override theme's dark grey defaults
 p,
 li,
 td,
