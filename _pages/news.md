@@ -29,7 +29,7 @@ author_profile: false
     </tr>
     <tr>
       <td class="news-date">Jan 29, 2026</td>
-      <td>Conference Paper: <span style="color:#FF9A3C">Generative Profiling for Soft Real-Time Systems and its Applications to Resource Allocation</span> accepted at the <a href="https://2026.rtas.org/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">32nd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2026)</a>.</td>
+      <td>Conference Paper: <span class="hl">Generative Profiling for Soft Real-Time Systems and its Applications to Resource Allocation</span> accepted at the <a href="https://2026.rtas.org/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">32nd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2026)</a>.</td>
     </tr>
   </table>
 </div>
@@ -85,6 +85,7 @@ author_profile: false
 .news-table tr:hover{background:rgba(255,107,0,0.03) !important}
 .news-table td{padding:14px 8px !important;font-size:0.88rem !important;color:#b0b8c8 !important;vertical-align:top !important;line-height:1.65 !important;background:none !important;border:none !important}
 .news-date{font-family:'Orbitron',sans-serif !important;font-size:0.64rem !important;letter-spacing:2px !important;color:#ffffff !important;white-space:nowrap !important;padding-right:32px !important;width:150px !important}
+.hl{color:#FF9A3C !important}  
 </style>
 
 <script>
