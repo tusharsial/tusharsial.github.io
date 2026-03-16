@@ -61,13 +61,20 @@ document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
     var toggle = document.querySelector('.greedy-nav__toggle');
     if (toggle) toggle.style.display = 'none';
   }
-  // Run after greedy nav JS has finished
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function () {
-      setTimeout(restoreNav, 0);
+
+  // Run immediately, after short delay, and watch for changes
+  restoreNav();
+  setTimeout(restoreNav, 100);
+  setTimeout(restoreNav, 500);
+  setTimeout(restoreNav, 1000);
+
+  // MutationObserver: re-run whenever hidden-links gains children
+  var hiddenLinks = document.querySelector('.greedy-nav .hidden-links');
+  if (hiddenLinks) {
+    var observer = new MutationObserver(function() {
+      restoreNav();
     });
-  } else {
-    setTimeout(restoreNav, 0);
+    observer.observe(hiddenLinks, { childList: true });
   }
 })();
 </script>
