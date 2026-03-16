@@ -176,7 +176,7 @@ body {
 .masthead .greedy-nav .visible-links {
   display: flex !important;
   align-items: center !important;
-  width: 100% !important;
+  flex: 1 !important;
 }
 
 .masthead .greedy-nav .visible-links .masthead__menu-item--lg {
@@ -197,10 +197,10 @@ body {
   button { background: transparent !important; color: #b0b8c8 !important; }
 }
 
-// Site title (Tushar Sial) colour
+// Site title (Tushar Sial) — orange only on hover
 .masthead .greedy-nav .visible-links .masthead__menu-item--lg a {
+  color: #b0b8c8 !important;
   font-family: 'Orbitron', sans-serif !important;
-  color: #FF6B00 !important;
   font-weight: 800 !important;
   letter-spacing: 2px !important;
   &:hover { color: #FF9A3C !important; }
