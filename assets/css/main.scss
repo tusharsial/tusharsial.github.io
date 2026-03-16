@@ -163,36 +163,33 @@ body {
   border: none !important;
 }
 
-// Inner wrap: flex container, title left, nav right
 .masthead__inner-wrap {
   max-width: 100% !important;
   width: 100% !important;
   padding-left: 56px !important;
   padding-right: 16px !important;
   border-bottom: none !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
 }
 
-// Site title anchored left
 .masthead .site-title {
   font-family: 'Orbitron', sans-serif !important;
   color: #FF6B00 !important;
   font-weight: 800;
   letter-spacing: 2px;
-  flex-shrink: 0 !important;
-  margin-right: auto !important;
   &:hover { color: #FF9A3C !important; }
 }
 
-// Greedy nav fills remaining space, links flush right
+// greedy-nav is the real flex container:
+// site-title + visible-links + button are all direct children
+// Push visible-links right by giving site-title margin-right: auto
 .masthead .greedy-nav {
-  flex: 1 !important;
-  display: flex !important;
-  justify-content: flex-end !important;
-  align-items: center !important;
   background: transparent !important;
+
+  // Anchor title to the left
+  .site-title {
+    margin-right: auto !important;
+    flex-shrink: 0 !important;
+  }
 
   a {
     font-family: 'Orbitron', sans-serif !important;
