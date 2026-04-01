@@ -18,6 +18,16 @@ author_profile: false
   
   <div class="pub-item fade-in">
     <div class="pub-title">
+      <a href="https://arxiv.org/abs/2603.28917" target="_blank" rel="noopener">  
+        Symmetrizing Bregman Divergence on the Cone of Positive Definite Matrices: Which Mean to Use and Why
+      </a>  
+    </div>
+    <div class="pub-authors"><strong>Tushar Sial</strong>, and Abhishek Halder.</div>
+    <div class="pub-venue">65th IEEE Conference on Decision and Control <span class="pub-status">· Under Review</span></div>
+  </div>
+  
+  <div class="pub-item fade-in">
+    <div class="pub-title">
         Continuous Time LQ Covariance Control over a Fixed Horizon: Optimal Transport and Bregman Divergence Terminal Costs
     </div>
     <div class="pub-authors"><strong>Tushar Sial</strong>, and Abhishek Halder.</div>
