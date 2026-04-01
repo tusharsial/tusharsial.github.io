@@ -55,7 +55,7 @@ custom_js: research-project
   <div class="pub-group">
     <div class="pub-group-label fade-in">Conference</div>
     <div class="pub-item fade-in">
-      <div class="pub-title">LQ Covariance Control with Deadline Constraint and Frobenius Terminal Loss</div>
+      <div class="pub-title"><a href="/files/Tushar_2026_AIAA_regional_conference_Covariance_Control.pdf" target="_blank" rel="noopener">LQ Covariance Control with Deadline Constraint and Frobenius Terminal Loss</a></div>
       <div class="pub-authors"><strong>Tushar Sial</strong>, and Abhishek Halder.</div>
       <div class="pub-venue">2026 AIAA Regional Student Conference <span class="pub-status">· To appear</span></div>
     </div>
