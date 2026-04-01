@@ -105,7 +105,6 @@ redirect_from:
   <div class="news-scroll-wrap" id="newsWrap">
     <div class="news-scroll-inner" id="newsInner">
       <table class="news-table" id="newsTable">
-         </tr>
         <tr>
           <td class="news-date">Mar 27, 2026</td>
           <td>Presented my work: <a href="/files/Tushar_2026_AIAA_regional_conference_Covariance_Control.pdf" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">LQ Covariance Control with Deadline Constraint and Frobenius Terminal Loss</a> in the <a href="https://aiaa.org/events/2026-region-v-student-conference/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">AIAA Region V Student Conference </a>, 2026.  </td>
