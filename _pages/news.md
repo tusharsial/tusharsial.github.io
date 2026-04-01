@@ -21,7 +21,6 @@ author_profile: false
 
 <!-- 2026 -->
 <div class="news-year-group" data-group="2026">
-  <div class="news-year-label">2026</div>
   <table class="news-table">
      <tr>
           <td class="news-date">Mar 27, 2026</td>
@@ -44,7 +43,6 @@ author_profile: false
 
 <!-- 2025 -->
 <div class="news-year-group" data-group="2025">
-  <div class="news-year-label">2025</div>
   <table class="news-table">
      <tr>
       <td class="news-date">Oct 24, 2025</td>
@@ -59,7 +57,6 @@ author_profile: false
 
 <!-- 2024 -->
 <div class="news-year-group" data-group="2024">
-  <div class="news-year-label">2024</div>
   <table class="news-table">
     <tr>
       <td class="news-date">Aug 15, 2024</td>
