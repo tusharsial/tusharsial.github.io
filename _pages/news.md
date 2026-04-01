@@ -31,7 +31,6 @@ author_profile: false
           <td class="news-date">Mar 26, 2026</td>
           <td>Presented my work: <a href="/files/Tushar_2026_AIAA_regional_conference_MDO.pdf" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Multidisciplinary Design Optimization of a Low-Thrust Asteroid Orbit Insertion Using Electric Propulsion</a> in the <a href="https://aiaa.org/events/2026-region-v-student-conference/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">2026 AIAA Region V Student Conference </a>. <a href="/files/Tushar_2026_AIAA_regional_conference_MDO_slides.pdf" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">[slides]</a></td>
           </tr>
-        <tr>
     <tr>
       <td class="news-date">Feb 27, 2026</td>
       <td>Successfully defended my MS thesis: <a href="/files/Tushar_MS_Thesis_Slides.pdf" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Fixed Horizon Linear Quadratic Optimal Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost</a>.</td>
