@@ -67,7 +67,9 @@ author_profile: false
 
   <div class="pub-item fade-in">
     <div class="pub-title">
+      <a href="/files/Tushar_2026_AIAA_regional_conference_Covariance_Control.pdf" target="_blank" rel="noopener">
       LQ Covariance Control with Deadline Constraint and Frobenius Terminal Loss
+      </a>
     </div>
     <div class="pub-authors"> <strong>Tushar Sial</strong>, and Abhishek Halder.</div>
     <div class="pub-venue">2026 AIAA Regional Student Conference <span class="pub-status">· To appear </span></div>
