@@ -50,7 +50,7 @@ redirect_from:
           <div class="edu-card">
             <div class="edu-degree">MS · Aerospace Engineering</div>
             <div class="edu-inst">Iowa State University</div>
-            <div class="edu-period">2024 — Present · Ames, IA</div>
+            <div class="edu-period">2024 — Present · Ames, IA, USA</div>
           </div>
         </div>
         <div class="edu-entry">
