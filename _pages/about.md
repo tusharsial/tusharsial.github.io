@@ -105,10 +105,14 @@ redirect_from:
   <div class="news-scroll-wrap" id="newsWrap">
     <div class="news-scroll-inner" id="newsInner">
       <table class="news-table" id="newsTable">
+         </tr>
         <tr>
-          <td class="news-date">March 26, 2026</td>
-          <td>Presented our works: <a href="/files/Tushar_MS_Thesis_Slides.pdf" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Multidisciplinary Design Optimization of a Low-Thrust Asteroid Orbit Insertion Using Electric Propulsion</a> and <a href="/files/Tushar_MS_Thesis_Slides.pdf" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">LQ Covariance Control with Deadline Constraint and Frobenius Terminal Loss</a> in the <a href="https://aiaa.org/events/2026-region-v-student-conference/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">AIAA Region V Student Conference </a>, 2026.  </td>
-        </tr>
+          <td class="news-date">Mar 27, 2026</td>
+          <td>Presented my work: <a href="/files/Tushar_2026_AIAA_regional_conference_Covariance_Control.pdf" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">LQ Covariance Control with Deadline Constraint and Frobenius Terminal Loss</a> in the <a href="https://aiaa.org/events/2026-region-v-student-conference/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">AIAA Region V Student Conference </a>, 2026.  </td>
+        </tr> 
+        <tr>
+          <td class="news-date">Mar 26, 2026</td>
+          <td>Presented my work: <a href="/files/Tushar_2026_AIAA_regional_conference_MDO.pdf" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Multidisciplinary Design Optimization of a Low-Thrust Asteroid Orbit Insertion Using Electric Propulsion</a> in the <a href="https://aiaa.org/events/2026-region-v-student-conference/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">AIAA Region V Student Conference </a>, 2026.  </td>
         <tr>
           <td class="news-date">Feb 27, 2026</td>
           <td>Successfully defended my MS thesis: <a href="/files/Tushar_MS_Thesis_Slides.pdf" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Fixed Horizon Linear Quadratic Optimal Covariance Steering in Continuous Time with Hilbert-Schmidt Terminal Cost</a>.</td>
@@ -124,14 +128,6 @@ redirect_from:
         <tr>
           <td class="news-date">July 11, 2025</td>
           <td>Journal paper: <a href="https://dl.acm.org/doi/pdf/10.1145/3761814" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Rasco: Resource Allocation and Scheduling Co-design for DAG Applications on Multicore</a> accepted in ACM Transactions on Embedded Computing Systems (TECS). Also accepted to be presented at <a href="https://esweek.org/emsoft/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">2025 ACM SIGBED International Conference on Embedded Software (EMSOFT)</a>.</td>
-        </tr>
-        <tr>
-          <td class="news-date">Aug 15, 2024</td>
-          <td>Joined Prof. <a href="https://abhishekhalder.org/index.html" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Abhishek Halder's group</a> as a Graduate Research Assistant at ISU.</td>
-        </tr>
-        <tr>
-          <td class="news-date">Aug 07, 2024</td>
-          <td>Started MS in the <a href="https://www.aere.iastate.edu/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Department of Aerospace Engineering, Iowa State University</a>.</td>
         </tr>
       </table>
     </div>
