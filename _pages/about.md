@@ -67,10 +67,10 @@ redirect_from:
     <!-- RIGHT: bio + interests + hobbies -->
     <div class="about-content-col">
       <p class="about-desc">
-        I am a final year Master's student in Aerospace Engineering at Iowa State University. Since the fall of 2024, I have been working as a Graduate Research Assistant under <a href="https://abhishekhalder.org/index.html" target="_blank" rel="noopener">Professor Abhishek Halder</a>, at the intersection of Stochastic Systems, Dynamics &amp; Control, and Optimization.
+        I am a 2nd year Master's student in Aerospace Engineering at Iowa State University. Since the fall of 2024, I have been working as a Graduate Research Assistant under <a href="https://abhishekhalder.org/index.html" target="_blank" rel="noopener">Professor Abhishek Halder</a>, at the intersection of Stochastic Systems, Dynamics &amp; Control, and Optimization.
       </p>
       <p class="about-desc">
-        My enduring curiosity for control systems led me to major in Electrical and Electronics Engineering at Birla Institute of Technology and Science (BITS) Pilani. My undergraduate and master's research experiences have helped me identify my interests in bridging astrodynamics, control theory, optimization, and stochastic systems to advance Guidance, Navigation, and Control (GNC) architectures of space systems.
+        My enduring curiosity for control systems led me to major in Electrical and Electronics Engineering at Birla Institute of Technology and Science (BITS) Pilani. My undergraduate and master's research experiences have helped me identify my interests in bridging astrodynamics, control theory, optimization, and stochastic systems to advance Guidance, Navigation, & Control architectures of space systems.
       </p>
       <span class="about-tags-label">Research Interests</span>
       <div class="research-tags">
