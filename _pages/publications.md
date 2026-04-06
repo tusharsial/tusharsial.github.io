@@ -87,7 +87,9 @@ author_profile: false
   
   <div class="pub-item fade-in">
     <div class="pub-title">
+       <a href="https://arxiv.org/abs/2604.01441" target="_blank" rel="noopener">
       Generative Profiling for Soft Real-Time Systems and its Applications to Resource Allocation
+       </a>
     </div>
     <div class="pub-authors">Georgiy A. Bondar, Abigail Eisenklam, Yifan Cai, Robert Gifford, <strong>Tushar Sial</strong>, Linh Thi Xuan Phan, and Abhishek Halder.</div>
     <div class="pub-venue">32nd IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2026) <span class="pub-status">· To appear</span></div>
