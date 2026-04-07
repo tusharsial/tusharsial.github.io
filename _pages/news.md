@@ -22,7 +22,11 @@ author_profile: false
 <!-- 2026 -->
 <div class="news-year-group" data-group="2026">
   <table class="news-table">
-     <tr>
+    <tr>
+      <td class="news-date">Mar 30, 2026</td>
+      <td>New Manuscript: <a href="https://arxiv.org/pdf/2603.28917" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">Symmetrizing Bregman Divergence on the Cone of Positive Definite Matrices: Which Mean to Use and Why</a>.</td>
+    </tr> 
+    <tr>
           <td class="news-date">Mar 27, 2026</td>
           <td>Presented my work: <a href="/files/Tushar_2026_AIAA_regional_conference_Covariance_Control.pdf" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">LQ Covariance Control with Deadline Constraint and Frobenius Terminal Loss</a> in the <a href="https://aiaa.org/events/2026-region-v-student-conference/" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;"> 2026 AIAA Region V Student Conference</a>. <a href="/files/Tushar_2026_AIAA_regional_conference_Covariance_Control_Slides.pdf" target="_blank" rel="noopener" style="color:#FF9A3C;text-decoration:none;">[slides]</a></td>
         </tr> 
